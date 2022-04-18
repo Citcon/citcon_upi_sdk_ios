@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1056F84280D175000C911C8 /* CPaySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1056F83280D175000C911C8 /* CPaySDK.xcframework */; };
+		F1056F85280D175000C911C8 /* CPaySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1056F83280D175000C911C8 /* CPaySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F1056F87280D175300C911C8 /* PPRiskMagnes.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1056F86280D175300C911C8 /* PPRiskMagnes.xcframework */; };
+		F1056F88280D175300C911C8 /* PPRiskMagnes.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1056F86280D175300C911C8 /* PPRiskMagnes.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F1056F8A280D175600C911C8 /* CardinalMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1056F89280D175600C911C8 /* CardinalMobile.xcframework */; };
+		F1056F8B280D175600C911C8 /* CardinalMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1056F89280D175600C911C8 /* CardinalMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F1F06AC827B0FD8000BD302F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F06AC727B0FD8000BD302F /* AppDelegate.m */; };
+		F1F06ACE27B0FD8000BD302F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F06ACD27B0FD8000BD302F /* ViewController.m */; };
+		F1F06AD127B0FD8000BD302F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F06ACF27B0FD8000BD302F /* Main.storyboard */; };
+		F1F06AD327B0FD8200BD302F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F06AD227B0FD8200BD302F /* Assets.xcassets */; };
+		F1F06AD627B0FD8200BD302F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F06AD427B0FD8200BD302F /* LaunchScreen.storyboard */; };
+		F1F06AD927B0FD8200BD302F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F06AD827B0FD8200BD302F /* main.m */; };
+		F1F2436027CDF3620065809F /* WechatPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2435F27CDF3620065809F /* WechatPayViewController.m */; };
+		F1F2436327CE0D830065809F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2436227CE0D830065809F /* BaseViewController.m */; };
+		F1F2436627CE12420065809F /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2436527CE12420065809F /* LoadingView.m */; };
+		F1F2436927CF08840065809F /* AppDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2436827CF08840065809F /* AppDefines.m */; };
+		F1F2436E27CF437B0065809F /* AlipayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2436D27CF437B0065809F /* AlipayViewController.m */; };
+		F1F2437127CF55180065809F /* UnionPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2437027CF55180065809F /* UnionPayViewController.m */; };
+		F1F2437F27D0C2B50065809F /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2437E27D0C2B50065809F /* CardViewController.m */; };
+		F1F2445727DE29CB0065809F /* DigitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2445627DE29CB0065809F /* DigitViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F1BC0DA827BFB24000C04C0B /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1F06B6327B1037100BD302F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F1056F85280D175000C911C8 /* CPaySDK.xcframework in Embed Frameworks */,
+				F1056F88280D175300C911C8 /* PPRiskMagnes.xcframework in Embed Frameworks */,
+				F1056F8B280D175600C911C8 /* CardinalMobile.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F1056F83280D175000C911C8 /* CPaySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CPaySDK.xcframework; path = Frameworks/CPaySDK.xcframework; sourceTree = "<group>"; };
+		F1056F86280D175300C911C8 /* PPRiskMagnes.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PPRiskMagnes.xcframework; path = Frameworks/PPRiskMagnes.xcframework; sourceTree = "<group>"; };
+		F1056F89280D175600C911C8 /* CardinalMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CardinalMobile.xcframework; path = Frameworks/CardinalMobile.xcframework; sourceTree = "<group>"; };
+		F1F06AC327B0FD8000BD302F /* CPayDemoOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPayDemoOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1F06AC627B0FD8000BD302F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F1F06AC727B0FD8000BD302F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F1F06ACC27B0FD8000BD302F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F1F06ACD27B0FD8000BD302F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F1F06AD027B0FD8000BD302F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1F06AD227B0FD8200BD302F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1F06AD527B0FD8200BD302F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1F06AD727B0FD8200BD302F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1F06AD827B0FD8200BD302F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1F242C127C4829B0065809F /* CPayDemoOC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CPayDemoOC.entitlements; sourceTree = "<group>"; };
+		F1F2435E27CDF3620065809F /* WechatPayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WechatPayViewController.h; sourceTree = "<group>"; };
+		F1F2435F27CDF3620065809F /* WechatPayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WechatPayViewController.m; sourceTree = "<group>"; };
+		F1F2436127CE0D830065809F /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		F1F2436227CE0D830065809F /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		F1F2436427CE12420065809F /* LoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		F1F2436527CE12420065809F /* LoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		F1F2436727CE55180065809F /* AppDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDefines.h; sourceTree = "<group>"; };
+		F1F2436827CF08840065809F /* AppDefines.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDefines.m; sourceTree = "<group>"; };
+		F1F2436C27CF437B0065809F /* AlipayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlipayViewController.h; sourceTree = "<group>"; };
+		F1F2436D27CF437B0065809F /* AlipayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlipayViewController.m; sourceTree = "<group>"; };
+		F1F2436F27CF55180065809F /* UnionPayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnionPayViewController.h; sourceTree = "<group>"; };
+		F1F2437027CF55180065809F /* UnionPayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnionPayViewController.m; sourceTree = "<group>"; };
+		F1F2437D27D0C2B50065809F /* CardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
+		F1F2437E27D0C2B50065809F /* CardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
+		F1F2445527DE29CB0065809F /* DigitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DigitViewController.h; sourceTree = "<group>"; };
+		F1F2445627DE29CB0065809F /* DigitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DigitViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1F06AC027B0FD8000BD302F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1056F84280D175000C911C8 /* CPaySDK.xcframework in Frameworks */,
+				F1056F87280D175300C911C8 /* PPRiskMagnes.xcframework in Frameworks */,
+				F1056F8A280D175600C911C8 /* CardinalMobile.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1F06ABA27B0FD8000BD302F = {
+			isa = PBXGroup;
+			children = (
+				F1F06AC527B0FD8000BD302F /* CPayDemoOC */,
+				F1F06AC427B0FD8000BD302F /* Products */,
+				F1F06ADF27B0FDB300BD302F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1F06AC427B0FD8000BD302F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1F06AC327B0FD8000BD302F /* CPayDemoOC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1F06AC527B0FD8000BD302F /* CPayDemoOC */ = {
+			isa = PBXGroup;
+			children = (
+				F1F242C127C4829B0065809F /* CPayDemoOC.entitlements */,
+				F1F06AC627B0FD8000BD302F /* AppDelegate.h */,
+				F1F06AC727B0FD8000BD302F /* AppDelegate.m */,
+				F1F06ACC27B0FD8000BD302F /* ViewController.h */,
+				F1F06ACD27B0FD8000BD302F /* ViewController.m */,
+				F1F06ACF27B0FD8000BD302F /* Main.storyboard */,
+				F1F06AD227B0FD8200BD302F /* Assets.xcassets */,
+				F1F06AD427B0FD8200BD302F /* LaunchScreen.storyboard */,
+				F1F06AD727B0FD8200BD302F /* Info.plist */,
+				F1F06AD827B0FD8200BD302F /* main.m */,
+				F1F2436427CE12420065809F /* LoadingView.h */,
+				F1F2436527CE12420065809F /* LoadingView.m */,
+				F1F2436727CE55180065809F /* AppDefines.h */,
+				F1F2436827CF08840065809F /* AppDefines.m */,
+				F1F2436127CE0D830065809F /* BaseViewController.h */,
+				F1F2436227CE0D830065809F /* BaseViewController.m */,
+				F1F2435E27CDF3620065809F /* WechatPayViewController.h */,
+				F1F2435F27CDF3620065809F /* WechatPayViewController.m */,
+				F1F2436C27CF437B0065809F /* AlipayViewController.h */,
+				F1F2436D27CF437B0065809F /* AlipayViewController.m */,
+				F1F2436F27CF55180065809F /* UnionPayViewController.h */,
+				F1F2437027CF55180065809F /* UnionPayViewController.m */,
+				F1F2437D27D0C2B50065809F /* CardViewController.h */,
+				F1F2437E27D0C2B50065809F /* CardViewController.m */,
+				F1F2445527DE29CB0065809F /* DigitViewController.h */,
+				F1F2445627DE29CB0065809F /* DigitViewController.m */,
+			);
+			path = CPayDemoOC;
+			sourceTree = "<group>";
+		};
+		F1F06ADF27B0FDB300BD302F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1056F89280D175600C911C8 /* CardinalMobile.xcframework */,
+				F1056F86280D175300C911C8 /* PPRiskMagnes.xcframework */,
+				F1056F83280D175000C911C8 /* CPaySDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1F06AC227B0FD8000BD302F /* CPayDemoOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1F06ADC27B0FD8200BD302F /* Build configuration list for PBXNativeTarget "CPayDemoOC" */;
+			buildPhases = (
+				F1F06ABF27B0FD8000BD302F /* Sources */,
+				F1F06AC027B0FD8000BD302F /* Frameworks */,
+				F1F06AC127B0FD8000BD302F /* Resources */,
+				F1F06B6327B1037100BD302F /* Embed Frameworks */,
+				F1BC0DA827BFB24000C04C0B /* Embed PlugIns */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CPayDemoOC;
+			productName = CPayDemoOC;
+			productReference = F1F06AC327B0FD8000BD302F /* CPayDemoOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1F06ABB27B0FD8000BD302F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					F1F06AC227B0FD8000BD302F = {
+						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = F1F06ABE27B0FD8000BD302F /* Build configuration list for PBXProject "CPayDemoOC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1F06ABA27B0FD8000BD302F;
+			productRefGroup = F1F06AC427B0FD8000BD302F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1F06AC227B0FD8000BD302F /* CPayDemoOC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1F06AC127B0FD8000BD302F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F06AD627B0FD8200BD302F /* LaunchScreen.storyboard in Resources */,
+				F1F06AD327B0FD8200BD302F /* Assets.xcassets in Resources */,
+				F1F06AD127B0FD8000BD302F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1F06ABF27B0FD8000BD302F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F06ACE27B0FD8000BD302F /* ViewController.m in Sources */,
+				F1F2436327CE0D830065809F /* BaseViewController.m in Sources */,
+				F1F2437127CF55180065809F /* UnionPayViewController.m in Sources */,
+				F1F2436627CE12420065809F /* LoadingView.m in Sources */,
+				F1F06AC827B0FD8000BD302F /* AppDelegate.m in Sources */,
+				F1F2445727DE29CB0065809F /* DigitViewController.m in Sources */,
+				F1F06AD927B0FD8200BD302F /* main.m in Sources */,
+				F1F2436E27CF437B0065809F /* AlipayViewController.m in Sources */,
+				F1F2436027CDF3620065809F /* WechatPayViewController.m in Sources */,
+				F1F2436927CF08840065809F /* AppDefines.m in Sources */,
+				F1F2437F27D0C2B50065809F /* CardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F1F06ACF27B0FD8000BD302F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1F06AD027B0FD8000BD302F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1F06AD427B0FD8200BD302F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1F06AD527B0FD8200BD302F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1F06ADA27B0FD8200BD302F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F1F06ADB27B0FD8200BD302F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1F06ADD27B0FD8200BD302F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CPayDemoOC/CPayDemoOC.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development: long zhao (49Q5V63857)";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6QR8NK5X24;
+				INFOPLIST_FILE = CPayDemoOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.citcon.citconpay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Zhao Long";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1F06ADE27B0FD8200BD302F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CPayDemoOC/CPayDemoOC.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development: long zhao (49Q5V63857)";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6QR8NK5X24;
+				INFOPLIST_FILE = CPayDemoOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.citcon.citconpay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Zhao Long";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1F06ABE27B0FD8000BD302F /* Build configuration list for PBXProject "CPayDemoOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F06ADA27B0FD8200BD302F /* Debug */,
+				F1F06ADB27B0FD8200BD302F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1F06ADC27B0FD8200BD302F /* Build configuration list for PBXNativeTarget "CPayDemoOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F06ADD27B0FD8200BD302F /* Debug */,
+				F1F06ADE27B0FD8200BD302F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1F06ABB27B0FD8000BD302F /* Project object */;
+}
