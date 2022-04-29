@@ -18,7 +18,7 @@ import _Concurrency
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class CPayManager : ObjectiveC.NSObject {
   @objc public static func sharedInst() -> CPaySDK.CPayManager
-  @objc public func setMode(_ mode: CPaySDK.CPayMode) -> Swift.Bool
+  @objc public func setMode(_ mode: CPaySDK.CPayENVMode) -> Swift.Bool
   @objc public func setAccessToken(_ token: Swift.String) -> Swift.Bool
   @objc public func requestOrder(_ order: CPaySDK.CPayRequest, callback: @escaping CPaySDK.CPayRequestCallback) -> Swift.Bool
   @objc public func inquireOrder(_ transId: Swift.String, callback: @escaping CPaySDK.CPayCheckCallback) -> Swift.Bool
@@ -127,7 +127,7 @@ import _Concurrency
   @objc public var urls: CPaySDK.CPayUrls
   @objc public var scheme: Swift.String?
   @objc public var universalLink: Swift.String?
-  @objc public var threeDSecureVerification: Swift.Bool
+  @objc public var request3DSecureVerification: Swift.Bool
   @objc public var controller: UIKit.UIViewController?
   @objc public var unionpayMode: Swift.String?
   @objc override dynamic public init()
@@ -135,7 +135,7 @@ import _Concurrency
 }
 public typealias CPayRequestCallback = (_ result: CPaySDK.CPayResult?) -> Swift.Void
 public typealias CPayCheckCallback = (_ result: CPaySDK.CPayCheck?) -> Swift.Void
-@objc public enum CPayMode : Swift.Int {
+@objc public enum CPayENVMode : Swift.Int {
   case DEV
   case QA
   case UAT
@@ -224,6 +224,6 @@ public typealias CPayCheckCallback = (_ result: CPaySDK.CPayCheck?) -> Swift.Voi
   public init(status: Swift.String, code: Swift.String, message: Swift.String, id: Swift.String)
   @objc deinit
 }
-extension CPaySDK.CPayMode : Swift.Equatable {}
-extension CPaySDK.CPayMode : Swift.Hashable {}
-extension CPaySDK.CPayMode : Swift.RawRepresentable {}
+extension CPaySDK.CPayENVMode : Swift.Equatable {}
+extension CPaySDK.CPayENVMode : Swift.Hashable {}
+extension CPaySDK.CPayENVMode : Swift.RawRepresentable {}

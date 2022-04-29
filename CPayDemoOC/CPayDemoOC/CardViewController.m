@@ -116,8 +116,8 @@
     order.controller = self;
     
     // If 3DS
-    order.threeDSecureVerification = _swEnable3DS.isOn;
-    if (order.threeDSecureVerification) {
+    order.request3DSecureVerification = _swEnable3DS.isOn;
+    if (order.request3DSecureVerification) {
         order.consumer.email = _txtEmail.text;
         order.consumer.phone = _txtPhoneNumber.text;
         order.consumer.firstName = _txtGiveName.text;

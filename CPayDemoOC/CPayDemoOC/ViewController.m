@@ -271,13 +271,13 @@
     }
     
     if ([rtenv isEqualToString:@"DEV"]) {
-        return [[CPayManager sharedInst] setMode:CPayModeDEV];
+        return [[CPayManager sharedInst] setMode:CPayENVModeDEV];
     } else if ([rtenv isEqualToString:@"QA"]) {
-        return [[CPayManager sharedInst] setMode:CPayModeQA];
+        return [[CPayManager sharedInst] setMode:CPayENVModeQA];
     } else if ([rtenv isEqualToString:@"UAT"]) {
-        return [[CPayManager sharedInst] setMode:CPayModeUAT];
+        return [[CPayManager sharedInst] setMode:CPayENVModeUAT];
     } else {
-        return [[CPayManager sharedInst] setMode:CPayModePROD];
+        return [[CPayManager sharedInst] setMode:CPayENVModePROD];
     }
     return NO;
 }
