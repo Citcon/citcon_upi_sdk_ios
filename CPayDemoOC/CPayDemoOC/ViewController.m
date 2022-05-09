@@ -58,7 +58,7 @@
 - (void)initEnvForm {
     _txtRTEnv.text = @"QA";
     _txtPaymethod.text = @"wechatpay";
-    _txtVendorType.text = @"kfc_upi_usd";
+    _txtVendorType.text = @"sk-development-6531a79240d135e77c7a0affdf585bca";
 }
 
 - (void)setAccessToken {
@@ -188,7 +188,7 @@
         [ret appendFormat:@"amount: %ld\n", (long)resp.data.amount];
         [ret appendFormat:@"currency: %@\n", resp.data.currency];
         [ret appendFormat:@"Txn status: %@\n", resp.data.status];
-        [ret appendFormat:@"timeCanceled: %@\n", resp.data.timeCanceled];
+        [ret appendFormat:@"timeCanceled: %ld\n", (long)resp.data.timeCanceled];
         [ret appendFormat:@"expiry: %@\n", resp.data.expiry];
         [ret appendFormat:@"timeCreated: %ld\n", (long)resp.data.timeCreated];
         [ret appendFormat:@"country: %@\n", resp.data.country];

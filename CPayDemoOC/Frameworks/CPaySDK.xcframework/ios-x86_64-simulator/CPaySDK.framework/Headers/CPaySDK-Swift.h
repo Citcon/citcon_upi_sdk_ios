@@ -250,7 +250,7 @@ SWIFT_CLASS("_TtCC7CPaySDK9CPayCheck13CPayCheckData")
 @property (nonatomic) NSInteger amount;
 @property (nonatomic, copy) NSString * _Nullable currency;
 @property (nonatomic, copy) NSString * _Nullable status;
-@property (nonatomic, copy) NSString * _Nullable timeCanceled;
+@property (nonatomic) NSInteger timeCanceled;
 @property (nonatomic, copy) NSString * _Nullable expiry;
 @property (nonatomic) NSInteger timeCreated;
 @property (nonatomic, copy) NSString * _Nullable country;

@@ -192,7 +192,7 @@ public typealias CPayCheckCallback = (_ result: CPaySDK.CPayCheck?) -> Swift.Voi
     @objc public var amount: Swift.Int
     @objc public var currency: Swift.String?
     @objc public var status: Swift.String?
-    @objc public var timeCanceled: Swift.String?
+    @objc public var timeCanceled: Swift.Int
     @objc public var expiry: Swift.String?
     @objc public var timeCreated: Swift.Int
     @objc public var country: Swift.String?
