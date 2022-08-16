@@ -44,6 +44,16 @@
 				<string>com.citcon.citconpay.payments</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>wechat.aud</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wxfa1402e1e6cec516</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>

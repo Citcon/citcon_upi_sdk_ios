@@ -52,7 +52,17 @@
         @"alipay",
         @"card",
         @"paypal",
-        @"venmo"
+        @"venmo",
+        @"toss",
+        @"lpay",
+        @"lgpay",
+        @"samsungpay",
+        @"banktransfer",
+        @"grabpay",
+        @"atome",
+        @"shopeepay",
+        @"netspay",
+        @"paynow"
     ];
     
     self.ns_country = @[
@@ -62,7 +72,8 @@
         @"EN",
         @"AU",
         @"SG",
-        @"NZ"
+        @"NZ",
+        @"KR"
     ];
     
     self.ns_currency = @[
@@ -72,7 +83,8 @@
         @"GBP",
         @"AUD",
         @"SGD",
-        @"NZD"
+        @"NZD",
+        @"KRW"
     ];
     
     self.ns_vendors = @[

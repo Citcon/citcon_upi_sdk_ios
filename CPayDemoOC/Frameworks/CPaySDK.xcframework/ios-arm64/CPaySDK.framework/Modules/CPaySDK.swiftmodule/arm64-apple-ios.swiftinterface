@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CPaySDK
+import AMS
 import Alamofire
 import AlipayExt
 import BraintreeDropIn
@@ -12,6 +13,7 @@ import UnionPayExt
 import WechatPayExt
 import _Concurrency
 @_inheritsConvenienceInitializers @objc public class CPayRuntimeInst : ObjectiveC.NSObject {
+  public static let gateways: [Swift.String : [Swift.String]]
   @objc public static func NTFY_ASYNC() -> Swift.String
   @objc override dynamic public init()
   @objc deinit
@@ -60,13 +62,25 @@ import _Concurrency
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc public class CPayPaymentData : ObjectiveC.NSObject {
+  @objc public var issuer: Swift.String?
+  @objc public var pan: Swift.String?
+  @objc public var firstName: Swift.String?
+  @objc public var lastName: Swift.String?
+  @objc public var cvv: Swift.String?
+  @objc public var expiry: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class CPayPayment : ObjectiveC.NSObject {
   @objc public var method: Swift.String?
   @objc public var indicator: Swift.String?
   @objc public var requestToken: Swift.Bool
   @objc public var token: Swift.String?
   @objc public var client: [Swift.String]?
-  @objc public var timeout: Swift.Int
+  @objc public var expiry: Swift.Int
+  @objc public var format: Swift.String?
+  @objc public var data: CPaySDK.CPayPaymentData?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -82,6 +96,7 @@ import _Concurrency
   @objc public var totalDiscountAmount: Swift.Int32
   @objc public var taxableAmount: Swift.Int32
   @objc public var taxExemptAmount: Swift.Int32
+  @objc public var totalDiscountCode: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -107,6 +122,8 @@ import _Concurrency
 }
 @_inheritsConvenienceInitializers @objc public class CPayInstallments : ObjectiveC.NSObject {
   @objc public var id: Swift.String?
+  @objc public var paymentNumber: Swift.String?
+  @objc public var quantity: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -118,6 +135,27 @@ import _Concurrency
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc public class CPayExtTransactionReceipt : ObjectiveC.NSObject {
+  @objc public var type: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtTransaction : ObjectiveC.NSObject {
+  @objc public var receipt: CPaySDK.CPayExtTransactionReceipt?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtDevice : ObjectiveC.NSObject {
+  @objc public var ip: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExt : ObjectiveC.NSObject {
+  @objc public var transaction: CPaySDK.CPayExtTransaction?
+  @objc public var device: CPaySDK.CPayExtDevice?
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class CPayRequest : ObjectiveC.NSObject {
   @objc public var transaction: CPaySDK.CPayTranscation
   @objc public var consumer: CPaySDK.CPayConsumer?
@@ -125,6 +163,7 @@ import _Concurrency
   @objc public var goods: CPaySDK.CPayGoods?
   @objc public var installments: CPaySDK.CPayInstallments?
   @objc public var urls: CPaySDK.CPayUrls
+  @objc public var ext: CPaySDK.CPayExt?
   @objc public var scheme: Swift.String?
   @objc public var universalLink: Swift.String?
   @objc public var request3DSecureVerification: Swift.Bool

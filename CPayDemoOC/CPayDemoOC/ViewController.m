@@ -21,6 +21,8 @@
 
 @property (nonatomic, retain) NSString *accessToken;
 
+@property (nonatomic, retain) NSString *demoType;
+
 @end
 
 @implementation ViewController
@@ -32,6 +34,9 @@
     
     _lblVersion.text = [[CPayManager sharedInst] getVersion];
     _accessToken = nil;
+    
+    // Use to fomo testing
+    _demoType = @"fomo";
     
     [self addPaymentGesture];
     [self addRTEnvGesture];
@@ -56,9 +61,10 @@
 }
 
 - (void)initEnvForm {
-    _txtRTEnv.text = @"QA";
+    _txtRTEnv.text = @"DEV";
     _txtPaymethod.text = @"wechatpay";
-    _txtVendorType.text = @"sk-development-6531a79240d135e77c7a0affdf585bca";
+//    _txtVendorType.text = @"fomo_test";
+    _txtVendorType.text = @"sk-uat-00f788657a8c0d90434e11df2f33ed73";
 }
 
 - (void)setAccessToken {
@@ -246,6 +252,11 @@
 
 - (void)presentPaymentView {
     NSString *payment = _txtPaymethod.text;
+    NSString *vendor = _txtVendorType.text;
+    if ([_demoType isEqualToString:@"fomo"]) {
+        return [self presentPaymentView:@"card" payment:payment title:payment];
+    }
+    
     if ([payment isEqualToString:@"upop"]) {
         [self presentPaymentView:@"upop"];
     } else if ([payment isEqualToString:@"wechatpay"]) {
@@ -256,8 +267,14 @@
         [self presentPaymentView:@"digit" payment:payment title:@"PayPal"];
     } else if ([payment isEqualToString:@"venmo"]) {
         [self presentPaymentView:@"digit" payment:payment title:@"Venmo"];
-    } else if ([payment isEqualToString:@"card"]) {
-        [self presentPaymentView:@"card"];
+    } else if ([payment isEqualToString:@"card"] ||
+               [payment isEqualToString:@"toss"] ||
+               [payment isEqualToString:@"lpay"] ||
+               [payment isEqualToString:@"lgpay"] ||
+               [payment isEqualToString:@"samsungpay"] ||
+               [payment isEqualToString:@"banktransfer"]) {
+//        [self presentPaymentView:@"card"];
+        [self presentPaymentView:@"card" payment:payment title:payment];
     } else {
         [self showAlert:@"Error" andMessage:@"Unsupport Payment"];
     }
