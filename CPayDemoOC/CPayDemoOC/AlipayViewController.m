@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtFailUrl;
 @property (weak, nonatomic) IBOutlet UITextField *txtScheme;
 @property (weak, nonatomic) IBOutlet UITextField *txtNote;
+@property (weak, nonatomic) IBOutlet UITextField *txtTxnId;
 
 @end
 
@@ -109,8 +110,23 @@
 
 #pragma mark - UI event
 
+- (IBAction)onRequest:(id)sender {
+    [self requestCharge:[self createOrder] onComplete:^(NSString * _Nullable chargeToken) {
+        self.txtTxnId.text = chargeToken;
+    }];
+}
+
 - (IBAction)onConfirm:(id)sender {
-    [self confirmCharge:[self createOrder]];
+    if (_txtTxnId.text == nil || _txtTxnId.text.length < 1) {
+        [self showAlert:@"Error" andMessage:@"You should first request charge"];
+        return;
+    }
+    
+    CPayRequest *order = [self createOrder];
+    order.chargeToken = [_txtTxnId.text copy];
+    
+    _txtTxnId.text = nil;
+    [self confirmCharge:order];
 }
 
 @end

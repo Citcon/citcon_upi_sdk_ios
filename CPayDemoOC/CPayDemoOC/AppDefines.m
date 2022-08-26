@@ -62,7 +62,11 @@
         @"atome",
         @"shopeepay",
         @"netspay",
-        @"paynow"
+        @"paynow",
+        @"ubp",
+        @"bpi",
+        @"gcash",
+        @"paymaya"
     ];
     
     self.ns_country = @[
@@ -73,7 +77,8 @@
         @"AU",
         @"SG",
         @"NZ",
-        @"KR"
+        @"KR",
+        @"PH",
     ];
     
     self.ns_currency = @[
@@ -84,7 +89,8 @@
         @"AUD",
         @"SGD",
         @"NZD",
-        @"KRW"
+        @"KRW",
+        @"PHP"
     ];
     
     self.ns_vendors = @[

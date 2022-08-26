@@ -290,7 +290,6 @@ SWIFT_CLASS("_TtC7CPaySDK12CPayConsumer")
 @property (nonatomic, copy) NSString * _Nullable lastName;
 @property (nonatomic, copy) NSString * _Nullable phone;
 @property (nonatomic, copy) NSString * _Nullable email;
-@property (nonatomic, strong) CPayBillingAddr * _Nullable billingAddress;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -441,6 +440,15 @@ SWIFT_CLASS("_TtC7CPaySDK11CPayManager")
 /// returns:
 /// Void
 - (void)getAccessToken:(NSString * _Nonnull)vendor onComplete:(void (^ _Nonnull)(NSString * _Nullable))callback;
+/// Generate an order for test
+/// \param order An instance of CPayRequest.
+///
+/// \param callback A callback function of type @CPayRequestCallback. It will be called when payment is complete.
+///
+///
+/// returns:
+/// Void
+- (void)generateOrder:(CPayRequest * _Nonnull)order callback:(void (^ _Nonnull)(CPayResult * _Nullable))callback;
 @end
 
 @class CPayPaymentData;
@@ -455,6 +463,8 @@ SWIFT_CLASS("_TtC7CPaySDK11CPayPayment")
 @property (nonatomic) NSInteger expiry;
 @property (nonatomic, copy) NSString * _Nullable format;
 @property (nonatomic, strong) CPayPaymentData * _Nullable data;
+@property (nonatomic, strong) CPayBillingAddr * _Nullable billingAddress;
+@property (nonatomic, copy) NSString * _Nullable nonce;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -506,6 +516,7 @@ SWIFT_CLASS("_TtC7CPaySDK11CPayRequest")
 @property (nonatomic) BOOL request3DSecureVerification;
 @property (nonatomic, strong) UIViewController * _Nullable controller;
 @property (nonatomic, copy) NSString * _Nullable unionpayMode;
+@property (nonatomic, copy) NSString * _Nullable chargeToken;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

@@ -43,6 +43,7 @@
 
 @property (nonatomic, copy) NSString *paymentMethod;
 @property (nonatomic, copy) NSString *digitTitle;
+@property (weak, nonatomic) IBOutlet UITextField *txtTxnId;
 
 @end
 
@@ -71,15 +72,15 @@
 
 - (void)initOrderView {
     _txtRefId.text = [NSString stringWithFormat:@"sdk_card_%f", [[NSDate date] timeIntervalSince1970]];
-    _txtAmount.text = @"50";
+    _txtAmount.text = @"1";
     _txtTimeout.text = @"60000";
     _txtIPNUrl.text = @"https://ipn-receive.qa01.citconpay.com/notify";
     _txtSucUrl.text = @"com.citcon.citconpay://";
     _txtCancelUrl.text = @"com.citcon.citconpay://";
     _txtFailUrl.text = @"com.citcon.citconpay://";
     _txtNote.text = @"note";
-    _txtCurrency.text = @"SGD";
-    _txtCountry.text = @"SG";
+    _txtCurrency.text = @"USD";
+    _txtCountry.text = @"US";
 }
 
 - (void)init3DS {
@@ -91,12 +92,17 @@
     _txtExtedAddr.text = @"#2";
     _txtLocality.text = @"Chicago";
     _txtRegion.text = @"IL";
-    _txtZip.text = @"12345";
+    _txtZip.text = @"333000";
     _txtCountryCodeAlpha.text = @"US";
 }
 
 - (void)initCardInfo {
     _txtPaymentFormat.text = @"redirect";
+    _txtCardNo.text = @"4000000000000002";
+    _txtCvv.text = @"123";
+    _txtCardExpiry.text = @"12/25";
+    _txtCardFirstName.text = @"mike";
+    _txtCardLastName.text = @"bay";
 }
 
 - (void)enable3DS:(BOOL)enable {
@@ -151,20 +157,20 @@
     
     // If 3DS
     order.request3DSecureVerification = _swEnable3DS.isOn;
-    if (order.request3DSecureVerification) {
+//      if (order.request3DSecureVerification) {
         order.consumer.email = _txtEmail.text;
         order.consumer.phone = _txtPhoneNumber.text;
         order.consumer.firstName = _txtGiveName.text;
         order.consumer.lastName = _txtSurName.text;
         
-        order.consumer.billingAddress = [CPayBillingAddr new];
-        order.consumer.billingAddress.street = _txtStreetAddr.text;
-        order.consumer.billingAddress.street2 = _txtExtedAddr.text;
-        order.consumer.billingAddress.state = _txtRegion.text;
-        order.consumer.billingAddress.city = _txtLocality.text;
-        order.consumer.billingAddress.country = _txtCountryCodeAlpha.text;
-        order.consumer.billingAddress.zip = _txtZip.text;
-    }
+        order.payment.billingAddress = [CPayBillingAddr new];
+        order.payment.billingAddress.street = _txtStreetAddr.text;
+        order.payment.billingAddress.street2 = _txtExtedAddr.text;
+        order.payment.billingAddress.state = _txtRegion.text;
+        order.payment.billingAddress.city = _txtLocality.text;
+        order.payment.billingAddress.country = _txtCountryCodeAlpha.text;
+        order.payment.billingAddress.zip = _txtZip.text;
+//    }
     
     // If Instaments
     if (_swEnableInstaments.isOn) {
@@ -237,8 +243,23 @@
     [self enable3DS:s.on];
 }
 
+- (IBAction)onRequest:(id)sender {
+    [self requestCharge:[self createOrder] onComplete:^(NSString * _Nullable chargeToken) {
+        self.txtTxnId.text = chargeToken;
+    }];
+}
+
 - (IBAction)onConfirm:(id)sender {
-    [self confirmCharge:[self createOrder]];
+    if (_txtTxnId.text == nil || _txtTxnId.text.length < 1) {
+        [self showAlert:@"Error" andMessage:@"You should first request charge"];
+        return;
+    }
+    
+    CPayRequest *order = [self createOrder];
+    order.chargeToken = [_txtTxnId.text copy];
+    
+    _txtTxnId.text = nil;
+    [self confirmCharge:order];
 }
 
 @end

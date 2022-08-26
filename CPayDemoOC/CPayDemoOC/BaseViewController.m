@@ -11,6 +11,8 @@
 
 @interface BaseViewController ()
 
+@property (nonatomic, assign) CGFloat sPosY;
+
 @end
 
 @implementation BaseViewController
@@ -18,6 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // reigster keypad observer
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(transformView:) name:UIKeyboardWillChangeFrameNotification object:nil];
     
     [self initPickerView];
     [self initTouch];
@@ -106,10 +111,71 @@
     return YES;
 }
 
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+    CGRect vFrame = [textField.superview convertRect:textField.frame toView:self.view];
+    _sPosY = vFrame.origin.y + vFrame.size.height;
+    return YES;
+}
+
+- (void)transformView:(NSNotification *)notification {
+    NSValue *keyboardBeginBounds = [[notification userInfo] objectForKey:UIKeyboardFrameBeginUserInfoKey];
+    CGRect beginRect = [keyboardBeginBounds CGRectValue];
+    
+    NSValue *keyboardEndBounds = [[notification userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey];
+    CGRect endRect = [keyboardEndBounds CGRectValue];
+    
+    CGRect sRect = [[UIScreen mainScreen] bounds];
+    CGFloat keyboardPosY = sRect.size.height + (endRect.origin.y - beginRect.origin.y);
+//    NSLog(@"point: %f %f", endRect.origin.y, beginRect.origin.y);
+    
+    if (keyboardPosY - 40 < _sPosY) {
+//        CGFloat deltaY = endRect.origin.y - beginRect.origin.y;
+        CGFloat deltaY = keyboardPosY - 40 - _sPosY;
+        
+        [UIView animateWithDuration:0.25 animations:^{
+            [self.view setFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y + deltaY, self.view.frame.size.width, self.view.frame.size.height)];
+        }];
+    } else {
+        [UIView animateWithDuration:0.25 animations:^{
+            [self.view setFrame:CGRectMake(self.view.frame.origin.x, 0, self.view.frame.size.width, self.view.frame.size.height)];
+        }];
+    }
+}
+
 #pragma mark - utils
+
+- (void)showAlert:(NSString *)title andMessage:(NSString *)msg {
+    UIAlertController *vc = [UIAlertController alertControllerWithTitle:title message:msg preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *confirm = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+    
+    [vc addAction:confirm];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
+- (void)requestCharge:(CPayRequest *)order onComplete:(void (^ _Nonnull)(NSString * _Nullable))complete {
+    [LoadingView show: self];
+    
+    /// Prepare charge token
+    /// We recommend that merchant generate orders through their own servers rather than client.
+    [[CPayManager sharedInst] generateOrder:order callback:^(CPayResult * _Nullable resp) {
+        [LoadingView dismiss];
+        
+        if (resp == nil || [resp.status isEqualToString: @"fail"]) {
+            NSLog(@"Create payment failed");
+            
+            [[NSNotificationCenter defaultCenter] postNotificationName:[AppDefines sharedInst].ns_pay_completed object:resp];
+            [self.navigationController popViewControllerAnimated:YES];
+            return;
+        }
+        
+        NSLog(@"order charge token: %@", resp.data.chargeToken);
+        complete(resp.data.chargeToken);
+    }];
+}
 
 - (void)confirmCharge:(CPayRequest *)order {
     [LoadingView show: self];
+    
     [[CPayManager sharedInst] requestOrder:order callback:^(CPayResult * _Nullable resp) {
         [LoadingView dismiss];
         

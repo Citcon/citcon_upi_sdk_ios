@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)showPicker;
 - (void)dismissPicker;
 - (void)setNavTitle:(NSString *)title;
+- (void)showAlert:(NSString *)title andMessage:(NSString *)msg;
+- (void)requestCharge:(CPayRequest *)order onComplete:(void (^ _Nonnull)(NSString * _Nullable))complete;
 - (void)confirmCharge:(CPayRequest *)order;
 
 @end

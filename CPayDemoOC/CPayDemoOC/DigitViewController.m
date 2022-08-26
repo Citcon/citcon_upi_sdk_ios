@@ -22,6 +22,7 @@
 
 @property (nonatomic, copy) NSString *paymentMethod;
 @property (nonatomic, copy) NSString *digitTitle;
+@property (weak, nonatomic) IBOutlet UITextField *txtTxnId;
 
 @end
 
@@ -70,9 +71,9 @@
     _txtAmount.text = @"1";
     _txtTimeout.text = @"60000";
     _txtIPNUrl.text = @"https://ipn.com";
-    _txtSucUrl.text = @"https://success.com";
-    _txtCancelUrl.text = @"https://cancel.com";
-    _txtFailUrl.text = @"https://fail.com";
+    _txtSucUrl.text = @"com.citcon.citconpay://";
+    _txtCancelUrl.text = @"com.citcon.citconpay://";
+    _txtFailUrl.text = @"com.citcon.citconpay://";
     _txtNote.text = @"note";
     _txtCountry.text = @"US";
     _txtCurrency.text = @"USD";
@@ -129,8 +130,23 @@
     [self showPicker];
 }
 
+- (IBAction)onRequest:(id)sender {
+    [self requestCharge:[self createOrder] onComplete:^(NSString * _Nullable chargeToken) {
+        self.txtTxnId.text = chargeToken;
+    }];
+}
+
 - (IBAction)onConfirm:(id)sender {
-    [self confirmCharge:[self createOrder]];
+    if (_txtTxnId.text == nil || _txtTxnId.text.length < 1) {
+        [self showAlert:@"Error" andMessage:@"You should first request charge"];
+        return;
+    }
+    
+    CPayRequest *order = [self createOrder];
+    order.chargeToken = [_txtTxnId.text copy];
+    
+    _txtTxnId.text = nil;
+    [self confirmCharge:order];
 }
 
 @end

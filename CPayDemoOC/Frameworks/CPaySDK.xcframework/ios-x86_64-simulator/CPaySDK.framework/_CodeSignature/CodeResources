@@ -304,7 +304,7 @@
 		</dict>
 		<key>Headers/CPaySDK-Swift.h</key>
 		<data>
-		Ygmf2zS5Antd1t+tPjZyMP5i/mI=
+		7uX9f19Evuxeit7wPkNmFcGuYz8=
 		</data>
 		<key>Headers/CPaySDK.h</key>
 		<data>
@@ -312,19 +312,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XkfperyyAFoc1f6yP7eOP3QsGwk=
+		22N0UusWyxfAz1BIRBds9XJVzn4=
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		zhyEmpGy6h99evIlvnTNgqKYXus=
+		v+t/7j5i/z5cZueqFw7l+3MZQMQ=
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		tVQ2nGMH0ZdnZuS1JAaN3vHwqH8=
+		JFEA1y/73xotyT1n0ahuM91IVIQ=
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		45MVMFkYFQBM5wqle+xQFE+MgfA=
+		o26XlPeZGdE5Qa8GP3gpP1Mf/Ng=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -710,7 +710,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6Xq8m1sfNDDKdEwMX/oWz/v10ySfC7qrS9o+ml/0TSM=
+			UVn7ZK8wJmWbnKa4D2BAvo4jcfD5MmqJibRTGgKoFQA=
 			</data>
 		</dict>
 		<key>Headers/CPaySDK.h</key>
@@ -724,21 +724,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			f2M+bw8Jtfvm5koedm+wshU2wE1l0t76uiBY8TdCKpg=
+			RtStewjvz/HMjv42+HnJ4U91NFgDjeJpyZcZRR7dToE=
 			</data>
 		</dict>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AZnfi0JkKrePXYxOAxE7oy3UWTNb6hCuwJm+gRs3mbQ=
+			DqqMlevobxygqPvKAgNZcm2BdQRiTn8dWZkAdaoxM0E=
 			</data>
 		</dict>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X3ts1DzGrhuEGzDuVZUNLarlEOv5chRiYIEQ/ch4j08=
+			JiKWv7NiuFCSzsATRKixE113WXr8eoDLF6KqGJitAz8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

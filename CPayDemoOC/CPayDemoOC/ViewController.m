@@ -36,7 +36,7 @@
     _accessToken = nil;
     
     // Use to fomo testing
-    _demoType = @"fomo";
+    _demoType = @"braintree";
     
     [self addPaymentGesture];
     [self addRTEnvGesture];
@@ -63,8 +63,9 @@
 - (void)initEnvForm {
     _txtRTEnv.text = @"DEV";
     _txtPaymethod.text = @"wechatpay";
-//    _txtVendorType.text = @"fomo_test";
-    _txtVendorType.text = @"sk-uat-00f788657a8c0d90434e11df2f33ed73";
+//    _txtVendorType.text = @"braintree";
+//    _txtVendorType.text = @"sk-development-864372832a76fefa8a7c7f1f97403b2a";
+    _txtVendorType.text = @"sk-development-53e3dfe3bfab5be4c219c78482d77e0c";
 }
 
 - (void)setAccessToken {
@@ -252,8 +253,12 @@
 
 - (void)presentPaymentView {
     NSString *payment = _txtPaymethod.text;
-    NSString *vendor = _txtVendorType.text;
+//    NSString *vendor = _txtVendorType.text;
+    NSLog(@"demo: %@ payment: %@", _demoType, payment);
     if ([_demoType isEqualToString:@"fomo"]) {
+        return [self presentPaymentView:@"card" payment:payment title:payment];
+    }
+    if ([_demoType isEqualToString:@"xendit"]) {
         return [self presentPaymentView:@"card" payment:payment title:payment];
     }
     
@@ -353,7 +358,7 @@
     [self clearResult];
     [self showAccessToken];
     
-    [LoadingView show: self];
+//    [LoadingView show: self];
     [[CPayManager sharedInst] inquireOrder:txnId callback:^(CPayCheck * _Nullable resp) {
         [LoadingView dismiss];
         
