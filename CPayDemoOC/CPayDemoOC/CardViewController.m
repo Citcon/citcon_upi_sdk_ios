@@ -73,7 +73,7 @@
 - (void)initOrderView {
     _txtRefId.text = [NSString stringWithFormat:@"sdk_card_%f", [[NSDate date] timeIntervalSince1970]];
     _txtAmount.text = @"1";
-    _txtTimeout.text = @"60000";
+    _txtTimeout.text = @"1670000000";
     _txtIPNUrl.text = @"https://ipn-receive.qa01.citconpay.com/notify";
     _txtSucUrl.text = @"com.citcon.citconpay://";
     _txtCancelUrl.text = @"com.citcon.citconpay://";
@@ -135,6 +135,7 @@
     
     order.payment = [CPayPayment new];
     order.payment.method = _paymentMethod;
+    order.payment.expiry = [_txtTimeout.text intValue];
     
     // card information [used in "fomo"]
     order.payment.data = [CPayPaymentData new];
@@ -146,7 +147,7 @@
     order.payment.format = [self getTextValue:_txtPaymentFormat];
     
     order.consumer = [CPayConsumer new];
-    order.consumer.reference = @"123"; // Change to unique value to idenfier consumer
+    order.consumer.reference = @"88888"; // Change to unique value to idenfier consumer
     
     order.urls.ipn = _txtIPNUrl.text;
     order.urls.success = _txtSucUrl.text;

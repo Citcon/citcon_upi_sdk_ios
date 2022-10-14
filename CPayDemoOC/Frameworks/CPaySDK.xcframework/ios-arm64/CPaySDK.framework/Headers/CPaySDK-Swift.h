@@ -314,6 +314,7 @@ SWIFT_CLASS("_TtC7CPaySDK7CPayExt")
 SWIFT_CLASS("_TtC7CPaySDK13CPayExtDevice")
 @interface CPayExtDevice : NSObject
 @property (nonatomic, copy) NSString * _Nullable ip;
+@property (nonatomic, copy) NSString * _Nullable os;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

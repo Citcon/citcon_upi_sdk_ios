@@ -36,7 +36,7 @@
     _accessToken = nil;
     
     // Use to fomo testing
-    _demoType = @"braintree";
+    _demoType = @"alipay+";
     
     [self addPaymentGesture];
     [self addRTEnvGesture];
@@ -65,7 +65,8 @@
     _txtPaymethod.text = @"wechatpay";
 //    _txtVendorType.text = @"braintree";
 //    _txtVendorType.text = @"sk-development-864372832a76fefa8a7c7f1f97403b2a";
-    _txtVendorType.text = @"sk-development-53e3dfe3bfab5be4c219c78482d77e0c";
+//    _txtVendorType.text = @"sk-development-53e3dfe3bfab5be4c219c78482d77e0c";
+    _txtVendorType.text = @"aps_sandbox";
 }
 
 - (void)setAccessToken {
@@ -260,6 +261,9 @@
     }
     if ([_demoType isEqualToString:@"xendit"]) {
         return [self presentPaymentView:@"card" payment:payment title:payment];
+    }
+    if ([_demoType isEqualToString:@"alipay+"]) {
+        return [self presentPaymentView:@"digit" payment:payment title:@"Alipay+"];
     }
     
     if ([payment isEqualToString:@"upop"]) {

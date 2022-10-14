@@ -44,7 +44,7 @@
 - (void)initOrderView {
     _txtRefId.text = [NSString stringWithFormat:@"sdk_wechatpay_%f", [[NSDate date] timeIntervalSince1970]];
     _txtAmount.text = @"1";
-    _txtTimeout.text = @"60000";
+    _txtTimeout.text = @"1670000000";
     _txtIPNUrl.text = @"https://ipn.com";
     _txtSucUrl.text = @"https://success.com";
     _txtCancelUrl.text = @"https://cancel.com";
@@ -75,6 +75,7 @@
     
     order.payment = [CPayPayment new];
     order.payment.method = @"wechatpay";
+    order.payment.expiry = [_txtTimeout.text intValue];
     
     order.urls.ipn = _txtIPNUrl.text;
     order.urls.success = _txtSucUrl.text;

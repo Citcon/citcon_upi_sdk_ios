@@ -66,7 +66,14 @@
         @"ubp",
         @"bpi",
         @"gcash",
-        @"paymaya"
+        @"paymaya",
+        @"alipay+",
+        @"alipay_hk",
+        @"dana",
+        @"kakaopay",
+        @"rabbit_line_pay",
+        @"tng",
+        @"truemoney"
     ];
     
     self.ns_country = @[
@@ -79,6 +86,11 @@
         @"NZ",
         @"KR",
         @"PH",
+        @"HK",
+        @"ID",
+        @"MY",
+        @"TH",
+        @""
     ];
     
     self.ns_currency = @[
@@ -90,7 +102,11 @@
         @"SGD",
         @"NZD",
         @"KRW",
-        @"PHP"
+        @"PHP",
+        @"IDR",
+        @"MYR",
+        @"THB",
+        @"HKD"
     ];
     
     self.ns_vendors = @[

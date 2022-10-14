@@ -149,6 +149,7 @@ import _Concurrency
 }
 @_inheritsConvenienceInitializers @objc public class CPayExtDevice : ObjectiveC.NSObject {
   @objc public var ip: Swift.String?
+  @objc public var os: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }

@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F163738028B860BA00768A15 /* CardinalMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F163737F28B860BA00768A15 /* CardinalMobile.xcframework */; };
-		F163738128B860BA00768A15 /* CardinalMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F163737F28B860BA00768A15 /* CardinalMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F163738428B860BC00768A15 /* CPaySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F163738328B860BC00768A15 /* CPaySDK.xcframework */; };
-		F163738528B860BC00768A15 /* CPaySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F163738328B860BC00768A15 /* CPaySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F163738728B860BE00768A15 /* PPRiskMagnes.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F163738628B860BE00768A15 /* PPRiskMagnes.xcframework */; };
-		F163738828B860BE00768A15 /* PPRiskMagnes.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F163738628B860BE00768A15 /* PPRiskMagnes.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F1B9667128F95ED200CAC565 /* PPRiskMagnes.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B9666E28F95ED200CAC565 /* PPRiskMagnes.xcframework */; };
+		F1B9667228F95ED200CAC565 /* PPRiskMagnes.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1B9666E28F95ED200CAC565 /* PPRiskMagnes.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F1B9667328F95ED200CAC565 /* CardinalMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B9666F28F95ED200CAC565 /* CardinalMobile.xcframework */; };
+		F1B9667428F95ED200CAC565 /* CardinalMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1B9666F28F95ED200CAC565 /* CardinalMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F1B9667528F95ED200CAC565 /* CPaySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B9667028F95ED200CAC565 /* CPaySDK.xcframework */; };
+		F1B9667628F95ED200CAC565 /* CPaySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1B9667028F95ED200CAC565 /* CPaySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F1F06AC827B0FD8000BD302F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F06AC727B0FD8000BD302F /* AppDelegate.m */; };
 		F1F06ACE27B0FD8000BD302F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F06ACD27B0FD8000BD302F /* ViewController.m */; };
 		F1F06AD127B0FD8000BD302F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F06ACF27B0FD8000BD302F /* Main.storyboard */; };
@@ -30,19 +30,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F163738228B860BA00768A15 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				F163738128B860BA00768A15 /* CardinalMobile.xcframework in Embed Frameworks */,
-				F163738528B860BC00768A15 /* CPaySDK.xcframework in Embed Frameworks */,
-				F163738828B860BE00768A15 /* PPRiskMagnes.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F1BC0DA827BFB24000C04C0B /* Embed PlugIns */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,15 +40,25 @@
 			name = "Embed PlugIns";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F1F06B6327B1037100BD302F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F1B9667228F95ED200CAC565 /* PPRiskMagnes.xcframework in Embed Frameworks */,
+				F1B9667428F95ED200CAC565 /* CardinalMobile.xcframework in Embed Frameworks */,
+				F1B9667628F95ED200CAC565 /* CPaySDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F163737F28B860BA00768A15 /* CardinalMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CardinalMobile.xcframework; path = Frameworks/CardinalMobile.xcframework; sourceTree = "<group>"; };
-		F163738328B860BC00768A15 /* CPaySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CPaySDK.xcframework; path = Frameworks/CPaySDK.xcframework; sourceTree = "<group>"; };
-		F163738628B860BE00768A15 /* PPRiskMagnes.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PPRiskMagnes.xcframework; path = Frameworks/PPRiskMagnes.xcframework; sourceTree = "<group>"; };
-		F194F0EE27EDB5EE00D6DD67 /* CPaySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CPaySDK.xcframework; path = ../Frameworks/CPaySDK/Output/DynamicFramework/CPaySDK.xcframework; sourceTree = "<group>"; };
-		F1BC07FE27BBA5A100C04C0B /* PPRiskMagnes.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PPRiskMagnes.xcframework; path = ../Frameworks/Braintree/Braintree/Frameworks/XCFrameworks/PPRiskMagnes.xcframework; sourceTree = "<group>"; };
-		F1BC07FF27BBA5A100C04C0B /* CardinalMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CardinalMobile.xcframework; path = ../Frameworks/Braintree/Braintree/Frameworks/XCFrameworks/CardinalMobile.xcframework; sourceTree = "<group>"; };
+		F1B9666E28F95ED200CAC565 /* PPRiskMagnes.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PPRiskMagnes.xcframework; path = Frameworks/PPRiskMagnes.xcframework; sourceTree = "<group>"; };
+		F1B9666F28F95ED200CAC565 /* CardinalMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CardinalMobile.xcframework; path = Frameworks/CardinalMobile.xcframework; sourceTree = "<group>"; };
+		F1B9667028F95ED200CAC565 /* CPaySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CPaySDK.xcframework; path = Frameworks/CPaySDK.xcframework; sourceTree = "<group>"; };
 		F1F06AC327B0FD8000BD302F /* CPayDemoOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPayDemoOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F06AC627B0FD8000BD302F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1F06AC727B0FD8000BD302F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -96,9 +93,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F163738028B860BA00768A15 /* CardinalMobile.xcframework in Frameworks */,
-				F163738428B860BC00768A15 /* CPaySDK.xcframework in Frameworks */,
-				F163738728B860BE00768A15 /* PPRiskMagnes.xcframework in Frameworks */,
+				F1B9667128F95ED200CAC565 /* PPRiskMagnes.xcframework in Frameworks */,
+				F1B9667328F95ED200CAC565 /* CardinalMobile.xcframework in Frameworks */,
+				F1B9667528F95ED200CAC565 /* CPaySDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,12 +155,9 @@
 		F1F06ADF27B0FDB300BD302F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F163738628B860BE00768A15 /* PPRiskMagnes.xcframework */,
-				F163738328B860BC00768A15 /* CPaySDK.xcframework */,
-				F163737F28B860BA00768A15 /* CardinalMobile.xcframework */,
-				F194F0EE27EDB5EE00D6DD67 /* CPaySDK.xcframework */,
-				F1BC07FF27BBA5A100C04C0B /* CardinalMobile.xcframework */,
-				F1BC07FE27BBA5A100C04C0B /* PPRiskMagnes.xcframework */,
+				F1B9666F28F95ED200CAC565 /* CardinalMobile.xcframework */,
+				F1B9667028F95ED200CAC565 /* CPaySDK.xcframework */,
+				F1B9666E28F95ED200CAC565 /* PPRiskMagnes.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,8 +172,8 @@
 				F1F06ABF27B0FD8000BD302F /* Sources */,
 				F1F06AC027B0FD8000BD302F /* Frameworks */,
 				F1F06AC127B0FD8000BD302F /* Resources */,
+				F1F06B6327B1037100BD302F /* Embed Frameworks */,
 				F1BC0DA827BFB24000C04C0B /* Embed PlugIns */,
-				F163738228B860BA00768A15 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -405,6 +399,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -427,7 +422,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CPayDemoOC/CPayDemoOC.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development: long zhao (49Q5V63857)";
+				CODE_SIGN_IDENTITY = "Apple Distribution: Citcon Inc. (6QR8NK5X24)";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6QR8NK5X24;
@@ -437,6 +432,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -444,7 +440,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.citcon.citconpay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Zhao Long";
+				PROVISIONING_PROFILE_SPECIFIER = "App Store T";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -69,8 +69,8 @@
 - (void)initOrderView {
     _txtRefId.text = [NSString stringWithFormat:@"sdk_digit_%f", [[NSDate date] timeIntervalSince1970]];
     _txtAmount.text = @"1";
-    _txtTimeout.text = @"60000";
-    _txtIPNUrl.text = @"https://ipn.com";
+    _txtTimeout.text = @"1670000000";
+    _txtIPNUrl.text = @"https://ipn-receive.qa01.citconpay.com/notify";
     _txtSucUrl.text = @"com.citcon.citconpay://";
     _txtCancelUrl.text = @"com.citcon.citconpay://";
     _txtFailUrl.text = @"com.citcon.citconpay://";
@@ -84,16 +84,17 @@
     order.transaction.reference = _txtRefId.text;
     order.transaction.amount = [_txtAmount.text intValue];
     order.transaction.currency = _txtCurrency.text;
-    order.transaction.country = _txtCountry.text;
+    order.transaction.country = (_txtCountry.text && _txtCountry.text.length > 0) ? _txtCountry.text : nil;
     order.transaction.note = _txtNote.text;
     
     order.payment = [CPayPayment new];
     order.payment.method = _paymentMethod;
+    order.payment.expiry = [_txtTimeout.text intValue];
     
     if (_paymentMethod && ([_paymentMethod caseInsensitiveCompare:@"paypal"] == NSOrderedSame ||
                            [_paymentMethod caseInsensitiveCompare:@"venmo"] == NSOrderedSame)) {
         order.consumer = [CPayConsumer new];
-        order.consumer.reference = @"123"; // Change to unique value to idenfier consumer
+        order.consumer.reference = @"1234567"; // Change to unique value to idenfier consumer
     }
     
     order.urls.ipn = _txtIPNUrl.text;
