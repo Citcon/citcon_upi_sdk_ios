@@ -18,10 +18,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtTxnId;
 @property (weak, nonatomic) IBOutlet UILabel *lblResult;
 @property (weak, nonatomic) IBOutlet UIButton *btnAccessToken;
+@property (weak, nonatomic) IBOutlet UITextField *txtDemoType;
 
 @property (nonatomic, retain) NSString *accessToken;
-
-@property (nonatomic, retain) NSString *demoType;
 
 @end
 
@@ -36,11 +35,11 @@
     _accessToken = nil;
     
     // Use to fomo testing
-    _demoType = @"alipay+";
     
     [self addPaymentGesture];
     [self addRTEnvGesture];
 //    [self addVendorGesture];
+    [self addDemoTypeGesture];
     
     [self initEnvForm];
     
@@ -64,9 +63,8 @@
     _txtRTEnv.text = @"DEV";
     _txtPaymethod.text = @"wechatpay";
 //    _txtVendorType.text = @"braintree";
-//    _txtVendorType.text = @"sk-development-864372832a76fefa8a7c7f1f97403b2a";
-//    _txtVendorType.text = @"sk-development-53e3dfe3bfab5be4c219c78482d77e0c";
-    _txtVendorType.text = @"aps_sandbox";
+    _txtVendorType.text = @"";
+    _txtDemoType.text = @"other";
 }
 
 - (void)setAccessToken {
@@ -116,6 +114,11 @@
 - (void)addVendorGesture {
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onVendorSelect)];
     [_txtVendorType addGestureRecognizer:tap];
+}
+
+- (void)addDemoTypeGesture {
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onDemoTypeSelect)];
+    [_txtDemoType addGestureRecognizer:tap];
 }
 
 # pragma mark - notification
@@ -255,14 +258,18 @@
 - (void)presentPaymentView {
     NSString *payment = _txtPaymethod.text;
 //    NSString *vendor = _txtVendorType.text;
-    NSLog(@"demo: %@ payment: %@", _demoType, payment);
-    if ([_demoType isEqualToString:@"fomo"]) {
+    NSLog(@"demo: %@ payment: %@", _txtDemoType.text, payment);
+    if ([_txtDemoType.text isEqualToString:@"fomo"]) {
         return [self presentPaymentView:@"card" payment:payment title:payment];
     }
-    if ([_demoType isEqualToString:@"xendit"]) {
-        return [self presentPaymentView:@"card" payment:payment title:payment];
+    if ([_txtDemoType.text isEqualToString:@"xendit"]) {
+        if ([payment isEqualToString:@"card"]) {
+            return [self presentPaymentView:@"card" payment:payment title:@"Xendit"];
+        } else {
+            return [self presentPaymentView:@"digit" payment:payment title:@"Xendit"];
+        }
     }
-    if ([_demoType isEqualToString:@"alipay+"]) {
+    if ([_txtDemoType.text isEqualToString:@"alipay+"]) {
         return [self presentPaymentView:@"digit" payment:payment title:@"Alipay+"];
     }
     
@@ -330,6 +337,17 @@
 - (void)onVendorSelect {
     self.currentTextField = _txtVendorType;
     self.pickerData = [[AppDefines sharedInst] getVendors];
+    [self showPicker];
+}
+
+- (void)onDemoTypeSelect {
+    self.currentTextField = _txtDemoType;
+    self.pickerData = @[
+        @"fomo",
+        @"xendit",
+        @"alipay+",
+        @"others"
+    ];
     [self showPicker];
 }
 
