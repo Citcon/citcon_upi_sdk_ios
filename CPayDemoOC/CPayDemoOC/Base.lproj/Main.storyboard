@@ -127,7 +127,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Bn-b6-ScE">
-                                <rect key="frame" x="20" y="322" width="188" height="34"/>
+                                <rect key="frame" x="20" y="349" width="188" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -135,13 +135,13 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Vendor Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNH-db-TRA">
-                                <rect key="frame" x="20" y="297" width="188" height="21"/>
+                                <rect key="frame" x="20" y="324" width="188" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNO-5J-oFE">
-                                <rect key="frame" x="216" y="324" width="178" height="30"/>
+                                <rect key="frame" x="216" y="351" width="178" height="30"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <state key="normal" title="Get AccessToken">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -161,15 +161,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demo Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnw-bE-Dih">
+                                <rect key="frame" x="20" y="295" width="188" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xZG-od-LWD">
+                                <rect key="frame" x="216" y="288" width="178" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fey-vG-S1U"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="BqG-om-OlY" firstAttribute="trailing" secondItem="w5z-ST-8H6" secondAttribute="trailing" id="19T-b3-OVj"/>
+                            <constraint firstItem="xZG-od-LWD" firstAttribute="top" secondItem="lgF-GI-VI9" secondAttribute="bottom" constant="16" id="42i-ui-bC8"/>
                             <constraint firstItem="DS8-Fa-U9P" firstAttribute="trailing" secondItem="85f-9A-1or" secondAttribute="trailing" id="7IC-DM-6ew"/>
                             <constraint firstItem="3RD-nh-CuH" firstAttribute="top" secondItem="tDg-6a-xcu" secondAttribute="bottom" constant="8" symbolic="YES" id="7g9-la-dB9"/>
                             <constraint firstItem="DS8-Fa-U9P" firstAttribute="top" secondItem="85f-9A-1or" secondAttribute="bottom" constant="8" symbolic="YES" id="8UR-d7-21z"/>
                             <constraint firstItem="fNO-5J-oFE" firstAttribute="width" secondItem="5Bn-b6-ScE" secondAttribute="width" multiplier="0.946809" id="97O-LH-Gcp"/>
+                            <constraint firstItem="xZG-od-LWD" firstAttribute="leading" secondItem="rnw-bE-Dih" secondAttribute="trailing" constant="8" symbolic="YES" id="AkC-KZ-v7E"/>
                             <constraint firstItem="wKU-m1-hTY" firstAttribute="top" secondItem="DS8-Fa-U9P" secondAttribute="bottom" constant="8" symbolic="YES" id="Cdf-pG-afM"/>
                             <constraint firstItem="5Bn-b6-ScE" firstAttribute="top" secondItem="WNH-db-TRA" secondAttribute="bottom" constant="4" id="CjM-Gi-eKc"/>
                             <constraint firstItem="dal-I8-O1W" firstAttribute="leading" secondItem="QcR-6O-hiR" secondAttribute="leading" id="DvR-Q5-blF"/>
@@ -184,23 +197,27 @@
                             <constraint firstItem="85f-9A-1or" firstAttribute="leading" secondItem="dal-I8-O1W" secondAttribute="leading" id="MOb-zB-dT5"/>
                             <constraint firstItem="dal-I8-O1W" firstAttribute="trailing" secondItem="QcR-6O-hiR" secondAttribute="trailing" id="OBc-FT-can"/>
                             <constraint firstItem="dal-I8-O1W" firstAttribute="top" secondItem="QcR-6O-hiR" secondAttribute="bottom" constant="1" id="Old-9m-L78"/>
-                            <constraint firstItem="qjN-Uv-Tn8" firstAttribute="top" secondItem="5Bn-b6-ScE" secondAttribute="bottom" constant="39" id="QS0-gv-yoW"/>
                             <constraint firstItem="ncd-Ap-mal" firstAttribute="leading" secondItem="fey-vG-S1U" secondAttribute="leading" constant="20" id="S4j-j2-bc0"/>
                             <constraint firstItem="85f-9A-1or" firstAttribute="top" secondItem="dal-I8-O1W" secondAttribute="bottom" constant="8" symbolic="YES" id="XeQ-sg-Zdz"/>
                             <constraint firstItem="fey-vG-S1U" firstAttribute="trailing" secondItem="w5z-ST-8H6" secondAttribute="trailing" constant="20" id="Xsr-8c-Xns"/>
                             <constraint firstItem="ncd-Ap-mal" firstAttribute="top" secondItem="BqG-om-OlY" secondAttribute="bottom" constant="30" id="Y1m-ND-FZM"/>
                             <constraint firstItem="tDg-6a-xcu" firstAttribute="top" secondItem="wKU-m1-hTY" secondAttribute="bottom" constant="8" symbolic="YES" id="Z8S-ko-0SL"/>
+                            <constraint firstItem="rnw-bE-Dih" firstAttribute="leading" secondItem="lgF-GI-VI9" secondAttribute="leading" id="aIX-tg-X2X"/>
                             <constraint firstItem="fNO-5J-oFE" firstAttribute="trailing" secondItem="lgF-GI-VI9" secondAttribute="trailing" id="cHU-ff-4ug"/>
+                            <constraint firstItem="rnw-bE-Dih" firstAttribute="top" secondItem="lgF-GI-VI9" secondAttribute="bottom" constant="23" id="cj1-fs-1Qb"/>
                             <constraint firstItem="WNH-db-TRA" firstAttribute="leading" secondItem="lgF-GI-VI9" secondAttribute="leading" id="cwJ-6o-98y"/>
                             <constraint firstItem="w5z-ST-8H6" firstAttribute="top" secondItem="fey-vG-S1U" secondAttribute="top" constant="28" id="dMI-wa-KYR"/>
                             <constraint firstItem="tDg-6a-xcu" firstAttribute="centerX" secondItem="3RD-nh-CuH" secondAttribute="centerX" id="dSX-PQ-Ho5"/>
                             <constraint firstItem="QcR-6O-hiR" firstAttribute="trailing" secondItem="qjN-Uv-Tn8" secondAttribute="trailing" id="epT-Uo-rAm"/>
-                            <constraint firstItem="WNH-db-TRA" firstAttribute="top" secondItem="lgF-GI-VI9" secondAttribute="bottom" constant="25" id="fLn-jY-u2s"/>
                             <constraint firstItem="w5z-ST-8H6" firstAttribute="leading" secondItem="fey-vG-S1U" secondAttribute="leading" constant="20" id="fPF-Ra-lb7"/>
                             <constraint firstItem="fey-vG-S1U" firstAttribute="trailing" secondItem="3RD-nh-CuH" secondAttribute="trailing" constant="20" id="ffe-RZ-ELi"/>
                             <constraint firstItem="DS8-Fa-U9P" firstAttribute="leading" secondItem="85f-9A-1or" secondAttribute="leading" id="i1t-oz-1y5"/>
+                            <constraint firstItem="qjN-Uv-Tn8" firstAttribute="top" secondItem="5Bn-b6-ScE" secondAttribute="bottom" constant="12" id="idN-Fi-weB"/>
                             <constraint firstItem="wKU-m1-hTY" firstAttribute="trailing" secondItem="DS8-Fa-U9P" secondAttribute="trailing" id="jBf-vq-a5q"/>
+                            <constraint firstItem="rnw-bE-Dih" firstAttribute="width" secondItem="xZG-od-LWD" secondAttribute="width" multiplier="1.05618" id="jHT-Tz-1my"/>
+                            <constraint firstItem="rnw-bE-Dih" firstAttribute="centerY" secondItem="xZG-od-LWD" secondAttribute="centerY" id="jMh-sV-FnR"/>
                             <constraint firstItem="fNO-5J-oFE" firstAttribute="leading" secondItem="5Bn-b6-ScE" secondAttribute="trailing" constant="8" symbolic="YES" id="jna-QJ-9qw"/>
+                            <constraint firstItem="fNO-5J-oFE" firstAttribute="top" secondItem="xZG-od-LWD" secondAttribute="bottom" constant="28" id="k1i-Fe-k96"/>
                             <constraint firstItem="5Bn-b6-ScE" firstAttribute="leading" secondItem="WNH-db-TRA" secondAttribute="leading" id="mbc-vF-fyD"/>
                             <constraint firstItem="fNO-5J-oFE" firstAttribute="centerY" secondItem="5Bn-b6-ScE" secondAttribute="centerY" id="mmw-dE-aY2"/>
                             <constraint firstItem="fey-vG-S1U" firstAttribute="trailing" secondItem="ncd-Ap-mal" secondAttribute="trailing" constant="20" id="mny-97-czl"/>
@@ -208,7 +225,9 @@
                             <constraint firstItem="lgF-GI-VI9" firstAttribute="trailing" secondItem="ncd-Ap-mal" secondAttribute="trailing" id="n06-2Z-xd9"/>
                             <constraint firstItem="lgF-GI-VI9" firstAttribute="top" secondItem="ncd-Ap-mal" secondAttribute="bottom" constant="8" symbolic="YES" id="ngd-ZO-Rdy"/>
                             <constraint firstItem="qjN-Uv-Tn8" firstAttribute="trailing" secondItem="lgF-GI-VI9" secondAttribute="trailing" id="oPl-Ch-eF6"/>
+                            <constraint firstItem="xZG-od-LWD" firstAttribute="trailing" secondItem="lgF-GI-VI9" secondAttribute="trailing" id="rfz-pU-R6K"/>
                             <constraint firstItem="wKU-m1-hTY" firstAttribute="leading" secondItem="DS8-Fa-U9P" secondAttribute="leading" id="tBk-nu-aiq"/>
+                            <constraint firstItem="WNH-db-TRA" firstAttribute="top" secondItem="rnw-bE-Dih" secondAttribute="bottom" constant="8" symbolic="YES" id="u0o-Lf-3FA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="CitconSDK" id="pjd-N8-UR7"/>
@@ -216,6 +235,7 @@
                         <outlet property="btnAccessToken" destination="fNO-5J-oFE" id="1U6-ar-GH3"/>
                         <outlet property="lblResult" destination="dWC-yE-OS0" id="tNT-O1-QSc"/>
                         <outlet property="lblVersion" destination="3RD-nh-CuH" id="0UL-DJ-Q9k"/>
+                        <outlet property="txtDemoType" destination="xZG-od-LWD" id="YNv-dc-kP3"/>
                         <outlet property="txtPaymethod" destination="lgF-GI-VI9" id="RJL-z8-cDl"/>
                         <outlet property="txtRTEnv" destination="BqG-om-OlY" id="4Mu-I3-csw"/>
                         <outlet property="txtTxnId" destination="dal-I8-O1W" id="X4m-a2-uSB"/>

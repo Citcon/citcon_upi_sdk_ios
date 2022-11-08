@@ -73,7 +73,9 @@
         @"kakaopay",
         @"rabbit_line_pay",
         @"tng",
-        @"truemoney"
+        @"truemoney",
+        @"billease",
+        @"cashalo"
     ];
     
     self.ns_country = @[
@@ -90,6 +92,7 @@
         @"ID",
         @"MY",
         @"TH",
+        @"JP",
         @""
     ];
     
@@ -106,7 +109,8 @@
         @"IDR",
         @"MYR",
         @"THB",
-        @"HKD"
+        @"HKD",
+        @"JPY",
     ];
     
     self.ns_vendors = @[

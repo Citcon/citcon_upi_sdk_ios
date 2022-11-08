@@ -75,12 +75,15 @@
     _txtAmount.text = @"1";
     _txtTimeout.text = @"1670000000";
     _txtIPNUrl.text = @"https://ipn-receive.qa01.citconpay.com/notify";
-    _txtSucUrl.text = @"com.citcon.citconpay://";
-    _txtCancelUrl.text = @"com.citcon.citconpay://";
-    _txtFailUrl.text = @"com.citcon.citconpay://";
+//    _txtSucUrl.text = @"com.citcon.citconpay://";
+//    _txtCancelUrl.text = @"com.citcon.citconpay://";
+//    _txtFailUrl.text = @"com.citcon.citconpay://";
+    _txtSucUrl.text = @"https://success";
+    _txtCancelUrl.text = @"https://cancel";
+    _txtFailUrl.text = @"https://fail";
     _txtNote.text = @"note";
-    _txtCurrency.text = @"USD";
-    _txtCountry.text = @"US";
+    _txtCurrency.text = @"PHP";
+    _txtCountry.text = @"PH";
 }
 
 - (void)init3DS {
@@ -93,7 +96,7 @@
     _txtLocality.text = @"Chicago";
     _txtRegion.text = @"IL";
     _txtZip.text = @"333000";
-    _txtCountryCodeAlpha.text = @"US";
+    _txtCountryCodeAlpha.text = @"PH";
 }
 
 - (void)initCardInfo {
