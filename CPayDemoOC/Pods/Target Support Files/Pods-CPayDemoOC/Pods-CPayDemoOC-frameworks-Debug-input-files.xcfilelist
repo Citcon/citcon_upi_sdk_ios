@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-CPayDemoOC/Pods-CPayDemoOC-frameworks.sh
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Core/CPaySDK.framework/CPaySDK
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Ext/CardinalMobile/CardinalMobile.framework/CardinalMobile
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Ext/PPRiskMagnes/PPRiskMagnes.framework/PPRiskMagnes

@@ -1,0 +1,24 @@
+PODS:
+  - CPaySDK (2.0.9):
+    - CPaySDK/Core (= 2.0.9)
+    - CPaySDK/Ext (= 2.0.9)
+  - CPaySDK/Core (2.0.9)
+  - CPaySDK/Ext (2.0.9):
+    - CPaySDK/Ext/CardinalMobile (= 2.0.9)
+    - CPaySDK/Ext/PPRiskMagnes (= 2.0.9)
+  - CPaySDK/Ext/CardinalMobile (2.0.9)
+  - CPaySDK/Ext/PPRiskMagnes (2.0.9)
+
+DEPENDENCIES:
+  - CPaySDK (from `../`)
+
+EXTERNAL SOURCES:
+  CPaySDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CPaySDK: b71420466f5f842e6b2cc9a6ce6838109647d147
+
+PODFILE CHECKSUM: ae3c52c45945825e816fad31b6f03c1b45526909
+
+COCOAPODS: 1.11.3

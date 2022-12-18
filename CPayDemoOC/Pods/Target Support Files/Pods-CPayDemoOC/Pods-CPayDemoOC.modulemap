@@ -1,0 +1,6 @@
+framework module Pods_CPayDemoOC {
+  umbrella header "Pods-CPayDemoOC-umbrella.h"
+
+  export *
+  module * { export * }
+}
