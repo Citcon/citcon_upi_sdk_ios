@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6I0-gN-vwS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6I0-gN-vwS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,7 +14,7 @@
             <objects>
                 <navigationController id="6I0-gN-vwS" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qy9-lY-hFu">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -34,8 +34,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjN-Uv-Tn8">
-                                <rect key="frame" x="20" y="395" width="374" height="30"/>
+                                <rect key="frame" x="20" y="409.5" width="374" height="45"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="xLg-SC-GYl"/>
+                                </constraints>
                                 <state key="normal" title="Request Charge">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -44,19 +47,22 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcR-6O-hiR">
-                                <rect key="frame" x="20" y="448" width="374" height="21"/>
+                                <rect key="frame" x="20" y="477.5" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dal-I8-O1W" userLabel="TxnId Text Field">
-                                <rect key="frame" x="20" y="470" width="374" height="34"/>
+                                <rect key="frame" x="20" y="499.5" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85f-9A-1or">
-                                <rect key="frame" x="20" y="512" width="374" height="30"/>
+                                <rect key="frame" x="20" y="541.5" width="374" height="45"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="aBQ-Ng-pBI"/>
+                                </constraints>
                                 <state key="normal" title="Inquire Order">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -77,18 +83,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Runtime Environment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5z-ST-8H6">
-                                <rect key="frame" x="20" y="116" width="374" height="21"/>
+                                <rect key="frame" x="20" y="120" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BqG-om-OlY" userLabel="RTEnv Text Field">
-                                <rect key="frame" x="20" y="145" width="374" height="34"/>
+                                <rect key="frame" x="20" y="149" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wKU-m1-hTY">
-                                <rect key="frame" x="20" y="579" width="374" height="233"/>
+                                <rect key="frame" x="20" y="623.5" width="374" height="188.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9k-VK-eEh" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="566"/>
@@ -121,28 +127,34 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="LHx-UN-4Gz"/>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DS8-Fa-U9P">
-                                <rect key="frame" x="20" y="550" width="374" height="21"/>
+                                <rect key="frame" x="20" y="594.5" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Bn-b6-ScE">
-                                <rect key="frame" x="20" y="349" width="188" height="34"/>
+                                <rect key="frame" x="20" y="357.5" width="188" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gXc-6E-beA"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="LeC-FH-k8W" id="Sm2-vp-FEf"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Vendor Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNH-db-TRA">
-                                <rect key="frame" x="20" y="324" width="188" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vendor Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNH-db-TRA">
+                                <rect key="frame" x="20" y="328" width="96.5" height="25.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNO-5J-oFE">
-                                <rect key="frame" x="216" y="351" width="178" height="30"/>
+                                <rect key="frame" x="216" y="355" width="178" height="45"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="XkK-ZV-sDA"/>
+                                </constraints>
                                 <state key="normal" title="Get AccessToken">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -151,24 +163,24 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Method" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncd-Ap-mal">
-                                <rect key="frame" x="20" y="209" width="374" height="21"/>
+                                <rect key="frame" x="20" y="213" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lgF-GI-VI9" userLabel="Payment Text Field">
-                                <rect key="frame" x="20" y="238" width="374" height="34"/>
+                                <rect key="frame" x="20" y="242" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demo Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnw-bE-Dih">
-                                <rect key="frame" x="20" y="295" width="188" height="21"/>
+                                <rect key="frame" x="20" y="299" width="188" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xZG-od-LWD">
-                                <rect key="frame" x="216" y="288" width="178" height="35"/>
+                                <rect key="frame" x="216" y="292" width="178" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -255,10 +267,10 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G3K-45-PBU">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcG-To-oWs" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1096"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="780"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reference" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YlK-Az-43o">
                                                 <rect key="frame" x="8" y="8" width="398" height="21"/>
@@ -409,8 +421,11 @@
                                                 </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMs-PO-jT7">
-                                                <rect key="frame" x="8" y="1058" width="398" height="30"/>
+                                                <rect key="frame" x="8" y="727" width="398" height="45"/>
                                                 <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="QDV-oh-aOI"/>
+                                                </constraints>
                                                 <state key="normal" title="Confirm Charge">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -419,8 +434,11 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9r-Xr-tri">
-                                                <rect key="frame" x="8" y="1020" width="398" height="30"/>
+                                                <rect key="frame" x="8" y="674" width="398" height="45"/>
                                                 <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="LHo-ee-3Ev"/>
+                                                </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Request Charge">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -430,7 +448,7 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f3u-nI-Qhz">
-                                                <rect key="frame" x="8" y="978" width="398" height="34"/>
+                                                <rect key="frame" x="8" y="632" width="398" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
@@ -438,7 +456,7 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generated Charge Token" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00d-yU-Wp1">
-                                                <rect key="frame" x="8" y="949" width="398" height="21"/>
+                                                <rect key="frame" x="8" y="603" width="398" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -476,7 +494,7 @@
                                             <constraint firstAttribute="trailing" secondItem="YlK-Az-43o" secondAttribute="trailing" constant="8" id="UkB-UM-FZo"/>
                                             <constraint firstItem="4yO-oq-z3G" firstAttribute="leading" secondItem="oLB-4c-eI5" secondAttribute="leading" id="VcN-Nc-8z9"/>
                                             <constraint firstItem="7bv-dF-cjz" firstAttribute="top" secondItem="f2K-7k-NPI" secondAttribute="bottom" constant="-1" id="YRd-AQ-jqP"/>
-                                            <constraint firstAttribute="height" constant="1096" id="ZWx-v1-OjG"/>
+                                            <constraint firstAttribute="height" constant="780" id="ZWx-v1-OjG"/>
                                             <constraint firstItem="oLB-4c-eI5" firstAttribute="top" secondItem="CXG-Be-EKD" secondAttribute="bottom" id="aau-po-veD"/>
                                             <constraint firstItem="4bg-5u-THr" firstAttribute="leading" secondItem="f2K-7k-NPI" secondAttribute="trailing" constant="6" id="akG-Ff-inG"/>
                                             <constraint firstAttribute="bottom" secondItem="lMs-PO-jT7" secondAttribute="bottom" constant="8" id="bpQ-hF-nkD"/>
@@ -576,10 +594,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GpJ-EB-2kD">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CHM-kz-seT" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1096"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="780"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reference" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwe-Yk-mWE">
                                                 <rect key="frame" x="8" y="0.0" width="398" height="21"/>
@@ -730,8 +748,11 @@
                                                 </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STC-XN-xwm">
-                                                <rect key="frame" x="8" y="1058" width="398" height="30"/>
+                                                <rect key="frame" x="8" y="727" width="398" height="45"/>
                                                 <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="VcS-gH-QJF"/>
+                                                </constraints>
                                                 <state key="normal" title="Confirm Charge">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -740,8 +761,11 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9b7-xm-NM9">
-                                                <rect key="frame" x="8" y="1020" width="398" height="30"/>
+                                                <rect key="frame" x="8" y="674" width="398" height="45"/>
                                                 <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="fDC-yU-WLX"/>
+                                                </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Request Charge">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -751,7 +775,7 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QMT-Zf-puW">
-                                                <rect key="frame" x="8" y="978" width="398" height="34"/>
+                                                <rect key="frame" x="8" y="632" width="398" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
@@ -759,7 +783,7 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generated Charge Token" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKP-bQ-MbU">
-                                                <rect key="frame" x="8" y="949" width="398" height="21"/>
+                                                <rect key="frame" x="8" y="603" width="398" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -801,7 +825,7 @@
                                             <constraint firstItem="Ivv-CW-eHZ" firstAttribute="trailing" secondItem="TcP-RC-gic" secondAttribute="trailing" id="HMW-Sh-aHq"/>
                                             <constraint firstAttribute="trailing" secondItem="STC-XN-xwm" secondAttribute="trailing" constant="8" id="HUE-pw-tb9"/>
                                             <constraint firstItem="INf-OM-nvl" firstAttribute="top" secondItem="vyx-VO-st2" secondAttribute="bottom" constant="8" symbolic="YES" id="Imy-RU-jyP"/>
-                                            <constraint firstAttribute="height" constant="1096" id="JRJ-Cw-Xji"/>
+                                            <constraint firstAttribute="height" constant="780" id="JRJ-Cw-Xji"/>
                                             <constraint firstItem="rWu-iP-z4W" firstAttribute="top" secondItem="fdE-or-gY9" secondAttribute="bottom" constant="8" symbolic="YES" id="Jh0-OS-vYb"/>
                                             <constraint firstItem="QMT-Zf-puW" firstAttribute="leading" secondItem="CHM-kz-seT" secondAttribute="leading" constant="8" id="Jo5-nL-gVl"/>
                                             <constraint firstItem="rWu-iP-z4W" firstAttribute="leading" secondItem="fdE-or-gY9" secondAttribute="leading" id="Ldv-QF-Y9R"/>
@@ -899,10 +923,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="879-9L-zeq">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROW-8a-TXa" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1096"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="780"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reference" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XdQ-9i-Xsv">
                                                 <rect key="frame" x="8" y="0.0" width="398" height="21"/>
@@ -1064,8 +1088,11 @@
                                                 </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ph7-Jy-SdD">
-                                                <rect key="frame" x="8" y="1052" width="398" height="30"/>
+                                                <rect key="frame" x="8" y="721" width="398" height="45"/>
                                                 <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="ocP-sx-EK4"/>
+                                                </constraints>
                                                 <state key="normal" title="Confirm Charge">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -1074,8 +1101,11 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTS-pv-dlU">
-                                                <rect key="frame" x="8" y="1014" width="398" height="30"/>
+                                                <rect key="frame" x="8" y="668" width="398" height="45"/>
                                                 <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="OgF-ks-diJ"/>
+                                                </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Request Charge">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1085,7 +1115,7 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BLm-gO-Ulu">
-                                                <rect key="frame" x="8" y="971" width="398" height="34"/>
+                                                <rect key="frame" x="8" y="625" width="398" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
@@ -1093,7 +1123,7 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generated Charge Token" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8s-x7-Fw5">
-                                                <rect key="frame" x="8" y="942" width="398" height="21"/>
+                                                <rect key="frame" x="8" y="596" width="398" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -1150,7 +1180,7 @@
                                             <constraint firstItem="0Zw-pW-Gbz" firstAttribute="top" secondItem="MUq-kg-bRX" secondAttribute="bottom" constant="-2" id="WTy-P1-F9c"/>
                                             <constraint firstItem="X5K-TS-gVH" firstAttribute="leading" secondItem="i7e-En-lfM" secondAttribute="leading" id="Ws0-jS-pOV"/>
                                             <constraint firstItem="tFI-p8-JB1" firstAttribute="leading" secondItem="JEM-XL-nFR" secondAttribute="leading" id="Ygu-AA-mvi"/>
-                                            <constraint firstAttribute="height" constant="1096" id="Yx2-eV-3Ai"/>
+                                            <constraint firstAttribute="height" constant="780" id="Yx2-eV-3Ai"/>
                                             <constraint firstItem="X5K-TS-gVH" firstAttribute="trailing" secondItem="i7e-En-lfM" secondAttribute="trailing" id="Z9T-rc-2Ci"/>
                                             <constraint firstItem="bRk-xL-UMc" firstAttribute="leading" secondItem="4Jx-ks-nkn" secondAttribute="leading" id="ZCP-CH-QFd"/>
                                             <constraint firstItem="cIM-4c-F5v" firstAttribute="leading" secondItem="baI-Ph-Yc4" secondAttribute="leading" id="Zqc-dz-H4n"/>
@@ -1238,7 +1268,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WuW-to-Toc">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O2I-a4-nhn" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1588"/>
@@ -1530,8 +1560,11 @@
                                                 </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hN9-Qh-S2h">
-                                                <rect key="frame" x="8" y="1550" width="398" height="30"/>
+                                                <rect key="frame" x="8" y="1535" width="398" height="45"/>
                                                 <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="aHq-Sv-ZFN"/>
+                                                </constraints>
                                                 <state key="normal" title="Confirm">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -1653,8 +1686,11 @@
                                                 </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yA-gy-aZa">
-                                                <rect key="frame" x="8" y="1512" width="398" height="30"/>
+                                                <rect key="frame" x="8" y="1482" width="398" height="45"/>
                                                 <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="2an-pt-QR0"/>
+                                                </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Request Charge">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1664,7 +1700,7 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IJh-1f-Muc">
-                                                <rect key="frame" x="8" y="1469" width="398" height="34"/>
+                                                <rect key="frame" x="8" y="1439" width="398" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
@@ -1672,7 +1708,7 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generated Charge Token" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RB-PL-K92">
-                                                <rect key="frame" x="8" y="1440" width="398" height="21"/>
+                                                <rect key="frame" x="8" y="1410" width="398" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -1940,10 +1976,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QFB-Fz-w40">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WHK-My-jEY" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1024"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="780"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reference" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPn-Ro-VKW">
                                                 <rect key="frame" x="8" y="8" width="398" height="21"/>
@@ -2080,8 +2116,11 @@
                                                 </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSx-XL-HsH">
-                                                <rect key="frame" x="8" y="986" width="398" height="30"/>
+                                                <rect key="frame" x="8" y="727" width="398" height="45"/>
                                                 <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="4TD-3S-15x"/>
+                                                </constraints>
                                                 <state key="normal" title="Confirm Charge">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -2090,8 +2129,11 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BsH-VM-Vtj">
-                                                <rect key="frame" x="8" y="948" width="398" height="30"/>
+                                                <rect key="frame" x="8" y="674" width="398" height="45"/>
                                                 <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="3RI-qE-wLl"/>
+                                                </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Request Charge">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2101,7 +2143,7 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wd3-hx-su7">
-                                                <rect key="frame" x="8" y="905" width="398" height="34"/>
+                                                <rect key="frame" x="8" y="631" width="398" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
@@ -2109,7 +2151,7 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generated Charge Token" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwG-tp-H6t">
-                                                <rect key="frame" x="8" y="876" width="398" height="21"/>
+                                                <rect key="frame" x="8" y="602" width="398" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -2169,7 +2211,7 @@
                                             <constraint firstItem="dUq-4B-Ing" firstAttribute="trailing" secondItem="B82-HJ-FOy" secondAttribute="trailing" id="iSv-cr-9O0"/>
                                             <constraint firstItem="C4K-mc-Dxg" firstAttribute="leading" secondItem="It5-Kf-YU5" secondAttribute="leading" id="lfJ-K8-gei"/>
                                             <constraint firstItem="lrR-8S-D7O" firstAttribute="leading" secondItem="dg0-ZW-ntX" secondAttribute="leading" id="lfk-hp-q89"/>
-                                            <constraint firstAttribute="height" constant="1024" id="lyV-er-6Pa"/>
+                                            <constraint firstAttribute="height" constant="780" id="lyV-er-6Pa"/>
                                             <constraint firstItem="BuX-lH-Nvn" firstAttribute="leading" secondItem="oWK-vg-5ag" secondAttribute="leading" id="mcr-Sk-GEX"/>
                                             <constraint firstItem="sgz-Od-awJ" firstAttribute="top" secondItem="BuX-lH-Nvn" secondAttribute="bottom" constant="1" id="n5q-bb-OY9"/>
                                             <constraint firstItem="IkR-5v-88T" firstAttribute="top" secondItem="dUq-4B-Ing" secondAttribute="bottom" id="nOp-yn-Hkz"/>
