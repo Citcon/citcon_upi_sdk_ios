@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/CPaySDK/CPaySDK-xcframeworks.sh
+${PODS_ROOT}/../../CPaySDK/Core/CPaySDK.xcframework
+${PODS_ROOT}/../../CPaySDK/Ext/CardinalMobile.xcframework
+${PODS_ROOT}/../../CPaySDK/Ext/PPRiskMagnes.xcframework

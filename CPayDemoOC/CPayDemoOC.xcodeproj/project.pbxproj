@@ -3,16 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F1B9667128F95ED200CAC565 /* PPRiskMagnes.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B9666E28F95ED200CAC565 /* PPRiskMagnes.xcframework */; };
-		F1B9667228F95ED200CAC565 /* PPRiskMagnes.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1B9666E28F95ED200CAC565 /* PPRiskMagnes.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F1B9667328F95ED200CAC565 /* CardinalMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B9666F28F95ED200CAC565 /* CardinalMobile.xcframework */; };
-		F1B9667428F95ED200CAC565 /* CardinalMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1B9666F28F95ED200CAC565 /* CardinalMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F1B9667528F95ED200CAC565 /* CPaySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B9667028F95ED200CAC565 /* CPaySDK.xcframework */; };
-		F1B9667628F95ED200CAC565 /* CPaySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1B9667028F95ED200CAC565 /* CPaySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		285B33DEAE2D3469D25787C5 /* Pods_CPayDemoOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02A27B76CFBAA1227A30AEE /* Pods_CPayDemoOC.framework */; };
 		F1F06AC827B0FD8000BD302F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F06AC727B0FD8000BD302F /* AppDelegate.m */; };
 		F1F06ACE27B0FD8000BD302F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F06ACD27B0FD8000BD302F /* ViewController.m */; };
 		F1F06AD127B0FD8000BD302F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F06ACF27B0FD8000BD302F /* Main.storyboard */; };
@@ -46,9 +41,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F1B9667228F95ED200CAC565 /* PPRiskMagnes.xcframework in Embed Frameworks */,
-				F1B9667428F95ED200CAC565 /* CardinalMobile.xcframework in Embed Frameworks */,
-				F1B9667628F95ED200CAC565 /* CPaySDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,9 +48,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F1B9666E28F95ED200CAC565 /* PPRiskMagnes.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PPRiskMagnes.xcframework; path = Frameworks/PPRiskMagnes.xcframework; sourceTree = "<group>"; };
-		F1B9666F28F95ED200CAC565 /* CardinalMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CardinalMobile.xcframework; path = Frameworks/CardinalMobile.xcframework; sourceTree = "<group>"; };
-		F1B9667028F95ED200CAC565 /* CPaySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CPaySDK.xcframework; path = Frameworks/CPaySDK.xcframework; sourceTree = "<group>"; };
+		17F735747D79331BB90DB603 /* Pods-CPayDemoOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CPayDemoOC.release.xcconfig"; path = "Target Support Files/Pods-CPayDemoOC/Pods-CPayDemoOC.release.xcconfig"; sourceTree = "<group>"; };
+		D02A27B76CFBAA1227A30AEE /* Pods_CPayDemoOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CPayDemoOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F025AACE5DA621E3E4E4F70B /* Pods-CPayDemoOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CPayDemoOC.debug.xcconfig"; path = "Target Support Files/Pods-CPayDemoOC/Pods-CPayDemoOC.debug.xcconfig"; sourceTree = "<group>"; };
 		F1F06AC327B0FD8000BD302F /* CPayDemoOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPayDemoOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F06AC627B0FD8000BD302F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1F06AC727B0FD8000BD302F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,21 +85,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1B9667128F95ED200CAC565 /* PPRiskMagnes.xcframework in Frameworks */,
-				F1B9667328F95ED200CAC565 /* CardinalMobile.xcframework in Frameworks */,
-				F1B9667528F95ED200CAC565 /* CPaySDK.xcframework in Frameworks */,
+				285B33DEAE2D3469D25787C5 /* Pods_CPayDemoOC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0244F4CA4A1909320EC5E363 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D02A27B76CFBAA1227A30AEE /* Pods_CPayDemoOC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		661701FF90B5F4C772EFA05F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F025AACE5DA621E3E4E4F70B /* Pods-CPayDemoOC.debug.xcconfig */,
+				17F735747D79331BB90DB603 /* Pods-CPayDemoOC.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F1F06ABA27B0FD8000BD302F = {
 			isa = PBXGroup;
 			children = (
 				F1F06AC527B0FD8000BD302F /* CPayDemoOC */,
 				F1F06AC427B0FD8000BD302F /* Products */,
-				F1F06ADF27B0FDB300BD302F /* Frameworks */,
+				661701FF90B5F4C772EFA05F /* Pods */,
+				0244F4CA4A1909320EC5E363 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,16 +160,6 @@
 			path = CPayDemoOC;
 			sourceTree = "<group>";
 		};
-		F1F06ADF27B0FDB300BD302F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F1B9666F28F95ED200CAC565 /* CardinalMobile.xcframework */,
-				F1B9667028F95ED200CAC565 /* CPaySDK.xcframework */,
-				F1B9666E28F95ED200CAC565 /* PPRiskMagnes.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,11 +167,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1F06ADC27B0FD8200BD302F /* Build configuration list for PBXNativeTarget "CPayDemoOC" */;
 			buildPhases = (
+				6B84989A5D453B9E824E9FDE /* [CP] Check Pods Manifest.lock */,
 				F1F06ABF27B0FD8000BD302F /* Sources */,
 				F1F06AC027B0FD8000BD302F /* Frameworks */,
 				F1F06AC127B0FD8000BD302F /* Resources */,
 				F1F06B6327B1037100BD302F /* Embed Frameworks */,
 				F1BC0DA827BFB24000C04C0B /* Embed PlugIns */,
+				2966FD6E85E7B0167DE5FB02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,6 +228,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2966FD6E85E7B0167DE5FB02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CPayDemoOC/Pods-CPayDemoOC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CPayDemoOC/Pods-CPayDemoOC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CPayDemoOC/Pods-CPayDemoOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B84989A5D453B9E824E9FDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CPayDemoOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F1F06ABF27B0FD8000BD302F /* Sources */ = {
@@ -384,6 +426,7 @@
 		};
 		F1F06ADD27B0FD8200BD302F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F025AACE5DA621E3E4E4F70B /* Pods-CPayDemoOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -393,8 +436,9 @@
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6QR8NK5X24;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = CPayDemoOC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -417,6 +461,7 @@
 		};
 		F1F06ADE27B0FD8200BD302F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17F735747D79331BB90DB603 /* Pods-CPayDemoOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -427,8 +472,9 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6QR8NK5X24;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6QR8NK5X24;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = CPayDemoOC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
