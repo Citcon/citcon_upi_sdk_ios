@@ -523,6 +523,7 @@
             "declAttributes": [
               "AccessControl",
               "ObjC",
+              "DiscardableResult",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -9056,22 +9057,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
               }
             ],
             "declKind": "Var",
             "usr": "c:@M@CPaySDK@objc(cs)CPayInstallments(py)paymentNumber",
-            "mangledName": "$s7CPaySDK0A12InstallmentsC13paymentNumberSSSgvp",
+            "mangledName": "$s7CPaySDK0A12InstallmentsC13paymentNumberSdvp",
             "moduleName": "CPaySDK",
             "declAttributes": [
               "HasInitialValue",
@@ -9088,22 +9081,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@CPaySDK@objc(cs)CPayInstallments(im)paymentNumber",
-                "mangledName": "$s7CPaySDK0A12InstallmentsC13paymentNumberSSSgvg",
+                "mangledName": "$s7CPaySDK0A12InstallmentsC13paymentNumberSdvg",
                 "moduleName": "CPaySDK",
                 "implicit": true,
                 "declAttributes": [
@@ -9123,22 +9108,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@CPaySDK@objc(cs)CPayInstallments(im)setPaymentNumber:",
-                "mangledName": "$s7CPaySDK0A12InstallmentsC13paymentNumberSSSgvs",
+                "mangledName": "$s7CPaySDK0A12InstallmentsC13paymentNumberSdvs",
                 "moduleName": "CPaySDK",
                 "implicit": true,
                 "declAttributes": [
@@ -9158,8 +9135,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7CPaySDK0A12InstallmentsC13paymentNumberSSSgvM",
-                "mangledName": "$s7CPaySDK0A12InstallmentsC13paymentNumberSSSgvM",
+                "usr": "s:7CPaySDK0A12InstallmentsC13paymentNumberSdvM",
+                "mangledName": "$s7CPaySDK0A12InstallmentsC13paymentNumberSdvM",
                 "moduleName": "CPaySDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -9173,22 +9150,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
               }
             ],
             "declKind": "Var",
             "usr": "c:@M@CPaySDK@objc(cs)CPayInstallments(py)quantity",
-            "mangledName": "$s7CPaySDK0A12InstallmentsC8quantitySSSgvp",
+            "mangledName": "$s7CPaySDK0A12InstallmentsC8quantitys5Int32Vvp",
             "moduleName": "CPaySDK",
             "declAttributes": [
               "HasInitialValue",
@@ -9205,22 +9174,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@CPaySDK@objc(cs)CPayInstallments(im)quantity",
-                "mangledName": "$s7CPaySDK0A12InstallmentsC8quantitySSSgvg",
+                "mangledName": "$s7CPaySDK0A12InstallmentsC8quantitys5Int32Vvg",
                 "moduleName": "CPaySDK",
                 "implicit": true,
                 "declAttributes": [
@@ -9240,22 +9201,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@CPaySDK@objc(cs)CPayInstallments(im)setQuantity:",
-                "mangledName": "$s7CPaySDK0A12InstallmentsC8quantitySSSgvs",
+                "mangledName": "$s7CPaySDK0A12InstallmentsC8quantitys5Int32Vvs",
                 "moduleName": "CPaySDK",
                 "implicit": true,
                 "declAttributes": [
@@ -9275,8 +9228,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7CPaySDK0A12InstallmentsC8quantitySSSgvM",
-                "mangledName": "$s7CPaySDK0A12InstallmentsC8quantitySSSgvM",
+                "usr": "s:7CPaySDK0A12InstallmentsC8quantitys5Int32VvM",
+                "mangledName": "$s7CPaySDK0A12InstallmentsC8quantitys5Int32VvM",
                 "moduleName": "CPaySDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -10601,6 +10554,123 @@
                 "declKind": "Accessor",
                 "usr": "s:7CPaySDK0A9ExtDeviceC2osSSSgvM",
                 "mangledName": "$s7CPaySDK0A9ExtDeviceC2osSSSgvM",
+                "moduleName": "CPaySDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fingerprint",
+            "printedName": "fingerprint",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CPaySDK@objc(cs)CPayExtDevice(py)fingerprint",
+            "mangledName": "$s7CPaySDK0A9ExtDeviceC11fingerprintSSSgvp",
+            "moduleName": "CPaySDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CPaySDK@objc(cs)CPayExtDevice(im)fingerprint",
+                "mangledName": "$s7CPaySDK0A9ExtDeviceC11fingerprintSSSgvg",
+                "moduleName": "CPaySDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CPaySDK@objc(cs)CPayExtDevice(im)setFingerprint:",
+                "mangledName": "$s7CPaySDK0A9ExtDeviceC11fingerprintSSSgvs",
+                "moduleName": "CPaySDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CPaySDK0A9ExtDeviceC11fingerprintSSSgvM",
+                "mangledName": "$s7CPaySDK0A9ExtDeviceC11fingerprintSSSgvM",
                 "moduleName": "CPaySDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -19076,26 +19146,6 @@
       },
       {
         "kind": "Import",
-        "name": "PPRiskMagnes",
-        "printedName": "PPRiskMagnes",
-        "declKind": "Import",
-        "moduleName": "CPaySDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CardinalMobile",
-        "printedName": "CardinalMobile",
-        "declKind": "Import",
-        "moduleName": "CPaySDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -19151,133 +19201,133 @@
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayURLGateway.swift",
       "kind": "IntegerLiteral",
-      "offset": 844,
+      "offset": 846,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayURLGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1059,
+      "offset": 1061,
       "length": 4,
       "value": "\"-2\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayURLGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1118,
+      "offset": 1120,
       "length": 102,
       "value": "\"Unexcept Error for Response Data: \""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayURLGateway.swift",
       "kind": "IntegerLiteral",
-      "offset": 1207,
+      "offset": 1209,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayURLGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1219,
+      "offset": 1221,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayURLGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1306,
+      "offset": 1308,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayURLGateway.swift",
       "kind": "BooleanLiteral",
-      "offset": 1617,
+      "offset": 1619,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayURLGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1690,
+      "offset": 1692,
       "length": 10,
       "value": "\"noncestr\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayURLGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1734,
+      "offset": 1736,
       "length": 9,
       "value": "\"package\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayURLGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1776,
+      "offset": 1778,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayURLGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1822,
+      "offset": 1824,
       "length": 11,
       "value": "\"partnerid\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayURLGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1868,
+      "offset": 1870,
       "length": 10,
       "value": "\"prepayid\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayURLGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1912,
+      "offset": 1914,
       "length": 6,
       "value": "\"sign\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayURLGateway.swift",
       "kind": "IntegerLiteral",
-      "offset": 2080,
+      "offset": 2082,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayURLGateway.swift",
       "kind": "StringLiteral",
-      "offset": 2084,
+      "offset": 2086,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayURLGateway.swift",
       "kind": "StringLiteral",
-      "offset": 2096,
+      "offset": 2098,
       "length": 6,
       "value": "\"fail\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayURLGateway.swift",
       "kind": "StringLiteral",
-      "offset": 2583,
+      "offset": 2585,
       "length": 4,
       "value": "\"-1\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayURLGateway.swift",
       "kind": "StringLiteral",
-      "offset": 2638,
+      "offset": 2640,
       "length": 23,
       "value": "\"Register WxApp Failed\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayURLGateway.swift",
       "kind": "StringLiteral",
-      "offset": 2743,
+      "offset": 2745,
       "length": 2,
       "value": "\"\""
     },
@@ -19368,7 +19418,7 @@
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/CPayManager.swift",
       "kind": "Dictionary",
-      "offset": 6422,
+      "offset": 6445,
       "length": 3,
       "value": "[]"
     },
@@ -19451,8 +19501,22 @@
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Core\/Order\/CPayRequest.swift",
+      "kind": "FloatLiteral",
+      "offset": 7346,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Core\/Order\/CPayRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7390,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Core\/Order\/CPayRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 10714,
+      "offset": 10873,
       "length": 5,
       "value": "false"
     },
@@ -19508,77 +19572,77 @@
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Core\/Network\/APIManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6757,
+      "offset": 6761,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayAlipayGateway.swift",
       "kind": "IntegerLiteral",
-      "offset": 1830,
+      "offset": 1831,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayAlipayGateway.swift",
       "kind": "StringLiteral",
-      "offset": 2081,
+      "offset": 2082,
       "length": 4,
       "value": "\"-2\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayAlipayGateway.swift",
       "kind": "StringLiteral",
-      "offset": 2140,
+      "offset": 2141,
       "length": 102,
       "value": "\"Unexcept Error for Response Data: \""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayAlipayGateway.swift",
       "kind": "IntegerLiteral",
-      "offset": 2229,
+      "offset": 2230,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayAlipayGateway.swift",
       "kind": "StringLiteral",
-      "offset": 2241,
+      "offset": 2242,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayAlipayGateway.swift",
       "kind": "StringLiteral",
-      "offset": 2328,
+      "offset": 2329,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayAlipayGateway.swift",
       "kind": "StringLiteral",
-      "offset": 2576,
+      "offset": 2577,
       "length": 10,
       "value": "\"&sign=\"\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayAlipayGateway.swift",
       "kind": "StringLiteral",
-      "offset": 2610,
+      "offset": 2611,
       "length": 22,
       "value": "\"\"&sign_type=\"RSA\"\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayAlipayGateway.swift",
       "kind": "StringLiteral",
-      "offset": 2731,
+      "offset": 2732,
       "length": 51,
       "value": "\"Alipay payOrder Resp: \""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayAlipayGateway.swift",
       "kind": "StringLiteral",
-      "offset": 2781,
+      "offset": 2782,
       "length": 3,
       "value": "\"\""
     },
@@ -19683,217 +19747,217 @@
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayUnionPayGateway.swift",
       "kind": "IntegerLiteral",
-      "offset": 626,
+      "offset": 627,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayUnionPayGateway.swift",
       "kind": "StringLiteral",
-      "offset": 841,
+      "offset": 842,
       "length": 4,
       "value": "\"-2\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayUnionPayGateway.swift",
       "kind": "StringLiteral",
-      "offset": 900,
+      "offset": 901,
       "length": 102,
       "value": "\"Unexcept Error for Response Data: \""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayUnionPayGateway.swift",
       "kind": "IntegerLiteral",
-      "offset": 989,
+      "offset": 990,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayUnionPayGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1001,
+      "offset": 1002,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayUnionPayGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1088,
+      "offset": 1089,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayUnionPayGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1520,
+      "offset": 1521,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayUnionPayGateway.swift",
       "kind": "IntegerLiteral",
-      "offset": 1533,
+      "offset": 1534,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayUnionPayGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1550,
+      "offset": 1551,
       "length": 6,
       "value": "\"fail\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayUnionPayGateway.swift",
       "kind": "IntegerLiteral",
-      "offset": 1560,
+      "offset": 1561,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayUnionPayGateway.swift",
       "kind": "IntegerLiteral",
-      "offset": 1565,
+      "offset": 1566,
       "length": 2,
       "value": "2"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayUnionPayGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1849,
+      "offset": 1850,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayWechatGateway.swift",
       "kind": "IntegerLiteral",
-      "offset": 978,
+      "offset": 979,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayWechatGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1193,
+      "offset": 1194,
       "length": 4,
       "value": "\"-2\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayWechatGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1252,
+      "offset": 1253,
       "length": 102,
       "value": "\"Unexcept Error for Response Data: \""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayWechatGateway.swift",
       "kind": "IntegerLiteral",
-      "offset": 1341,
+      "offset": 1342,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayWechatGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1353,
+      "offset": 1354,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayWechatGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1440,
+      "offset": 1441,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayWechatGateway.swift",
       "kind": "BooleanLiteral",
-      "offset": 1751,
+      "offset": 1752,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayWechatGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1824,
+      "offset": 1825,
       "length": 10,
       "value": "\"noncestr\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayWechatGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1868,
+      "offset": 1869,
       "length": 9,
       "value": "\"package\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayWechatGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1910,
+      "offset": 1911,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayWechatGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1956,
+      "offset": 1957,
       "length": 11,
       "value": "\"partnerid\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayWechatGateway.swift",
       "kind": "StringLiteral",
-      "offset": 2002,
+      "offset": 2003,
       "length": 10,
       "value": "\"prepayid\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayWechatGateway.swift",
       "kind": "StringLiteral",
-      "offset": 2046,
+      "offset": 2047,
       "length": 6,
       "value": "\"sign\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayWechatGateway.swift",
       "kind": "IntegerLiteral",
-      "offset": 2214,
+      "offset": 2215,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayWechatGateway.swift",
       "kind": "StringLiteral",
-      "offset": 2218,
+      "offset": 2219,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayWechatGateway.swift",
       "kind": "StringLiteral",
-      "offset": 2230,
+      "offset": 2231,
       "length": 6,
       "value": "\"fail\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayWechatGateway.swift",
       "kind": "StringLiteral",
-      "offset": 2717,
+      "offset": 2718,
       "length": 4,
       "value": "\"-1\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayWechatGateway.swift",
       "kind": "StringLiteral",
-      "offset": 2772,
+      "offset": 2773,
       "length": 23,
       "value": "\"Register WxApp Failed\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/upi-github\/upi_mobile_sdk_ios_sephora\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayWechatGateway.swift",
       "kind": "StringLiteral",
-      "offset": 2877,
+      "offset": 2878,
       "length": 2,
       "value": "\"\""
     }
