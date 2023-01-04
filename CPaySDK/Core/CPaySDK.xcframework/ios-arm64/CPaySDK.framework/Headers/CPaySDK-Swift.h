@@ -357,6 +357,7 @@ SWIFT_CLASS("_TtC7CPaySDK13CPayExtDevice")
 @interface CPayExtDevice : NSObject
 @property (nonatomic, copy) NSString * _Nullable ip;
 @property (nonatomic, copy) NSString * _Nullable os;
+@property (nonatomic, copy) NSString * _Nullable fingerprint;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -389,8 +390,8 @@ SWIFT_CLASS("_TtC7CPaySDK9CPayGoods")
 SWIFT_CLASS("_TtC7CPaySDK16CPayInstallments")
 @interface CPayInstallments : NSObject
 @property (nonatomic, copy) NSString * _Nullable id;
-@property (nonatomic, copy) NSString * _Nullable paymentNumber;
-@property (nonatomic, copy) NSString * _Nullable quantity;
+@property (nonatomic) double paymentNumber;
+@property (nonatomic) int32_t quantity;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -437,7 +438,7 @@ SWIFT_CLASS("_TtC7CPaySDK11CPayManager")
 ///
 /// returns:
 /// true if the call was successful, but does not mean the query has completed. It depends on the callback.
-- (BOOL)inquireOrder:(NSString * _Nonnull)transId callback:(void (^ _Nonnull)(CPayCheck * _Nullable))callback SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)inquireOrder:(NSString * _Nonnull)transId callback:(void (^ _Nonnull)(CPayCheck * _Nullable))callback;
 /// Get the version of the SDK.
 ///
 /// returns:
