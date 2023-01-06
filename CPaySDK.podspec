@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/Citcon/citcon_upi_sdk_ios'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'yansheng.ao@citcon.cn' => 'yansheng.ao@citcon.cn' }
-  s.source           = { :git => 'https://github.com/Citcon/citcon_upi_sdk_ios.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Citcon/citcon_upi_sdk_ios.git', :tag => 'v' + s.version.to_s }
 
 #  s.exclude_files = ['PPRiskMagnes.xcframework', 'Alamofire.xcframework', 'Braintree.xcframework', 'CardinalMobile.xcframework']
   
