@@ -1,0 +1,294 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CPaySDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import CPaySDK
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc public class CPayRuntimeInst : ObjectiveC.NSObject {
+  public static let gateways: [Swift.String : [Swift.String]]
+  @objc public static func NTFY_ASYNC() -> Swift.String
+  @objc public static func ORDER_CONFIRMED() -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class CPayManager : ObjectiveC.NSObject {
+  @objc public static func sharedInst() -> CPaySDK.CPayManager
+  @discardableResult
+  @objc public func setMode(_ mode: CPaySDK.CPayENVMode) -> Swift.Bool
+  @discardableResult
+  @objc public func setAccessToken(_ token: Swift.String) -> Swift.Bool
+  @discardableResult
+  @objc public func requestOrder(_ order: CPaySDK.CPayRequest, callback: @escaping CPaySDK.CPayRequestCallback) -> Swift.Bool
+  @discardableResult
+  @objc public func inquireOrder(_ transId: Swift.String, callback: @escaping CPaySDK.CPayCheckCallback) -> Swift.Bool
+  @objc public func getVersion() -> Swift.String
+  @available(iOS 13.0, *)
+  @objc public func handleScene(_ URLContexts: Swift.Set<UIKit.UIOpenURLContext>)
+  @objc public func handleUrl(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
+  @objc public func handleUniversalLink(_ userActivity: Foundation.NSUserActivity)
+  @objc public func getAccessToken(_ vendor: Swift.String, onComplete callback: @escaping (_ result: Swift.String?) -> Swift.Void)
+  @objc public func generateOrder(_ order: CPaySDK.CPayRequest, callback: @escaping CPaySDK.CPayRequestCallback)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayTranscation : ObjectiveC.NSObject {
+  @objc public var reference: Swift.String?
+  @objc public var amount: Swift.Int32
+  @objc public var currency: Swift.String?
+  @objc public var country: Swift.String?
+  @objc public var autoCapture: Swift.Bool
+  @objc public var note: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayBillingAddr : ObjectiveC.NSObject {
+  @objc public var street: Swift.String?
+  @objc public var street2: Swift.String?
+  @objc public var city: Swift.String?
+  @objc public var state: Swift.String?
+  @objc public var zip: Swift.String?
+  @objc public var country: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayConsumer : ObjectiveC.NSObject {
+  @objc public var reference: Swift.String?
+  @objc public var firstName: Swift.String?
+  @objc public var lastName: Swift.String?
+  @objc public var phone: Swift.String?
+  @objc public var email: Swift.String?
+  @objc public var street: Swift.String?
+  @objc public var city: Swift.String?
+  @objc public var zip: Swift.String?
+  @objc public var country: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayPaymentData : ObjectiveC.NSObject {
+  @objc public var issuer: Swift.String?
+  @objc public var pan: Swift.String?
+  @objc public var firstName: Swift.String?
+  @objc public var lastName: Swift.String?
+  @objc public var cvv: Swift.String?
+  @objc public var expiry: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayPayment : ObjectiveC.NSObject {
+  @objc public var method: Swift.String?
+  @objc public var indicator: Swift.String?
+  @objc public var requestToken: Swift.Bool
+  @objc public var token: Swift.String?
+  @objc public var client: [Swift.String]?
+  @objc public var expiry: Swift.Int
+  @objc public var format: Swift.String?
+  @objc public var data: CPaySDK.CPayPaymentData?
+  @objc public var billingAddress: CPaySDK.CPayBillingAddr?
+  @objc public var nonce: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayProduct : ObjectiveC.NSObject {
+  @objc public var name: Swift.String?
+  @objc public var sku: Swift.String?
+  @objc public var url: Swift.String?
+  @objc public var category: Swift.String?
+  @objc public var quantity: Swift.Int32
+  @objc public var totalAmount: Swift.Int32
+  @objc public var unitAmount: Swift.Int32
+  @objc public var totalTaxRate: Swift.Int32
+  @objc public var totalTaxAmount: Swift.Int32
+  @objc public var totalDiscountAmount: Swift.Int32
+  @objc public var taxableAmount: Swift.Int32
+  @objc public var taxExemptAmount: Swift.Int32
+  @objc public var totalDiscountCode: Swift.String?
+  @objc public var productType: Swift.String?
+  @objc public var desc: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayShipping : ObjectiveC.NSObject {
+  @objc public var firstName: Swift.String?
+  @objc public var lastName: Swift.String?
+  @objc public var phone: Swift.String?
+  @objc public var email: Swift.String?
+  @objc public var street: Swift.String?
+  @objc public var street2: Swift.String?
+  @objc public var city: Swift.String?
+  @objc public var state: Swift.String?
+  @objc public var zip: Swift.String?
+  @objc public var country: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayGoods : ObjectiveC.NSObject {
+  @objc public var goods: [CPaySDK.CPayProduct]?
+  @objc public var shipping: CPaySDK.CPayShipping?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayInstallments : ObjectiveC.NSObject {
+  @objc public var id: Swift.String?
+  @objc public var paymentNumber: Swift.Double
+  @objc public var quantity: Swift.Int32
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayUrls : ObjectiveC.NSObject {
+  @objc public var ipn: Swift.String?
+  @objc public var success: Swift.String?
+  @objc public var cancel: Swift.String?
+  @objc public var fail: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtTransactionReceipt : ObjectiveC.NSObject {
+  @objc public var type: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtTransaction : ObjectiveC.NSObject {
+  @objc public var receipt: CPaySDK.CPayExtTransactionReceipt?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtApp : ObjectiveC.NSObject {
+  @objc public var app_name: Swift.String?
+  @objc public var version: Swift.String?
+  @objc public var source: Swift.String?
+  @objc public var bundle_id: Swift.String?
+  @objc public var sdk_version: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtDevice : ObjectiveC.NSObject {
+  @objc public var ip: Swift.String?
+  @objc public var os: Swift.String?
+  @objc public var fingerprint: Swift.String?
+  @objc public var os_version: Swift.String?
+  @objc public var model: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExt : ObjectiveC.NSObject {
+  @objc public var transaction: CPaySDK.CPayExtTransaction?
+  @objc public var device: CPaySDK.CPayExtDevice?
+  @objc public var app: CPaySDK.CPayExtApp?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayRequest : ObjectiveC.NSObject {
+  @objc public var transaction: CPaySDK.CPayTranscation
+  @objc public var consumer: CPaySDK.CPayConsumer?
+  @objc public var payment: CPaySDK.CPayPayment?
+  @objc public var goods: CPaySDK.CPayGoods?
+  @objc public var installments: CPaySDK.CPayInstallments?
+  @objc public var urls: CPaySDK.CPayUrls
+  @objc public var ext: CPaySDK.CPayExt?
+  @objc public var scheme: Swift.String?
+  @objc public var universalLink: Swift.String?
+  @objc public var request3DSecureVerification: Swift.Bool
+  @objc public var controller: UIKit.UIViewController?
+  @objc public var unionpayMode: Swift.String?
+  @objc public var chargeToken: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+public typealias CPayRequestCallback = (_ result: CPaySDK.CPayResult?) -> Swift.Void
+public typealias CPayCheckCallback = (_ result: CPaySDK.CPayCheck?) -> Swift.Void
+@objc public enum CPayENVMode : Swift.Int {
+  case DEV
+  case QA
+  case UAT
+  case PROD
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class CPayResult : ObjectiveC.NSObject {
+  @objc public var status: Swift.String?
+  @objc public var version: Swift.String?
+  @_inheritsConvenienceInitializers @objc public class CPayResultData : ObjectiveC.NSObject {
+    @objc public var code: Swift.String?
+    @objc public var message: Swift.String?
+    @objc public var id: Swift.String?
+    @objc public var object: Swift.String?
+    @objc public var reference: Swift.String?
+    @objc public var amount: Swift.Int
+    @objc public var amountCaptured: Swift.Int
+    @objc public var amountRefunded: Swift.Int
+    @objc public var currency: Swift.String?
+    @objc public var country: Swift.String?
+    @objc public var autoCapture: Swift.Bool
+    @objc public var status: Swift.String?
+    @objc public var timeCreated: Swift.Int
+    @objc public var timeAuthorized: Swift.Int
+    @objc public var timeCaptured: Swift.Int
+    @objc public var chargeToken: Swift.String?
+    @_inheritsConvenienceInitializers @objc public class CPayResultPayment : ObjectiveC.NSObject {
+      @objc public var method: Swift.String?
+      @objc override dynamic public init()
+      @objc deinit
+    }
+    @objc public var payment: CPaySDK.CPayResult.CPayResultData.CPayResultPayment?
+    @objc override dynamic public init()
+    @objc deinit
+  }
+  @objc public var data: CPaySDK.CPayResult.CPayResultData
+  @objc override dynamic public init()
+  public init(status: Swift.String, code: Swift.String, message: Swift.String, reference: Swift.String, id: Swift.String? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayCheck : ObjectiveC.NSObject {
+  @objc public var status: Swift.String?
+  @objc public var version: Swift.String?
+  @objc public var app: Swift.String?
+  @_inheritsConvenienceInitializers @objc public class CPayCheckData : ObjectiveC.NSObject {
+    @objc public var code: Swift.String?
+    @objc public var message: Swift.String?
+    @objc public var id: Swift.String?
+    @objc public var object: Swift.String?
+    @objc public var amount: Swift.Int
+    @objc public var currency: Swift.String?
+    @objc public var status: Swift.String?
+    @objc public var timeCanceled: Swift.Int
+    @objc public var expiry: Swift.String?
+    @objc public var timeCreated: Swift.Int
+    @objc public var country: Swift.String?
+    @objc public var reference: Swift.String?
+    @objc public var amountCaptured: Swift.Int
+    @objc public var amountRefunded: Swift.Int
+    @objc public var timeCaptured: Swift.Int
+    @objc public var autoCapture: Swift.Bool
+    @_inheritsConvenienceInitializers @objc public class CPayCheckDataPayment : ObjectiveC.NSObject {
+      @objc public var method: Swift.String?
+      @objc public var token: Swift.String?
+      @objc public var type: Swift.String?
+      @_inheritsConvenienceInitializers @objc public class CPayCheckDataPaymentData : ObjectiveC.NSObject {
+        @objc public var pan: Swift.String?
+        @objc public var expiry: Swift.String?
+        @objc override dynamic public init()
+        @objc deinit
+      }
+      @objc public var data: CPaySDK.CPayCheck.CPayCheckData.CPayCheckDataPayment.CPayCheckDataPaymentData?
+      @objc override dynamic public init()
+      @objc deinit
+    }
+    @objc public var payment: CPaySDK.CPayCheck.CPayCheckData.CPayCheckDataPayment?
+    @objc override dynamic public init()
+    @objc deinit
+  }
+  @objc public var data: CPaySDK.CPayCheck.CPayCheckData
+  @objc override dynamic public init()
+  public init(status: Swift.String, code: Swift.String, message: Swift.String, id: Swift.String)
+  @objc deinit
+}
+extension CPaySDK.CPayENVMode : Swift.Equatable {}
+extension CPaySDK.CPayENVMode : Swift.Hashable {}
+extension CPaySDK.CPayENVMode : Swift.RawRepresentable {}

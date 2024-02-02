@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CPaySDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import CPaySDK
@@ -8,9 +8,11 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @objc public class CPayRuntimeInst : ObjectiveC.NSObject {
   public static let gateways: [Swift.String : [Swift.String]]
   @objc public static func NTFY_ASYNC() -> Swift.String
+  @objc public static func ORDER_CONFIRMED() -> Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -154,16 +156,28 @@ import _StringProcessing
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc public class CPayExtApp : ObjectiveC.NSObject {
+  @objc public var app_name: Swift.String?
+  @objc public var version: Swift.String?
+  @objc public var source: Swift.String?
+  @objc public var bundle_id: Swift.String?
+  @objc public var sdk_version: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class CPayExtDevice : ObjectiveC.NSObject {
   @objc public var ip: Swift.String?
   @objc public var os: Swift.String?
   @objc public var fingerprint: Swift.String?
+  @objc public var os_version: Swift.String?
+  @objc public var model: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class CPayExt : ObjectiveC.NSObject {
   @objc public var transaction: CPaySDK.CPayExtTransaction?
   @objc public var device: CPaySDK.CPayExtDevice?
+  @objc public var app: CPaySDK.CPayExtApp?
   @objc override dynamic public init()
   @objc deinit
 }

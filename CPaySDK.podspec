@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CPaySDK'
-  s.version          = '2.0.9'
+  s.version          = '2.0.10'
   s.summary          = 'UPI mobile SDK for iOS.'
 
 # This description is used to generate tags and improve search results.
@@ -35,8 +35,7 @@ Pod::Spec.new do |s|
   
 #  s.ios.deployment_target = '13.0'
 
-  s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => true , 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-   }
+#  s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => true , 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   s.libraries = 'stdc++'#,'z','c++'
   s.requires_arc = true

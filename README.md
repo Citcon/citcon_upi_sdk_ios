@@ -4,7 +4,7 @@ Release UPI mobile SDK for iOS
 
 ## Installation
 
-testa is available through [CocoaPods](https://cocoapods.org). To install
+CPaySDK is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 
