@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -432,8 +432,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CPayDemoOC/CPayDemoOC.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development: long zhao (49Q5V63857)";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6QR8NK5X24;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
@@ -451,7 +451,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.citcon.citconpay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Zhao Long";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -467,11 +467,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CPayDemoOC/CPayDemoOC.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Distribution: Citcon Inc. (6QR8NK5X24)";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6QR8NK5X24;
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6QR8NK5X24;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = CPayDemoOC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -487,8 +486,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.citcon.citconpay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "App Store T";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "App Store T";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

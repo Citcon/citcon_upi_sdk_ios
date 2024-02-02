@@ -17,4 +17,4 @@ Output/*
 **/Pods/*
 *.xcuserdatad
 **/Build/*
-
+*.xcuserstate

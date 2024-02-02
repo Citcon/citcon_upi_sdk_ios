@@ -1,5 +1,9 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
+#source 'https://github.com/CocoaPods/Specs.git'
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+
+
 
 target 'CPayDemoOC' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -8,18 +12,16 @@ target 'CPayDemoOC' do
  #use_frameworks! :linkage => :static
 
   # Pods for Demo
-
+  
     pod 'CPaySDK', :path => '../'
-
-
-end
-
-
-post_install do |installer|
-
-    installer.pods_project.build_configurations.each do |config|
-        config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
-
-    end
+#    pod 'CPaySDK', :git => 'git@github.com:Citcon/citcon_upi_sdk_ios.git', :branch => 'main'
+#     pod 'CPaySDK', '2.0.10'
 
 end
+
+
+#post_install do |installer|
+#    installer.pods_project.build_configurations.each do |config|
+#        config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+#    end
+#end

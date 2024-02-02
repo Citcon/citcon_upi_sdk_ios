@@ -17,11 +17,11 @@ RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 variant_for_slice()
 {
   case "$1" in
-  "CPaySDK.xcframework/ios-x86_64-simulator")
-    echo "simulator"
-    ;;
   "CPaySDK.xcframework/ios-arm64")
     echo ""
+    ;;
+  "CPaySDK.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
     ;;
   "CardinalMobile.xcframework/ios-arm64_armv7")
     echo ""
@@ -41,11 +41,11 @@ variant_for_slice()
 archs_for_slice()
 {
   case "$1" in
-  "CPaySDK.xcframework/ios-x86_64-simulator")
-    echo "x86_64"
-    ;;
   "CPaySDK.xcframework/ios-arm64")
     echo "arm64"
+    ;;
+  "CPaySDK.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
     ;;
   "CardinalMobile.xcframework/ios-arm64_armv7")
     echo "arm64 armv7"
@@ -141,7 +141,7 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/../../CPaySDK/Core/CPaySDK.xcframework" "CPaySDK/Core" "framework" "ios-x86_64-simulator" "ios-arm64"
+install_xcframework "${PODS_ROOT}/../../CPaySDK/Core/CPaySDK.xcframework" "CPaySDK/Core" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 install_xcframework "${PODS_ROOT}/../../CPaySDK/Ext/CardinalMobile.xcframework" "CPaySDK/Ext/CardinalMobile" "framework" "ios-arm64_armv7" "ios-arm64_i386_x86_64-simulator"
 install_xcframework "${PODS_ROOT}/../../CPaySDK/Ext/PPRiskMagnes.xcframework" "CPaySDK/Ext/PPRiskMagnes" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 
