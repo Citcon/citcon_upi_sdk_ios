@@ -1,5 +1,5 @@
-# citcon_upi_sdk_ios
-Release UPI mobile SDK for iOS
+# CPaySDK
+> UPI mobile SDK for iOS.
 
 
 ## Installation
@@ -11,6 +11,8 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'CPaySDK'
 ```
+
+or
 
 
 ```ruby
