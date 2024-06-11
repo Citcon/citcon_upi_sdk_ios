@@ -36,11 +36,12 @@ import _SwiftConcurrencyShims
 }
 @_inheritsConvenienceInitializers @objc public class CPayTranscation : ObjectiveC.NSObject {
   @objc public var reference: Swift.String?
-  @objc public var amount: Swift.Int32
+  @objc public var amount: Foundation.NSNumber?
   @objc public var currency: Swift.String?
   @objc public var country: Swift.String?
   @objc public var autoCapture: Swift.Bool
   @objc public var note: Swift.String?
+  @objc public var vertical: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -64,6 +65,11 @@ import _SwiftConcurrencyShims
   @objc public var city: Swift.String?
   @objc public var zip: Swift.String?
   @objc public var country: Swift.String?
+  @objc public var registrationTime: Foundation.NSNumber?
+  @objc public var registrationIp: Swift.String?
+  @objc public var riskLevel: Swift.String?
+  @objc public var firstInteractionTime: Foundation.NSNumber?
+  @objc public var totalTransactionCount: Foundation.NSNumber?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -83,7 +89,7 @@ import _SwiftConcurrencyShims
   @objc public var requestToken: Swift.Bool
   @objc public var token: Swift.String?
   @objc public var client: [Swift.String]?
-  @objc public var expiry: Swift.Int
+  @objc public var expiry: Foundation.NSNumber?
   @objc public var format: Swift.String?
   @objc public var data: CPaySDK.CPayPaymentData?
   @objc public var billingAddress: CPaySDK.CPayBillingAddr?
@@ -91,22 +97,23 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class CPayProduct : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @objcMembers public class CPayProduct : ObjectiveC.NSObject {
   @objc public var name: Swift.String?
   @objc public var sku: Swift.String?
   @objc public var url: Swift.String?
   @objc public var category: Swift.String?
-  @objc public var quantity: Swift.Int32
-  @objc public var totalAmount: Swift.Int32
-  @objc public var unitAmount: Swift.Int32
-  @objc public var totalTaxRate: Swift.Int32
-  @objc public var totalTaxAmount: Swift.Int32
-  @objc public var totalDiscountAmount: Swift.Int32
-  @objc public var taxableAmount: Swift.Int32
-  @objc public var taxExemptAmount: Swift.Int32
+  @objc public var quantity: Foundation.NSNumber?
+  @objc public var totalAmount: Foundation.NSNumber?
+  @objc public var unitAmount: Foundation.NSNumber?
+  @objc public var totalTaxRate: Foundation.NSNumber?
+  @objc public var totalTaxAmount: Foundation.NSNumber?
+  @objc public var totalDiscountAmount: Foundation.NSNumber?
+  @objc public var taxableAmount: Foundation.NSNumber?
+  @objc public var taxExemptAmount: Foundation.NSNumber?
   @objc public var totalDiscountCode: Swift.String?
   @objc public var productType: Swift.String?
   @objc public var desc: Swift.String?
+  @objc public var unitTaxAmount: Foundation.NSNumber?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -121,6 +128,8 @@ import _SwiftConcurrencyShims
   @objc public var state: Swift.String?
   @objc public var zip: Swift.String?
   @objc public var country: Swift.String?
+  @objc public var type: Swift.String?
+  @objc public var amount: Foundation.NSNumber?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -142,6 +151,7 @@ import _SwiftConcurrencyShims
   @objc public var success: Swift.String?
   @objc public var cancel: Swift.String?
   @objc public var fail: Swift.String?
+  @objc public var mobile: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -152,6 +162,7 @@ import _SwiftConcurrencyShims
 }
 @_inheritsConvenienceInitializers @objc public class CPayExtTransaction : ObjectiveC.NSObject {
   @objc public var receipt: CPaySDK.CPayExtTransactionReceipt?
+  @objc public var metadata: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -173,10 +184,19 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers public class CPayExtGateway : ObjectiveC.NSObject {
+  public var order_id: Swift.String?
+  public var order_payer_id: Swift.String?
+  public var order_payment_id: Swift.String?
+  public var order_payment_source: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class CPayExt : ObjectiveC.NSObject {
   @objc public var transaction: CPaySDK.CPayExtTransaction?
   @objc public var device: CPaySDK.CPayExtDevice?
   @objc public var app: CPaySDK.CPayExtApp?
+  @objc public var gateway: CPaySDK.CPayExtGateway?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -194,6 +214,7 @@ import _SwiftConcurrencyShims
   @objc public var controller: UIKit.UIViewController?
   @objc public var unionpayMode: Swift.String?
   @objc public var chargeToken: Swift.String?
+  public var `internal`: Swift.Bool?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -242,6 +263,12 @@ public typealias CPayCheckCallback = (_ result: CPaySDK.CPayCheck?) -> Swift.Voi
   @objc public var data: CPaySDK.CPayResult.CPayResultData
   @objc override dynamic public init()
   public init(status: Swift.String, code: Swift.String, message: Swift.String, reference: Swift.String, id: Swift.String? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayStyleManager : ObjectiveC.NSObject {
+  @objc public static func buildPayPalButton(color: Swift.String? = "gold", size: Swift.String? = "collapsed", lable: Swift.String? = "none") -> UIKit.UIButton?
+  @objc public static func buildPayPalButton(insets: UIKit.UIEdgeInsets, edges: Swift.Int = 4, color: Swift.String? = "gold", size: Swift.String? = "collapsed", lable: Swift.String? = "none") -> UIKit.UIButton?
+  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class CPayCheck : ObjectiveC.NSObject {

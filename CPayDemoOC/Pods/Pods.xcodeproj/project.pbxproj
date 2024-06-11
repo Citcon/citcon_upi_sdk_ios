@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		673BF9E640B1F57AA3F31F9D7796F25A /* PBXContainerItemProxy */ = {
+		1D089E430A6ACCCECAAE6A431EB0A4F2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -36,26 +36,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05AF125D2DD1BD1CB25A8F73FFF67625 /* CPaySDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "CPaySDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		0496791672FE85317D681E2D815A78B5 /* CPaySDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CPaySDK.release.xcconfig; sourceTree = "<group>"; };
 		092354648D1CCFE5A2BB053DB7DDE6B7 /* Pods-CPayDemoOC-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CPayDemoOC-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1BA019B7440F299F831DAE0F2790055B /* Pods-CPayDemoOC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CPayDemoOC.modulemap"; sourceTree = "<group>"; };
+		226C4B6D3C7B5BC65206D9DC9E3CC0D0 /* PPRiskMagnes.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = PPRiskMagnes.xcframework; path = CPaySDK/Ext/PPRiskMagnes.xcframework; sourceTree = "<group>"; };
 		28851E6AC772B3591CECF85722837AF9 /* Pods-CPayDemoOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CPayDemoOC.release.xcconfig"; sourceTree = "<group>"; };
-		3275B072AAC63C49B6B8FE43FF73A795 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		2C1D84C3DF0CB0E79C14C836A828E63D /* CardinalMobile.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = CardinalMobile.xcframework; path = CPaySDK/Ext/CardinalMobile.xcframework; sourceTree = "<group>"; };
+		2EA2D8E62C1DFA5C0CC6B9DF1A18E9F9 /* FraudProtection.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = FraudProtection.xcframework; path = CPaySDK/Payment/PayPal/Ext/FraudProtection.xcframework; sourceTree = "<group>"; };
+		341E16B713C3D8631F1CE5D32C1A5D9C /* CPaySDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "CPaySDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		438B69C7EECB6636E94239C8226762DB /* CPaySDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CPaySDK.debug.xcconfig; sourceTree = "<group>"; };
 		44136A907C148B9E968FA5BD86CB949C /* Pods-CPayDemoOC-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CPayDemoOC-frameworks.sh"; sourceTree = "<group>"; };
+		4D5730542B5120C54EACC642F6F3DCE6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		51F86B4021C592BB5E71CFBF338C68B4 /* Pods-CPayDemoOC-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CPayDemoOC-Info.plist"; sourceTree = "<group>"; };
-		54B88CD1493D27C876DE3B0672308776 /* CPaySDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CPaySDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5E2575AA34B36B3B2F2D7F870F5E0ACD /* CPaySDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = CPaySDK.xcframework; path = CPaySDK/Core/CPaySDK.xcframework; sourceTree = "<group>"; };
+		54393549856DAFB5738C8E76920052EA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		5CDFA22CF53E2BE6FC9953DB383238E0 /* CorePayments.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = CorePayments.xcframework; path = CPaySDK/Payment/PayPal/Ext/CorePayments.xcframework; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		73FE92F5D1832677AE7179BF6B606DDE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		74121EE00CCEA2F885415C6875301E7C /* CPaySDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CPaySDK.release.xcconfig; sourceTree = "<group>"; };
+		7A68F2D6F635DEEF6DEC8676E6D095BF /* CPaySDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CPaySDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7BA644FC4CAA9108B7F8B007510C4A56 /* Pods-CPayDemoOC */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CPayDemoOC"; path = Pods_CPayDemoOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A555F0E3241F7B06D63BEB8565944CB /* Pods-CPayDemoOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CPayDemoOC.debug.xcconfig"; sourceTree = "<group>"; };
-		8FA14BBE7337D7B4E4020B08F57546CC /* PPRiskMagnes.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = PPRiskMagnes.xcframework; path = CPaySDK/Ext/PPRiskMagnes.xcframework; sourceTree = "<group>"; };
+		95D792F71B18FE12BAE250C9790050C4 /* PayPalWebPayments.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = PayPalWebPayments.xcframework; path = CPaySDK/Payment/PayPal/Ext/PayPalWebPayments.xcframework; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D16258C1FE9BCA07CB4926DFE492F1B6 /* CardinalMobile.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = CardinalMobile.xcframework; path = CPaySDK/Ext/CardinalMobile.xcframework; sourceTree = "<group>"; };
+		BF208E9676FFD18B1E7960B7ABE9FF69 /* PaymentButtons.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = PaymentButtons.xcframework; path = CPaySDK/Payment/PayPal/Ext/PaymentButtons.xcframework; sourceTree = "<group>"; };
 		D8A65B00A2B00E1C05396AD2D10E8C19 /* Pods-CPayDemoOC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CPayDemoOC-dummy.m"; sourceTree = "<group>"; };
 		DD2FB96DA2EFF86B52A0408AAFB007FC /* Pods-CPayDemoOC-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CPayDemoOC-acknowledgements.plist"; sourceTree = "<group>"; };
-		F5CF9A8AB4085FA01391A1AE9778916E /* CPaySDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CPaySDK.debug.xcconfig; sourceTree = "<group>"; };
+		F0BE10AEC2930F5E492DC71DFA034221 /* CPaySDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = CPaySDK.xcframework; path = CPaySDK/Core/CPaySDK.xcframework; sourceTree = "<group>"; };
 		FB83AAD132C1C35023781AF9444E0B12 /* Pods-CPayDemoOC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CPayDemoOC-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,37 +75,83 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0810B15FEAF27FD56DC037E3D50CC167 /* PPRiskMagnes */ = {
+		00C2B9EB6FDA473AE2A9BF753180A051 /* Button */ = {
 			isa = PBXGroup;
 			children = (
-				FBB5BF2CD6E6B0A6BC122B8C0E458E57 /* Frameworks */,
+				64AF86FEF9864C208E1786B30B4710DC /* Frameworks */,
 			);
-			name = PPRiskMagnes;
+			name = Button;
 			sourceTree = "<group>";
 		};
-		112B21E59F78831C3B30E3C38A304BEF /* Ext */ = {
+		049E37520032BD735BAD720AF54AF4A3 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				90286EC5685E98D43B15F90DCE4C98AB /* CardinalMobile */,
-				0810B15FEAF27FD56DC037E3D50CC167 /* PPRiskMagnes */,
+				FD20E35F4E77E3162F85C3BA554C3AE2 /* Frameworks */,
 			);
-			name = Ext;
+			name = Core;
 			sourceTree = "<group>";
 		};
-		3D746C4C489CA512B111A6C91E1C2895 /* Frameworks */ = {
+		0D2E3DEDC6B3135FFD7542ED861FA2B3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D16258C1FE9BCA07CB4926DFE492F1B6 /* CardinalMobile.xcframework */,
+				341E16B713C3D8631F1CE5D32C1A5D9C /* CPaySDK-xcframeworks.sh */,
+				438B69C7EECB6636E94239C8226762DB /* CPaySDK.debug.xcconfig */,
+				0496791672FE85317D681E2D815A78B5 /* CPaySDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "CPayDemoOC/Pods/Target Support Files/CPaySDK";
+			sourceTree = "<group>";
+		};
+		0D50B5503D79B49C76BB2AB97B397432 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C1D84C3DF0CB0E79C14C836A828E63D /* CardinalMobile.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4BF60A578C2A38C8690B32E5D6A61DA9 /* Core */ = {
+		19ABE92BC0F87F7D2821D0F3F2FF0FCF /* PPRiskMagnes */ = {
 			isa = PBXGroup;
 			children = (
-				B3D87E01E6C6A1B23F7FE84578D006D7 /* Frameworks */,
+				F1AC3E76F4940F8C08BD29A0839C4FB3 /* Frameworks */,
 			);
-			name = Core;
+			name = PPRiskMagnes;
+			sourceTree = "<group>";
+		};
+		3C3B1F6EC568CBECF71ADE01B95FC11A /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				46B76308107F5FF69233EA65E9FD9FF7 /* PayPal */,
+			);
+			name = Payment;
+			sourceTree = "<group>";
+		};
+		46B76308107F5FF69233EA65E9FD9FF7 /* PayPal */ = {
+			isa = PBXGroup;
+			children = (
+				00C2B9EB6FDA473AE2A9BF753180A051 /* Button */,
+				E776585EA536894AFB4DE73882680F15 /* Core */,
+				9806F64120F94552F3C180E3729C75DF /* Fraud */,
+				A2604586AC64ABA2FFAAAD349C089B95 /* Web */,
+			);
+			name = PayPal;
+			sourceTree = "<group>";
+		};
+		4C6B5966D20D3D60510BF6C72D78748E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CDFA22CF53E2BE6FC9953DB383238E0 /* CorePayments.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55AE12F00E77F2C4B2C78593D5A7ADF3 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				8A1DD103591DA26ABF4F9C353B4F3AD8 /* CardinalMobile */,
+				19ABE92BC0F87F7D2821D0F3F2FF0FCF /* PPRiskMagnes */,
+			);
+			name = Ext;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -112,12 +162,28 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5DB3F14D600DAD1C80029DF31D1A94B5 /* Development Pods */ = {
+		64AF86FEF9864C208E1786B30B4710DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FFA4FE97A22C27055FC36EE1B2B77F73 /* CPaySDK */,
+				BF208E9676FFD18B1E7960B7ABE9FF69 /* PaymentButtons.xcframework */,
 			);
-			name = "Development Pods";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CDD61770689294BD85113C24117D17A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EA2D8E62C1DFA5C0CC6B9DF1A18E9F9 /* FraudProtection.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A1DD103591DA26ABF4F9C353B4F3AD8 /* CardinalMobile */ = {
+			isa = PBXGroup;
+			children = (
+				0D50B5503D79B49C76BB2AB97B397432 /* Frameworks */,
+			);
+			name = CardinalMobile;
 			sourceTree = "<group>";
 		};
 		8BDAFD0A41ADD99F28FEA32713939091 /* Pods-CPayDemoOC */ = {
@@ -145,41 +211,46 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		90286EC5685E98D43B15F90DCE4C98AB /* CardinalMobile */ = {
+		9806F64120F94552F3C180E3729C75DF /* Fraud */ = {
 			isa = PBXGroup;
 			children = (
-				3D746C4C489CA512B111A6C91E1C2895 /* Frameworks */,
+				7CDD61770689294BD85113C24117D17A /* Frameworks */,
 			);
-			name = CardinalMobile;
+			name = Fraud;
 			sourceTree = "<group>";
 		};
-		9462786A99F6814B84127AD994197C9E /* Pod */ = {
+		9FAAEC505C919B7318A759F7AE394EE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				54B88CD1493D27C876DE3B0672308776 /* CPaySDK.podspec */,
-				73FE92F5D1832677AE7179BF6B606DDE /* LICENSE */,
-				3275B072AAC63C49B6B8FE43FF73A795 /* README.md */,
+				95D792F71B18FE12BAE250C9790050C4 /* PayPalWebPayments.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2604586AC64ABA2FFAAAD349C089B95 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				9FAAEC505C919B7318A759F7AE394EE5 /* Frameworks */,
+			);
+			name = Web;
+			sourceTree = "<group>";
+		};
+		ACD5F73A5F66FF1A96F68A6556F2952D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7A68F2D6F635DEEF6DEC8676E6D095BF /* CPaySDK.podspec */,
+				4D5730542B5120C54EACC642F6F3DCE6 /* LICENSE */,
+				54393549856DAFB5738C8E76920052EA /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		94E838EC2732361E305BB3D81CBA4685 /* Support Files */ = {
+		B1700C0ECCAAA5F73E12A7D1D003C0F3 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				05AF125D2DD1BD1CB25A8F73FFF67625 /* CPaySDK-xcframeworks.sh */,
-				F5CF9A8AB4085FA01391A1AE9778916E /* CPaySDK.debug.xcconfig */,
-				74121EE00CCEA2F885415C6875301E7C /* CPaySDK.release.xcconfig */,
+				EA03F5AB0C2394EED386C5301BDD961E /* CPaySDK */,
 			);
-			name = "Support Files";
-			path = "CPayDemoOC/Pods/Target Support Files/CPaySDK";
-			sourceTree = "<group>";
-		};
-		B3D87E01E6C6A1B23F7FE84578D006D7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5E2575AA34B36B3B2F2D7F870F5E0ACD /* CPaySDK.xcframework */,
-			);
-			name = Frameworks;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		B6A9C35174FB178C8F5E58BBDFC2D9DF /* Products */ = {
@@ -194,7 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				5DB3F14D600DAD1C80029DF31D1A94B5 /* Development Pods */,
+				B1700C0ECCAAA5F73E12A7D1D003C0F3 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				B6A9C35174FB178C8F5E58BBDFC2D9DF /* Products */,
 				8ED27F578F9217CFF517782DDFE3EFD6 /* Targets Support Files */,
@@ -209,24 +280,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FBB5BF2CD6E6B0A6BC122B8C0E458E57 /* Frameworks */ = {
+		E776585EA536894AFB4DE73882680F15 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				8FA14BBE7337D7B4E4020B08F57546CC /* PPRiskMagnes.xcframework */,
+				4C6B5966D20D3D60510BF6C72D78748E /* Frameworks */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		EA03F5AB0C2394EED386C5301BDD961E /* CPaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				049E37520032BD735BAD720AF54AF4A3 /* Core */,
+				55AE12F00E77F2C4B2C78593D5A7ADF3 /* Ext */,
+				3C3B1F6EC568CBECF71ADE01B95FC11A /* Payment */,
+				ACD5F73A5F66FF1A96F68A6556F2952D /* Pod */,
+				0D2E3DEDC6B3135FFD7542ED861FA2B3 /* Support Files */,
+			);
+			name = CPaySDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F1AC3E76F4940F8C08BD29A0839C4FB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				226C4B6D3C7B5BC65206D9DC9E3CC0D0 /* PPRiskMagnes.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FFA4FE97A22C27055FC36EE1B2B77F73 /* CPaySDK */ = {
+		FD20E35F4E77E3162F85C3BA554C3AE2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4BF60A578C2A38C8690B32E5D6A61DA9 /* Core */,
-				112B21E59F78831C3B30E3C38A304BEF /* Ext */,
-				9462786A99F6814B84127AD994197C9E /* Pod */,
-				94E838EC2732361E305BB3D81CBA4685 /* Support Files */,
+				F0BE10AEC2930F5E492DC71DFA034221 /* CPaySDK.xcframework */,
 			);
-			name = CPaySDK;
-			path = ../..;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,7 +343,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				9B3D954FF6694EC73C6116631EC4C281 /* PBXTargetDependency */,
+				E7799A16CCAC68D0B2062256FFE76DE1 /* PBXTargetDependency */,
 			);
 			name = "Pods-CPayDemoOC";
 			productName = Pods_CPayDemoOC;
@@ -332,11 +420,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9B3D954FF6694EC73C6116631EC4C281 /* PBXTargetDependency */ = {
+		E7799A16CCAC68D0B2062256FFE76DE1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CPaySDK;
 			target = 0EA3B06E42F14A5239D6B4EEF1A2183D /* CPaySDK */;
-			targetProxy = 673BF9E640B1F57AA3F31F9D7796F25A /* PBXContainerItemProxy */;
+			targetProxy = 1D089E430A6ACCCECAAE6A431EB0A4F2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -447,7 +535,7 @@
 		};
 		988019C38B79CC216812734417BA103C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5CF9A8AB4085FA01391A1AE9778916E /* CPaySDK.debug.xcconfig */;
+			baseConfigurationReference = 438B69C7EECB6636E94239C8226762DB /* CPaySDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -563,7 +651,7 @@
 		};
 		DE891E1214A1025227DFAAAF6FF24AC1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74121EE00CCEA2F885415C6875301E7C /* CPaySDK.release.xcconfig */;
+			baseConfigurationReference = 0496791672FE85317D681E2D815A78B5 /* CPaySDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

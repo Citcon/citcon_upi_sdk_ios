@@ -1,13 +1,24 @@
 PODS:
-  - CPaySDK (2.0.10):
-    - CPaySDK/Core (= 2.0.10)
-    - CPaySDK/Ext (= 2.0.10)
-  - CPaySDK/Core (2.0.10)
-  - CPaySDK/Ext (2.0.10):
-    - CPaySDK/Ext/CardinalMobile (= 2.0.10)
-    - CPaySDK/Ext/PPRiskMagnes (= 2.0.10)
-  - CPaySDK/Ext/CardinalMobile (2.0.10)
-  - CPaySDK/Ext/PPRiskMagnes (2.0.10)
+  - CPaySDK (2.2.0):
+    - CPaySDK/Core (= 2.2.0)
+    - CPaySDK/Ext (= 2.2.0)
+    - CPaySDK/Payment/PayPal/Button (= 2.2.0)
+    - CPaySDK/Payment/PayPal/Fraud (= 2.2.0)
+    - CPaySDK/Payment/PayPal/Web (= 2.2.0)
+  - CPaySDK/Core (2.2.0)
+  - CPaySDK/Ext (2.2.0):
+    - CPaySDK/Ext/CardinalMobile (= 2.2.0)
+    - CPaySDK/Ext/PPRiskMagnes (= 2.2.0)
+  - CPaySDK/Ext/CardinalMobile (2.2.0)
+  - CPaySDK/Ext/PPRiskMagnes (2.2.0)
+  - CPaySDK/Payment/PayPal/Button (2.2.0):
+    - CPaySDK/Payment/PayPal/Core
+  - CPaySDK/Payment/PayPal/Core (2.2.0)
+  - CPaySDK/Payment/PayPal/Fraud (2.2.0):
+    - CPaySDK/Ext/PPRiskMagnes
+    - CPaySDK/Payment/PayPal/Core
+  - CPaySDK/Payment/PayPal/Web (2.2.0):
+    - CPaySDK/Payment/PayPal/Core
 
 DEPENDENCIES:
   - CPaySDK (from `../`)
@@ -17,8 +28,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CPaySDK: 1e5d70141b79a0751bd3a5ed1b5838f76b950639
+  CPaySDK: 7febf3f3b4d95eabf070b647378bc6b23a9eae97
 
-PODFILE CHECKSUM: ee7abf64379db3546d5268fb1e6f753be66bcea6
+PODFILE CHECKSUM: cb0448c270a57b238e57f9675651d227b8620066
 
-COCOAPODS: 1.15.0
+COCOAPODS: 1.15.2

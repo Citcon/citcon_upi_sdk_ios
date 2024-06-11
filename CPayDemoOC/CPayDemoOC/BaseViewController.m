@@ -174,6 +174,9 @@
 }
 
 - (void)confirmCharge:(CPayRequest *)order {
+    AppDefines.sharedInst.startTime = [NSDate date].timeIntervalSince1970;
+    
+    NSLog(@"confirmCharge --> start");
     [LoadingView show: self];
     
     [[CPayManager sharedInst] requestOrder:order callback:^(CPayResult * _Nullable resp) {
@@ -195,6 +198,7 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:[AppDefines sharedInst].ns_pay_completed object:resp];
         [self.navigationController popViewControllerAnimated:YES];
     }];
+
 }
 
 @end

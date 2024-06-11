@@ -367,6 +367,7 @@ SWIFT_CLASS("_TtCCCC7CPaySDK9CPayCheck13CPayCheckData20CPayCheckDataPayment24CPa
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSNumber;
 
 SWIFT_CLASS("_TtC7CPaySDK12CPayConsumer")
 @interface CPayConsumer : NSObject
@@ -379,6 +380,11 @@ SWIFT_CLASS("_TtC7CPaySDK12CPayConsumer")
 @property (nonatomic, copy) NSString * _Nullable city;
 @property (nonatomic, copy) NSString * _Nullable zip;
 @property (nonatomic, copy) NSString * _Nullable country;
+@property (nonatomic, strong) NSNumber * _Nullable registrationTime;
+@property (nonatomic, copy) NSString * _Nullable registrationIp;
+@property (nonatomic, copy) NSString * _Nullable riskLevel;
+@property (nonatomic, strong) NSNumber * _Nullable firstInteractionTime;
+@property (nonatomic, strong) NSNumber * _Nullable totalTransactionCount;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -392,12 +398,14 @@ typedef SWIFT_ENUM(NSInteger, CPayENVMode, open) {
 @class CPayExtTransaction;
 @class CPayExtDevice;
 @class CPayExtApp;
+@class CPayExtGateway;
 
 SWIFT_CLASS("_TtC7CPaySDK7CPayExt")
 @interface CPayExt : NSObject
 @property (nonatomic, strong) CPayExtTransaction * _Nullable transaction;
 @property (nonatomic, strong) CPayExtDevice * _Nullable device;
 @property (nonatomic, strong) CPayExtApp * _Nullable app;
+@property (nonatomic, strong) CPayExtGateway * _Nullable gateway;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -423,11 +431,18 @@ SWIFT_CLASS("_TtC7CPaySDK13CPayExtDevice")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC7CPaySDK14CPayExtGateway")
+@interface CPayExtGateway : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class CPayExtTransactionReceipt;
 
 SWIFT_CLASS("_TtC7CPaySDK18CPayExtTransaction")
 @interface CPayExtTransaction : NSObject
 @property (nonatomic, strong) CPayExtTransactionReceipt * _Nullable receipt;
+@property (nonatomic, copy) NSString * _Nullable metadata;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -566,7 +581,7 @@ SWIFT_CLASS("_TtC7CPaySDK11CPayPayment")
 @property (nonatomic) BOOL requestToken;
 @property (nonatomic, copy) NSString * _Nullable token;
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable client;
-@property (nonatomic) NSInteger expiry;
+@property (nonatomic, strong) NSNumber * _Nullable expiry;
 @property (nonatomic, copy) NSString * _Nullable format;
 @property (nonatomic, strong) CPayPaymentData * _Nullable data;
 @property (nonatomic, strong) CPayBillingAddr * _Nullable billingAddress;
@@ -593,17 +608,18 @@ SWIFT_CLASS("_TtC7CPaySDK11CPayProduct")
 @property (nonatomic, copy) NSString * _Nullable sku;
 @property (nonatomic, copy) NSString * _Nullable url;
 @property (nonatomic, copy) NSString * _Nullable category;
-@property (nonatomic) int32_t quantity;
-@property (nonatomic) int32_t totalAmount;
-@property (nonatomic) int32_t unitAmount;
-@property (nonatomic) int32_t totalTaxRate;
-@property (nonatomic) int32_t totalTaxAmount;
-@property (nonatomic) int32_t totalDiscountAmount;
-@property (nonatomic) int32_t taxableAmount;
-@property (nonatomic) int32_t taxExemptAmount;
+@property (nonatomic, strong) NSNumber * _Nullable quantity;
+@property (nonatomic, strong) NSNumber * _Nullable totalAmount;
+@property (nonatomic, strong) NSNumber * _Nullable unitAmount;
+@property (nonatomic, strong) NSNumber * _Nullable totalTaxRate;
+@property (nonatomic, strong) NSNumber * _Nullable totalTaxAmount;
+@property (nonatomic, strong) NSNumber * _Nullable totalDiscountAmount;
+@property (nonatomic, strong) NSNumber * _Nullable taxableAmount;
+@property (nonatomic, strong) NSNumber * _Nullable taxExemptAmount;
 @property (nonatomic, copy) NSString * _Nullable totalDiscountCode;
 @property (nonatomic, copy) NSString * _Nullable productType;
 @property (nonatomic, copy) NSString * _Nullable desc;
+@property (nonatomic, strong) NSNumber * _Nullable unitTaxAmount;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -691,6 +707,45 @@ SWIFT_CLASS("_TtC7CPaySDK12CPayShipping")
 @property (nonatomic, copy) NSString * _Nullable state;
 @property (nonatomic, copy) NSString * _Nullable zip;
 @property (nonatomic, copy) NSString * _Nullable country;
+@property (nonatomic, copy) NSString * _Nullable type;
+@property (nonatomic, strong) NSNumber * _Nullable amount;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIButton;
+
+SWIFT_CLASS("_TtC7CPaySDK16CPayStyleManager")
+@interface CPayStyleManager : NSObject
+/// Create PayPal Button
+/// <ul>
+///   <li>
+///     Returns a button or nil,  if the paypal button module is not imported
+///   </li>
+/// </ul>
+/// \param color default is gold, value: gold, white, black, silver, blue
+///
+/// \param size default is expanded, value: mini, collapsed, expanded, full
+///
+/// \param lable default is none, value: none, checkout, buyNow, payWith
+///
++ (UIButton * _Nullable)buildPayPalButtonWithColor:(NSString * _Nullable)color size:(NSString * _Nullable)size lable:(NSString * _Nullable)lable SWIFT_WARN_UNUSED_RESULT;
+/// Create PayPal Button
+/// <ul>
+///   <li>
+///     Returns a button or nil,  if the paypal button module is not imported
+///   </li>
+/// </ul>
+/// \param insets default is (-1, -1, -1, -1)
+///
+/// \param edges default is 4, value: ‘0’ - hardEdges, ‘4’ - softEdges, ‘-1’ - rounded , ‘xx - custom’
+///
+/// \param color default is gold, value: gold, white, black, silver, blue
+///
+/// \param size default is expanded, value: mini, collapsed, expanded, full
+///
+/// \param lable default is none, value: none, checkout, buyNow, payWith
+///
++ (UIButton * _Nullable)buildPayPalButtonWithInsets:(UIEdgeInsets)insets edges:(NSInteger)edges color:(NSString * _Nullable)color size:(NSString * _Nullable)size lable:(NSString * _Nullable)lable SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -698,11 +753,12 @@ SWIFT_CLASS("_TtC7CPaySDK12CPayShipping")
 SWIFT_CLASS("_TtC7CPaySDK15CPayTranscation")
 @interface CPayTranscation : NSObject
 @property (nonatomic, copy) NSString * _Nullable reference;
-@property (nonatomic) int32_t amount;
+@property (nonatomic, strong) NSNumber * _Nullable amount;
 @property (nonatomic, copy) NSString * _Nullable currency;
 @property (nonatomic, copy) NSString * _Nullable country;
 @property (nonatomic) BOOL autoCapture;
 @property (nonatomic, copy) NSString * _Nullable note;
+@property (nonatomic, copy) NSString * _Nullable vertical;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -713,6 +769,7 @@ SWIFT_CLASS("_TtC7CPaySDK8CPayUrls")
 @property (nonatomic, copy) NSString * _Nullable success;
 @property (nonatomic, copy) NSString * _Nullable cancel;
 @property (nonatomic, copy) NSString * _Nullable fail;
+@property (nonatomic, copy) NSString * _Nullable mobile;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1093,6 +1150,7 @@ SWIFT_CLASS("_TtCCCC7CPaySDK9CPayCheck13CPayCheckData20CPayCheckDataPayment24CPa
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSNumber;
 
 SWIFT_CLASS("_TtC7CPaySDK12CPayConsumer")
 @interface CPayConsumer : NSObject
@@ -1105,6 +1163,11 @@ SWIFT_CLASS("_TtC7CPaySDK12CPayConsumer")
 @property (nonatomic, copy) NSString * _Nullable city;
 @property (nonatomic, copy) NSString * _Nullable zip;
 @property (nonatomic, copy) NSString * _Nullable country;
+@property (nonatomic, strong) NSNumber * _Nullable registrationTime;
+@property (nonatomic, copy) NSString * _Nullable registrationIp;
+@property (nonatomic, copy) NSString * _Nullable riskLevel;
+@property (nonatomic, strong) NSNumber * _Nullable firstInteractionTime;
+@property (nonatomic, strong) NSNumber * _Nullable totalTransactionCount;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1118,12 +1181,14 @@ typedef SWIFT_ENUM(NSInteger, CPayENVMode, open) {
 @class CPayExtTransaction;
 @class CPayExtDevice;
 @class CPayExtApp;
+@class CPayExtGateway;
 
 SWIFT_CLASS("_TtC7CPaySDK7CPayExt")
 @interface CPayExt : NSObject
 @property (nonatomic, strong) CPayExtTransaction * _Nullable transaction;
 @property (nonatomic, strong) CPayExtDevice * _Nullable device;
 @property (nonatomic, strong) CPayExtApp * _Nullable app;
+@property (nonatomic, strong) CPayExtGateway * _Nullable gateway;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1149,11 +1214,18 @@ SWIFT_CLASS("_TtC7CPaySDK13CPayExtDevice")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC7CPaySDK14CPayExtGateway")
+@interface CPayExtGateway : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class CPayExtTransactionReceipt;
 
 SWIFT_CLASS("_TtC7CPaySDK18CPayExtTransaction")
 @interface CPayExtTransaction : NSObject
 @property (nonatomic, strong) CPayExtTransactionReceipt * _Nullable receipt;
+@property (nonatomic, copy) NSString * _Nullable metadata;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1292,7 +1364,7 @@ SWIFT_CLASS("_TtC7CPaySDK11CPayPayment")
 @property (nonatomic) BOOL requestToken;
 @property (nonatomic, copy) NSString * _Nullable token;
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable client;
-@property (nonatomic) NSInteger expiry;
+@property (nonatomic, strong) NSNumber * _Nullable expiry;
 @property (nonatomic, copy) NSString * _Nullable format;
 @property (nonatomic, strong) CPayPaymentData * _Nullable data;
 @property (nonatomic, strong) CPayBillingAddr * _Nullable billingAddress;
@@ -1319,17 +1391,18 @@ SWIFT_CLASS("_TtC7CPaySDK11CPayProduct")
 @property (nonatomic, copy) NSString * _Nullable sku;
 @property (nonatomic, copy) NSString * _Nullable url;
 @property (nonatomic, copy) NSString * _Nullable category;
-@property (nonatomic) int32_t quantity;
-@property (nonatomic) int32_t totalAmount;
-@property (nonatomic) int32_t unitAmount;
-@property (nonatomic) int32_t totalTaxRate;
-@property (nonatomic) int32_t totalTaxAmount;
-@property (nonatomic) int32_t totalDiscountAmount;
-@property (nonatomic) int32_t taxableAmount;
-@property (nonatomic) int32_t taxExemptAmount;
+@property (nonatomic, strong) NSNumber * _Nullable quantity;
+@property (nonatomic, strong) NSNumber * _Nullable totalAmount;
+@property (nonatomic, strong) NSNumber * _Nullable unitAmount;
+@property (nonatomic, strong) NSNumber * _Nullable totalTaxRate;
+@property (nonatomic, strong) NSNumber * _Nullable totalTaxAmount;
+@property (nonatomic, strong) NSNumber * _Nullable totalDiscountAmount;
+@property (nonatomic, strong) NSNumber * _Nullable taxableAmount;
+@property (nonatomic, strong) NSNumber * _Nullable taxExemptAmount;
 @property (nonatomic, copy) NSString * _Nullable totalDiscountCode;
 @property (nonatomic, copy) NSString * _Nullable productType;
 @property (nonatomic, copy) NSString * _Nullable desc;
+@property (nonatomic, strong) NSNumber * _Nullable unitTaxAmount;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1417,6 +1490,45 @@ SWIFT_CLASS("_TtC7CPaySDK12CPayShipping")
 @property (nonatomic, copy) NSString * _Nullable state;
 @property (nonatomic, copy) NSString * _Nullable zip;
 @property (nonatomic, copy) NSString * _Nullable country;
+@property (nonatomic, copy) NSString * _Nullable type;
+@property (nonatomic, strong) NSNumber * _Nullable amount;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIButton;
+
+SWIFT_CLASS("_TtC7CPaySDK16CPayStyleManager")
+@interface CPayStyleManager : NSObject
+/// Create PayPal Button
+/// <ul>
+///   <li>
+///     Returns a button or nil,  if the paypal button module is not imported
+///   </li>
+/// </ul>
+/// \param color default is gold, value: gold, white, black, silver, blue
+///
+/// \param size default is expanded, value: mini, collapsed, expanded, full
+///
+/// \param lable default is none, value: none, checkout, buyNow, payWith
+///
++ (UIButton * _Nullable)buildPayPalButtonWithColor:(NSString * _Nullable)color size:(NSString * _Nullable)size lable:(NSString * _Nullable)lable SWIFT_WARN_UNUSED_RESULT;
+/// Create PayPal Button
+/// <ul>
+///   <li>
+///     Returns a button or nil,  if the paypal button module is not imported
+///   </li>
+/// </ul>
+/// \param insets default is (-1, -1, -1, -1)
+///
+/// \param edges default is 4, value: ‘0’ - hardEdges, ‘4’ - softEdges, ‘-1’ - rounded , ‘xx - custom’
+///
+/// \param color default is gold, value: gold, white, black, silver, blue
+///
+/// \param size default is expanded, value: mini, collapsed, expanded, full
+///
+/// \param lable default is none, value: none, checkout, buyNow, payWith
+///
++ (UIButton * _Nullable)buildPayPalButtonWithInsets:(UIEdgeInsets)insets edges:(NSInteger)edges color:(NSString * _Nullable)color size:(NSString * _Nullable)size lable:(NSString * _Nullable)lable SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1424,11 +1536,12 @@ SWIFT_CLASS("_TtC7CPaySDK12CPayShipping")
 SWIFT_CLASS("_TtC7CPaySDK15CPayTranscation")
 @interface CPayTranscation : NSObject
 @property (nonatomic, copy) NSString * _Nullable reference;
-@property (nonatomic) int32_t amount;
+@property (nonatomic, strong) NSNumber * _Nullable amount;
 @property (nonatomic, copy) NSString * _Nullable currency;
 @property (nonatomic, copy) NSString * _Nullable country;
 @property (nonatomic) BOOL autoCapture;
 @property (nonatomic, copy) NSString * _Nullable note;
+@property (nonatomic, copy) NSString * _Nullable vertical;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1439,6 +1552,7 @@ SWIFT_CLASS("_TtC7CPaySDK8CPayUrls")
 @property (nonatomic, copy) NSString * _Nullable success;
 @property (nonatomic, copy) NSString * _Nullable cancel;
 @property (nonatomic, copy) NSString * _Nullable fail;
+@property (nonatomic, copy) NSString * _Nullable mobile;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

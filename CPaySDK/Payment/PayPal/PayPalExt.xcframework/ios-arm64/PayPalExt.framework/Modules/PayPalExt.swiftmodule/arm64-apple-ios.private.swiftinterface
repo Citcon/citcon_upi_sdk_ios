@@ -1,0 +1,64 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 effective-4.1.50 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayPalExt
+import Foundation
+@_exported import PayPalExt
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public class PayPalButtonBuilder : ObjectiveC.NSObject {
+  @objc public var insets: UIKit.UIEdgeInsets
+  @objc public var color: Swift.String?
+  @objc public var edges: Swift.Int
+  @objc public var size: Swift.String?
+  @objc public var lable: Swift.String?
+  @objc public init(insets: UIKit.UIEdgeInsets, edges: Swift.Int = 4, color: Swift.String? = "gold", size: Swift.String? = "collapsed", lable: Swift.String? = "none")
+  @objc public init(color: Swift.String? = "gold", size: Swift.String? = "collapsed", lable: Swift.String? = "none")
+  @objc public static func build(color: Swift.String? = "gold", size: Swift.String? = "collapsed", lable: Swift.String? = "none") -> UIKit.UIButton?
+  @objc public static func build(insets: UIKit.UIEdgeInsets, edges: Swift.Int = 4, color: Swift.String? = "gold", size: Swift.String? = "collapsed", lable: Swift.String? = "none") -> UIKit.UIButton?
+  @objc public static func hasImported() -> Swift.Bool
+  @objc deinit
+}
+@objc public enum PayPalStatus : Swift.Int {
+  case Start = 1, Complete, Cancel, Error
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class PayPalResult : ObjectiveC.NSObject {
+  @objc public var env: Swift.Int
+  @objc public var clientId: Swift.String?
+  @objc public var orderId: Swift.String?
+  @objc public var status: Swift.Int
+  @objc public var payerId: Swift.String?
+  @objc public var metadata: Swift.String?
+  @objc public var error: Foundation.NSError?
+  @objc deinit
+}
+public typealias PayPalCallback = (PayPalExt.PayPalResult) -> Swift.Void
+@objc public enum PayPalModel : Swift.Int {
+  case Native = 0, Web
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class PayPalService : ObjectiveC.NSObject {
+  @objc public static func setMode(_ model: PayPalExt.PayPalModel)
+  @objc public static func initCofing(_ clientId: Swift.String, _ env: Swift.Int = 0)
+  @objc public static func getMetadata() -> Swift.String?
+  @objc public static func payOrder(clientId: Swift.String, orderId: Swift.String, env: Swift.Int = 0, callback: @escaping PayPalExt.PayPalCallback)
+  @objc public static func hasImported() -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension PayPalExt.PayPalStatus : Swift.Equatable {}
+extension PayPalExt.PayPalStatus : Swift.Hashable {}
+extension PayPalExt.PayPalStatus : Swift.RawRepresentable {}
+extension PayPalExt.PayPalModel : Swift.Equatable {}
+extension PayPalExt.PayPalModel : Swift.Hashable {}
+extension PayPalExt.PayPalModel : Swift.RawRepresentable {}

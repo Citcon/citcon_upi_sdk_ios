@@ -9,6 +9,9 @@
 #import "AppDefines.h"
 #import "WechatPayViewController.h"
 #import "LoadingView.h"
+#import "TokenHeader.h"
+
+
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *lblVersion;
@@ -22,16 +25,21 @@
 
 @property (nonatomic, retain) NSString *accessToken;
 
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
-    NSLog(@"viewDidLoad");
+    NSString *sdkVersiion = [[CPayManager sharedInst] getVersion];
+
+    NSLog(@"viewDidLoad, version: %@", sdkVersiion);
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _lblVersion.text = [[CPayManager sharedInst] getVersion];
+    NSString *buildVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+    _lblVersion.text = [NSString stringWithFormat:@"%@(%@)", sdkVersiion, buildVersion];
+    
     _accessToken = nil;
     
     // Use to fomo testing
@@ -49,10 +57,18 @@
                                                object:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onAsyncResult:) name:[CPayRuntimeInst NTFY_ASYNC] object:nil];
+    
+    
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
 }
 
 - (void)dealloc {
@@ -61,10 +77,10 @@
 
 - (void)initEnvForm {
     _txtRTEnv.text = @"DEV";
-    _txtPaymethod.text = @"wechatpay";
-//    _txtVendorType.text = @"braintree";
-    _txtVendorType.text = @"";
-    _txtDemoType.text = @"other";
+    _txtPaymethod.text = @"paypal";
+    _txtVendorType.text = SDK_TOKEN;
+    _txtDemoType.text = @"ppcp";
+    
 }
 
 - (void)setAccessToken {
@@ -154,7 +170,7 @@
 }
 
 - (void)showAccessToken {
-    _lblResult.text = self.accessToken ? [NSString stringWithFormat:@"%@\n\n\n", self.accessToken] : @"nil";
+    _lblResult.text = self.accessToken ? [NSString stringWithFormat:@"accessToken:%@\n\n\n", self.accessToken] : @"nil";
 }
 
 - (void)showOrderResult:(CPayResult *)resp {
@@ -273,6 +289,10 @@
         return [self presentPaymentView:@"digit" payment:payment title:@"Alipay+"];
     }
     
+    if ([_txtDemoType.text isEqualToString:@"ppcp"]) {
+        return [self presentPaymentView:@"digit" payment:payment title:@"PPCP PayPal"];
+    }
+    
     if ([payment isEqualToString:@"upop"]) {
         [self presentPaymentView:@"upop"];
     } else if ([payment isEqualToString:@"wechatpay"]) {
@@ -346,6 +366,7 @@
         @"fomo",
         @"xendit",
         @"alipay+",
+        @"ppcp",
         @"others"
     ];
     [self showPicker];

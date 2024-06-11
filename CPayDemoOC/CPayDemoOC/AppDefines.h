@@ -28,6 +28,7 @@ typedef void (^onGetTokenBlock)(NSString * _Nullable token);
 - (void)getAccessToken:(NSString *)vendor callback:(onGetTokenBlock)callback;
 
 @property (nonatomic, retain) NSString *ns_pay_completed;
+@property (nonatomic, assign) NSTimeInterval startTime;
 
 @end
 
