@@ -49,7 +49,7 @@ public typealias PayPalCallback = (PayPalExt.PayPalResult) -> Swift.Void
 }
 @_inheritsConvenienceInitializers @objc public class PayPalService : ObjectiveC.NSObject {
   @objc public static func setMode(_ model: PayPalExt.PayPalModel)
-  @objc public static func initCofing(_ clientId: Swift.String, _ env: Swift.Int = 0)
+  @objc public static func initConfig(_ clientId: Swift.String, _ env: Swift.Int = 0)
   @objc public static func getMetadata() -> Swift.String?
   @objc public static func payOrder(clientId: Swift.String, orderId: Swift.String, env: Swift.Int = 0, callback: @escaping PayPalExt.PayPalCallback)
   @objc public static func hasImported() -> Swift.Bool

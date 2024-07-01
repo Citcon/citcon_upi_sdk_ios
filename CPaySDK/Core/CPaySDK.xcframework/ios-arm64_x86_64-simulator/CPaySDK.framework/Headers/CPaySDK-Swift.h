@@ -641,6 +641,7 @@ SWIFT_CLASS("_TtC7CPaySDK11CPayRequest")
 @property (nonatomic) BOOL request3DSecureVerification;
 @property (nonatomic, strong) UIViewController * _Nullable controller;
 @property (nonatomic, copy) NSString * _Nullable unionpayMode;
+@property (nonatomic, copy) NSString * _Nullable paypalClientId;
 @property (nonatomic, copy) NSString * _Nullable chargeToken;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -1424,6 +1425,7 @@ SWIFT_CLASS("_TtC7CPaySDK11CPayRequest")
 @property (nonatomic) BOOL request3DSecureVerification;
 @property (nonatomic, strong) UIViewController * _Nullable controller;
 @property (nonatomic, copy) NSString * _Nullable unionpayMode;
+@property (nonatomic, copy) NSString * _Nullable paypalClientId;
 @property (nonatomic, copy) NSString * _Nullable chargeToken;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

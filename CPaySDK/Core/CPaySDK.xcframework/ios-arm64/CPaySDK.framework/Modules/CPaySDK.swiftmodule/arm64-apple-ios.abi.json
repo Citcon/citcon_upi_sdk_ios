@@ -15692,6 +15692,124 @@
           },
           {
             "kind": "Var",
+            "name": "paypalClientId",
+            "printedName": "paypalClientId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CPaySDK@objc(cs)CPayRequest(py)paypalClientId",
+            "mangledName": "$s7CPaySDK0A7RequestC14paypalClientIdSSSgvp",
+            "moduleName": "CPaySDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CPaySDK@objc(cs)CPayRequest(im)paypalClientId",
+                "mangledName": "$s7CPaySDK0A7RequestC14paypalClientIdSSSgvg",
+                "moduleName": "CPaySDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CPaySDK@objc(cs)CPayRequest(im)setPaypalClientId:",
+                "mangledName": "$s7CPaySDK0A7RequestC14paypalClientIdSSSgvs",
+                "moduleName": "CPaySDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7CPaySDK0A7RequestC14paypalClientIdSSSgvM",
+                "mangledName": "$s7CPaySDK0A7RequestC14paypalClientIdSSSgvM",
+                "moduleName": "CPaySDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "chargeToken",
             "printedName": "chargeToken",
             "children": [
@@ -23359,245 +23477,273 @@
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 887,
+      "offset": 998,
       "length": 4,
       "value": "\"-1\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1036,
+      "offset": 1147,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "BooleanLiteral",
-      "offset": 1123,
+      "offset": 1234,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1177,
+      "offset": 1288,
       "length": 25,
       "value": "\"PayPalExt.PayPalService\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1266,
+      "offset": 1377,
       "length": 7,
       "value": "\"other\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1328,
+      "offset": 1439,
       "length": 36,
       "value": "\"The PayPal module is not imported.\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1450,
+      "offset": 1561,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "BooleanLiteral",
-      "offset": 1537,
+      "offset": 1648,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "BooleanLiteral",
-      "offset": 1629,
+      "offset": 1740,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1690,
+      "offset": 1801,
       "length": 7,
       "value": "\"other\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1752,
+      "offset": 1863,
       "length": 36,
       "value": "\"The PayPal module is not imported.\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 1874,
+      "offset": 1985,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "BooleanLiteral",
-      "offset": 1961,
+      "offset": 2072,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 3062,
+      "offset": 2391,
+      "length": 7,
+      "value": "\"other\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
+      "kind": "StringLiteral",
+      "offset": 2453,
+      "length": 77,
+      "value": "\"The metadata is empty. Please check if the PayPal Fraud module is imported.\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
+      "kind": "StringLiteral",
+      "offset": 2616,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2703,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
+      "kind": "StringLiteral",
+      "offset": 3439,
       "length": 6,
       "value": "\"fail\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 3147,
+      "offset": 3524,
       "length": 4,
       "value": "\"-1\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 3232,
+      "offset": 3609,
       "length": 15,
       "value": "\"Unknown Error\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 3337,
+      "offset": 3714,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "BooleanLiteral",
-      "offset": 3601,
+      "offset": 3978,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "IntegerLiteral",
-      "offset": 4179,
+      "offset": 4493,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 4394,
+      "offset": 4708,
       "length": 4,
       "value": "\"-2\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 4453,
+      "offset": 4767,
       "length": 102,
       "value": "\"Unexcept Error for Response Data: \""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "IntegerLiteral",
-      "offset": 4542,
+      "offset": 4856,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 4554,
+      "offset": 4868,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 4641,
+      "offset": 4955,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 5311,
+      "offset": 5702,
       "length": 6,
       "value": "\"fail\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 5411,
+      "offset": 5802,
       "length": 4,
       "value": "\"-1\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 5511,
+      "offset": 5902,
       "length": 15,
       "value": "\"Unknown Error\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 5624,
+      "offset": 6015,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 6189,
+      "offset": 6580,
       "length": 7,
       "value": "\"other\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 6255,
-      "length": 11,
-      "value": "\"Cancelled\""
+      "offset": 6646,
+      "length": 10,
+      "value": "\"Canceled\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 6356,
+      "offset": 6746,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 6631,
+      "offset": 7021,
       "length": 7,
       "value": "\"other\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 6697,
+      "offset": 7087,
       "length": 66,
       "value": "\"Error: \""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 6762,
+      "offset": 7152,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CPaySDK\/CPaySDK\/Gateway\/CPayPayPalGateway.swift",
       "kind": "StringLiteral",
-      "offset": 6853,
+      "offset": 7243,
       "length": 2,
       "value": "\"\""
     },

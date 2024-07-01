@@ -347,7 +347,7 @@ SWIFT_CLASS("_TtC9PayPalExt12PayPalResult")
 SWIFT_CLASS("_TtC9PayPalExt13PayPalService")
 @interface PayPalService : NSObject
 + (void)setMode:(enum PayPalModel)model;
-+ (void)initCofing:(NSString * _Nonnull)clientId :(NSInteger)env SWIFT_METHOD_FAMILY(none);
++ (void)initConfig:(NSString * _Nonnull)clientId :(NSInteger)env SWIFT_METHOD_FAMILY(none);
 + (NSString * _Nullable)getMetadata SWIFT_WARN_UNUSED_RESULT;
 + (void)payOrderWithClientId:(NSString * _Nonnull)clientId orderId:(NSString * _Nonnull)orderId env:(NSInteger)env callback:(void (^ _Nonnull)(PayPalResult * _Nonnull))callback;
 + (BOOL)hasImported SWIFT_WARN_UNUSED_RESULT;

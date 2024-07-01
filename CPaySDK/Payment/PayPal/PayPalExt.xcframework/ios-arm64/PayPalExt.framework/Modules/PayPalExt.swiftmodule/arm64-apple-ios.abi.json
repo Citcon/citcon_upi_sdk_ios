@@ -2474,8 +2474,8 @@
           },
           {
             "kind": "Function",
-            "name": "initCofing",
-            "printedName": "initCofing(_:_:)",
+            "name": "initConfig",
+            "printedName": "initConfig(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2497,8 +2497,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@PayPalExt@objc(cs)PayPalService(cm)initCofing::",
-            "mangledName": "$s9PayPalExt0aB7ServiceC10initCofingyySS_SitFZ",
+            "usr": "c:@M@PayPalExt@objc(cs)PayPalService(cm)initConfig::",
+            "mangledName": "$s9PayPalExt0aB7ServiceC10initConfigyySS_SitFZ",
             "moduleName": "PayPalExt",
             "static": true,
             "declAttributes": [
@@ -2873,14 +2873,14 @@
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalCheckoutModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1446,
+      "offset": 1486,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalCheckoutModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 2117,
+      "offset": 2067,
       "length": 1,
       "value": "0"
     },

@@ -213,6 +213,7 @@ import _SwiftConcurrencyShims
   @objc public var request3DSecureVerification: Swift.Bool
   @objc public var controller: UIKit.UIViewController?
   @objc public var unionpayMode: Swift.String?
+  @objc public var paypalClientId: Swift.String?
   @objc public var chargeToken: Swift.String?
   public var `internal`: Swift.Bool?
   @objc override dynamic public init()
