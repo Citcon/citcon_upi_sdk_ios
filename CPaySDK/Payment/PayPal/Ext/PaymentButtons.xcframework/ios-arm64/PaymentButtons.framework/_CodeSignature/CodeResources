@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		xeG74xh3DBpi8S4GVtQUmdF6MKU=
+		ljPbGzzUaLdyocQLk+R+46Uf8EQ=
 		</data>
 		<key>Headers/PaymentButtons-Swift.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kcpwZ+RrR4B/3ZEtDihOGL/5igw=
+		DFvngMvtsqiKnkcu5kHQusOOZgM=
 		</data>
 		<key>Modules/PaymentButtons.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/PaymentButtons.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		0LQbL4fB0NaC4KxhUOP3ocND4aQ=
+		7Kg/3b7AqomC1q/sZ4UGRTgk0HY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,7 +55,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0tRCclioz3c/RpKrQiggbE5sBFkftPIkT09N6WFen7U=
+			16qfOJxXE8f8cTivwpSL09ra6E3BLnSUyxU7mQrgM+k=
 			</data>
 		</dict>
 		<key>Headers/PaymentButtons-Swift.h</key>
@@ -97,7 +97,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ICsgYqkxLzquMbpXp/q/8dhhCTCmPN+jkZPbkYpZmPM=
+			jAviqXIREN4OpTqGnxWdFNfSDBUW59tiI6BdjRmUPJo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

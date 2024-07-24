@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Y/DM+KIWCQQpV9ZRpJao+DUl2L8=
+		eCEeENVbonwV2VgES9RdxK5CkOA=
 		</data>
 		<key>Modules/PayPalNativePayments.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/PayPalNativePayments.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		gY5fbu50XFdjrSFl2AV/HWLhnSE=
+		Py4n2o3pxY95mu68jSYcrsuOkUY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -82,7 +82,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cc6AsUw5uukgoZA3GfD+iOeEq+nT4VuaF1Y7AY3tqxk=
+			vUxWzOBWk8t9oBWKOVoPuF6I5NgmM1NatQ8FKfTdxsI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

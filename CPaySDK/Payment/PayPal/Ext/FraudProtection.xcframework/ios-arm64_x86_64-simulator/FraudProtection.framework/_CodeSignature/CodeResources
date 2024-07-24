@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bZnWzm9o58P9ixruHfBSpEVKBY4=
+		z88R3FBxB4JUtqTv7cuz1O8MZ+o=
 		</data>
 		<key>Modules/FraudProtection.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/FraudProtection.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		yP43qap8Y6YvZNGfjuE+xWb+v7A=
+		SRRv5sij36Jh8+t5qK5nP+k/wr0=
 		</data>
 		<key>Modules/FraudProtection.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/FraudProtection.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		RnM5VWxwo3NVUQYiieIGO/vV2r8=
+		Lloe4GC4o9yWt4dlJ4VZj4WF7/A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -102,7 +102,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IB82wcV28+oPyK6mA7uARGseHMSX5DZy/uvf+urWHyc=
+			LewpATj7+iL1r7K1dsxvrY/CdnOVZz3iQ/1r7ZCmvoc=
 			</data>
 		</dict>
 		<key>Modules/FraudProtection.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -137,7 +137,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vWeZ+klJEswx//FZ0qVXw+DQbgAD9V4eUwMOKOho6uw=
+			5n7wTlSb6KFCMaZtdp2//rYiR6wb1s+apfOyVXgon+E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -32,6 +32,11 @@
 
 @implementation DigitViewController
 
+- (void)dealloc {
+    NSLog(@"back to ..");
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -43,6 +48,10 @@
     [self addCurrencyGesture];
     [self addCountryGesture];
     
+    [self addButtons];
+}
+
+- (void)addButtons {
     if (self.isPPCPPayPal) {
         _txtAmount.text = @"8";
      
@@ -73,6 +82,42 @@
             }
         }
     }
+    
+    if (self.isCashApp) {
+        {
+            UIView *button =
+            [CPayStyleManager buildCashAppPaymentButtonWithSize:@"large" action:^{
+                [self buttonTapped];
+            }];
+            
+            if (button) {
+                [self.view addSubview:button];
+                
+                [NSLayoutConstraint activateConstraints:@[
+                    [button.bottomAnchor constraintEqualToAnchor:self.confirmBtn.bottomAnchor constant:10 + 100],
+                    [button.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor]
+                ]];
+            }
+            
+        }
+        
+        {
+            UIView *button =
+            [CPayStyleManager buildCashAppPaymentMethodWithSize:@"large" cashTag:@"$USD" cashTagColor:[UIColor redColor] cashTagFont: [UIFont systemFontOfSize:10]];
+            
+            if (button) {
+                [self.view addSubview:button];
+                
+                [NSLayoutConstraint activateConstraints:@[
+                    [button.bottomAnchor constraintEqualToAnchor:self.confirmBtn.bottomAnchor constant:10 + 150],
+                    [button.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor]
+                ]];
+                
+            }
+        }
+        
+    }
+    
 }
 
 - (void)buttonTapped {
@@ -199,6 +244,10 @@
             
         }
         
+        if ([_paymentMethod isEqualToString:@"cashapppay"]) {
+            order.scheme = @"com.citcon.citconpay://cashapp";
+        }
+        
     }
     
     
@@ -238,7 +287,7 @@
                 good.name = @"shoes";
                 good.sku = @"shoes";
                 good.url = @"https://www.ttshop.com";
-                good.quantity = @1;
+                good.quantity = @4;
                 good.unitAmount = @1;
                 good.unitTaxAmount = @1;
                 good.totalDiscountAmount = @1;
@@ -287,11 +336,22 @@
     order.urls.fail = _txtFailUrl.text;
 
     // temporary fix xendit
-//    order.urls.success = @"https://www.baidu.com?";
-//    order.urls.cancel = @"https://www.baidu.com";
-//    order.urls.fail = @"https://www.baidu.com";
+    
+    if ([self.digitTitle isEqualToString:@"Xendit"]) {
+        order.urls.success = @"https://www.baidu.com";
+        order.urls.cancel = @"https://www.baidu.com";
+        order.urls.fail = @"https://www.baidu.com";
+    }
+    
+
     
     order.controller = self;
+    
+    if (self.isPPCPPayPal) {
+//        order.paypalClientId = @"Aevy5i-20TVIB6j6KyjbWoUuqopBtx0UKg8L6xlbHv3_ZP3ddoVXkAXSooCsg7HUWDOJgt4oJmh8l2Yg";
+    }
+
+    
     
     return order;
 }
@@ -300,6 +360,11 @@
     return [_paymentMethod isEqualToString:@"paypal"] && _digitTitle && [_digitTitle isEqualToString:@"PPCP PayPal"];
 }
 
+
+
+- (BOOL) isCashApp {
+    return [_paymentMethod isEqualToString:@"cashapppay"] ;
+}
 - (void)addCurrencyGesture {
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onCurrencySelect)];
     [_txtCurrency addGestureRecognizer:tap];

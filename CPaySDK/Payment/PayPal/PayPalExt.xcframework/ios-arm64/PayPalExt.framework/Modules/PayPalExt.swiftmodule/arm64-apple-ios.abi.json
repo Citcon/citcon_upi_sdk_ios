@@ -30,695 +30,6 @@
         "printedName": "PayPalButtonBuilder",
         "children": [
           {
-            "kind": "Var",
-            "name": "insets",
-            "printedName": "insets",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIEdgeInsets",
-                "printedName": "UIKit.UIEdgeInsets",
-                "usr": "c:@S@UIEdgeInsets"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PayPalExt@objc(cs)PayPalButtonBuilder(py)insets",
-            "mangledName": "$s9PayPalExt0aB13ButtonBuilderC6insetsSo12UIEdgeInsetsVvp",
-            "moduleName": "PayPalExt",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIEdgeInsets",
-                    "printedName": "UIKit.UIEdgeInsets",
-                    "usr": "c:@S@UIEdgeInsets"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PayPalExt@objc(cs)PayPalButtonBuilder(im)insets",
-                "mangledName": "$s9PayPalExt0aB13ButtonBuilderC6insetsSo12UIEdgeInsetsVvg",
-                "moduleName": "PayPalExt",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIEdgeInsets",
-                    "printedName": "UIKit.UIEdgeInsets",
-                    "usr": "c:@S@UIEdgeInsets"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PayPalExt@objc(cs)PayPalButtonBuilder(im)setInsets:",
-                "mangledName": "$s9PayPalExt0aB13ButtonBuilderC6insetsSo12UIEdgeInsetsVvs",
-                "moduleName": "PayPalExt",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9PayPalExt0aB13ButtonBuilderC6insetsSo12UIEdgeInsetsVvM",
-                "mangledName": "$s9PayPalExt0aB13ButtonBuilderC6insetsSo12UIEdgeInsetsVvM",
-                "moduleName": "PayPalExt",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "color",
-            "printedName": "color",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PayPalExt@objc(cs)PayPalButtonBuilder(py)color",
-            "mangledName": "$s9PayPalExt0aB13ButtonBuilderC5colorSSSgvp",
-            "moduleName": "PayPalExt",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PayPalExt@objc(cs)PayPalButtonBuilder(im)color",
-                "mangledName": "$s9PayPalExt0aB13ButtonBuilderC5colorSSSgvg",
-                "moduleName": "PayPalExt",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PayPalExt@objc(cs)PayPalButtonBuilder(im)setColor:",
-                "mangledName": "$s9PayPalExt0aB13ButtonBuilderC5colorSSSgvs",
-                "moduleName": "PayPalExt",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9PayPalExt0aB13ButtonBuilderC5colorSSSgvM",
-                "mangledName": "$s9PayPalExt0aB13ButtonBuilderC5colorSSSgvM",
-                "moduleName": "PayPalExt",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "edges",
-            "printedName": "edges",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PayPalExt@objc(cs)PayPalButtonBuilder(py)edges",
-            "mangledName": "$s9PayPalExt0aB13ButtonBuilderC5edgesSivp",
-            "moduleName": "PayPalExt",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PayPalExt@objc(cs)PayPalButtonBuilder(im)edges",
-                "mangledName": "$s9PayPalExt0aB13ButtonBuilderC5edgesSivg",
-                "moduleName": "PayPalExt",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PayPalExt@objc(cs)PayPalButtonBuilder(im)setEdges:",
-                "mangledName": "$s9PayPalExt0aB13ButtonBuilderC5edgesSivs",
-                "moduleName": "PayPalExt",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9PayPalExt0aB13ButtonBuilderC5edgesSivM",
-                "mangledName": "$s9PayPalExt0aB13ButtonBuilderC5edgesSivM",
-                "moduleName": "PayPalExt",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "size",
-            "printedName": "size",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PayPalExt@objc(cs)PayPalButtonBuilder(py)size",
-            "mangledName": "$s9PayPalExt0aB13ButtonBuilderC4sizeSSSgvp",
-            "moduleName": "PayPalExt",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PayPalExt@objc(cs)PayPalButtonBuilder(im)size",
-                "mangledName": "$s9PayPalExt0aB13ButtonBuilderC4sizeSSSgvg",
-                "moduleName": "PayPalExt",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PayPalExt@objc(cs)PayPalButtonBuilder(im)setSize:",
-                "mangledName": "$s9PayPalExt0aB13ButtonBuilderC4sizeSSSgvs",
-                "moduleName": "PayPalExt",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9PayPalExt0aB13ButtonBuilderC4sizeSSSgvM",
-                "mangledName": "$s9PayPalExt0aB13ButtonBuilderC4sizeSSSgvM",
-                "moduleName": "PayPalExt",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "lable",
-            "printedName": "lable",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PayPalExt@objc(cs)PayPalButtonBuilder(py)lable",
-            "mangledName": "$s9PayPalExt0aB13ButtonBuilderC5lableSSSgvp",
-            "moduleName": "PayPalExt",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PayPalExt@objc(cs)PayPalButtonBuilder(im)lable",
-                "mangledName": "$s9PayPalExt0aB13ButtonBuilderC5lableSSSgvg",
-                "moduleName": "PayPalExt",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PayPalExt@objc(cs)PayPalButtonBuilder(im)setLable:",
-                "mangledName": "$s9PayPalExt0aB13ButtonBuilderC5lableSSSgvs",
-                "moduleName": "PayPalExt",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9PayPalExt0aB13ButtonBuilderC5lableSSSgvM",
-                "mangledName": "$s9PayPalExt0aB13ButtonBuilderC5lableSSSgvM",
-                "moduleName": "PayPalExt",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(insets:edges:color:size:lable:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PayPalButtonBuilder",
-                "printedName": "PayPalExt.PayPalButtonBuilder",
-                "usr": "c:@M@PayPalExt@objc(cs)PayPalButtonBuilder"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIEdgeInsets",
-                "printedName": "UIKit.UIEdgeInsets",
-                "usr": "c:@S@UIEdgeInsets"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@PayPalExt@objc(cs)PayPalButtonBuilder(im)initWithInsets:edges:color:size:lable:",
-            "mangledName": "$s9PayPalExt0aB13ButtonBuilderC6insets5edges5color4size5lableACSo12UIEdgeInsetsV_SiSSSgA2Ktcfc",
-            "moduleName": "PayPalExt",
-            "objc_name": "initWithInsets:edges:color:size:lable:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(color:size:lable:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PayPalButtonBuilder",
-                "printedName": "PayPalExt.PayPalButtonBuilder",
-                "usr": "c:@M@PayPalExt@objc(cs)PayPalButtonBuilder"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@PayPalExt@objc(cs)PayPalButtonBuilder(im)initWithColor:size:lable:",
-            "mangledName": "$s9PayPalExt0aB13ButtonBuilderC5color4size5lableACSSSg_A2Gtcfc",
-            "moduleName": "PayPalExt",
-            "objc_name": "initWithColor:size:lable:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "init_kind": "Designated"
-          },
-          {
             "kind": "Function",
             "name": "build",
             "printedName": "build(color:size:lable:)",
@@ -948,6 +259,7 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
@@ -2547,8 +1859,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -2590,7 +1903,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@PayPalExt@objc(cs)PayPalService(cm)payOrderWithClientId:orderId:env:callback:",
-            "mangledName": "$s9PayPalExt0aB7ServiceC8payOrder8clientId05orderH03env8callbackySS_SSSiyAA0aB6ResultCctFZ",
+            "mangledName": "$s9PayPalExt0aB7ServiceC8payOrder8clientId05orderH03env8callbackSbSS_SSSiyAA0aB6ResultCctFZ",
             "moduleName": "PayPalExt",
             "static": true,
             "objc_name": "payOrderWithClientId:orderId:env:callback:",
@@ -2598,6 +1911,126 @@
               "Final",
               "AccessControl",
               "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "payOrderWithNative",
+            "printedName": "payOrderWithNative(clientId:orderId:env:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayPalExt.PayPalResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayPalResult",
+                    "printedName": "PayPalExt.PayPalResult",
+                    "usr": "c:@M@PayPalExt@objc(cs)PayPalResult"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9PayPalExt0aB7ServiceC18payOrderWithNative8clientId05orderJ03env8callbackSbSS_SSSiyAA0aB6ResultCctFZ",
+            "mangledName": "$s9PayPalExt0aB7ServiceC18payOrderWithNative8clientId05orderJ03env8callbackSbSS_SSSiyAA0aB6ResultCctFZ",
+            "moduleName": "PayPalExt",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "payOrderWithWeb",
+            "printedName": "payOrderWithWeb(clientId:orderId:env:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayPalExt.PayPalResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayPalResult",
+                    "printedName": "PayPalExt.PayPalResult",
+                    "usr": "c:@M@PayPalExt@objc(cs)PayPalResult"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9PayPalExt0aB7ServiceC15payOrderWithWeb8clientId05orderJ03env8callbackSbSS_SSSiyAA0aB6ResultCctFZ",
+            "mangledName": "$s9PayPalExt0aB7ServiceC15payOrderWithWeb8clientId05orderJ03env8callbackSbSS_SSSiyAA0aB6ResultCctFZ",
+            "moduleName": "PayPalExt",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -2753,115 +2186,52 @@
   "ConstValues": [
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalButtonBuilder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 443,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalButtonBuilder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 721,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalButtonBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 741,
+      "offset": 329,
       "length": 6,
       "value": "\"gold\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalButtonBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 766,
+      "offset": 354,
       "length": 11,
       "value": "\"collapsed\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalButtonBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 796,
-      "length": 6,
-      "value": "\"none\""
-    },
-    {
-      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalButtonBuilder.swift",
-      "kind": "StringLiteral",
-      "offset": 995,
-      "length": 6,
-      "value": "\"gold\""
-    },
-    {
-      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalButtonBuilder.swift",
-      "kind": "StringLiteral",
-      "offset": 1019,
-      "length": 11,
-      "value": "\"collapsed\""
-    },
-    {
-      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalButtonBuilder.swift",
-      "kind": "StringLiteral",
-      "offset": 1049,
-      "length": 6,
-      "value": "\"none\""
-    },
-    {
-      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalButtonBuilder.swift",
-      "kind": "StringLiteral",
-      "offset": 1283,
-      "length": 6,
-      "value": "\"gold\""
-    },
-    {
-      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalButtonBuilder.swift",
-      "kind": "StringLiteral",
-      "offset": 1308,
-      "length": 11,
-      "value": "\"collapsed\""
-    },
-    {
-      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalButtonBuilder.swift",
-      "kind": "StringLiteral",
-      "offset": 1338,
+      "offset": 384,
       "length": 6,
       "value": "\"none\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalButtonBuilder.swift",
       "kind": "IntegerLiteral",
-      "offset": 2062,
+      "offset": 1108,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalButtonBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 2082,
+      "offset": 1128,
       "length": 6,
       "value": "\"gold\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalButtonBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 2107,
+      "offset": 1153,
       "length": 11,
       "value": "\"collapsed\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalButtonBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 2137,
+      "offset": 1183,
       "length": 6,
       "value": "\"none\""
-    },
-    {
-      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalButtonBuilder.swift",
-      "kind": "StringLiteral",
-      "offset": 232,
-      "length": 19,
-      "value": "\"PayPalExt.PayPalButtonBuilder\""
     },
     {
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalCheckoutModel.swift",
@@ -2986,6 +2356,20 @@
       "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalService.swift",
       "kind": "IntegerLiteral",
       "offset": 1029,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1381,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/PayPalExt\/PayPalExt\/Classes\/PayPalService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1728,
       "length": 1,
       "value": "0"
     }

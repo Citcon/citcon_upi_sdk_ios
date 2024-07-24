@@ -304,13 +304,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC9PayPalExt19PayPalButtonBuilder")
 @interface PayPalButtonBuilder : NSObject
-@property (nonatomic) UIEdgeInsets insets;
-@property (nonatomic, copy) NSString * _Nullable color;
-@property (nonatomic) NSInteger edges;
-@property (nonatomic, copy) NSString * _Nullable size;
-@property (nonatomic, copy) NSString * _Nullable lable;
-- (nonnull instancetype)initWithInsets:(UIEdgeInsets)insets edges:(NSInteger)edges color:(NSString * _Nullable)color size:(NSString * _Nullable)size lable:(NSString * _Nullable)lable OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithColor:(NSString * _Nullable)color size:(NSString * _Nullable)size lable:(NSString * _Nullable)lable OBJC_DESIGNATED_INITIALIZER;
 + (UIButton * _Nullable)buildWithColor:(NSString * _Nullable)color size:(NSString * _Nullable)size lable:(NSString * _Nullable)lable SWIFT_WARN_UNUSED_RESULT;
 /// insets default: (-1, -1, -1, -1)
 /// color default: gold // gold, white, black, silver, blue
@@ -319,8 +312,7 @@ SWIFT_CLASS("_TtC9PayPalExt19PayPalButtonBuilder")
 /// lable default: none // none, checkout, buyNow, payWith
 + (UIButton * _Nullable)buildWithInsets:(UIEdgeInsets)insets edges:(NSInteger)edges color:(NSString * _Nullable)color size:(NSString * _Nullable)size lable:(NSString * _Nullable)lable SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)hasImported SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 typedef SWIFT_ENUM(NSInteger, PayPalModel, open) {
@@ -349,7 +341,7 @@ SWIFT_CLASS("_TtC9PayPalExt13PayPalService")
 + (void)setMode:(enum PayPalModel)model;
 + (void)initConfig:(NSString * _Nonnull)clientId :(NSInteger)env SWIFT_METHOD_FAMILY(none);
 + (NSString * _Nullable)getMetadata SWIFT_WARN_UNUSED_RESULT;
-+ (void)payOrderWithClientId:(NSString * _Nonnull)clientId orderId:(NSString * _Nonnull)orderId env:(NSInteger)env callback:(void (^ _Nonnull)(PayPalResult * _Nonnull))callback;
++ (BOOL)payOrderWithClientId:(NSString * _Nonnull)clientId orderId:(NSString * _Nonnull)orderId env:(NSInteger)env callback:(void (^ _Nonnull)(PayPalResult * _Nonnull))callback SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)hasImported SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -675,13 +667,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC9PayPalExt19PayPalButtonBuilder")
 @interface PayPalButtonBuilder : NSObject
-@property (nonatomic) UIEdgeInsets insets;
-@property (nonatomic, copy) NSString * _Nullable color;
-@property (nonatomic) NSInteger edges;
-@property (nonatomic, copy) NSString * _Nullable size;
-@property (nonatomic, copy) NSString * _Nullable lable;
-- (nonnull instancetype)initWithInsets:(UIEdgeInsets)insets edges:(NSInteger)edges color:(NSString * _Nullable)color size:(NSString * _Nullable)size lable:(NSString * _Nullable)lable OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithColor:(NSString * _Nullable)color size:(NSString * _Nullable)size lable:(NSString * _Nullable)lable OBJC_DESIGNATED_INITIALIZER;
 + (UIButton * _Nullable)buildWithColor:(NSString * _Nullable)color size:(NSString * _Nullable)size lable:(NSString * _Nullable)lable SWIFT_WARN_UNUSED_RESULT;
 /// insets default: (-1, -1, -1, -1)
 /// color default: gold // gold, white, black, silver, blue
@@ -690,8 +675,7 @@ SWIFT_CLASS("_TtC9PayPalExt19PayPalButtonBuilder")
 /// lable default: none // none, checkout, buyNow, payWith
 + (UIButton * _Nullable)buildWithInsets:(UIEdgeInsets)insets edges:(NSInteger)edges color:(NSString * _Nullable)color size:(NSString * _Nullable)size lable:(NSString * _Nullable)lable SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)hasImported SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 typedef SWIFT_ENUM(NSInteger, PayPalModel, open) {
@@ -720,7 +704,7 @@ SWIFT_CLASS("_TtC9PayPalExt13PayPalService")
 + (void)setMode:(enum PayPalModel)model;
 + (void)initConfig:(NSString * _Nonnull)clientId :(NSInteger)env SWIFT_METHOD_FAMILY(none);
 + (NSString * _Nullable)getMetadata SWIFT_WARN_UNUSED_RESULT;
-+ (void)payOrderWithClientId:(NSString * _Nonnull)clientId orderId:(NSString * _Nonnull)orderId env:(NSInteger)env callback:(void (^ _Nonnull)(PayPalResult * _Nonnull))callback;
++ (BOOL)payOrderWithClientId:(NSString * _Nonnull)clientId orderId:(NSString * _Nonnull)orderId env:(NSInteger)env callback:(void (^ _Nonnull)(PayPalResult * _Nonnull))callback SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)hasImported SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

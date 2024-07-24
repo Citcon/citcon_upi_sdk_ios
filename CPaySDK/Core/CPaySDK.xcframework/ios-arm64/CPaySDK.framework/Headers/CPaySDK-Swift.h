@@ -437,6 +437,18 @@ SWIFT_CLASS("_TtC7CPaySDK14CPayExtGateway")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC7CPaySDK22CPayExtGatewayConsumer")
+@interface CPayExtGatewayConsumer : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7CPaySDK19CPayExtGatewayGrant")
+@interface CPayExtGatewayGrant : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class CPayExtTransactionReceipt;
 
 SWIFT_CLASS("_TtC7CPaySDK18CPayExtTransaction")
@@ -714,6 +726,9 @@ SWIFT_CLASS("_TtC7CPaySDK12CPayShipping")
 @end
 
 @class UIButton;
+@class UIView;
+@class UIColor;
+@class UIFont;
 
 SWIFT_CLASS("_TtC7CPaySDK16CPayStyleManager")
 @interface CPayStyleManager : NSObject
@@ -747,6 +762,28 @@ SWIFT_CLASS("_TtC7CPaySDK16CPayStyleManager")
 /// \param lable default is none, value: none, checkout, buyNow, payWith
 ///
 + (UIButton * _Nullable)buildPayPalButtonWithInsets:(UIEdgeInsets)insets edges:(NSInteger)edges color:(NSString * _Nullable)color size:(NSString * _Nullable)size lable:(NSString * _Nullable)lable SWIFT_WARN_UNUSED_RESULT;
+/// Create CashApp Button
+/// \param size string, value are small、large, default is large
+///
+/// \param action 
+///
+///
+/// returns:
+/// UIView
++ (UIView * _Nullable)buildCashAppPaymentButtonWithSize:(NSString * _Nullable)size action:(void (^ _Nonnull)(void))action SWIFT_WARN_UNUSED_RESULT;
+/// Create CashApp Method View
+/// \param size string, value are small、large, default is large
+///
+/// \param cashTag string, default is “”
+///
+/// \param cashTagColor UIColor
+///
+/// \param cashTagFont UIFont
+///
+///
+/// returns:
+/// UIView
++ (UIView * _Nullable)buildCashAppPaymentMethodWithSize:(NSString * _Nullable)size cashTag:(NSString * _Nonnull)cashTag cashTagColor:(UIColor * _Nullable)cashTagColor cashTagFont:(UIFont * _Nullable)cashTagFont SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

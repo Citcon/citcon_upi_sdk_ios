@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LEyMwutpZk1JOxx25LWb1sNiTn8=
+		kZ6L+2d5vk0K67Fz6lyR4Zu6XHM=
 		</data>
 		<key>Modules/PayPalWebPayments.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/PayPalWebPayments.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/rA0seXoDdQAYonmIuv8OMOYz3E=
+		TlaaFRSQIweV2DeoYt2kee7CZBY=
 		</data>
 		<key>Modules/PayPalWebPayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/PayPalWebPayments.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		b+L/FoB9ltY2s3mCvP7ND1Bq7j4=
+		53lBkWxJ/cfHmg9/rmk9Q0D29qY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -102,7 +102,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			z6MDpOwhBlZJmB2vyEErb9xLJX4eC0eqU1BJ+pFSgHQ=
+			XEsdNHI6mpG9NCO+HPlyhjP4Nxn6J/U/QwFlyymP4Ww=
 			</data>
 		</dict>
 		<key>Modules/PayPalWebPayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -137,7 +137,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L3j7wrSvTRaZAIyzyW+Mj4UZG2g3o4e0FURjmecuGuA=
+			of+5IGDr/Z7jSkZOX5smdjbbiFiaG77cbKHwqDhLvmo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

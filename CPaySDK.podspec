@@ -42,7 +42,7 @@ s.platform         = :ios, "13.0"
 
 #  s.default_subspecs = %w[Core Ext Payment]
 
-s.default_subspecs = ["Core", "Ext", "Payment/PayPal/Web", "Payment/PayPal/Fraud", "Payment/PayPal/Button"]
+s.default_subspecs = ["Core", "Ext", "Payment/PayPal/Web", "Payment/PayPal/Fraud", "Payment/PayPal/Button", "Payment/CashApp/Core", "Payment/CashApp/Button"]
 
 s.subspec 'Core' do |ss|
   # Alamofire 5.5.0
@@ -104,9 +104,15 @@ s.subspec 'Payment' do |ss|
     
   end
   
-  #ss.subspec 'CashApp' do |sss|
-  
-  #end
+  ss.subspec 'CashApp' do |sss|
+    sss.subspec 'Core' do |ssss|
+      ssss.vendored_frameworks = ['CPaySDK/Payment/CashApp/Ext/PayKit.xcframework']
+    end
+    
+    sss.subspec 'Button' do |ssss|
+      ssss.vendored_frameworks = ['CPaySDK/Payment/CashApp/Ext/PayKitUI.xcframework']
+    end
+  end
 end
 
 end

@@ -76,10 +76,10 @@
 }
 
 - (void)initEnvForm {
-    _txtRTEnv.text = @"DEV";
-    _txtPaymethod.text = @"paypal";
+    _txtRTEnv.text = @"UAT";
+    _txtPaymethod.text = @"cashapppay";
     _txtVendorType.text = SDK_TOKEN;
-    _txtDemoType.text = @"ppcp";
+    _txtDemoType.text = @"others";
     
 }
 
@@ -276,9 +276,15 @@
 //    NSString *vendor = _txtVendorType.text;
     NSLog(@"demo: %@ payment: %@", _txtDemoType.text, payment);
     if ([_txtDemoType.text isEqualToString:@"fomo"]) {
-        return [self presentPaymentView:@"card" payment:payment title:payment];
+//        return [self presentPaymentView:@"card" payment:payment title:payment];
+        
+        if ([payment isEqualToString:@"card"]) {
+            return [self presentPaymentView:@"card" payment:payment title:@"Fomo"];
+        } else {
+            return [self presentPaymentView:@"digit" payment:payment title:@"Fomo"];
+        }
     }
-    if ([_txtDemoType.text isEqualToString:@"xendit"]) {
+    if ([_txtDemoType.text isEqualToString:@"fomo"] || [_txtDemoType.text isEqualToString:@"xendit"]) {
         if ([payment isEqualToString:@"card"]) {
             return [self presentPaymentView:@"card" payment:payment title:@"Xendit"];
         } else {
@@ -291,6 +297,10 @@
     
     if ([_txtDemoType.text isEqualToString:@"ppcp"]) {
         return [self presentPaymentView:@"digit" payment:payment title:@"PPCP PayPal"];
+    }
+    
+    if ([_txtPaymethod.text isEqualToString:@"cashapppay"]) {
+        return [self presentPaymentView:@"digit" payment:payment title:@"Cash App"];
     }
     
     if ([payment isEqualToString:@"upop"]) {

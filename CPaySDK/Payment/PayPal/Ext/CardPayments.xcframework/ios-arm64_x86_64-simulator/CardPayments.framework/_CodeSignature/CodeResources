@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8MZrvo/ZLgIsbkdx1CtTAW5IuMQ=
+		459fhOA0koORAaLw7tTGzBaQbxg=
 		</data>
 		<key>Modules/CardPayments.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/CardPayments.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		iyWTRe2ulJlfmDBWQ1a9WzN+62k=
+		q7cQ+yk0ltwyjV9TbnW/CHp6djc=
 		</data>
 		<key>Modules/CardPayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/CardPayments.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8HNF6Ng9c0O5t0ycndJY1VivPRI=
+		xpw5YcU8yCSvqd6uChCDJEztBaQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -102,7 +102,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hXSvAV5h49VYDmgMOJyX8rqqHrkM8AR4b711u/C10kI=
+			7G4614Ko25JN/No+ZrV/92xP01TJSrcyWg4Re9w5hEQ=
 			</data>
 		</dict>
 		<key>Modules/CardPayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -137,7 +137,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EnCpCpmGafS0F8E15RzgLThvOacnCYfwWWlWqs1Bv3A=
+			43HXWdGEEQMqq3YtUn2tF1UBfHwWrAhyi+DydFKOeAM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

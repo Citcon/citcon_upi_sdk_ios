@@ -7,17 +7,11 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc public class PayPalButtonBuilder : ObjectiveC.NSObject {
-  @objc public var insets: UIKit.UIEdgeInsets
-  @objc public var color: Swift.String?
-  @objc public var edges: Swift.Int
-  @objc public var size: Swift.String?
-  @objc public var lable: Swift.String?
-  @objc public init(insets: UIKit.UIEdgeInsets, edges: Swift.Int = 4, color: Swift.String? = "gold", size: Swift.String? = "collapsed", lable: Swift.String? = "none")
-  @objc public init(color: Swift.String? = "gold", size: Swift.String? = "collapsed", lable: Swift.String? = "none")
+@_inheritsConvenienceInitializers @objc public class PayPalButtonBuilder : ObjectiveC.NSObject {
   @objc public static func build(color: Swift.String? = "gold", size: Swift.String? = "collapsed", lable: Swift.String? = "none") -> UIKit.UIButton?
   @objc public static func build(insets: UIKit.UIEdgeInsets, edges: Swift.Int = 4, color: Swift.String? = "gold", size: Swift.String? = "collapsed", lable: Swift.String? = "none") -> UIKit.UIButton?
   @objc public static func hasImported() -> Swift.Bool
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum PayPalStatus : Swift.Int {
@@ -51,7 +45,9 @@ public typealias PayPalCallback = (PayPalExt.PayPalResult) -> Swift.Void
   @objc public static func setMode(_ model: PayPalExt.PayPalModel)
   @objc public static func initConfig(_ clientId: Swift.String, _ env: Swift.Int = 0)
   @objc public static func getMetadata() -> Swift.String?
-  @objc public static func payOrder(clientId: Swift.String, orderId: Swift.String, env: Swift.Int = 0, callback: @escaping PayPalExt.PayPalCallback)
+  @objc public static func payOrder(clientId: Swift.String, orderId: Swift.String, env: Swift.Int = 0, callback: @escaping PayPalExt.PayPalCallback) -> Swift.Bool
+  public static func payOrderWithNative(clientId: Swift.String, orderId: Swift.String, env: Swift.Int = 0, callback: @escaping PayPalExt.PayPalCallback) -> Swift.Bool
+  public static func payOrderWithWeb(clientId: Swift.String, orderId: Swift.String, env: Swift.Int = 0, callback: @escaping PayPalExt.PayPalCallback) -> Swift.Bool
   @objc public static func hasImported() -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit

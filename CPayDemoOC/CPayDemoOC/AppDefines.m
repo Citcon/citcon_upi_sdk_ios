@@ -75,7 +75,8 @@
         @"tng",
         @"truemoney",
         @"billease",
-        @"cashalo"
+        @"cashalo",
+        @"cashapppay",
     ];
     
     self.ns_country = @[

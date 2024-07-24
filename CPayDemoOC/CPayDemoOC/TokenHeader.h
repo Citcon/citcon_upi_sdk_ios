@@ -8,7 +8,7 @@
 #ifndef TokenHeader_h
 #define TokenHeader_h
 
-#define SDK_TOKEN @"usd"
+#define SDK_TOKEN @""
 
 
 #endif /* TokenHeader_h */

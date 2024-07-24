@@ -2,6 +2,7 @@
 // swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name CPaySDK
 @_exported import CPaySDK
+import CashAppExt
 import Foundation
 import Swift
 import UIKit
@@ -184,11 +185,24 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers public class CPayExtGatewayGrant : ObjectiveC.NSObject {
+  public var grand_id: Swift.String?
+  public var expiry: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class CPayExtGatewayConsumer : ObjectiveC.NSObject {
+  public var consumer_id: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers public class CPayExtGateway : ObjectiveC.NSObject {
   public var order_id: Swift.String?
   public var order_payer_id: Swift.String?
   public var order_payment_id: Swift.String?
   public var order_payment_source: Swift.String?
+  public var grant: CPaySDK.CPayExtGatewayGrant?
+  public var consumer: CPaySDK.CPayExtGatewayConsumer?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -269,6 +283,8 @@ public typealias CPayCheckCallback = (_ result: CPaySDK.CPayCheck?) -> Swift.Voi
 @_inheritsConvenienceInitializers @objc public class CPayStyleManager : ObjectiveC.NSObject {
   @objc public static func buildPayPalButton(color: Swift.String? = "gold", size: Swift.String? = "collapsed", lable: Swift.String? = "none") -> UIKit.UIButton?
   @objc public static func buildPayPalButton(insets: UIKit.UIEdgeInsets, edges: Swift.Int = 4, color: Swift.String? = "gold", size: Swift.String? = "collapsed", lable: Swift.String? = "none") -> UIKit.UIButton?
+  @objc public static func buildCashAppPaymentButton(size: Swift.String? = "large", action: @escaping () -> Swift.Void) -> UIKit.UIView?
+  @objc public static func buildCashAppPaymentMethod(size: Swift.String? = "large", cashTag: Swift.String = "", cashTagColor: UIKit.UIColor?, cashTagFont: UIKit.UIFont?) -> UIKit.UIView?
   @objc override dynamic public init()
   @objc deinit
 }
