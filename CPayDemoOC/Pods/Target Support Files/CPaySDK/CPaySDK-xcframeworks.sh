@@ -17,11 +17,11 @@ RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 variant_for_slice()
 {
   case "$1" in
-  "CPaySDK.xcframework/ios-x86_64-simulator")
-    echo "simulator"
-    ;;
   "CPaySDK.xcframework/ios-arm64")
     echo ""
+    ;;
+  "CPaySDK.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
     ;;
   "CardinalMobile.xcframework/ios-arm64_armv7")
     echo ""
@@ -35,17 +35,53 @@ variant_for_slice()
   "PPRiskMagnes.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
+  "PayKitUI.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "PayKitUI.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
+  "PayKit.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "PayKit.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
+  "PaymentButtons.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "PaymentButtons.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
+  "CorePayments.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "CorePayments.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
+  "FraudProtection.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "FraudProtection.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
+  "PayPalWebPayments.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "PayPalWebPayments.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
   esac
 }
 
 archs_for_slice()
 {
   case "$1" in
-  "CPaySDK.xcframework/ios-x86_64-simulator")
-    echo "x86_64"
-    ;;
   "CPaySDK.xcframework/ios-arm64")
     echo "arm64"
+    ;;
+  "CPaySDK.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
     ;;
   "CardinalMobile.xcframework/ios-arm64_armv7")
     echo "arm64 armv7"
@@ -57,6 +93,42 @@ archs_for_slice()
     echo "arm64"
     ;;
   "PPRiskMagnes.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "PayKitUI.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "PayKitUI.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "PayKit.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "PayKit.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "PaymentButtons.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "PaymentButtons.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "CorePayments.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "CorePayments.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "FraudProtection.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "FraudProtection.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "PayPalWebPayments.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "PayPalWebPayments.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
   esac
@@ -141,7 +213,13 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/../../CPaySDK/Core/CPaySDK.xcframework" "CPaySDK/Core" "framework" "ios-x86_64-simulator" "ios-arm64"
+install_xcframework "${PODS_ROOT}/../../CPaySDK/Core/CPaySDK.xcframework" "CPaySDK/Core" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 install_xcframework "${PODS_ROOT}/../../CPaySDK/Ext/CardinalMobile.xcframework" "CPaySDK/Ext/CardinalMobile" "framework" "ios-arm64_armv7" "ios-arm64_i386_x86_64-simulator"
 install_xcframework "${PODS_ROOT}/../../CPaySDK/Ext/PPRiskMagnes.xcframework" "CPaySDK/Ext/PPRiskMagnes" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../CPaySDK/Payment/CashApp/Ext/PayKitUI.xcframework" "CPaySDK/Payment/CashApp/Button" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../CPaySDK/Payment/CashApp/Ext/PayKit.xcframework" "CPaySDK/Payment/CashApp/Core" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../CPaySDK/Payment/PayPal/Ext/PaymentButtons.xcframework" "CPaySDK/Payment/PayPal/Button" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../CPaySDK/Payment/PayPal/Ext/CorePayments.xcframework" "CPaySDK/Payment/PayPal/Core" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../CPaySDK/Payment/PayPal/Ext/FraudProtection.xcframework" "CPaySDK/Payment/PayPal/Fraud" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../CPaySDK/Payment/PayPal/Ext/PayPalWebPayments.xcframework" "CPaySDK/Payment/PayPal/Web" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 

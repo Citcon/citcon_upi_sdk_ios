@@ -1,3 +1,9 @@
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Core/CPaySDK.framework
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Ext/CardinalMobile/CardinalMobile.framework
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Ext/PPRiskMagnes/PPRiskMagnes.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Button/PayKitUI.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Core/PayKit.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Button/PaymentButtons.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Core/CorePayments.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Fraud/FraudProtection.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Web/PayPalWebPayments.framework

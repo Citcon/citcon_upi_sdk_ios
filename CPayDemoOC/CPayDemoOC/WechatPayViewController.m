@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtUniversalLink;
 @property (weak, nonatomic) IBOutlet UITextField *txtNote;
 @property (weak, nonatomic) IBOutlet UITextField *txtTxnId;
+@property (weak, nonatomic) IBOutlet UISwitch *autoCaptureSwitcher;
 
 @end
 
@@ -44,7 +45,10 @@
 - (void)initOrderView {
     _txtRefId.text = [NSString stringWithFormat:@"sdk_wechatpay_%f", [[NSDate date] timeIntervalSince1970]];
     _txtAmount.text = @"1";
-    _txtTimeout.text = @"1670000000";
+//    _txtTimeout.text = @"1670000000";
+    NSTimeInterval timestmp = ceil([[NSDate date] timeIntervalSince1970]);
+    _txtTimeout.text = [NSString stringWithFormat:@"%@", @(timestmp + 2 *3600)];
+
     _txtIPNUrl.text = @"https://ipn.com";
     _txtSucUrl.text = @"https://success.com";
     _txtCancelUrl.text = @"https://cancel.com";
@@ -68,14 +72,15 @@
 - (CPayRequest *)createOrder {
     CPayRequest *order = [CPayRequest new];
     order.transaction.reference = _txtRefId.text;
-    order.transaction.amount = [_txtAmount.text intValue];
+    order.transaction.amount = @([_txtAmount.text intValue]);
     order.transaction.currency = _txtCurrency.text;
     order.transaction.country = _txtCountry.text;
     order.transaction.note = _txtNote.text;
+    order.transaction.autoCapture = _autoCaptureSwitcher.isOn;
     
     order.payment = [CPayPayment new];
     order.payment.method = @"wechatpay";
-    order.payment.expiry = [_txtTimeout.text intValue];
+    order.payment.expiry = @([_txtTimeout.text intValue]);
     
     order.urls.ipn = _txtIPNUrl.text;
     order.urls.success = _txtSucUrl.text;

@@ -32,14 +32,19 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtZip;
 @property (weak, nonatomic) IBOutlet UITextField *txtCountryCodeAlpha;
 @property (weak, nonatomic) IBOutlet UISwitch *swEnable3DS;
-@property (weak, nonatomic) IBOutlet UITextField *txtInstallments;
-@property (weak, nonatomic) IBOutlet UISwitch *swEnableInstaments;
 @property (weak, nonatomic) IBOutlet UITextField *txtCardFirstName;
 @property (weak, nonatomic) IBOutlet UITextField *txtCardNo;
 @property (weak, nonatomic) IBOutlet UITextField *txtCardLastName;
 @property (weak, nonatomic) IBOutlet UITextField *txtCvv;
 @property (weak, nonatomic) IBOutlet UITextField *txtCardExpiry;
 @property (weak, nonatomic) IBOutlet UITextField *txtPaymentFormat;
+
+@property (weak, nonatomic) IBOutlet UISwitch *swEnableInstaments;
+@property (weak, nonatomic) IBOutlet UITextField *txtInstallmentsId;
+@property (weak, nonatomic) IBOutlet UITextField *txtInstallmentsQuantity;
+@property (weak, nonatomic) IBOutlet UITextField *txtInstallmentsPaymentNumber;
+@property (weak, nonatomic) IBOutlet UISwitch *autoCaptureSwitcher;
+
 
 @property (nonatomic, copy) NSString *paymentMethod;
 @property (nonatomic, copy) NSString *digitTitle;
@@ -73,7 +78,10 @@
 - (void)initOrderView {
     _txtRefId.text = [NSString stringWithFormat:@"sdk_card_%f", [[NSDate date] timeIntervalSince1970]];
     _txtAmount.text = @"1";
-    _txtTimeout.text = @"1670000000";
+//    _txtTimeout.text = @"1670000000";
+    NSTimeInterval timestmp = ceil([[NSDate date] timeIntervalSince1970]);
+    _txtTimeout.text = [NSString stringWithFormat:@"%@", @(timestmp + 2 *3600)];
+
     _txtIPNUrl.text = @"https://ipn-receive.qa01.citconpay.com/notify";
 //    _txtSucUrl.text = @"com.citcon.citconpay://";
 //    _txtCancelUrl.text = @"com.citcon.citconpay://";
@@ -131,14 +139,15 @@
 - (CPayRequest *)createOrder {
     CPayRequest *order = [CPayRequest new];
     order.transaction.reference = _txtRefId.text;
-    order.transaction.amount = [_txtAmount.text intValue];
+    order.transaction.amount = @([_txtAmount.text intValue]);
     order.transaction.currency = _txtCurrency.text;
     order.transaction.country = _txtCountry.text;
     order.transaction.note = _txtNote.text;
-    
+    order.transaction.autoCapture = _autoCaptureSwitcher.isOn;
+
     order.payment = [CPayPayment new];
     order.payment.method = _paymentMethod;
-    order.payment.expiry = [_txtTimeout.text intValue];
+    order.payment.expiry = @([_txtTimeout.text intValue]);
     
     // card information [used in "fomo"]
     order.payment.data = [CPayPaymentData new];
@@ -179,7 +188,9 @@
     // If Instaments
     if (_swEnableInstaments.isOn) {
         order.installments = [CPayInstallments new];
-        order.installments.id = _txtInstallments.text;
+        order.installments.id = _txtInstallmentsId.text;
+        order.installments.quantity = _txtInstallmentsQuantity.text.intValue;
+        order.installments.paymentNumber = _txtInstallmentsPaymentNumber.text.floatValue;
     }
     
 //    order.payment.format = @"json";

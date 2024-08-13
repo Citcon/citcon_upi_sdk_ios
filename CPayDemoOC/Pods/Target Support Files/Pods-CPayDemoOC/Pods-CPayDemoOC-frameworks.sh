@@ -18,7 +18,7 @@ echo "mkdir -p ${CONFIGURATION_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}"
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}"
 
 COCOAPODS_PARALLEL_CODE_SIGN="${COCOAPODS_PARALLEL_CODE_SIGN:-false}"
-SWIFT_STDLIB_PATH="${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}"
+SWIFT_STDLIB_PATH="${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}"
 BCSYMBOLMAP_DIR="BCSymbolMaps"
 
 
@@ -41,7 +41,7 @@ install_framework()
 
   if [ -L "${source}" ]; then
     echo "Symlinked..."
-    source="$(readlink "${source}")"
+    source="$(readlink -f "${source}")"
   fi
 
   if [ -d "${source}/${BCSYMBOLMAP_DIR}" ]; then
@@ -179,11 +179,23 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Core/CPaySDK.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Ext/CardinalMobile/CardinalMobile.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Ext/PPRiskMagnes/PPRiskMagnes.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Button/PayKitUI.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Core/PayKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Button/PaymentButtons.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Core/CorePayments.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Fraud/FraudProtection.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Web/PayPalWebPayments.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Core/CPaySDK.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Ext/CardinalMobile/CardinalMobile.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Ext/PPRiskMagnes/PPRiskMagnes.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Button/PayKitUI.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Core/PayKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Button/PaymentButtons.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Core/CorePayments.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Fraud/FraudProtection.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Web/PayPalWebPayments.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

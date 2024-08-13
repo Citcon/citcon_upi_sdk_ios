@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setDigitTitle:(NSString *)title;
 - (void)setPaymentMethod:(NSString *)payment;
+@property (weak, nonatomic) IBOutlet UIButton *confirmBtn;
 
 @end
 

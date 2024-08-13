@@ -1,8 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../CPaySDK/Core" "${PODS_ROOT}/../../CPaySDK/Ext" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Core" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Ext/CardinalMobile" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Ext/PPRiskMagnes"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../CPaySDK/Core" "${PODS_ROOT}/../../CPaySDK/Ext" "${PODS_ROOT}/../../CPaySDK/Payment/CashApp/Ext" "${PODS_ROOT}/../../CPaySDK/Payment/PayPal/Ext" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Core" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Ext/CardinalMobile" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Ext/PPRiskMagnes" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Button" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Core" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Button" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Core" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Fraud" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Web"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -l"stdc++" -framework "CPaySDK" -framework "CardinalMobile" -framework "PPRiskMagnes"
+OTHER_LDFLAGS = $(inherited) -l"stdc++" -framework "CPaySDK" -framework "CardinalMobile" -framework "CorePayments" -framework "FraudProtection" -framework "PPRiskMagnes" -framework "PayKit" -framework "PayKitUI" -framework "PayPalWebPayments" -framework "PaymentButtons"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

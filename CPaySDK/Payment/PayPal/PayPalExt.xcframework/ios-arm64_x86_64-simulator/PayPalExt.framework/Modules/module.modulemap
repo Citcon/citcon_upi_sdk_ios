@@ -1,0 +1,11 @@
+framework module PayPalExt {
+  umbrella header "PayPalExt-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module PayPalExt.Swift {
+  header "PayPalExt-Swift.h"
+  requires objc
+}
