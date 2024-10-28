@@ -245,7 +245,7 @@
         }
         
         if ([_paymentMethod isEqualToString:@"cashapppay"]) {
-            order.scheme = @"com.citcon.citconpay://cashapp";
+            order.scheme = @"com.citcon.citconpay";
         }
         
     }
