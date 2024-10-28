@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		z88R3FBxB4JUtqTv7cuz1O8MZ+o=
+		eKfYILVbJamCkJAV5v6nYnX+Hso=
 		</data>
 		<key>Modules/FraudProtection.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		7OQgcgtJooPvzNkFiWm3ED/tK0s=
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/FraudProtection.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/FraudProtection.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		SRRv5sij36Jh8+t5qK5nP+k/wr0=
+		FV5KOUDGWfdjY7wGgDAk8SScL60=
 		</data>
 		<key>Modules/FraudProtection.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		7OQgcgtJooPvzNkFiWm3ED/tK0s=
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/FraudProtection.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/FraudProtection.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Lloe4GC4o9yWt4dlJ4VZj4WF7/A=
+		IElwTmzISRCEKwxFyiRoh+0/ntA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -74,7 +74,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cZgzngvRO5Cl6sDG4PF5rDFtR3XeEz+9oGG5X/TBBv8=
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/FraudProtection.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -102,14 +102,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LewpATj7+iL1r7K1dsxvrY/CdnOVZz3iQ/1r7ZCmvoc=
+			n05QTThwKWnzALO60IBrt4q1B398wsZF7iHzeaGMDsQ=
 			</data>
 		</dict>
 		<key>Modules/FraudProtection.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cZgzngvRO5Cl6sDG4PF5rDFtR3XeEz+9oGG5X/TBBv8=
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/FraudProtection.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,7 +137,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5n7wTlSb6KFCMaZtdp2//rYiR6wb1s+apfOyVXgon+E=
+			CJeBfWSsGp+dn0JgqgRd4mGlzmowO2PUmhO9QG7mP4k=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
