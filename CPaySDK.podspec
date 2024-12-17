@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CPaySDK'
-  s.version          = '2.2.1'
+  s.version          = '2.3.0'
   s.summary          = 'UPI mobile SDK for iOS.'
   
   # This description is used to generate tags and improve search results.
@@ -80,11 +80,11 @@ s.subspec 'Payment' do |ss|
       ssss.dependency 'CPaySDK/Payment/PayPal/Core'
     end
     
-    sss.subspec 'Native' do |ssss|
-      ssss.vendored_frameworks = ['CPaySDK/Payment/PayPal/Ext/PayPalNativePayments.xcframework']
-      ssss.dependency 'PayPalCheckout', '= 1.3.0'
-      ssss.dependency 'CPaySDK/Payment/PayPal/Core'
-    end
+    #sss.subspec 'Native' do |ssss|
+    #  ssss.vendored_frameworks = ['CPaySDK/Payment/PayPal/Ext/PayPalNativePayments.xcframework']
+    #  ssss.dependency 'PayPalCheckout', '= 1.3.0'
+    #  ssss.dependency 'CPaySDK/Payment/PayPal/Core'
+    #end
     
     #          sss.subspec 'Card' do |ssss|
     #            ssss.vendored_frameworks = ['CPaySDK/Payment/PayPal/Ext/CardPayments.xcframework']
