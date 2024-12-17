@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name CPaySDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 @_exported import CPaySDK
@@ -186,13 +186,14 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class CPayExtGatewayGrant : ObjectiveC.NSObject {
-  public var grand_id: Swift.String?
+  public var grant_id: Swift.String?
   public var expiry: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class CPayExtGatewayConsumer : ObjectiveC.NSObject {
   public var consumer_id: Swift.String?
+  public var cashtag: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }

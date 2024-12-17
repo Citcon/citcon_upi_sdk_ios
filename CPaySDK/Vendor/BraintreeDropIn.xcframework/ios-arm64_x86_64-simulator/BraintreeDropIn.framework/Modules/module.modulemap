@@ -1,0 +1,11 @@
+framework module BraintreeDropIn {
+  umbrella header "BraintreeDropIn-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module BraintreeDropIn.Swift {
+  header "BraintreeDropIn-Swift.h"
+  requires objc
+}

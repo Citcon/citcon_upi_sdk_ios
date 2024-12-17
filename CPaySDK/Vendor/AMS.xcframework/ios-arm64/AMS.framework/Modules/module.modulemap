@@ -1,0 +1,6 @@
+framework module AMS {
+  umbrella header "AMS-umbrella.h"
+
+  export *
+  module * { export * }
+}
