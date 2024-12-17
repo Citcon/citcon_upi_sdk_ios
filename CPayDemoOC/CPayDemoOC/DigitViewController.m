@@ -27,6 +27,7 @@
 @property (nonatomic, copy) NSString *digitTitle;
 @property (weak, nonatomic) IBOutlet UITextField *txtTxnId;
 @property (weak, nonatomic) IBOutlet UISwitch *autoCaptureSwitcher;
+@property (weak, nonatomic) IBOutlet UISwitch *requestTokenSwitcher;
 
 @end
 
@@ -246,6 +247,7 @@
         
         if ([_paymentMethod isEqualToString:@"cashapppay"]) {
             order.scheme = @"com.citcon.citconpay";
+            order.payment.requestToken = _requestTokenSwitcher.isOn;
         }
         
     }
