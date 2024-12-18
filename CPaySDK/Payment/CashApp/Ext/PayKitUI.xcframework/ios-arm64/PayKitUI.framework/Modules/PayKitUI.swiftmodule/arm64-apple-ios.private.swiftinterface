@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayKitUI
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Combine
@@ -41,13 +41,13 @@ import _SwiftConcurrencyShims
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @available(iOS 13.0, *)
   public typealias Body = @_opaqueReturnTypeOf("$s8PayKitUI07CashAppA10ButtonViewV4bodyQrvp", 0) __
 }
 @available(iOS 13.0, *)
 extension PayKitUI.CashAppPayButtonView {
   @_hasMissingDesignatedInitializers public class ViewModel : Foundation.ObservableObject {
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    @available(iOS 13.0, *)
     public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
     @objc deinit
   }
@@ -87,13 +87,13 @@ extension PayKitUI.CashAppPayButtonView {
     public static let cashTagFont: SwiftUICore.Font
     public static let cashTagTextColor: SwiftUICore.Color
   }
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @available(iOS 13.0, *)
   public typealias Body = @_opaqueReturnTypeOf("$s8PayKitUI24CashAppPaymentMethodViewV4bodyQrvp", 0) __
 }
 @available(iOS 13.0, *)
 extension PayKitUI.CashAppPaymentMethodView {
   @_hasMissingDesignatedInitializers public class ViewModel : Foundation.ObservableObject {
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    @available(iOS 13.0, *)
     public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
     @objc deinit
   }

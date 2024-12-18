@@ -1,0 +1,6 @@
+framework module UnionPayExt {
+  umbrella header "UnionPayExt.h"
+  export *
+
+  module * { export * }
+}
