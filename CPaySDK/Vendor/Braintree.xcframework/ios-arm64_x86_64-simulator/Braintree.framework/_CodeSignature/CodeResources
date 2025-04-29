@@ -294,7 +294,7 @@
 		</data>
 		<key>Headers/Braintree-Swift.h</key>
 		<data>
-		PHzJPWjMfnjE0A3mHEeQ3ae8ovQ=
+		vPyHn+/5Syyq024bFzEVu9V540Y=
 		</data>
 		<key>Headers/Braintree-umbrella.h</key>
 		<data>
@@ -338,7 +338,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fECe0+gGfL8fIVfIszIEQ+YK0FQ=
+		woDdKWzC8aIdwjsMQNjIVeeCXvM=
 		</data>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -346,19 +346,19 @@
 		</data>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ISGdQ/XdpL/AZN6ROF22GNi3siw=
+		mi3sgabxc8dapU05CuLAGJdL8pw=
 		</data>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		9kAgbJZf40gOmmm/Wo4JKGEANdY=
+		xPr1b11Iu780GKfu9bamdULoYBY=
 		</data>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ISGdQ/XdpL/AZN6ROF22GNi3siw=
+		mi3sgabxc8dapU05CuLAGJdL8pw=
 		</data>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		K8hQuWYVqTT8Fzp+GmnjtOISMF8=
+		8Crpf+PnQ7f52c67k50w1pkUBaQ=
 		</data>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -366,19 +366,19 @@
 		</data>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		XvWNXhrmvfmBNUhRQrHou/lSHNE=
+		W9LT4UFEKsP9FB2OyRkoSDKa8Bc=
 		</data>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		BcOPfteMqE+pG+OCBP8lCgvJ7Vw=
+		wne78BIvM4DK38rUt7gcOkLq8xc=
 		</data>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		XvWNXhrmvfmBNUhRQrHou/lSHNE=
+		W9LT4UFEKsP9FB2OyRkoSDKa8Bc=
 		</data>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Eni6oiu7azmVlGRdDbKuJ23C9pE=
+		1MTCeKbAgOi/Yq82PezpGTS7x1A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1183,11 +1183,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PHzJPWjMfnjE0A3mHEeQ3ae8ovQ=
+			vPyHn+/5Syyq024bFzEVu9V540Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			hMkzHfzuCotQQltgW2mkEy2uf/D/++YYDzqd6FVsHOk=
+			3y2HfFV0RVrTmmU704UOmP/pmpc2DAcZ16oZGTJXOd0=
 			</data>
 		</dict>
 		<key>Headers/Braintree-umbrella.h</key>
@@ -1315,44 +1315,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ISGdQ/XdpL/AZN6ROF22GNi3siw=
+			mi3sgabxc8dapU05CuLAGJdL8pw=
 			</data>
 			<key>hash2</key>
 			<data>
-			HH66JPtKFTJdn7TsL9YbK3nFLHxbE+7KgWBf4dzy0Ys=
+			H4nE2bVHRgG2/yYHNJelX7PLDCs7a64+Je1K65Re1b8=
 			</data>
 		</dict>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9kAgbJZf40gOmmm/Wo4JKGEANdY=
+			xPr1b11Iu780GKfu9bamdULoYBY=
 			</data>
 			<key>hash2</key>
 			<data>
-			BXWoVooI16aApLYDzUY5RZ5GGqfgbHAwldmjJGyCg2U=
+			XwUr0FVL/KL9I1mByz0NFRu6kqJ70KiWCp0uV7wleEc=
 			</data>
 		</dict>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ISGdQ/XdpL/AZN6ROF22GNi3siw=
+			mi3sgabxc8dapU05CuLAGJdL8pw=
 			</data>
 			<key>hash2</key>
 			<data>
-			HH66JPtKFTJdn7TsL9YbK3nFLHxbE+7KgWBf4dzy0Ys=
+			H4nE2bVHRgG2/yYHNJelX7PLDCs7a64+Je1K65Re1b8=
 			</data>
 		</dict>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			K8hQuWYVqTT8Fzp+GmnjtOISMF8=
+			8Crpf+PnQ7f52c67k50w1pkUBaQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			oKEMpuHT3u+uak54/RmWf39nJI1xNzN0hyJamcKxpIo=
+			vHNayuOlweK4/kFNT1pv/K3z0nUDMojCbJ3U1xQH5mU=
 			</data>
 		</dict>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -1370,44 +1370,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XvWNXhrmvfmBNUhRQrHou/lSHNE=
+			W9LT4UFEKsP9FB2OyRkoSDKa8Bc=
 			</data>
 			<key>hash2</key>
 			<data>
-			DgFwPrmXlJEMNE8jfDy+2f0GQzE2ztvgMnvLe8Ztm/U=
+			58sNkyJ+7PE6m+dlb72aWyyxQZaHL3ksfP0DKfwZpgw=
 			</data>
 		</dict>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BcOPfteMqE+pG+OCBP8lCgvJ7Vw=
+			wne78BIvM4DK38rUt7gcOkLq8xc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Scvvy6ddBI6vm5yIKQxGabsQNaAt14ofCTsqpaZaA7Q=
+			2M36uCAM9LdCSme4qgIAasAmsBmeZuNbHQ4cOFOeAN8=
 			</data>
 		</dict>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XvWNXhrmvfmBNUhRQrHou/lSHNE=
+			W9LT4UFEKsP9FB2OyRkoSDKa8Bc=
 			</data>
 			<key>hash2</key>
 			<data>
-			DgFwPrmXlJEMNE8jfDy+2f0GQzE2ztvgMnvLe8Ztm/U=
+			58sNkyJ+7PE6m+dlb72aWyyxQZaHL3ksfP0DKfwZpgw=
 			</data>
 		</dict>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Eni6oiu7azmVlGRdDbKuJ23C9pE=
+			1MTCeKbAgOi/Yq82PezpGTS7x1A=
 			</data>
 			<key>hash2</key>
 			<data>
-			kkblYxob2Krn16OHRziOD04pmUPIiZhKMF65Rh+szNQ=
+			v+VLMbYTUSAMGl6Z1H9hzAKo9YawX56m0a9+E/ERzQ0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

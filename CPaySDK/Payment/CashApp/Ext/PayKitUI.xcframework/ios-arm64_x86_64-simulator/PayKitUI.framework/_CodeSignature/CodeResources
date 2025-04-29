@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		GyfrQx11RR5x/3+F4QpymDshvdA=
+		LIEBWzMEh40iusfmQyFeXIQ4S7s=
 		</data>
 		<key>Headers/CashAppPayKitUI-umbrella.h</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Headers/PayKitUI-Swift.h</key>
 		<data>
-		NJof1wlEl0XHZRw9rh0lGmttG6o=
+		DthjSkAeZ9r/tuQgvhKEChYJQqw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CNNMFktopzBbwiDBcYV0XlNDGfU=
+		1EWNw6Rdgky7P+HhVET89xgvtu4=
 		</data>
 		<key>Modules/PayKitUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/PayKitUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		FyA2qpMnn4orIL2w9H8U3p4S/Ic=
+		/UP8Eqi0QBcNsIi2SLSuiLzhPi4=
 		</data>
 		<key>Modules/PayKitUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		2QalYBgAxzrd+bWdiqIcv7YJ5gA=
+		C25O1FByFBngVXR58LgeyX0RqMw=
 		</data>
 		<key>Modules/PayKitUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		FyA2qpMnn4orIL2w9H8U3p4S/Ic=
+		/UP8Eqi0QBcNsIi2SLSuiLzhPi4=
 		</data>
 		<key>Modules/PayKitUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		sXjZuPrROM+lnL2SLcygewxdAps=
+		xu1A0yywCpwEy7xOY7bYgI4SDQ4=
 		</data>
 		<key>Modules/PayKitUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -46,19 +46,19 @@
 		</data>
 		<key>Modules/PayKitUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		v1V7rdoQeEFFv3L0NYKYQcTaH/4=
+		I6t0rK1hDS8l8NpVh+M70/XzZLs=
 		</data>
 		<key>Modules/PayKitUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		h1xG8lX5BbXFcP6KjHxhXPE/uLU=
+		3wC0OOam26FwPqqu0hq8rSqjWIA=
 		</data>
 		<key>Modules/PayKitUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		v1V7rdoQeEFFv3L0NYKYQcTaH/4=
+		I6t0rK1hDS8l8NpVh+M70/XzZLs=
 		</data>
 		<key>Modules/PayKitUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		x4K9MrCCtwZeZkuQyUfaXlFyo8M=
+		Ypn/10YeXTf6GYzEgW9X7CWKpCQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2k49j+2G5x0zwWqQP1iGonb9P0oRjAHGLj4T5p7JcTQ=
+			a5v9EzueGByhidhxJw5xEfk6pOFYznrNeddCRzhCjFc=
 			</data>
 		</dict>
 		<key>Headers/CashAppPayKitUI-umbrella.h</key>
@@ -85,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			E4T6O+LkXQudHda6F0UZSAL8YD81NT0QDht5xxyeqdM=
+			//RWCiqu8ybb4weQf7VSpCaVsqzj58r5CJ2Wa8oesew=
 			</data>
 		</dict>
 		<key>Modules/PayKitUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -99,28 +99,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hcQKnbvu2Uva/69h2gXHOWg4+lrO3YzGF4CHkMaKb1U=
+			v3hYleL7DarbQKG81zrWbQ10HEiIZjRBE4oAnliNTgM=
 			</data>
 		</dict>
 		<key>Modules/PayKitUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hN2RuRJ+mNsj3+p34DCY9Ymc90CQ9jST6+AKSul3N+Q=
+			A/VGB1Q40/Nt2pyAxSPqTAfL9dasNHVig/KAFOjP3CU=
 			</data>
 		</dict>
 		<key>Modules/PayKitUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hcQKnbvu2Uva/69h2gXHOWg4+lrO3YzGF4CHkMaKb1U=
+			v3hYleL7DarbQKG81zrWbQ10HEiIZjRBE4oAnliNTgM=
 			</data>
 		</dict>
 		<key>Modules/PayKitUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j3/UgtCDjxi1hy2TvmwjiQb6xrBDB+TOCyexQHZX13A=
+			cy889U+YO0JVWxfmAE8JX4UPqEMsQN13sZhzD9IzPos=
 			</data>
 		</dict>
 		<key>Modules/PayKitUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -134,28 +134,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6oD8HqTYJBNV3Y1nNaI2JQpeYkDGX12qkgMpRDTO0KI=
+			h6HaWZ02OTknRTkFXwn9PlQ25k8SRedpnQguSU3BfL8=
 			</data>
 		</dict>
 		<key>Modules/PayKitUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PvmErHF0bFdN9GSD4HPXXqySKRgHxWexoKf8IJJkjQQ=
+			+TAE93NkeHI4N4zzYQ9do0TbG7eKSa10TzHA/4RcxXI=
 			</data>
 		</dict>
 		<key>Modules/PayKitUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6oD8HqTYJBNV3Y1nNaI2JQpeYkDGX12qkgMpRDTO0KI=
+			h6HaWZ02OTknRTkFXwn9PlQ25k8SRedpnQguSU3BfL8=
 			</data>
 		</dict>
 		<key>Modules/PayKitUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EhcpsSkQDTxl87Ixo2a60R1I872BAT2+vQVrAkkiHxo=
+			GQlp8yLZjhd8ukNyG+L8EqKdiVqsWfk3qS5GitnUK1A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
