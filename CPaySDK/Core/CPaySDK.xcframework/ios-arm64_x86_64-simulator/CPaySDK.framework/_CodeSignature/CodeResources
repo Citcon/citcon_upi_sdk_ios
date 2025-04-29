@@ -240,7 +240,7 @@
 		</dict>
 		<key>Headers/CPaySDK-Swift.h</key>
 		<data>
-		IXEx3vn0crJwAzy2x3Pk9tRBydU=
+		3izk8dIKASFQABFKT6BWIGDuJlI=
 		</data>
 		<key>Headers/CPaySDK.h</key>
 		<data>
@@ -248,7 +248,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		I1wR2t0rSPx7fv27Uon+L3cScfU=
+		G+2AvsimKX8CKHJWYFhwv6WeMNM=
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -256,19 +256,19 @@
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		OShqB7JEs9v+bwMpmS8fYz/ze+A=
+		VWuqwnqNlHYqU/VlIo8IF5/pZro=
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		rPf25X06RoiME/BeTtgWn1OR+bM=
+		ls2jPiY1DCpW17k9rtrhSQdZKxc=
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		OShqB7JEs9v+bwMpmS8fYz/ze+A=
+		VWuqwnqNlHYqU/VlIo8IF5/pZro=
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		97fnL2I9XWYBSKBWtgG+6kHdl34=
+		YVmM7BfmlHZTF7d9PraKVYRMJwQ=
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -276,19 +276,19 @@
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		8bA5nQJQ0ijZhs7jraZLpg7kJ58=
+		pXrW7QJLelxupEyS6L2mGv8pHH4=
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		sKSeskMq+G/YJRY+cjuWux9qpJU=
+		QeuiNx4mg6/5wjsgIpVLeL68II0=
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8bA5nQJQ0ijZhs7jraZLpg7kJ58=
+		pXrW7QJLelxupEyS6L2mGv8pHH4=
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/K1Bh2/YF4qM36E7wpsNjwWPEfY=
+		cJHK7J55eIgW0KWiRLrLXic1q1k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -566,7 +566,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1kfrl7Rh5rGKsq1bOXpLQ+IftSZX/mA0nthRTaLjN5w=
+			pP3faHZFV5X0TjsjPcC+a4i57Xp3b3Slbtk3/C98SvM=
 			</data>
 		</dict>
 		<key>Headers/CPaySDK.h</key>
@@ -587,28 +587,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			73fVJctkGfA/ARzr6xCbYsojDK449cBy6UgcHPYKoNU=
+			o8IWW0S3zwTyiNmKw6USWE0kg1bJ8uqEUSrPJd2oJm8=
 			</data>
 		</dict>
 		<key>Modules/CPaySDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			55hI0SHL1NWbTeLCVlPt2LZWPg5ONBD3zRPBa9bf+Tg=
+			kFb8rqSfAK7FQGHV+Kh4dcW/0JoshyuY27yq+UtgHw0=
 			</data>
 		</dict>
 		<key>Modules/CPaySDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			73fVJctkGfA/ARzr6xCbYsojDK449cBy6UgcHPYKoNU=
+			o8IWW0S3zwTyiNmKw6USWE0kg1bJ8uqEUSrPJd2oJm8=
 			</data>
 		</dict>
 		<key>Modules/CPaySDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tjvuc4D9AkhJaJh1+pqwj1UG/3cXvfrjRVq68Qscwrw=
+			OXrcpWED6NuSOnG5dppCCSKZyr6IduiWb8VP4Zg3Njs=
 			</data>
 		</dict>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -622,28 +622,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CTHvuCY3Vr6c5Su3PBR7UYfHkwaVwCRxrQSpz9oUJMs=
+			StMVD45pfkeuq1VyN9B0umJoIM5d5vYnPJlSY+TiINg=
 			</data>
 		</dict>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FRosQ6v12PiqTiJ9/jk1DjnT/1RqcltqCH3PMah9Zos=
+			EOoWo88F/8hmUkPMzCyUmKjuTOCX4T9mFtX5DQlBN/M=
 			</data>
 		</dict>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CTHvuCY3Vr6c5Su3PBR7UYfHkwaVwCRxrQSpz9oUJMs=
+			StMVD45pfkeuq1VyN9B0umJoIM5d5vYnPJlSY+TiINg=
 			</data>
 		</dict>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DoUeHtptL57evjTJpx/XxXHt+5TPzhvPXwUagXe6nBU=
+			8p5kP5puPc9DUNIcPITB7BnCiF2Wyd8sRTty1aT58/c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

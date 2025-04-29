@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CPaySDK'
-  s.version          = '2.3.0'
+  s.version          = '2.3.1'
   s.summary          = 'UPI mobile SDK for iOS.'
   
   # This description is used to generate tags and improve search results.

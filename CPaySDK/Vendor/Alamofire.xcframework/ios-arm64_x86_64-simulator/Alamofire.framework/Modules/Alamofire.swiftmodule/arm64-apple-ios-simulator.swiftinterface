@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Alamofire
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Alamofire
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 @_exported import Alamofire
 import Combine
 import Dispatch
@@ -790,21 +790,11 @@ public struct StreamOf<Element> : _Concurrency.AsyncSequence {
   public func makeAsyncIterator() -> Alamofire.StreamOf<Element>.Iterator
   public struct Iterator : _Concurrency.AsyncIteratorProtocol {
     public mutating func next() async -> Element?
-    #if compiler(>=5.3) && $AssociatedTypeImplements
     @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
     @_implements(_Concurrency.AsyncIteratorProtocol, Failure) public typealias __AsyncIteratorProtocol_Failure = Swift.Never
-    #else
-    @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-    public typealias __AsyncIteratorProtocol_Failure = Swift.Never
-    #endif
   }
-  #if compiler(>=5.3) && $AssociatedTypeImplements
   @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
   @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
-  #else
-  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
-  public typealias __AsyncSequence_Failure = Swift.Never
-  #endif
 }
 public typealias AFDataResponse<Success> = Alamofire.DataResponse<Success, Alamofire.AFError>
 public typealias AFDownloadResponse<Success> = Alamofire.DownloadResponse<Success, Alamofire.AFError>
@@ -972,8 +962,8 @@ public struct HTTPHeader : Swift.Hashable {
   public let name: Swift.String
   public let value: Swift.String
   public init(name: Swift.String, value: Swift.String)
-  public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: Alamofire.HTTPHeader, b: Alamofire.HTTPHeader) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -1044,7 +1034,7 @@ extension Alamofire.CachedResponseHandler where Self == Alamofire.ResponseCacher
   public static var doNotCache: Alamofire.ResponseCacher {
     get
   }
-  public static func modify(using closure: @escaping ((Foundation.URLSessionDataTask, Foundation.CachedURLResponse) -> Foundation.CachedURLResponse?)) -> Alamofire.ResponseCacher
+  public static func modify(using closure: @escaping (Foundation.URLSessionDataTask, Foundation.CachedURLResponse) -> Foundation.CachedURLResponse?) -> Alamofire.ResponseCacher
 }
 final public class URLEncodedFormEncoder {
   public enum ArrayEncoding {
