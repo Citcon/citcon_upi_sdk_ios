@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UW4q4tx/LxlVzgohCF+O2b/uG9c=
+		7NE7sgwIyZAfrEcJ93WZGBnxcHg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -21,10 +21,6 @@
 	<dict>
 		<key>Headers/UnionPayExt.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ty09e8NkTX4VqKPwszuLGIcidoE=
-			</data>
 			<key>hash2</key>
 			<data>
 			p98P5/WMpx4Eyn5lyO1czauxtAaXA2v1BEeEG9jWfKI=
@@ -32,10 +28,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6JXb1DYTXzokTfZ5obQ1VVn5Ubs=
-			</data>
 			<key>hash2</key>
 			<data>
 			UmqDinleUX5BWzDbRy//eq9TUIj4cwmFQZu2XUDkiq0=

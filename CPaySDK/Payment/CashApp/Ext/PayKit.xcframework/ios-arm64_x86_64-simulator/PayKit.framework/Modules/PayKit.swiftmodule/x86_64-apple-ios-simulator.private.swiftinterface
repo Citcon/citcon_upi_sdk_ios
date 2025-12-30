@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import Foundation
 @_exported import PayKit
 import Swift
@@ -27,7 +27,9 @@ import _SwiftConcurrencyShims
     }
   }
   final public let endpoint: PayKit.CashAppPay.Endpoint
+  #if compiler(>=5.3) && $NonescapableTypes
   public func retrieveCustomerRequest(id: Swift.String, completion: @escaping (Swift.Result<PayKit.CustomerRequest, any Swift.Error>) -> Swift.Void)
+  #endif
   public func createCustomerRequest(params: PayKit.CreateCustomerRequestParams)
   public func updateCustomerRequest(_ request: PayKit.CustomerRequest, with params: PayKit.UpdateCustomerRequestParams)
   public enum AuthorizationMethod {
@@ -68,69 +70,95 @@ extension PayKit.CashAppPay {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class CAPCashAppPayStateNotStarted : PayKit.CAPCashAppPayState {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateCreatingCustomerRequest : PayKit.CAPCashAppPayState {
   @objc final public let params: PayKit.CAPCreateCustomerRequestParams
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateUpdatingCustomerRequest : PayKit.CAPCashAppPayState {
   @objc final public let request: PayKit.CAPCustomerRequest
   @objc final public let params: PayKit.CAPUpdateCustomerRequestParams
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateReadyToAuthorize : PayKit.CAPCashAppPayState {
   @objc final public let request: PayKit.CAPCustomerRequest
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateRedirecting : PayKit.CAPCashAppPayState {
   @objc final public let request: PayKit.CAPCustomerRequest
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStatePolling : PayKit.CAPCashAppPayState {
   @objc final public let request: PayKit.CAPCustomerRequest
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateDeclined : PayKit.CAPCashAppPayState {
   @objc final public let request: PayKit.CAPCustomerRequest
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateApproved : PayKit.CAPCashAppPayState {
   @objc final public let request: PayKit.CAPCustomerRequest
   @objc final public let grants: [PayKit.CAPCustomerRequestGrant]
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateRefreshing : PayKit.CAPCashAppPayState {
   @objc final public let request: PayKit.CAPCustomerRequest
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateAPIError : PayKit.CAPCashAppPayState {
   final public let apiError: PayKit.APIError
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateIntegrationError : PayKit.CAPCashAppPayState {
   final public let integrationError: PayKit.IntegrationError
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateNetworkError : PayKit.CAPCashAppPayState {
   @objc final public let networkError: Foundation.NSError
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateUnexpectedError : PayKit.CAPCashAppPayState {
   final public let unexpectedError: PayKit.UnexpectedError
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 public struct CreateCustomerRequestParams : Swift.Codable, Swift.Equatable {
@@ -139,7 +167,9 @@ public struct CreateCustomerRequestParams : Swift.Codable, Swift.Equatable {
   public let redirectURL: Foundation.URL
   public let referenceID: Swift.String?
   public let metadata: [Swift.String : Swift.String]?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(actions: [PayKit.PaymentAction], channel: PayKit.Channel = .IN_APP, redirectURL: Foundation.URL, referenceID: Swift.String?, metadata: [Swift.String : Swift.String]?)
+  #endif
   public static func == (a: PayKit.CreateCustomerRequestParams, b: PayKit.CreateCustomerRequestParams) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -148,7 +178,9 @@ public struct UpdateCustomerRequestParams : Swift.Equatable, Swift.Decodable {
   public let actions: [PayKit.PaymentAction]
   public let referenceID: Swift.String?
   public let metadata: [Swift.String : Swift.String]?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(actions: [PayKit.PaymentAction], referenceID: Swift.String?, metadata: [Swift.String : Swift.String]?)
+  #endif
   public static func == (a: PayKit.UpdateCustomerRequestParams, b: PayKit.UpdateCustomerRequestParams) -> Swift.Bool
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -162,7 +194,9 @@ public struct CustomerRequest : Swift.Codable, Swift.Equatable {
     case PROCESSING
     case APPROVED
     case DECLINED
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -188,7 +222,9 @@ public struct CustomerRequest : Swift.Codable, Swift.Equatable {
     public enum `Type` : Swift.String, Swift.Codable {
       case DIRECT
       case REQUEST_INITIATOR
+      #if compiler(>=5.3) && $NonescapableTypes
       public init?(rawValue: Swift.String)
+      #endif
       public typealias RawValue = Swift.String
       public var rawValue: Swift.String {
         get
@@ -211,7 +247,9 @@ public struct CustomerRequest : Swift.Codable, Swift.Equatable {
       case EXPIRED
       case CONSUMED
       case REVOKED
+      #if compiler(>=5.3) && $NonescapableTypes
       public init?(rawValue: Swift.String)
+      #endif
       public typealias RawValue = Swift.String
       public var rawValue: Swift.String {
         get
@@ -221,7 +259,9 @@ public struct CustomerRequest : Swift.Codable, Swift.Equatable {
     public enum GrantType : Swift.String, Swift.Codable, Swift.Equatable {
       case ONE_TIME
       case EXTENDED
+      #if compiler(>=5.3) && $NonescapableTypes
       public init?(rawValue: Swift.String)
+      #endif
       public typealias RawValue = Swift.String
       public var rawValue: Swift.String {
         get
@@ -264,8 +304,12 @@ public struct PaymentAction : Swift.Equatable {
   public let scopeID: Swift.String
   public let money: PayKit.Money?
   public let accountReferenceID: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func oneTimePayment(scopeID: Swift.String, money: PayKit.Money?) -> PayKit.PaymentAction
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func onFilePayment(scopeID: Swift.String, accountReferenceID: Swift.String?) -> PayKit.PaymentAction
+  #endif
   public static func == (a: PayKit.PaymentAction, b: PayKit.PaymentAction) -> Swift.Bool
 }
 extension PayKit.PaymentAction : Swift.Decodable {
@@ -277,7 +321,9 @@ extension PayKit.PaymentAction : Swift.Encodable {
 public enum PaymentType : Swift.String, Swift.Codable, Swift.CaseIterable, Swift.Equatable {
   case ONE_TIME_PAYMENT
   case ON_FILE_PAYMENT
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias AllCases = [PayKit.PaymentType]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [PayKit.PaymentType] {
@@ -297,7 +343,9 @@ public struct Money : Swift.Codable, Swift.Equatable {
 }
 public enum Currency : Swift.String, Swift.Codable, Swift.Equatable {
   case USD
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -307,7 +355,9 @@ public enum Channel : Swift.String, Swift.Codable, Swift.CaseIterable, Swift.Equ
   case IN_APP
   case IN_PERSON
   case ONLINE
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias AllCases = [PayKit.Channel]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [PayKit.Channel] {
@@ -347,29 +397,47 @@ extension PayKit.PaymentAction : Swift.CustomDebugStringConvertible {
   @objc final public var redirectURL: Foundation.URL {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var referenceID: Swift.String? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var metadata: [Swift.String : Swift.String]? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(actions: [PayKit.CAPPaymentAction], channel: PayKit.CAPChannel, redirectURL: Foundation.URL, referenceID: Swift.String?, metadata: [Swift.String : Swift.String]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(actions: [PayKit.CAPPaymentAction], redirectURL: Foundation.URL, referenceID: Swift.String?, metadata: [Swift.String : Swift.String]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPUpdateCustomerRequestParams : ObjectiveC.NSObject {
   @objc final public var actions: [PayKit.CAPPaymentAction] {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var referenceID: Swift.String? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var metadata: [Swift.String : Swift.String]? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(actions: [PayKit.CAPPaymentAction], referenceID: Swift.String?, metadata: [Swift.String : Swift.String]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCustomerRequest : ObjectiveC.NSObject {
@@ -382,12 +450,16 @@ extension PayKit.PaymentAction : Swift.CustomDebugStringConvertible {
   @objc final public var actions: [PayKit.CAPPaymentAction] {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var authFlowTriggers: PayKit.CAPCustomerRequestAuthFlowTriggers? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var redirectURL: Foundation.URL? {
     @objc get
   }
+  #endif
   @objc final public var createdAt: Foundation.Date {
     @objc get
   }
@@ -397,28 +469,42 @@ extension PayKit.PaymentAction : Swift.CustomDebugStringConvertible {
   @objc final public var expiresAt: Foundation.Date {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var origin: PayKit.CAPCustomerRequestOrigin? {
     @objc get
   }
+  #endif
   @objc final public var channel: Swift.String {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var grants: [PayKit.CAPCustomerRequestGrant]? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var referenceID: Swift.String? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var requesterProfile: PayKit.CAPCustomerRequestRequesterProfile? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var customerProfile: PayKit.CAPCustomerRequestCustomerProfile? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var metadata: [Swift.String : Swift.String]? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCustomerRequestGrant : ObjectiveC.NSObject {
@@ -443,10 +529,14 @@ extension PayKit.PaymentAction : Swift.CustomDebugStringConvertible {
   @objc final public var updatedAt: Foundation.Date {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var expiresAt: Foundation.Date? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCustomerRequestCustomerProfile : ObjectiveC.NSObject {
@@ -456,7 +546,9 @@ extension PayKit.PaymentAction : Swift.CustomDebugStringConvertible {
   @objc final public var cashtag: Swift.String {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCustomerRequestRequesterProfile : ObjectiveC.NSObject {
@@ -466,17 +558,23 @@ extension PayKit.PaymentAction : Swift.CustomDebugStringConvertible {
   @objc final public var logoURL: Foundation.URL {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCustomerRequestOrigin : ObjectiveC.NSObject {
   @objc final public var type: Swift.String {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var id: Swift.String? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCustomerRequestAuthFlowTriggers : ObjectiveC.NSObject {
@@ -492,7 +590,9 @@ extension PayKit.PaymentAction : Swift.CustomDebugStringConvertible {
   @objc final public var refreshesAt: Foundation.Date {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPPaymentAction : ObjectiveC.NSObject {
@@ -502,15 +602,25 @@ extension PayKit.PaymentAction : Swift.CustomDebugStringConvertible {
   @objc final public var scopeID: Swift.String {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var money: PayKit.CAPMoney? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var accountReferenceID: Swift.String? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func oneTimePayment(scopeID: Swift.String, money: PayKit.CAPMoney?) -> PayKit.CAPPaymentAction
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func onFilePayment(scopeID: Swift.String, accountReferenceID: Swift.String?) -> PayKit.CAPPaymentAction
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPMoney : ObjectiveC.NSObject {
@@ -521,12 +631,16 @@ extension PayKit.PaymentAction : Swift.CustomDebugStringConvertible {
     @objc get
   }
   @objc public init(amount: Swift.UInt, currency: PayKit.CAPCurrency)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc public enum CAPCurrency : Swift.Int {
   case USD
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -536,7 +650,9 @@ extension PayKit.PaymentAction : Swift.CustomDebugStringConvertible {
   case IN_APP
   case IN_PERSON
   case ONLINE
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -572,17 +688,23 @@ public let CAPErrorDomain: Swift.String
   @objc override final public var code: Swift.Int {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var detail: Swift.String? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var field: Swift.String? {
     @objc get
   }
+  #endif
   @objc deinit
 }
 @objc public enum CAPApiErrorCategory : Swift.Int {
   case API_ERROR
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -592,7 +714,9 @@ public let CAPErrorDomain: Swift.String
   case INTERNAL_SERVER_ERROR
   case SERVICE_UNAVAILABLE
   case GATEWAY_TIMEOUT
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -605,12 +729,16 @@ public let CAPErrorDomain: Swift.String
   @objc override final public var code: Swift.Int {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var detail: Swift.String? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var field: Swift.String? {
     @objc get
   }
+  #endif
   @objc deinit
 }
 @objc public enum CAPIntegrationErrorCategory : Swift.Int {
@@ -619,7 +747,9 @@ public let CAPErrorDomain: Swift.String
   case MERCHANT_ERROR
   case INVALID_REQUEST_ERROR
   case RATE_LIMIT_ERROR
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -646,7 +776,9 @@ public let CAPErrorDomain: Swift.String
   case RATE_LIMITED
   case BRAND_NOT_FOUND
   case MERCHANT_MISSING_ADDRESS_OR_SITE
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -659,17 +791,25 @@ public let CAPErrorDomain: Swift.String
   @objc final public var codeMessage: Swift.String {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var detail: Swift.String? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var field: Swift.String? {
     @objc get
   }
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc final public class CAPNetworkErrorNoResponse : Foundation.NSError {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic public init(domain: Swift.String, code: Swift.Int, userInfo dict: [Swift.String : Any]? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc final public class CAPNetworkErrorNilData : Foundation.NSError {
@@ -694,7 +834,9 @@ public let CAPErrorDomain: Swift.String
     @objc get
   }
   @objc convenience public init(clientID: Swift.String, endpoint: PayKit.CAPEndpoint = .production)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func retrieveCustomerRequest(id: Swift.String, completion: @escaping (PayKit.CAPCustomerRequest?, Foundation.NSError?) -> Swift.Void)
+  #endif
   @objc final public func createCustomerRequest(params: PayKit.CAPCreateCustomerRequestParams)
   @objc final public func updateCustomerRequest(_ request: PayKit.CAPCustomerRequest, with params: PayKit.CAPUpdateCustomerRequestParams)
   @objc final public func authorizeCustomerRequest(_ request: PayKit.CAPCustomerRequest)
@@ -710,7 +852,9 @@ extension PayKit.ObjCWrapper : PayKit.CashAppPayObserver {
   case production
   case sandbox
   case staging
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
