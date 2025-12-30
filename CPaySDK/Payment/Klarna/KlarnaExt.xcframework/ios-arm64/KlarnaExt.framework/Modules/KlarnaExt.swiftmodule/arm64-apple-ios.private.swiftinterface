@@ -1,0 +1,95 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KlarnaExt
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import Foundation
+@_exported import KlarnaExt
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class KlarnaExtSDK : ObjectiveC.NSObject {
+  @objc public static let shared: KlarnaExt.KlarnaExtSDK
+  @objc public static let frameworkVersion: Swift.String
+  @objc public static func hasImported() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func createPaymentManager(clientToken: Swift.String, category: Swift.String, returnURL: Swift.String, completion: @escaping (UIKit.UIView?, (any Swift.Error)?) -> Swift.Void) -> KlarnaExt.KlarnaPaymentManager
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func createOSMManager(clientId: Swift.String, placementKey: Swift.String, locale: Swift.String = "en-US", purchaseAmount: Foundation.NSNumber? = nil, region: Swift.String? = nil, environment: Swift.String? = nil, theme: Swift.String? = nil, returnURL: Foundation.URL? = nil, onEvent: ((Swift.String, [Swift.String : Any]?) -> Swift.Void)? = nil, onHeightChanged: ((CoreFoundation.CGFloat) -> Swift.Void)? = nil, completion: @escaping (UIKit.UIView?, (any Swift.Error)?) -> Swift.Void) -> KlarnaExt.KlarnaOSMManager
+  #endif
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class KlarnaOSMManager : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func initialize(clientId: Swift.String, placementKey: Swift.String, locale: Swift.String = "en-US", purchaseAmount: Swift.Int? = nil, region: Swift.String? = nil, environment: Swift.String? = nil, theme: Swift.String? = nil, returnURL: Foundation.URL? = nil, onEvent: ((Swift.String, [Swift.String : Any]?) -> Swift.Void)? = nil, onHeightChanged: ((CoreFoundation.CGFloat) -> Swift.Void)? = nil, completion: @escaping (UIKit.UIView?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func render(completion: @escaping ((any Swift.Error)?) -> Swift.Void)
+  #endif
+  public func render()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func updatePurchaseAmount(_ amount: Swift.Int?)
+  #endif
+  public func cleanup()
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public protocol KlarnaPaymentEventListenerProtocol {
+  @objc func klarnaInitialized(paymentView: UIKit.UIView)
+  @objc func klarnaLoaded(paymentView: UIKit.UIView)
+  @objc func klarnaLoadedPaymentReview(paymentView: UIKit.UIView)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func klarnaAuthorized(paymentView: UIKit.UIView, approved: Swift.Bool, authToken: Swift.String?, finalizeRequired: Swift.Bool)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func klarnaReauthorized(paymentView: UIKit.UIView, approved: Swift.Bool, authToken: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func klarnaFinalized(paymentView: UIKit.UIView, approved: Swift.Bool, authToken: Swift.String?)
+  #endif
+  @objc func klarnaResized(paymentView: UIKit.UIView, to newHeight: CoreFoundation.CGFloat)
+  @objc func klarnaFailed(inPaymentView paymentView: UIKit.UIView, withError error: Foundation.NSError)
+}
+@objc public protocol KlarnaPaymentViewProtocol {
+  @objc func initialize(clientToken: Swift.String, returnUrl: Foundation.URL)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func authorize(autoFinalize: Swift.Bool, jsonData: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func finalise(jsonData: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func load(jsonData: Swift.String?)
+  #endif
+}
+@objc @_inheritsConvenienceInitializers public class KlarnaPaymentManager : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func initialize(clientToken: Swift.String, category: Swift.String, returnURL: Swift.String, completion: @escaping (UIKit.UIView?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func authorize(autoFinalize: Swift.Bool = true, completion: @escaping (Swift.String?, Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  @objc public func finalizePayment()
+  @objc public func load()
+  @objc public func cleanup()
+  @objc deinit
+  @objc override dynamic public init()
+}
+extension KlarnaExt.KlarnaPaymentManager : KlarnaExt.KlarnaPaymentEventListenerProtocol {
+  @objc dynamic public func klarnaInitialized(paymentView: UIKit.UIView)
+  @objc dynamic public func klarnaLoaded(paymentView: UIKit.UIView)
+  @objc dynamic public func klarnaLoadedPaymentReview(paymentView: UIKit.UIView)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func klarnaAuthorized(paymentView: UIKit.UIView, approved: Swift.Bool, authToken: Swift.String?, finalizeRequired: Swift.Bool)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func klarnaReauthorized(paymentView: UIKit.UIView, approved: Swift.Bool, authToken: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc dynamic public func klarnaFinalized(paymentView: UIKit.UIView, approved: Swift.Bool, authToken: Swift.String?)
+  #endif
+  @objc dynamic public func klarnaResized(paymentView: UIKit.UIView, to newHeight: CoreFoundation.CGFloat)
+  @objc dynamic public func klarnaFailed(inPaymentView paymentView: UIKit.UIView, withError error: Foundation.NSError)
+}

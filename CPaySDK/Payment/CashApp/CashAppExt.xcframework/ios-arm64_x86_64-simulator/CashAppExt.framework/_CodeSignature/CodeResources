@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/CashAppExt-Swift.h</key>
 		<data>
-		tjlFrnJR2U+6q/nzM1gcr+/0Efc=
+		rizZVbJKG35nN75aR1vzvaA0UG4=
 		</data>
 		<key>Headers/CashAppExt-umbrella.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CYTdvIriyQIdT8iyI/5gegOsldU=
+		2mbg7m3YITx9kuDZkzWOH+RuBvI=
 		</data>
 		<key>Modules/CashAppExt.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/CashAppExt.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		CuFvfCYBRBpZPKmwiVAnG5ldjTI=
+		/rcqw3Ekcu7ENtM5bNf1cGN4RoY=
 		</data>
 		<key>Modules/CashAppExt.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		6c6eAce3tfyotWfgcoKAVFFIWVE=
+		jiIfsKAVbONoaWqFKsXo+7XEilg=
 		</data>
 		<key>Modules/CashAppExt.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		CuFvfCYBRBpZPKmwiVAnG5ldjTI=
+		/rcqw3Ekcu7ENtM5bNf1cGN4RoY=
 		</data>
 		<key>Modules/CashAppExt.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		KB8ArN8im/CgQYpNcvChmJj/s/8=
+		17USuhgQopw/ncQzjYtG83qKPcM=
 		</data>
 		<key>Modules/CashAppExt.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -42,19 +42,19 @@
 		</data>
 		<key>Modules/CashAppExt.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		4oSFHui7LzJpeRXQojp96PKSpqc=
+		21tBjkm6Fqsz+XoFtHGd2nI03fI=
 		</data>
 		<key>Modules/CashAppExt.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ZhxozKj9HyRWHb5sFUu7XkeTiq4=
+		njjo5udMKZlZzrPXoph1zaW73/Y=
 		</data>
 		<key>Modules/CashAppExt.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		4oSFHui7LzJpeRXQojp96PKSpqc=
+		21tBjkm6Fqsz+XoFtHGd2nI03fI=
 		</data>
 		<key>Modules/CashAppExt.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZiC4gyfCTWnd9zDVWXBpvZhxt0Q=
+		rAtffRnhugNLGBUHmX9GDbBsYzs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,21 +65,13 @@
 	<dict>
 		<key>Headers/CashAppExt-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			tjlFrnJR2U+6q/nzM1gcr+/0Efc=
-			</data>
 			<key>hash2</key>
 			<data>
-			njyrEv0fCn1u7910NtUyrBGuvtDuW7BFJBBeLjIcCXM=
+			0WfNdSXWeMzWfHWgErqAS6i6y8dJa0sP+JLw6h3dQyE=
 			</data>
 		</dict>
 		<key>Headers/CashAppExt-umbrella.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xzdO7idVlj3LIPzKooUtuFo7/i0=
-			</data>
 			<key>hash2</key>
 			<data>
 			lX+riVxRo/OF4mr8IYj3B3zSmCZlDQXvu9FphYvtx30=
@@ -87,10 +79,6 @@
 		</dict>
 		<key>Modules/CashAppExt.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gcwBsH4BgyFY4sVtNt+/xOKS3vY=
-			</data>
 			<key>hash2</key>
 			<data>
 			Qnesa0n4URGWAopawg9bGx36dUwkYV00BoCJ8LFzlyg=
@@ -98,54 +86,34 @@
 		</dict>
 		<key>Modules/CashAppExt.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			CuFvfCYBRBpZPKmwiVAnG5ldjTI=
-			</data>
 			<key>hash2</key>
 			<data>
-			uhgybBjnkmsN6u/EP+s2XSpGcjNRIYW6C5IT7fZ6AjU=
+			HqOotLlYqSuwfx4kI7lHY/MfwmhNHeElOXn9kDrhBcA=
 			</data>
 		</dict>
 		<key>Modules/CashAppExt.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6c6eAce3tfyotWfgcoKAVFFIWVE=
-			</data>
 			<key>hash2</key>
 			<data>
-			5jQDaha3XLY//lINIdXfDRXe8Z0UkgVQ7OBKoFC5rLc=
+			uiSwr2ePcC0A54xOQTdEY1qWr8YbQax4G8/T9s4chTo=
 			</data>
 		</dict>
 		<key>Modules/CashAppExt.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			CuFvfCYBRBpZPKmwiVAnG5ldjTI=
-			</data>
 			<key>hash2</key>
 			<data>
-			uhgybBjnkmsN6u/EP+s2XSpGcjNRIYW6C5IT7fZ6AjU=
+			HqOotLlYqSuwfx4kI7lHY/MfwmhNHeElOXn9kDrhBcA=
 			</data>
 		</dict>
 		<key>Modules/CashAppExt.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KB8ArN8im/CgQYpNcvChmJj/s/8=
-			</data>
 			<key>hash2</key>
 			<data>
-			egzNxZW0FMm/AcAsji/J4ZZZLfHcDwNhNV9YsWmh97I=
+			LXrgxp508gi5GIOdbO5ZYyVKP8NOv8BIEf2jSl6MtY0=
 			</data>
 		</dict>
 		<key>Modules/CashAppExt.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gcwBsH4BgyFY4sVtNt+/xOKS3vY=
-			</data>
 			<key>hash2</key>
 			<data>
 			Qnesa0n4URGWAopawg9bGx36dUwkYV00BoCJ8LFzlyg=
@@ -153,54 +121,34 @@
 		</dict>
 		<key>Modules/CashAppExt.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4oSFHui7LzJpeRXQojp96PKSpqc=
-			</data>
 			<key>hash2</key>
 			<data>
-			PJkjeXOxPYecDNh+ek17E8OCUstHf77Z63FlBnYBH90=
+			EcifOukDFjhvQ5yBJcJVO4QOTlsA9Y/u0n7fp8WT0DU=
 			</data>
 		</dict>
 		<key>Modules/CashAppExt.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ZhxozKj9HyRWHb5sFUu7XkeTiq4=
-			</data>
 			<key>hash2</key>
 			<data>
-			uqzEvuGLjdFuFUi0gRZlWbWHyOvVZJ1yZzV5BvE8vDQ=
+			ey8K0GV6PWEllcNsuBAI2TsgtN/pYCJLXASrUqLIFlc=
 			</data>
 		</dict>
 		<key>Modules/CashAppExt.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4oSFHui7LzJpeRXQojp96PKSpqc=
-			</data>
 			<key>hash2</key>
 			<data>
-			PJkjeXOxPYecDNh+ek17E8OCUstHf77Z63FlBnYBH90=
+			EcifOukDFjhvQ5yBJcJVO4QOTlsA9Y/u0n7fp8WT0DU=
 			</data>
 		</dict>
 		<key>Modules/CashAppExt.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ZiC4gyfCTWnd9zDVWXBpvZhxt0Q=
-			</data>
 			<key>hash2</key>
 			<data>
-			iP76p2IwhDAOIUHEyc9HpzU8jnvCUikTNXfxZuzTT1g=
+			q5vXF7uRqIvVpDh5eJyJNVca3zCXGuVtAQlNpoVkdtc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YEYBqpVnfNQ62xIO0xBLp0Yi9mY=
-			</data>
 			<key>hash2</key>
 			<data>
 			5oY3UFYFmuM/0TmV7QbSuUhMQbXvVmlbjd6+CbeeXPg=

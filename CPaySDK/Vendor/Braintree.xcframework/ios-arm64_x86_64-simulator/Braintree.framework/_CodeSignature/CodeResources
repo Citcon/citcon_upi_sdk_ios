@@ -294,7 +294,7 @@
 		</data>
 		<key>Headers/Braintree-Swift.h</key>
 		<data>
-		vPyHn+/5Syyq024bFzEVu9V540Y=
+		gdTaqyR7/sxpwEruNLohDAKwqOE=
 		</data>
 		<key>Headers/Braintree-umbrella.h</key>
 		<data>
@@ -338,7 +338,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		woDdKWzC8aIdwjsMQNjIVeeCXvM=
+		u01k6MdssYE1PUyslYapJKpMgYA=
 		</data>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -346,19 +346,19 @@
 		</data>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		mi3sgabxc8dapU05CuLAGJdL8pw=
+		A7EDCSLu3LwdbAA/9u7dY2pYf64=
 		</data>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		xPr1b11Iu780GKfu9bamdULoYBY=
+		JvIPVaPqx/GuN5LYneiNEKnM5mI=
 		</data>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		mi3sgabxc8dapU05CuLAGJdL8pw=
+		A7EDCSLu3LwdbAA/9u7dY2pYf64=
 		</data>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8Crpf+PnQ7f52c67k50w1pkUBaQ=
+		7dq0TlwX14YhhF2N7z/JZRbQlck=
 		</data>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -366,19 +366,19 @@
 		</data>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		W9LT4UFEKsP9FB2OyRkoSDKa8Bc=
+		TjcN7UhLDULGGQBJ3s9w/JoGq9M=
 		</data>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		wne78BIvM4DK38rUt7gcOkLq8xc=
+		NefzZ/E2+XdL1q9UNNuE8X67XmE=
 		</data>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		W9LT4UFEKsP9FB2OyRkoSDKa8Bc=
+		TjcN7UhLDULGGQBJ3s9w/JoGq9M=
 		</data>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		1MTCeKbAgOi/Yq82PezpGTS7x1A=
+		LLHeOF5YhUfS/2Rr8l6jdYkxbzs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -389,10 +389,6 @@
 	<dict>
 		<key>Braintree-Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uJAClQQ2tlKtKup5huUfyJ24M90=
-			</data>
 			<key>hash2</key>
 			<data>
 			jnJSNqt2zoHEIOseXOVfLomKWXVsujJxw6iuNyREQCo=
@@ -400,10 +396,6 @@
 		</dict>
 		<key>Braintree-xcframeworks-input-files.xcfilelist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			bezTl2ciZcEI79HspA79SZ7qo1c=
-			</data>
 			<key>hash2</key>
 			<data>
 			WYzi8ouIaCJoWj8dBm/S/7WqTcucXTivkL47okLWyzw=
@@ -411,10 +403,6 @@
 		</dict>
 		<key>Braintree-xcframeworks-output-files.xcfilelist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			PXu6SHIQXW9S2cQ/8BLELd2BQd4=
-			</data>
 			<key>hash2</key>
 			<data>
 			GAaCHzp14WfSl743vFrytQacXcV6RjZSN2Dla5kI2js=
@@ -422,10 +410,6 @@
 		</dict>
 		<key>Braintree-xcframeworks.sh</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Q3Ohb0IYOkcm9cqlgk6pZMILD0s=
-			</data>
 			<key>hash2</key>
 			<data>
 			qK4RvL67MFHVGoD6rFDvQInjfwpTFf0dB21YYn0nDWE=
@@ -433,10 +417,6 @@
 		</dict>
 		<key>Braintree.debug.xcconfig</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			u9E8fQ4dThAFkAV8CCxHVAAi8LQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			QilpbBbNvZvzn60CShl8qM11tTqlG6mDwOQBsGRRMeQ=
@@ -444,10 +424,6 @@
 		</dict>
 		<key>Braintree.release.xcconfig</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			u9E8fQ4dThAFkAV8CCxHVAAi8LQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			QilpbBbNvZvzn60CShl8qM11tTqlG6mDwOQBsGRRMeQ=
@@ -455,10 +431,6 @@
 		</dict>
 		<key>Headers/BTAPIClient.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TowJOUmEHO+o/QbukACIOqEOo/w=
-			</data>
 			<key>hash2</key>
 			<data>
 			1N4+XV6KUbAxN+cjOBi2xEBP2BlzPoLZ8SaObNqzd1w=
@@ -466,10 +438,6 @@
 		</dict>
 		<key>Headers/BTAppContextSwitcher.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vDrVvBxKyEK4qd3YRcloryGYdsg=
-			</data>
 			<key>hash2</key>
 			<data>
 			ANsreiY3kBvXq4Ri0lI/D7HDqh4/2drgh/OhbEB3Yqw=
@@ -477,10 +445,6 @@
 		</dict>
 		<key>Headers/BTApplePayCardNonce.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vAM1lP7E8bNSe66rLXv/45ymiHw=
-			</data>
 			<key>hash2</key>
 			<data>
 			TjP0GEQW08oNEB8jQsXGVeCy/FoiiLwJBP2YhlkyH30=
@@ -488,10 +452,6 @@
 		</dict>
 		<key>Headers/BTApplePayClient.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3jDrvEBtGY6t4riS9M8L0k0ct4c=
-			</data>
 			<key>hash2</key>
 			<data>
 			aK39TjekwN/EMBiLabhDB79qUq+wjrlijRs/Vt/1Pl0=
@@ -499,10 +459,6 @@
 		</dict>
 		<key>Headers/BTAuthenticationInsight.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gOXIMy5anNMlvB6Ehev1hjfBMyQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			rLBp6Sr6cZOU8j1nfYXrS2sJQdYwKbbFO3euJw04qGo=
@@ -510,10 +466,6 @@
 		</dict>
 		<key>Headers/BTBinData.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			XWE+K4D/06f2BV9S5Pe3OjEMnBc=
-			</data>
 			<key>hash2</key>
 			<data>
 			AwOxRKv/9uOcQEr7XEDb3b+qYGyHA9CSogiuOsT+dz4=
@@ -521,10 +473,6 @@
 		</dict>
 		<key>Headers/BTCard.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Wg2vY9ZMOU+aW+5C8+SdAdeXa20=
-			</data>
 			<key>hash2</key>
 			<data>
 			FzlryQo5feCYE8xWqE0ZhFdnEMb/oTHjLjl1boyHjzc=
@@ -532,10 +480,6 @@
 		</dict>
 		<key>Headers/BTCardCapabilities.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Jj3mFPK5Q54NvxbDNueLFbUYIC4=
-			</data>
 			<key>hash2</key>
 			<data>
 			o0AJhXFHy+mYX5cz6WNcWJdMgiApcT08yUH1XtEjFQ8=
@@ -543,10 +487,6 @@
 		</dict>
 		<key>Headers/BTCardClient+UnionPay.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Aa3NdbQNsGVRLS9aF6HkO66JswA=
-			</data>
 			<key>hash2</key>
 			<data>
 			22T3OYQDfkfdkDen5VnVzYdb1cSPlaArTvDs2BtCBLU=
@@ -554,10 +494,6 @@
 		</dict>
 		<key>Headers/BTCardClient.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			fGi/vik15r9zWf+ChCv1uW+nn6E=
-			</data>
 			<key>hash2</key>
 			<data>
 			Csqka91qVgCzL9SLOd86p1Jqg4xhEdqb0hCdBC8GZrs=
@@ -565,10 +501,6 @@
 		</dict>
 		<key>Headers/BTCardNonce.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			EYIpIDZ92OgIN7aSGiqCCTdnM+c=
-			</data>
 			<key>hash2</key>
 			<data>
 			DogJ9jBByWkgwfmxA8KwFt0An4qavfXYNDlr7iUi8DY=
@@ -576,10 +508,6 @@
 		</dict>
 		<key>Headers/BTCardRequest.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ntRlWyAP6Tqze1P3VKyGN4qIr7Q=
-			</data>
 			<key>hash2</key>
 			<data>
 			AhQF2dLUqw9XyzWst3nWpVi5DJHsC0rVAUs1yY7NqME=
@@ -587,10 +515,6 @@
 		</dict>
 		<key>Headers/BTClientMetadata.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vUknlEFn7XHBr21G4KVJER5Oxgw=
-			</data>
 			<key>hash2</key>
 			<data>
 			QTp0MsCo0CWXogKUOnBTGmZDuQzFT0eDjlx9wdnUoDA=
@@ -598,10 +522,6 @@
 		</dict>
 		<key>Headers/BTClientToken.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			F2WJrKq1nJH72sjkrjSVu5CaFSA=
-			</data>
 			<key>hash2</key>
 			<data>
 			ImNjJv1/BzGpwc4qR1DiPum3yjI0nLmkXleXnIhLkuQ=
@@ -609,10 +529,6 @@
 		</dict>
 		<key>Headers/BTConfiguration+ApplePay.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uxLnQAqWwEQkNur+W7i/Y04tYpQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			EVMQPv17j/J8dzK6Bvzxw9pUMCmHvWN/635RYnUihPA=
@@ -620,10 +536,6 @@
 		</dict>
 		<key>Headers/BTConfiguration+DataCollector.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			50sD+clHuaPr9d+LPLDgPxpYg9Y=
-			</data>
 			<key>hash2</key>
 			<data>
 			huFSSEkK1MYiHyxvFrX9DKm9mTJzaf5zhFQxenhoAjA=
@@ -631,10 +543,6 @@
 		</dict>
 		<key>Headers/BTConfiguration+LocalPayment.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			iRklsLinoOtliBehzx2YMZyuAWs=
-			</data>
 			<key>hash2</key>
 			<data>
 			BlaODUI5/yDf5FeqetuqAM6lbkhnFpwH9j4pl24U5XI=
@@ -642,10 +550,6 @@
 		</dict>
 		<key>Headers/BTConfiguration+PayPal.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			kGi4B5nBFtMQa0ro/ybYjvjoOpA=
-			</data>
 			<key>hash2</key>
 			<data>
 			dU3wTK4tQwINbBW+3/HHADTkoG2Bn8Hletisv8r6hPE=
@@ -653,10 +557,6 @@
 		</dict>
 		<key>Headers/BTConfiguration+ThreeDSecure.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ElEkRs+865RELalPHYahzraEnVU=
-			</data>
 			<key>hash2</key>
 			<data>
 			8e448QkcJ7eYkgLsTqyeEHWTtUEg9jspq7QpalA4Bt4=
@@ -664,10 +564,6 @@
 		</dict>
 		<key>Headers/BTConfiguration+UnionPay.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zVJlWzCLb6+7/LssSA5GaQqH59w=
-			</data>
 			<key>hash2</key>
 			<data>
 			BTz1Sq1fq2sq0wQmOq5Luvni4yVbbL0CS4c+QjRa2M4=
@@ -675,10 +571,6 @@
 		</dict>
 		<key>Headers/BTConfiguration+Venmo.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			eAvqv2bwuRACGwvq94Rzft2G0Wc=
-			</data>
 			<key>hash2</key>
 			<data>
 			KHMHVZLzIiaHcYjR8XTSDSmosgfR8qbaCtDDRKwjKzA=
@@ -686,10 +578,6 @@
 		</dict>
 		<key>Headers/BTConfiguration.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			W38OJQmPs9fLnZGI+msOhanDWLA=
-			</data>
 			<key>hash2</key>
 			<data>
 			IjarA8EX+bTIrbw8WnoW5IbjGxPTHGPvZ6e8RS9CK7Q=
@@ -697,10 +585,6 @@
 		</dict>
 		<key>Headers/BTDataCollector.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			deCA8pXI+4XiojI/tPKYwfAJwNQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			tf8Zp4iDJRTqzENn5v1xo2XMZxxSsSw1f66IzgddTOw=
@@ -708,10 +592,6 @@
 		</dict>
 		<key>Headers/BTEnums.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8nfUniQjE2y7z01NTr11i7AQBXc=
-			</data>
 			<key>hash2</key>
 			<data>
 			e2W4ObLPwStTUZ33uxezmVL7xkcVqyQUaBGwRKO2TKs=
@@ -719,10 +599,6 @@
 		</dict>
 		<key>Headers/BTErrors.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			tXjD4xdcKqUqW4UiuW5dL+OLlYI=
-			</data>
 			<key>hash2</key>
 			<data>
 			5isEJxSwTf4UkI/JFMBWZ03PSLraL4XUuX3GxgqwHiY=
@@ -730,10 +606,6 @@
 		</dict>
 		<key>Headers/BTHTTPErrors.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wyHk45YAUbICf1Z9ObnJhl1AfxY=
-			</data>
 			<key>hash2</key>
 			<data>
 			sOyWNcDWULd7fB11+ac9ZklHaaK6Bb/AyjTvXk1C7vM=
@@ -741,10 +613,6 @@
 		</dict>
 		<key>Headers/BTJSON.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qnzaowI1Jkxltcu+g2CPY8qGN8Q=
-			</data>
 			<key>hash2</key>
 			<data>
 			Hg5VX/bxm/KY5Hts+AtNqeh2yaO6TLpokPlBMYYjO7c=
@@ -752,10 +620,6 @@
 		</dict>
 		<key>Headers/BTLocalPaymentRequest.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/NPHPUVGrn/q1E2hGXb6nvQGX4o=
-			</data>
 			<key>hash2</key>
 			<data>
 			WgM955FGuYS4ObY/2Sq5pA4CgylfAuvCmNSurVZKnt8=
@@ -763,10 +627,6 @@
 		</dict>
 		<key>Headers/BTLocalPaymentResult.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NF6wFLq9Je6VgpUEAqn73Xx+Xks=
-			</data>
 			<key>hash2</key>
 			<data>
 			bwdxMJJcVsHpw9EdNnwwaef0cYhDBKo40+p/qCqFpuk=
@@ -774,10 +634,6 @@
 		</dict>
 		<key>Headers/BTLogger.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/RI143CNWNalldY1jzeMTIIFChA=
-			</data>
 			<key>hash2</key>
 			<data>
 			tZlVWFh7fK2wWDA3CA7eRal+CnTH2Bo5INq1zDUUDxc=
@@ -785,10 +641,6 @@
 		</dict>
 		<key>Headers/BTPayPalAccountNonce.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			V+CIGc5RMmo9mfD949bJkKapzvc=
-			</data>
 			<key>hash2</key>
 			<data>
 			2vpYdCfoUnmRZM6YYP9X2Zl43Xs+aF4P4rfPlMnzZQ4=
@@ -796,10 +648,6 @@
 		</dict>
 		<key>Headers/BTPayPalCheckoutRequest.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Xs3QVEq+yKlfYCCOmp5vpyepVjc=
-			</data>
 			<key>hash2</key>
 			<data>
 			DHB+tSE2fpDMhDSqYHrxlTSTaSasRSXtsNoq1orGNSU=
@@ -807,10 +655,6 @@
 		</dict>
 		<key>Headers/BTPayPalCreditFinancing.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3aTYXHMijeDyqUdbtmRQXLfvAUg=
-			</data>
 			<key>hash2</key>
 			<data>
 			Yj7byXNujZCtcH/CBhdQYkRbHBsDJVBmuhDYaMKbLs4=
@@ -818,10 +662,6 @@
 		</dict>
 		<key>Headers/BTPayPalCreditFinancingAmount.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RMsjnplepMGpppdEAaacWoSH89A=
-			</data>
 			<key>hash2</key>
 			<data>
 			/2sAT1VKhVS41PTKRyC7C3m/a3HsjjlzzYTwWXRz3k0=
@@ -829,10 +669,6 @@
 		</dict>
 		<key>Headers/BTPayPalDriver.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			v5+a6ctgtGLBD50x/h8pcatFDDY=
-			</data>
 			<key>hash2</key>
 			<data>
 			8LaSE+9UbKshNCCOQsRrH5IVuUnYRlDddb9awMx3nsk=
@@ -840,10 +676,6 @@
 		</dict>
 		<key>Headers/BTPayPalIDToken.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BpG6yoZg/7ZZ+qukuONeJXBOV9E=
-			</data>
 			<key>hash2</key>
 			<data>
 			co+h4VpC8dLtHS54Dyan90nQPKMYwvHFOfuCOB5/8jM=
@@ -851,10 +683,6 @@
 		</dict>
 		<key>Headers/BTPayPalLineItem.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Hw6eI6j2XJoXOVqnzMnnSIh5P0M=
-			</data>
 			<key>hash2</key>
 			<data>
 			+lel+ia/Gr48+aed/XikazYubFJUsG6TaDZqdG2OOIY=
@@ -862,10 +690,6 @@
 		</dict>
 		<key>Headers/BTPayPalRequest.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ClcxOsK6zb1BI4id1w1ja3rFi9E=
-			</data>
 			<key>hash2</key>
 			<data>
 			A4azFgeDRkcPdHsd0VQzg2YvXdCSCngYFmj4U1WuNMw=
@@ -873,10 +697,6 @@
 		</dict>
 		<key>Headers/BTPayPalVaultRequest.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rJSz6ZIE1923LySKGJ56uY5tJxs=
-			</data>
 			<key>hash2</key>
 			<data>
 			FN9dZxzbeaOYDCypFVuSpfCv7YcF08Xoovrd7t9Rwak=
@@ -884,10 +704,6 @@
 		</dict>
 		<key>Headers/BTPaymentFlowDriver+LocalPayment.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			iRHZRUVO1JGQYJYMD2uJrnU6kZc=
-			</data>
 			<key>hash2</key>
 			<data>
 			BX92p1vIbaV0TvdAurD8Db3b2j9E/ziqr6F0gv9Hkqc=
@@ -895,10 +711,6 @@
 		</dict>
 		<key>Headers/BTPaymentFlowDriver+ThreeDSecure.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			UvjOfzHyvRYLUpUjVy20h4r6aR4=
-			</data>
 			<key>hash2</key>
 			<data>
 			E6YD5zIi46E6A4Rd8Rf+zyFeAeUIg5rSLwsmeCkR26g=
@@ -906,10 +718,6 @@
 		</dict>
 		<key>Headers/BTPaymentFlowDriver.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yAY4THSbb6YHAiIml+pT8gPC8/o=
-			</data>
 			<key>hash2</key>
 			<data>
 			ylHl61zogwO8d2Bhr38zQ0CDPIf27h3HJGugxEjBYxo=
@@ -917,10 +725,6 @@
 		</dict>
 		<key>Headers/BTPaymentFlowRequest.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7vt3Y7OCu+uQePAYjNwAJ86J2D8=
-			</data>
 			<key>hash2</key>
 			<data>
 			dQDJAeJ3sfGYdPZ+o+sR3SIPbXBDfC16OCQNTkx2+os=
@@ -928,10 +732,6 @@
 		</dict>
 		<key>Headers/BTPaymentFlowResult.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			eS11Dnabg2x2iuxkzvngAxNL7dE=
-			</data>
 			<key>hash2</key>
 			<data>
 			vBfR2/fnS0pTKs2H6k6wRkH5nm/w517zmcrLjKD2TdQ=
@@ -939,10 +739,6 @@
 		</dict>
 		<key>Headers/BTPaymentMethodNonce.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			mOdeScEGhvcmG1miXkW8m/z6vzo=
-			</data>
 			<key>hash2</key>
 			<data>
 			2xDdLmNTd5TKsh+CC+mC8+SjSN8pF7wh63oNtrUWC58=
@@ -950,10 +746,6 @@
 		</dict>
 		<key>Headers/BTPostalAddress.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7dRGbAu+l+H1+UDI2f83BW/oBkE=
-			</data>
 			<key>hash2</key>
 			<data>
 			etLVXUJL4zATkdqn+UrltR8WTgrCNs2BwC22rrjLrXM=
@@ -961,10 +753,6 @@
 		</dict>
 		<key>Headers/BTPreferredPaymentMethods.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			C7CcXoOIPbJ+YCt57EiSalcEI1s=
-			</data>
 			<key>hash2</key>
 			<data>
 			tNsvDbRwUD0xRn4SFDLfYphyDSNzba+UnrOK5SeU3sU=
@@ -972,10 +760,6 @@
 		</dict>
 		<key>Headers/BTPreferredPaymentMethodsResult.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TGtil9/KAgJkJuENCc12kVWFjdo=
-			</data>
 			<key>hash2</key>
 			<data>
 			iJZrEVn04ZVzHs5E3iLSzuQZDkaLznPRMqijyYqH0kg=
@@ -983,10 +767,6 @@
 		</dict>
 		<key>Headers/BTThreeDSecureAdditionalInformation.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			oDZn/BtsubXcSddaMx+VdYDruD8=
-			</data>
 			<key>hash2</key>
 			<data>
 			CempxTbU0prAn1Hh4+cxaGFx+S8COoTTIclyPGKKwDI=
@@ -994,10 +774,6 @@
 		</dict>
 		<key>Headers/BTThreeDSecureInfo.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ess7kHc1bXHBYk/K2bOzOBbC6i0=
-			</data>
 			<key>hash2</key>
 			<data>
 			tP5+VgeT9osCawngJUkWeHzexZkwoi2InDIDFaSusi8=
@@ -1005,10 +781,6 @@
 		</dict>
 		<key>Headers/BTThreeDSecureLookup.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			kni/O0FGcKP1AqFU8DvBNnznInw=
-			</data>
 			<key>hash2</key>
 			<data>
 			prWjs24oWTx4H/bXczQOpkzrw20buNuFU3NLW+bVn6A=
@@ -1016,10 +788,6 @@
 		</dict>
 		<key>Headers/BTThreeDSecurePostalAddress.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AL038HIBtm8VhZ9krqtwxmCP31Q=
-			</data>
 			<key>hash2</key>
 			<data>
 			VKRksQlymo4JVGU9jDETZRP4rZ53AZ80TsoVH7CfD5g=
@@ -1027,10 +795,6 @@
 		</dict>
 		<key>Headers/BTThreeDSecureRequest.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			C2rGrOjkdVfsZPz4jR0yjhlI6H4=
-			</data>
 			<key>hash2</key>
 			<data>
 			pV+KGEjPrVFOIvg5t9aR1pHb2ixXjNPcsT42S3aaJh0=
@@ -1038,10 +802,6 @@
 		</dict>
 		<key>Headers/BTThreeDSecureResult.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Y5KhACazAvrDqcs5Fby+Py4CuAg=
-			</data>
 			<key>hash2</key>
 			<data>
 			wxDzr022P4YwnbEX9rZZeD4/bhOmHUBOyrTiGc4zU3I=
@@ -1049,10 +809,6 @@
 		</dict>
 		<key>Headers/BTThreeDSecureV1UICustomization.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			C6cdmj1as+05OQUu6yiZb+G9dwI=
-			</data>
 			<key>hash2</key>
 			<data>
 			ZobpOTOGQDNPfSAYX9S4Tewg3pvXiXQHD6LFyaTb0Q0=
@@ -1060,10 +816,6 @@
 		</dict>
 		<key>Headers/BTThreeDSecureV2BaseCustomization.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yXCc39M81LrWZOs8wFZsGMzdeQA=
-			</data>
 			<key>hash2</key>
 			<data>
 			CIsM3Faxw2+4AtX8Ha+2T0rhLbnVsFwjadKIuC+P2wY=
@@ -1071,10 +823,6 @@
 		</dict>
 		<key>Headers/BTThreeDSecureV2ButtonCustomization.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			a/RcZ9WFOfiA7gNlboLp3EeAM0I=
-			</data>
 			<key>hash2</key>
 			<data>
 			aFTzcqjqCFoEbQMFYoh0xVpl3UPXs4ahIJwh3gSRA88=
@@ -1082,10 +830,6 @@
 		</dict>
 		<key>Headers/BTThreeDSecureV2LabelCustomization.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			HMydmnF0cbV5QkJ5IwOq1rrbApU=
-			</data>
 			<key>hash2</key>
 			<data>
 			EIGAKns75ihWp8VcPLIwKMSdOp0DrUW534YuEc5ZFFQ=
@@ -1093,10 +837,6 @@
 		</dict>
 		<key>Headers/BTThreeDSecureV2TextBoxCustomization.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zYh5NizYbWv0ZJyI5POPSYkQGNM=
-			</data>
 			<key>hash2</key>
 			<data>
 			my5k4bAsnSFhSjtLNyiyIrBu9jB9WKrK7kMPZ4E3GHg=
@@ -1104,10 +844,6 @@
 		</dict>
 		<key>Headers/BTThreeDSecureV2ToolbarCustomization.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+z5+75abFJ+BGMMaTeAaqgRGfpg=
-			</data>
 			<key>hash2</key>
 			<data>
 			BNQURvwW4NWxWeo+SutdKiYlvbcyoAdb+JbOwO61EIg=
@@ -1115,10 +851,6 @@
 		</dict>
 		<key>Headers/BTThreeDSecureV2UICustomization.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			fR8GubjXxuOBlQ2cvszeHlBRRJE=
-			</data>
 			<key>hash2</key>
 			<data>
 			T8mLNQTalDQqBlULY8pLYFy9e8ls5MRS9CnAc/Xfl3E=
@@ -1126,10 +858,6 @@
 		</dict>
 		<key>Headers/BTURLUtils.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1cm30vbtSpEn9chuFjvKPdpeJp0=
-			</data>
 			<key>hash2</key>
 			<data>
 			BSb09scaw0fOR5g+WAdGbO3dvV1eC/0MqRTV5Kk04zU=
@@ -1137,10 +865,6 @@
 		</dict>
 		<key>Headers/BTVenmoAccountNonce.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			chCEhOml4fhyeYdw1FJkeRRMql0=
-			</data>
 			<key>hash2</key>
 			<data>
 			py+Azn25bwyu/tXaEWeFkWjfuLCQCoVvMw/9+F/DZ+4=
@@ -1148,10 +872,6 @@
 		</dict>
 		<key>Headers/BTVenmoDriver.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wIj4+tmydNfYtbGxltPcpIiRI90=
-			</data>
 			<key>hash2</key>
 			<data>
 			xUDBUWL2rs83ODgsDTReKfxiXZJxZ1zm2iX1XdPTjrI=
@@ -1159,10 +879,6 @@
 		</dict>
 		<key>Headers/BTVenmoRequest.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/z6fdIZZGgbSDV5d5D/p1lBXLD4=
-			</data>
 			<key>hash2</key>
 			<data>
 			U49LGPRQwl8TR4yaze1cfVdd4yvT4NXfkDv4JXTJkjY=
@@ -1170,10 +886,6 @@
 		</dict>
 		<key>Headers/BTViewControllerPresentingDelegate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hC88yCaFNt8Jt+0WMK4BWThoUlA=
-			</data>
 			<key>hash2</key>
 			<data>
 			miISkbj2CJ7sCeav1OhpnVoQxjeBRUpuaAXmH8NDEtk=
@@ -1181,21 +893,13 @@
 		</dict>
 		<key>Headers/Braintree-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vPyHn+/5Syyq024bFzEVu9V540Y=
-			</data>
 			<key>hash2</key>
 			<data>
-			3y2HfFV0RVrTmmU704UOmP/pmpc2DAcZ16oZGTJXOd0=
+			6/W9Z5vfxxIKrWpErz+ohunsUNymLQY34u1xrmX+9A0=
 			</data>
 		</dict>
 		<key>Headers/Braintree-umbrella.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Lk8dKGBMV9IlS3R20dOYrXbj4qY=
-			</data>
 			<key>hash2</key>
 			<data>
 			Hqx1mBnF4LZJJrIy3SepUU3ht+v7nBnTG5SL8pI4x2o=
@@ -1203,10 +907,6 @@
 		</dict>
 		<key>Headers/BraintreeApplePay.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			M3U/oRIRbUtR96XcpMgXwmuFEKw=
-			</data>
 			<key>hash2</key>
 			<data>
 			PUsEn8CkBx9OOddBUv/pcVC5QkZstCXhQP+IohiNMY4=
@@ -1214,10 +914,6 @@
 		</dict>
 		<key>Headers/BraintreeCard.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4QI0Zt5SfiM/J5mgYiJwt55eExA=
-			</data>
 			<key>hash2</key>
 			<data>
 			ndTeeNjG1CqODUw26hKIRZKm5Yn0TJyHYaJhWqR4QG0=
@@ -1225,10 +921,6 @@
 		</dict>
 		<key>Headers/BraintreeCore.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GOOMonNqF9Hso3ZgU25+s08UvS0=
-			</data>
 			<key>hash2</key>
 			<data>
 			5YZ2QSkw7Xe7no7P5UngpxySMguEwqUT2gMFE4gHkiE=
@@ -1236,10 +928,6 @@
 		</dict>
 		<key>Headers/BraintreeDataCollector.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TtMeW84GxNNzkt4aZ03Uce2tTY4=
-			</data>
 			<key>hash2</key>
 			<data>
 			hrIYa9PS2fBaGP4Qqt2PYphaLMoHRTlmBpcGqPMhwG4=
@@ -1247,10 +935,6 @@
 		</dict>
 		<key>Headers/BraintreePayPal.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			swp/QDNrTIqkxQmyPSckrrOIuLg=
-			</data>
 			<key>hash2</key>
 			<data>
 			QXVgLqBnmya3qGMbmEK+rRSZ9vnOukHWMF640AWGGug=
@@ -1258,10 +942,6 @@
 		</dict>
 		<key>Headers/BraintreePaymentFlow.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Wpff57+5b30q2Vo9LQrijUncHBw=
-			</data>
 			<key>hash2</key>
 			<data>
 			37SjQAVKJ0/soIhngOgBNITvASQbqCNDSvmAiGl045E=
@@ -1269,10 +949,6 @@
 		</dict>
 		<key>Headers/BraintreeThreeDSecure.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			twLgIKD+/wWL6I3ghWi/cBMnoRU=
-			</data>
 			<key>hash2</key>
 			<data>
 			yVcflKPut+7YK6vBhkHoNLMd0H5F6QUvkTEw0Ed7L+g=
@@ -1280,10 +956,6 @@
 		</dict>
 		<key>Headers/BraintreeUnionPay.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RpAzxQSbtaZENOAqaMVhoh6BsY8=
-			</data>
 			<key>hash2</key>
 			<data>
 			YF943HWEGU8adu69Ii3uRwDnX8RNGTLm2AlYYRUuA30=
@@ -1291,10 +963,6 @@
 		</dict>
 		<key>Headers/BraintreeVenmo.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0LM98H03DxVVs/W7R2roC4+K9vE=
-			</data>
 			<key>hash2</key>
 			<data>
 			9N0x257BER8U7oOdzHy/C3nNxIp1PJIbiHM7C+poKeg=
@@ -1302,10 +970,6 @@
 		</dict>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gcwBsH4BgyFY4sVtNt+/xOKS3vY=
-			</data>
 			<key>hash2</key>
 			<data>
 			Qnesa0n4URGWAopawg9bGx36dUwkYV00BoCJ8LFzlyg=
@@ -1313,54 +977,34 @@
 		</dict>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			mi3sgabxc8dapU05CuLAGJdL8pw=
-			</data>
 			<key>hash2</key>
 			<data>
-			H4nE2bVHRgG2/yYHNJelX7PLDCs7a64+Je1K65Re1b8=
+			SAj3pN6yH3mALi63FduR79EFmRaJaj/gLVVA+4a4vKk=
 			</data>
 		</dict>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xPr1b11Iu780GKfu9bamdULoYBY=
-			</data>
 			<key>hash2</key>
 			<data>
-			XwUr0FVL/KL9I1mByz0NFRu6kqJ70KiWCp0uV7wleEc=
+			XP1+4Xb9tyUHjpLpNrqWWJpshqgiBEbpxM1d1Oa/Xxs=
 			</data>
 		</dict>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			mi3sgabxc8dapU05CuLAGJdL8pw=
-			</data>
 			<key>hash2</key>
 			<data>
-			H4nE2bVHRgG2/yYHNJelX7PLDCs7a64+Je1K65Re1b8=
+			SAj3pN6yH3mALi63FduR79EFmRaJaj/gLVVA+4a4vKk=
 			</data>
 		</dict>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8Crpf+PnQ7f52c67k50w1pkUBaQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			vHNayuOlweK4/kFNT1pv/K3z0nUDMojCbJ3U1xQH5mU=
+			oZ20Xh7w63KQDjLqDP9/eDAt6NgT1dwou0TzIJ4k6WE=
 			</data>
 		</dict>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gcwBsH4BgyFY4sVtNt+/xOKS3vY=
-			</data>
 			<key>hash2</key>
 			<data>
 			Qnesa0n4URGWAopawg9bGx36dUwkYV00BoCJ8LFzlyg=
@@ -1368,54 +1012,34 @@
 		</dict>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			W9LT4UFEKsP9FB2OyRkoSDKa8Bc=
-			</data>
 			<key>hash2</key>
 			<data>
-			58sNkyJ+7PE6m+dlb72aWyyxQZaHL3ksfP0DKfwZpgw=
+			Tt/Xu+77sRLJ3YDGO+DV2WJ7nePlcfdpFeFLRKCVUE4=
 			</data>
 		</dict>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wne78BIvM4DK38rUt7gcOkLq8xc=
-			</data>
 			<key>hash2</key>
 			<data>
-			2M36uCAM9LdCSme4qgIAasAmsBmeZuNbHQ4cOFOeAN8=
+			Ae0omfNyMm7cpnCVlYgPWyTdwD9RpaMvuYqs0ZMTCEM=
 			</data>
 		</dict>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			W9LT4UFEKsP9FB2OyRkoSDKa8Bc=
-			</data>
 			<key>hash2</key>
 			<data>
-			58sNkyJ+7PE6m+dlb72aWyyxQZaHL3ksfP0DKfwZpgw=
+			Tt/Xu+77sRLJ3YDGO+DV2WJ7nePlcfdpFeFLRKCVUE4=
 			</data>
 		</dict>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1MTCeKbAgOi/Yq82PezpGTS7x1A=
-			</data>
 			<key>hash2</key>
 			<data>
-			v+VLMbYTUSAMGl6Z1H9hzAKo9YawX56m0a9+E/ERzQ0=
+			r6Bp8RjYyBXnPC1wUohpQ8wY6k1n8zcrrP5je9RQVLs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qoUo3lsnl51q1lzvJEcsfOBzDCw=
-			</data>
 			<key>hash2</key>
 			<data>
 			BA6fUrVVDix7L0UJ9rLgLTeo5oPd/45bS8ejmDTF6oY=

@@ -1,0 +1,2718 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "KlarnaExt",
+    "printedName": "KlarnaExt",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaExt",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KlarnaExt"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KlarnaExtSDK",
+        "printedName": "KlarnaExtSDK",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaExtSDK",
+                "printedName": "KlarnaExt.KlarnaExtSDK",
+                "usr": "c:@M@KlarnaExt@objc(cs)KlarnaExtSDK"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@KlarnaExt@objc(cs)KlarnaExtSDK(cpy)shared",
+            "mangledName": "$s9KlarnaExt0aB3SDKC6sharedACvpZ",
+            "moduleName": "KlarnaExt",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaExtSDK",
+                    "printedName": "KlarnaExt.KlarnaExtSDK",
+                    "usr": "c:@M@KlarnaExt@objc(cs)KlarnaExtSDK"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@KlarnaExt@objc(cs)KlarnaExtSDK(cm)shared",
+                "mangledName": "$s9KlarnaExt0aB3SDKC6sharedACvgZ",
+                "moduleName": "KlarnaExt",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "frameworkVersion",
+            "printedName": "frameworkVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@KlarnaExt@objc(cs)KlarnaExtSDK(cpy)frameworkVersion",
+            "mangledName": "$s9KlarnaExt0aB3SDKC16frameworkVersionSSvpZ",
+            "moduleName": "KlarnaExt",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@KlarnaExt@objc(cs)KlarnaExtSDK(cm)frameworkVersion",
+                "mangledName": "$s9KlarnaExt0aB3SDKC16frameworkVersionSSvgZ",
+                "moduleName": "KlarnaExt",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hasImported",
+            "printedName": "hasImported()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaExt@objc(cs)KlarnaExtSDK(cm)hasImported",
+            "mangledName": "$s9KlarnaExt0aB3SDKC11hasImportedSbyFZ",
+            "moduleName": "KlarnaExt",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createPaymentManager",
+            "printedName": "createPaymentManager(clientToken:category:returnURL:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaPaymentManager",
+                "printedName": "KlarnaExt.KlarnaPaymentManager",
+                "usr": "c:@M@KlarnaExt@objc(cs)KlarnaPaymentManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UIKit.UIView?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(UIKit.UIView?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.UIView?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIView",
+                            "printedName": "UIKit.UIView",
+                            "usr": "c:objc(cs)UIView"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaExt@objc(cs)KlarnaExtSDK(im)createPaymentManagerWithClientToken:category:returnURL:completion:",
+            "mangledName": "$s9KlarnaExt0aB3SDKC20createPaymentManager11clientToken8category9returnURL10completionAA0aeF0CSS_S2SySo6UIViewCSg_s5Error_pSgtctF",
+            "moduleName": "KlarnaExt",
+            "objc_name": "createPaymentManagerWithClientToken:category:returnURL:completion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createOSMManager",
+            "printedName": "createOSMManager(clientId:placementKey:locale:purchaseAmount:region:environment:theme:returnURL:onEvent:onHeightChanged:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaOSMManager",
+                "printedName": "KlarnaExt.KlarnaOSMManager",
+                "usr": "c:@M@KlarnaExt@objc(cs)KlarnaOSMManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String, [Swift.String : Any]?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, [Swift.String : Any]?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String, [Swift.String : Any]?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[Swift.String : Any]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((CoreGraphics.CGFloat) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CoreGraphics.CGFloat) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UIKit.UIView?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(UIKit.UIView?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.UIView?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIView",
+                            "printedName": "UIKit.UIView",
+                            "usr": "c:objc(cs)UIView"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaExt@objc(cs)KlarnaExtSDK(im)createOSMManagerWithClientId:placementKey:locale:purchaseAmount:region:environment:theme:returnURL:onEvent:onHeightChanged:completion:",
+            "mangledName": "$s9KlarnaExt0aB3SDKC16createOSMManager8clientId12placementKey6locale14purchaseAmount6region11environment5theme9returnURL7onEvent0R13HeightChanged10completionAA0aE0CSS_S2SSo8NSNumberCSgSSSgA2U10Foundation0Q0VSgySS_SDySSypGSgtcSgy12CoreGraphics7CGFloatVcSgySo6UIViewCSg_s5Error_pSgtctF",
+            "moduleName": "KlarnaExt",
+            "objc_name": "createOSMManagerWithClientId:placementKey:locale:purchaseAmount:region:environment:theme:returnURL:onEvent:onHeightChanged:completion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KlarnaExt@objc(cs)KlarnaExtSDK",
+        "mangledName": "$s9KlarnaExt0aB3SDKC",
+        "moduleName": "KlarnaExt",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaExt",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KlarnaExt"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KlarnaOSMManager",
+        "printedName": "KlarnaOSMManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(clientId:placementKey:locale:purchaseAmount:region:environment:theme:returnURL:onEvent:onHeightChanged:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String, [Swift.String : Any]?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, [Swift.String : Any]?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String, [Swift.String : Any]?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[Swift.String : Any]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((CoreGraphics.CGFloat) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CoreGraphics.CGFloat) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UIKit.UIView?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(UIKit.UIView?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.UIView?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIView",
+                            "printedName": "UIKit.UIView",
+                            "usr": "c:objc(cs)UIView"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9KlarnaExt0A10OSMManagerC10initialize8clientId12placementKey6locale14purchaseAmount6region11environment5theme9returnURL7onEvent0Q13HeightChanged10completionySS_S2SSiSgSSSgA2Q10Foundation0P0VSgySS_SDySSypGSgtcSgy04CoreV07CGFloatVcSgySo6UIViewCSg_s5Error_pSgtctF",
+            "mangledName": "$s9KlarnaExt0A10OSMManagerC10initialize8clientId12placementKey6locale14purchaseAmount6region11environment5theme9returnURL7onEvent0Q13HeightChanged10completionySS_S2SSiSgSSSgA2Q10Foundation0P0VSgySS_SDySSypGSgtcSgy12CoreGraphics7CGFloatVcSgySo6UIViewCSg_s5Error_pSgtctF",
+            "moduleName": "KlarnaExt",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "render",
+            "printedName": "render(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "((any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Swift.Error)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9KlarnaExt0A10OSMManagerC6render10completionyys5Error_pSgc_tF",
+            "mangledName": "$s9KlarnaExt0A10OSMManagerC6render10completionyys5Error_pSgc_tF",
+            "moduleName": "KlarnaExt",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "render",
+            "printedName": "render()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9KlarnaExt0A10OSMManagerC6renderyyF",
+            "mangledName": "$s9KlarnaExt0A10OSMManagerC6renderyyF",
+            "moduleName": "KlarnaExt",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updatePurchaseAmount",
+            "printedName": "updatePurchaseAmount(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9KlarnaExt0A10OSMManagerC20updatePurchaseAmountyySiSgF",
+            "mangledName": "$s9KlarnaExt0A10OSMManagerC20updatePurchaseAmountyySiSgF",
+            "moduleName": "KlarnaExt",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cleanup",
+            "printedName": "cleanup()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9KlarnaExt0A10OSMManagerC7cleanupyyF",
+            "mangledName": "$s9KlarnaExt0A10OSMManagerC7cleanupyyF",
+            "moduleName": "KlarnaExt",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaOSMManager",
+                "printedName": "KlarnaExt.KlarnaOSMManager",
+                "usr": "c:@M@KlarnaExt@objc(cs)KlarnaOSMManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KlarnaExt@objc(cs)KlarnaOSMManager(im)init",
+            "mangledName": "$s9KlarnaExt0A10OSMManagerCACycfc",
+            "moduleName": "KlarnaExt",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KlarnaExt@objc(cs)KlarnaOSMManager",
+        "mangledName": "$s9KlarnaExt0A10OSMManagerC",
+        "moduleName": "KlarnaExt",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaExt",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KlarnaExt"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KlarnaPaymentEventListenerProtocol",
+        "printedName": "KlarnaPaymentEventListenerProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "klarnaInitialized",
+            "printedName": "klarnaInitialized(paymentView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaExt@objc(pl)KlarnaPaymentEventListenerProtocol(im)klarnaInitializedWithPaymentView:",
+            "mangledName": "$s9KlarnaExt0A28PaymentEventListenerProtocolP17klarnaInitialized11paymentViewySo6UIViewC_tF",
+            "moduleName": "KlarnaExt",
+            "genericSig": "<τ_0_0 where τ_0_0 : KlarnaExt.KlarnaPaymentEventListenerProtocol>",
+            "sugared_genericSig": "<Self where Self : KlarnaExt.KlarnaPaymentEventListenerProtocol>",
+            "protocolReq": true,
+            "objc_name": "klarnaInitializedWithPaymentView:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaLoaded",
+            "printedName": "klarnaLoaded(paymentView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaExt@objc(pl)KlarnaPaymentEventListenerProtocol(im)klarnaLoadedWithPaymentView:",
+            "mangledName": "$s9KlarnaExt0A28PaymentEventListenerProtocolP12klarnaLoaded11paymentViewySo6UIViewC_tF",
+            "moduleName": "KlarnaExt",
+            "genericSig": "<τ_0_0 where τ_0_0 : KlarnaExt.KlarnaPaymentEventListenerProtocol>",
+            "sugared_genericSig": "<Self where Self : KlarnaExt.KlarnaPaymentEventListenerProtocol>",
+            "protocolReq": true,
+            "objc_name": "klarnaLoadedWithPaymentView:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaLoadedPaymentReview",
+            "printedName": "klarnaLoadedPaymentReview(paymentView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaExt@objc(pl)KlarnaPaymentEventListenerProtocol(im)klarnaLoadedPaymentReviewWithPaymentView:",
+            "mangledName": "$s9KlarnaExt0A28PaymentEventListenerProtocolP012klarnaLoadedC6Review11paymentViewySo6UIViewC_tF",
+            "moduleName": "KlarnaExt",
+            "genericSig": "<τ_0_0 where τ_0_0 : KlarnaExt.KlarnaPaymentEventListenerProtocol>",
+            "sugared_genericSig": "<Self where Self : KlarnaExt.KlarnaPaymentEventListenerProtocol>",
+            "protocolReq": true,
+            "objc_name": "klarnaLoadedPaymentReviewWithPaymentView:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaAuthorized",
+            "printedName": "klarnaAuthorized(paymentView:approved:authToken:finalizeRequired:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaExt@objc(pl)KlarnaPaymentEventListenerProtocol(im)klarnaAuthorizedWithPaymentView:approved:authToken:finalizeRequired:",
+            "mangledName": "$s9KlarnaExt0A28PaymentEventListenerProtocolP16klarnaAuthorized11paymentView8approved9authToken16finalizeRequiredySo6UIViewC_SbSSSgSbtF",
+            "moduleName": "KlarnaExt",
+            "genericSig": "<τ_0_0 where τ_0_0 : KlarnaExt.KlarnaPaymentEventListenerProtocol>",
+            "sugared_genericSig": "<Self where Self : KlarnaExt.KlarnaPaymentEventListenerProtocol>",
+            "protocolReq": true,
+            "objc_name": "klarnaAuthorizedWithPaymentView:approved:authToken:finalizeRequired:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaReauthorized",
+            "printedName": "klarnaReauthorized(paymentView:approved:authToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaExt@objc(pl)KlarnaPaymentEventListenerProtocol(im)klarnaReauthorizedWithPaymentView:approved:authToken:",
+            "mangledName": "$s9KlarnaExt0A28PaymentEventListenerProtocolP18klarnaReauthorized11paymentView8approved9authTokenySo6UIViewC_SbSSSgtF",
+            "moduleName": "KlarnaExt",
+            "genericSig": "<τ_0_0 where τ_0_0 : KlarnaExt.KlarnaPaymentEventListenerProtocol>",
+            "sugared_genericSig": "<Self where Self : KlarnaExt.KlarnaPaymentEventListenerProtocol>",
+            "protocolReq": true,
+            "objc_name": "klarnaReauthorizedWithPaymentView:approved:authToken:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaFinalized",
+            "printedName": "klarnaFinalized(paymentView:approved:authToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaExt@objc(pl)KlarnaPaymentEventListenerProtocol(im)klarnaFinalizedWithPaymentView:approved:authToken:",
+            "mangledName": "$s9KlarnaExt0A28PaymentEventListenerProtocolP15klarnaFinalized11paymentView8approved9authTokenySo6UIViewC_SbSSSgtF",
+            "moduleName": "KlarnaExt",
+            "genericSig": "<τ_0_0 where τ_0_0 : KlarnaExt.KlarnaPaymentEventListenerProtocol>",
+            "sugared_genericSig": "<Self where Self : KlarnaExt.KlarnaPaymentEventListenerProtocol>",
+            "protocolReq": true,
+            "objc_name": "klarnaFinalizedWithPaymentView:approved:authToken:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaResized",
+            "printedName": "klarnaResized(paymentView:to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaExt@objc(pl)KlarnaPaymentEventListenerProtocol(im)klarnaResizedWithPaymentView:to:",
+            "mangledName": "$s9KlarnaExt0A28PaymentEventListenerProtocolP13klarnaResized11paymentView2toySo6UIViewC_12CoreGraphics7CGFloatVtF",
+            "moduleName": "KlarnaExt",
+            "genericSig": "<τ_0_0 where τ_0_0 : KlarnaExt.KlarnaPaymentEventListenerProtocol>",
+            "sugared_genericSig": "<Self where Self : KlarnaExt.KlarnaPaymentEventListenerProtocol>",
+            "protocolReq": true,
+            "objc_name": "klarnaResizedWithPaymentView:to:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaFailed",
+            "printedName": "klarnaFailed(inPaymentView:withError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSError",
+                "printedName": "Foundation.NSError",
+                "usr": "c:objc(cs)NSError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaExt@objc(pl)KlarnaPaymentEventListenerProtocol(im)klarnaFailedInPaymentView:withError:",
+            "mangledName": "$s9KlarnaExt0A28PaymentEventListenerProtocolP12klarnaFailed02inC4View9withErrorySo6UIViewC_So7NSErrorCtF",
+            "moduleName": "KlarnaExt",
+            "genericSig": "<τ_0_0 where τ_0_0 : KlarnaExt.KlarnaPaymentEventListenerProtocol>",
+            "sugared_genericSig": "<Self where Self : KlarnaExt.KlarnaPaymentEventListenerProtocol>",
+            "protocolReq": true,
+            "objc_name": "klarnaFailedInPaymentView:withError:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@KlarnaExt@objc(pl)KlarnaPaymentEventListenerProtocol",
+        "mangledName": "$s9KlarnaExt0A28PaymentEventListenerProtocolP",
+        "moduleName": "KlarnaExt",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KlarnaPaymentViewProtocol",
+        "printedName": "KlarnaPaymentViewProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(clientToken:returnUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaExt@objc(pl)KlarnaPaymentViewProtocol(im)initializeWithClientToken:returnUrl:",
+            "mangledName": "$s9KlarnaExt0A19PaymentViewProtocolP10initialize11clientToken9returnUrlySS_10Foundation3URLVtF",
+            "moduleName": "KlarnaExt",
+            "genericSig": "<τ_0_0 where τ_0_0 : KlarnaExt.KlarnaPaymentViewProtocol>",
+            "sugared_genericSig": "<Self where Self : KlarnaExt.KlarnaPaymentViewProtocol>",
+            "protocolReq": true,
+            "objc_name": "initializeWithClientToken:returnUrl:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "authorize",
+            "printedName": "authorize(autoFinalize:jsonData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaExt@objc(pl)KlarnaPaymentViewProtocol(im)authorizeWithAutoFinalize:jsonData:",
+            "mangledName": "$s9KlarnaExt0A19PaymentViewProtocolP9authorize12autoFinalize8jsonDataySb_SSSgtF",
+            "moduleName": "KlarnaExt",
+            "genericSig": "<τ_0_0 where τ_0_0 : KlarnaExt.KlarnaPaymentViewProtocol>",
+            "sugared_genericSig": "<Self where Self : KlarnaExt.KlarnaPaymentViewProtocol>",
+            "protocolReq": true,
+            "objc_name": "authorizeWithAutoFinalize:jsonData:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "finalise",
+            "printedName": "finalise(jsonData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaExt@objc(pl)KlarnaPaymentViewProtocol(im)finaliseWithJsonData:",
+            "mangledName": "$s9KlarnaExt0A19PaymentViewProtocolP8finalise8jsonDataySSSg_tF",
+            "moduleName": "KlarnaExt",
+            "genericSig": "<τ_0_0 where τ_0_0 : KlarnaExt.KlarnaPaymentViewProtocol>",
+            "sugared_genericSig": "<Self where Self : KlarnaExt.KlarnaPaymentViewProtocol>",
+            "protocolReq": true,
+            "objc_name": "finaliseWithJsonData:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load(jsonData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaExt@objc(pl)KlarnaPaymentViewProtocol(im)loadWithJsonData:",
+            "mangledName": "$s9KlarnaExt0A19PaymentViewProtocolP4load8jsonDataySSSg_tF",
+            "moduleName": "KlarnaExt",
+            "genericSig": "<τ_0_0 where τ_0_0 : KlarnaExt.KlarnaPaymentViewProtocol>",
+            "sugared_genericSig": "<Self where Self : KlarnaExt.KlarnaPaymentViewProtocol>",
+            "protocolReq": true,
+            "objc_name": "loadWithJsonData:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@KlarnaExt@objc(pl)KlarnaPaymentViewProtocol",
+        "mangledName": "$s9KlarnaExt0A19PaymentViewProtocolP",
+        "moduleName": "KlarnaExt",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KlarnaPaymentManager",
+        "printedName": "KlarnaPaymentManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(clientToken:category:returnURL:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UIKit.UIView?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(UIKit.UIView?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.UIView?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIView",
+                            "printedName": "UIKit.UIView",
+                            "usr": "c:objc(cs)UIView"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaExt@objc(cs)KlarnaPaymentManager(im)initializeWithClientToken:category:returnURL:completion:",
+            "mangledName": "$s9KlarnaExt0A14PaymentManagerC10initialize11clientToken8category9returnURL10completionySS_S2SySo6UIViewCSg_s5Error_pSgtctF",
+            "moduleName": "KlarnaExt",
+            "objc_name": "initializeWithClientToken:category:returnURL:completion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "authorize",
+            "printedName": "authorize(autoFinalize:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String?, Swift.Bool, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, Swift.Bool, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaExt@objc(cs)KlarnaPaymentManager(im)authorizeWithAutoFinalize:completion:",
+            "mangledName": "$s9KlarnaExt0A14PaymentManagerC9authorize12autoFinalize10completionySb_ySSSg_Sbs5Error_pSgtctF",
+            "moduleName": "KlarnaExt",
+            "objc_name": "authorizeWithAutoFinalize:completion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "finalizePayment",
+            "printedName": "finalizePayment()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaExt@objc(cs)KlarnaPaymentManager(im)finalizePayment",
+            "mangledName": "$s9KlarnaExt0A14PaymentManagerC08finalizeC0yyF",
+            "moduleName": "KlarnaExt",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaExt@objc(cs)KlarnaPaymentManager(im)load",
+            "mangledName": "$s9KlarnaExt0A14PaymentManagerC4loadyyF",
+            "moduleName": "KlarnaExt",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cleanup",
+            "printedName": "cleanup()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaExt@objc(cs)KlarnaPaymentManager(im)cleanup",
+            "mangledName": "$s9KlarnaExt0A14PaymentManagerC7cleanupyyF",
+            "moduleName": "KlarnaExt",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaPaymentManager",
+                "printedName": "KlarnaExt.KlarnaPaymentManager",
+                "usr": "c:@M@KlarnaExt@objc(cs)KlarnaPaymentManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KlarnaExt@objc(cs)KlarnaPaymentManager(im)init",
+            "mangledName": "$s9KlarnaExt0A14PaymentManagerCACycfc",
+            "moduleName": "KlarnaExt",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaInitialized",
+            "printedName": "klarnaInitialized(paymentView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@KlarnaExt@objc(cs)KlarnaPaymentManager(im)klarnaInitializedWithPaymentView:",
+            "mangledName": "$s9KlarnaExt0A14PaymentManagerC17klarnaInitialized11paymentViewySo6UIViewC_tF",
+            "moduleName": "KlarnaExt",
+            "objc_name": "klarnaInitializedWithPaymentView:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaLoaded",
+            "printedName": "klarnaLoaded(paymentView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@KlarnaExt@objc(cs)KlarnaPaymentManager(im)klarnaLoadedWithPaymentView:",
+            "mangledName": "$s9KlarnaExt0A14PaymentManagerC12klarnaLoaded11paymentViewySo6UIViewC_tF",
+            "moduleName": "KlarnaExt",
+            "objc_name": "klarnaLoadedWithPaymentView:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaLoadedPaymentReview",
+            "printedName": "klarnaLoadedPaymentReview(paymentView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@KlarnaExt@objc(cs)KlarnaPaymentManager(im)klarnaLoadedPaymentReviewWithPaymentView:",
+            "mangledName": "$s9KlarnaExt0A14PaymentManagerC012klarnaLoadedC6Review11paymentViewySo6UIViewC_tF",
+            "moduleName": "KlarnaExt",
+            "objc_name": "klarnaLoadedPaymentReviewWithPaymentView:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaAuthorized",
+            "printedName": "klarnaAuthorized(paymentView:approved:authToken:finalizeRequired:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@KlarnaExt@objc(cs)KlarnaPaymentManager(im)klarnaAuthorizedWithPaymentView:approved:authToken:finalizeRequired:",
+            "mangledName": "$s9KlarnaExt0A14PaymentManagerC16klarnaAuthorized11paymentView8approved9authToken16finalizeRequiredySo6UIViewC_SbSSSgSbtF",
+            "moduleName": "KlarnaExt",
+            "objc_name": "klarnaAuthorizedWithPaymentView:approved:authToken:finalizeRequired:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaReauthorized",
+            "printedName": "klarnaReauthorized(paymentView:approved:authToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@KlarnaExt@objc(cs)KlarnaPaymentManager(im)klarnaReauthorizedWithPaymentView:approved:authToken:",
+            "mangledName": "$s9KlarnaExt0A14PaymentManagerC18klarnaReauthorized11paymentView8approved9authTokenySo6UIViewC_SbSSSgtF",
+            "moduleName": "KlarnaExt",
+            "objc_name": "klarnaReauthorizedWithPaymentView:approved:authToken:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaFinalized",
+            "printedName": "klarnaFinalized(paymentView:approved:authToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@KlarnaExt@objc(cs)KlarnaPaymentManager(im)klarnaFinalizedWithPaymentView:approved:authToken:",
+            "mangledName": "$s9KlarnaExt0A14PaymentManagerC15klarnaFinalized11paymentView8approved9authTokenySo6UIViewC_SbSSSgtF",
+            "moduleName": "KlarnaExt",
+            "objc_name": "klarnaFinalizedWithPaymentView:approved:authToken:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaResized",
+            "printedName": "klarnaResized(paymentView:to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@KlarnaExt@objc(cs)KlarnaPaymentManager(im)klarnaResizedWithPaymentView:to:",
+            "mangledName": "$s9KlarnaExt0A14PaymentManagerC13klarnaResized11paymentView2toySo6UIViewC_12CoreGraphics7CGFloatVtF",
+            "moduleName": "KlarnaExt",
+            "objc_name": "klarnaResizedWithPaymentView:to:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaFailed",
+            "printedName": "klarnaFailed(inPaymentView:withError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSError",
+                "printedName": "Foundation.NSError",
+                "usr": "c:objc(cs)NSError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@KlarnaExt@objc(cs)KlarnaPaymentManager(im)klarnaFailedInPaymentView:withError:",
+            "mangledName": "$s9KlarnaExt0A14PaymentManagerC12klarnaFailed02inC4View9withErrorySo6UIViewC_So7NSErrorCtF",
+            "moduleName": "KlarnaExt",
+            "objc_name": "klarnaFailedInPaymentView:withError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KlarnaExt@objc(cs)KlarnaPaymentManager",
+        "mangledName": "$s9KlarnaExt0A14PaymentManagerC",
+        "moduleName": "KlarnaExt",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "KlarnaPaymentEventListenerProtocol",
+            "printedName": "KlarnaPaymentEventListenerProtocol",
+            "usr": "c:@M@KlarnaExt@objc(pl)KlarnaPaymentEventListenerProtocol",
+            "mangledName": "$s9KlarnaExt0A28PaymentEventListenerProtocolP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaExtSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 602,
+      "length": 7,
+      "value": "\"1.0.0\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaExtSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2815,
+      "length": 7,
+      "value": "\"en-US\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 643,
+      "length": 7,
+      "value": "\"en-US\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2115,
+      "length": 7,
+      "value": "\"en-US\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3067,
+      "length": 31,
+      "value": "\"KlarnaMobileSDK.KlarnaOSMView\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3165,
+      "length": 11,
+      "value": "\"KlarnaExt\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3214,
+      "length": 3,
+      "value": "-20"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3287,
+      "length": 73,
+      "value": "\"KlarnaMobileSDK not found. Please ensure KlarnaMobileSDK is integrated.\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3514,
+      "length": 7,
+      "value": "\"alloc\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3674,
+      "length": 11,
+      "value": "\"KlarnaExt\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3723,
+      "length": 3,
+      "value": "-21"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3796,
+      "length": 34,
+      "value": "\"Failed to allocate KlarnaOSMView\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3985,
+      "length": 6,
+      "value": "\"init\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4139,
+      "length": 11,
+      "value": "\"KlarnaExt\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4188,
+      "length": 3,
+      "value": "-22"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4261,
+      "length": 45,
+      "value": "\"Failed to initialize KlarnaOSMView instance\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4517,
+      "length": 10,
+      "value": "\"clientId\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4577,
+      "length": 14,
+      "value": "\"placementKey\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4635,
+      "length": 8,
+      "value": "\"locale\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4800,
+      "length": 20,
+      "value": "\"setPurchaseAmount:\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5067,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5137,
+      "length": 25,
+      "value": "\"KlarnaCore.KlarnaRegion\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "Dictionary",
+      "offset": 5303,
+      "length": 230,
+      "value": "[(\"NA\", \"na\"), (\"NORTHAMERICA\", \"na\"), (\"EU\", \"eu\"), (\"EUROPE\", \"eu\"), (\"OC\", \"oc\"), (\"OCEANIA\", \"oc\")]"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6048,
+      "length": 8,
+      "value": "\"region\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6092,
+      "length": 56,
+      "value": "\"✅ Set OSM region to: .\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6128,
+      "length": 1,
+      "value": "\" (input: \""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6146,
+      "length": 1,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6190,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6338,
+      "length": 44,
+      "value": "\"⚠️ Failed to set OSM region: \""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6381,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6406,
+      "length": 61,
+      "value": "\"   Supported values: NA\/NORTHAMERICA, EU\/EUROPE, OC\/OCEANIA\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6702,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6769,
+      "length": 30,
+      "value": "\"KlarnaCore.KlarnaEnvironment\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7212,
+      "length": 13,
+      "value": "\"environment\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7257,
+      "length": 42,
+      "value": "\"✅ Set OSM environment to: .\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7298,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7334,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7453,
+      "length": 54,
+      "value": "\"⚠️ Failed to set OSM environment: \""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7506,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7531,
+      "length": 51,
+      "value": "\"   Supported values: playground, production, demo\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "Dictionary",
+      "offset": 7834,
+      "length": 128,
+      "value": "[(\"DARK\", 0), (\"LIGHT\", 1), (\"AUTOMATIC\", 2), (\"AUTO\", 2)]"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8246,
+      "length": 11,
+      "value": "\"setTheme:\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8489,
+      "length": 47,
+      "value": "\"⚠️ OSM view does not respond to setTheme:\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9031,
+      "length": 55,
+      "value": "\"✅ Set OSM theme to: \""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9062,
+      "length": 1,
+      "value": "\" (value: \""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9084,
+      "length": 1,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9131,
+      "length": 36,
+      "value": "\"⚠️ Invalid OSM theme: \""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9166,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9191,
+      "length": 57,
+      "value": "\"   Supported values: dark (0), light (1), automatic (2)\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9371,
+      "length": 11,
+      "value": "\"returnURL\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9659,
+      "length": 14,
+      "value": "\"eventHandler\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaOSMManager.swift",
+      "kind": "StringLiteral",
+      "offset": 9988,
+      "length": 16,
+      "value": "\"sizingDelegate\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/KlarnaExt\/KlarnaExt\/Classes\/KlarnaPaymentManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5606,
+      "length": 4,
+      "value": "true"
+    }
+  ]
+}

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PayPalExt-Swift.h</key>
 		<data>
-		Fwss4KcRsgbrl3vtUUoAMkFvIaw=
+		wN1tZ5dqjCo2iBm83UfXN+OwW1U=
 		</data>
 		<key>Headers/PayPalExt-umbrella.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		orzPSAnGepoKTQD4TIDRcgr6BmQ=
+		C1NGexILzrjFy58t2j+WcxlHC7w=
 		</data>
 		<key>Modules/PayPalExt.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/PayPalExt.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		EOgdbW/r558A9pZ/KbH54r4Bm4g=
+		lcLfqe6AHX3kvSlgKSPbrIKfgA0=
 		</data>
 		<key>Modules/PayPalExt.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		JO/fM2ybLWk0RHNqFP5FgGoZwj8=
+		GxNbA+MZopZQg41CwmIMbJ4eXhw=
 		</data>
 		<key>Modules/PayPalExt.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		EOgdbW/r558A9pZ/KbH54r4Bm4g=
+		lcLfqe6AHX3kvSlgKSPbrIKfgA0=
 		</data>
 		<key>Modules/PayPalExt.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		UXi5m18y+aP+MOX1w+lYdl3nw+k=
+		w5XudfA8hCy1hN7C904CQV0ZyIg=
 		</data>
 		<key>Modules/PayPalExt.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -42,19 +42,19 @@
 		</data>
 		<key>Modules/PayPalExt.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		XUpZctyt40QoGMjaYH6ZSRKKsdg=
+		nyHFtwOiSaatyXT/ihHoyEOrwIM=
 		</data>
 		<key>Modules/PayPalExt.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		mRh4udxe2PQqGyqutiHfxklBUEA=
+		rIlxFKtjdVzOaMfR5am/dY1OLPE=
 		</data>
 		<key>Modules/PayPalExt.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		XUpZctyt40QoGMjaYH6ZSRKKsdg=
+		nyHFtwOiSaatyXT/ihHoyEOrwIM=
 		</data>
 		<key>Modules/PayPalExt.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JFqanXCJs5uuFQQgzwhCnMjoieY=
+		uhPOFSF84PTfphxEto2WRkPnm3w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,21 +65,13 @@
 	<dict>
 		<key>Headers/PayPalExt-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Fwss4KcRsgbrl3vtUUoAMkFvIaw=
-			</data>
 			<key>hash2</key>
 			<data>
-			VMAz3kXUdHpGjBzS+f+RmkTWoXy8IC+kDsENDU5UW0c=
+			dp2TmK/cEyG8nUE8j+pXAUW2V2rmiaeA8S3/2Izxsp8=
 			</data>
 		</dict>
 		<key>Headers/PayPalExt-umbrella.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rmIqew0cvrqPCwsQYs5kIif81nE=
-			</data>
 			<key>hash2</key>
 			<data>
 			ai3pIa4V7p8cvk+3Cd9c4Bf2FRIE6ddDbHcP/tWk6Es=
@@ -87,10 +79,6 @@
 		</dict>
 		<key>Modules/PayPalExt.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gcwBsH4BgyFY4sVtNt+/xOKS3vY=
-			</data>
 			<key>hash2</key>
 			<data>
 			Qnesa0n4URGWAopawg9bGx36dUwkYV00BoCJ8LFzlyg=
@@ -98,54 +86,34 @@
 		</dict>
 		<key>Modules/PayPalExt.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			EOgdbW/r558A9pZ/KbH54r4Bm4g=
-			</data>
 			<key>hash2</key>
 			<data>
-			FgVKUJ2uv5JpO7dpnfgr17WwwhjeDtW/XgBPWPb4IUg=
+			8lLzlZuAmai+H7H+qtJ6tn08knwggZ0mphEsVZp0fwA=
 			</data>
 		</dict>
 		<key>Modules/PayPalExt.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JO/fM2ybLWk0RHNqFP5FgGoZwj8=
-			</data>
 			<key>hash2</key>
 			<data>
-			3C+TdMo4e1mxDPHHa9k77xl0B5GaUV2MdBtjf5HOGoc=
+			dQXReMkaSc5Uq2odUECJ2PEXwowS/ghJeyaYmjB7W2U=
 			</data>
 		</dict>
 		<key>Modules/PayPalExt.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			EOgdbW/r558A9pZ/KbH54r4Bm4g=
-			</data>
 			<key>hash2</key>
 			<data>
-			FgVKUJ2uv5JpO7dpnfgr17WwwhjeDtW/XgBPWPb4IUg=
+			8lLzlZuAmai+H7H+qtJ6tn08knwggZ0mphEsVZp0fwA=
 			</data>
 		</dict>
 		<key>Modules/PayPalExt.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			UXi5m18y+aP+MOX1w+lYdl3nw+k=
-			</data>
 			<key>hash2</key>
 			<data>
-			RpzaBbYWNII3BSuD3FHHs2p3WjGQ4kPVzUMNeUFPoSI=
+			sYkbW63abkm+kbBWy3W5XUXmBn8//95pH13ecfaPr+Y=
 			</data>
 		</dict>
 		<key>Modules/PayPalExt.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gcwBsH4BgyFY4sVtNt+/xOKS3vY=
-			</data>
 			<key>hash2</key>
 			<data>
 			Qnesa0n4URGWAopawg9bGx36dUwkYV00BoCJ8LFzlyg=
@@ -153,54 +121,34 @@
 		</dict>
 		<key>Modules/PayPalExt.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			XUpZctyt40QoGMjaYH6ZSRKKsdg=
-			</data>
 			<key>hash2</key>
 			<data>
-			z+qY3zDDadWj6UQyyqNwia+wNJApheuTRK0qivkw+d4=
+			m0iOIqayU84ADTr18lRixuzjUhcTqI3HbeCcus2ARas=
 			</data>
 		</dict>
 		<key>Modules/PayPalExt.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			mRh4udxe2PQqGyqutiHfxklBUEA=
-			</data>
 			<key>hash2</key>
 			<data>
-			46U36IaMMzgOVsRjUkI6QOy8rqmPlU+ooElRcUy3GCo=
+			OKNH+hlhRoPpGKEQ4udBdHJARp7DM5Nq978fk4sckg4=
 			</data>
 		</dict>
 		<key>Modules/PayPalExt.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			XUpZctyt40QoGMjaYH6ZSRKKsdg=
-			</data>
 			<key>hash2</key>
 			<data>
-			z+qY3zDDadWj6UQyyqNwia+wNJApheuTRK0qivkw+d4=
+			m0iOIqayU84ADTr18lRixuzjUhcTqI3HbeCcus2ARas=
 			</data>
 		</dict>
 		<key>Modules/PayPalExt.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JFqanXCJs5uuFQQgzwhCnMjoieY=
-			</data>
 			<key>hash2</key>
 			<data>
-			A0AFSR17GKdLtVvjsn39JhWniOFZZ3VP/AhJvQ4AdfE=
+			OKBDLKT21RAgOlxJF2QGb6JtavRxyQJOVn69lNi9RJY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			j13C5x3WOqLXWTPVJLG1QTsFMnM=
-			</data>
 			<key>hash2</key>
 			<data>
 			JIAHkw2UhKAZWi87hM0Yvs9AXevd6ezqRvODB2QUb5Q=

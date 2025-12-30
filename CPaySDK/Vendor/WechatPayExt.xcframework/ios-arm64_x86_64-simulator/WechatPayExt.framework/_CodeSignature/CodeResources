@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4KxxnzeVTrjoLLokB2l8uTGgnGI=
+		qasVh/E8Orv9mwLY/jdyKK+ho50=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -25,10 +25,6 @@
 	<dict>
 		<key>Headers/WechatPayExt-umbrella.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FOxwqvEorPZcr7ZTctR8nHmGp+s=
-			</data>
 			<key>hash2</key>
 			<data>
 			7iFi4C0mx79JKAYQcnkRzdXKczUq2mrO8QQ04KPeRkQ=
@@ -36,10 +32,6 @@
 		</dict>
 		<key>Headers/WechatPayExt.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3s8GkMyYc9WQ99q0E3bsoMQtNyM=
-			</data>
 			<key>hash2</key>
 			<data>
 			B6sGyaUSHjvVX5yZUy/tglEvI5EKP7H+D79q01sCu5s=
@@ -47,10 +39,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hfHtoYdIWSqZkoowEj9skNRxXAI=
-			</data>
 			<key>hash2</key>
 			<data>
 			ZuBXtKMxIHbTTK5LgC6+cwNgLETsBBW+qXoGAbphCgk=

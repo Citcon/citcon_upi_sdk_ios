@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CPaySDK'
-  s.version          = '2.3.1'
+  s.version          = '2.4.0'
   s.summary          = 'UPI mobile SDK for iOS.'
   
   # This description is used to generate tags and improve search results.
@@ -112,6 +112,12 @@ s.subspec 'Payment' do |ss|
     sss.subspec 'Button' do |ssss|
       ssss.vendored_frameworks = ['CPaySDK/Payment/CashApp/Ext/PayKitUI.xcframework']
     end
+  end
+  
+  ss.subspec 'Klarna' do |sss|
+    # KlarnaExt 1.0.0, KlarnaMobileSDK 2.10.0+
+    sss.vendored_frameworks = ['CPaySDK/Payment/Klarna/KlarnaExt.xcframework']
+    sss.dependency 'KlarnaMobileSDK', '~> 2.10.0'
   end
 end
 

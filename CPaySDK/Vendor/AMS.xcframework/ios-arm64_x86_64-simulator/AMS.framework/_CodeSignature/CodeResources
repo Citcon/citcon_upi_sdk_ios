@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fq2S/eb1LopxOJKR9smMcM7YCjU=
+		l2govGks5PKG/o2ihV3PDFNJN6I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -25,10 +25,6 @@
 	<dict>
 		<key>Headers/AMS-umbrella.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			sAwKQ0+s+DlKWDKsLxcwOY98/cE=
-			</data>
 			<key>hash2</key>
 			<data>
 			eo7nngZ9Or3VvcvhTmuEHEbkJy9pzlGGkZKNopBkCXw=
@@ -36,10 +32,6 @@
 		</dict>
 		<key>Headers/AMS.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ZKpc1A6IVI+9s/jk0UAagH8SIBs=
-			</data>
 			<key>hash2</key>
 			<data>
 			ZsBeg2cHRyf4ouvBi9pq0TxS9vCli7Eo27BHji7WV5Y=
@@ -47,10 +39,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			UavvjLgP6+LTmKsbqJvQLNFs28g=
-			</data>
 			<key>hash2</key>
 			<data>
 			BDMoE9ALbkQBmWUiNtuumIk1VnuIknFzZTVV+yEVB6E=

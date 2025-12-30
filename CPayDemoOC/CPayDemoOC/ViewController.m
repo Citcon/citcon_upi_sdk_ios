@@ -10,7 +10,7 @@
 #import "WechatPayViewController.h"
 #import "LoadingView.h"
 #import "TokenHeader.h"
-
+//#import "WebviewController.h"
 
 
 @interface ViewController ()
@@ -76,14 +76,18 @@
 }
 
 - (void)initEnvForm {
-    _txtRTEnv.text = @"UAT";
-    _txtPaymethod.text = @"cashapppay";
+    _txtRTEnv.text = @"QA";
+    _txtPaymethod.text = @"klarna";
     _txtVendorType.text = SDK_TOKEN;
     _txtDemoType.text = @"others";
     
 }
 
 - (void)setAccessToken {
+//    // todo
+//    [self.navigationController pushViewController:[[WebviewController alloc] init] animated:YES];
+//    return;
+    
     if (_txtVendorType.text == nil || _txtVendorType.text.length < 1) {
         [self showAlert:@"Error" andMessage:@"Please set payment method at first"];
         return;
@@ -299,6 +303,10 @@
         return [self presentPaymentView:@"digit" payment:payment title:@"PPCP PayPal"];
     }
     
+    if ([_txtDemoType.text isEqualToString:@"bt"]) {
+        return [self presentPaymentView:@"card" payment:payment title:@"Braintree PayPal"];
+    }
+    
     if ([_txtPaymethod.text isEqualToString:@"cashapppay"]) {
         return [self presentPaymentView:@"digit" payment:payment title:@"Cash App"];
     }
@@ -313,7 +321,10 @@
         [self presentPaymentView:@"digit" payment:payment title:@"PayPal"];
     } else if ([payment isEqualToString:@"venmo"]) {
         [self presentPaymentView:@"digit" payment:payment title:@"Venmo"];
-    } else if ([payment isEqualToString:@"card"] ||
+    }  else if ([payment isEqualToString:@"klarna"]) {
+        [self presentPaymentView:@"digit" payment:payment title:@"Klarna"];
+    }
+    else if ([payment isEqualToString:@"card"] ||
                [payment isEqualToString:@"toss"] ||
                [payment isEqualToString:@"lpay"] ||
                [payment isEqualToString:@"lgpay"] ||
@@ -377,6 +388,7 @@
         @"xendit",
         @"alipay+",
         @"ppcp",
+        @"bt",
         @"others"
     ];
     [self showPicker];

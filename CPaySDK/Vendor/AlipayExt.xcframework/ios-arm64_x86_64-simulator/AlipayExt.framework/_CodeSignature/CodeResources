@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		OWzkpSivPvTiSuD2J3PtIq0NsFY=
+		LiIOuP3Z1fNLAwJb30t03/O7OXY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -25,10 +25,6 @@
 	<dict>
 		<key>Headers/AlipayExt-umbrella.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xrpwFBrwhLBm3AdPwbE7OeWvIkQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			R08uMKhVVCdTU+Vit+PepSrzOaigsHGk2a50FtBRRCo=
@@ -36,10 +32,6 @@
 		</dict>
 		<key>Headers/AlipayExt.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			x22l+H5G8icgNQjX6y9hDXDsEWk=
-			</data>
 			<key>hash2</key>
 			<data>
 			E1ezaeT5A782s8bfPsrQpQTTC9A6csCc1vvL8nE8m44=
@@ -47,10 +39,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xcSgDgtO9fvkCgSG60k5hkmawHM=
-			</data>
 			<key>hash2</key>
 			<data>
 			S6JhUkcinXk3W+YP1Cp/IrgcnOCJhWlgUrAtE6qPtVE=

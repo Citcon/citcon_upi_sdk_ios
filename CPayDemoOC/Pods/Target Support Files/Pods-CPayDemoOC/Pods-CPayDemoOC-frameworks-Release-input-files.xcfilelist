@@ -1,10 +1,13 @@
 ${PODS_ROOT}/Target Support Files/Pods-CPayDemoOC/Pods-CPayDemoOC-frameworks.sh
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Core/CPaySDK.framework/CPaySDK
-${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Ext/CardinalMobile/CardinalMobile.framework/CardinalMobile
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Ext/PPRiskMagnes/PPRiskMagnes.framework/PPRiskMagnes
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Button/PayKitUI.framework/PayKitUI
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Core/PayKit.framework/PayKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/Klarna/KlarnaExt.framework/KlarnaExt
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Button/PaymentButtons.framework/PaymentButtons
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Core/CorePayments.framework/CorePayments
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Fraud/FraudProtection.framework/FraudProtection
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Web/PayPalWebPayments.framework/PayPalWebPayments
+${PODS_XCFRAMEWORKS_BUILD_DIR}/KlarnaMobileSDK/basic/KlarnaCore.framework/KlarnaCore
+${PODS_XCFRAMEWORKS_BUILD_DIR}/KlarnaMobileSDK/basic/KlarnaMobileSDK.framework/KlarnaMobileSDK
+${PODS_XCFRAMEWORKS_BUILD_DIR}/KlarnaMobileSDK/basic/KlarnaPayments.framework/KlarnaPayments

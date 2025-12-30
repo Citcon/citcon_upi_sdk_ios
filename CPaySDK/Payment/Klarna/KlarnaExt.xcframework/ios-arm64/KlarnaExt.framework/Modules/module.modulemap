@@ -1,0 +1,11 @@
+framework module KlarnaExt {
+  umbrella header "KlarnaExt-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module KlarnaExt.Swift {
+  header "KlarnaExt-Swift.h"
+  requires objc
+}

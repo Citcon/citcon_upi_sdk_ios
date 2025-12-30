@@ -1,9 +1,10 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CPaySDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 @_exported import CPaySDK
 import Foundation
+import ObjectiveC
 import Swift
 import UIKit
 import _Concurrency
@@ -31,7 +32,9 @@ import _SwiftConcurrencyShims
   @objc public func handleScene(_ URLContexts: Swift.Set<UIKit.UIOpenURLContext>)
   @objc public func handleUrl(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:]) -> Swift.Bool
   @objc public func handleUniversalLink(_ userActivity: Foundation.NSUserActivity)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getAccessToken(_ vendor: Swift.String, onComplete callback: @escaping (_ result: Swift.String?) -> Swift.Void)
+  #endif
   @objc public func generateOrder(_ order: CPaySDK.CPayRequest, callback: @escaping CPaySDK.CPayRequestCallback)
   @objc deinit
 }
@@ -202,6 +205,7 @@ import _SwiftConcurrencyShims
   public var order_payer_id: Swift.String?
   public var order_payment_id: Swift.String?
   public var order_payment_source: Swift.String?
+  public var authorization_token: Swift.String?
   public var grant: CPaySDK.CPayExtGatewayGrant?
   public var consumer: CPaySDK.CPayExtGatewayConsumer?
   @objc override dynamic public init()
@@ -241,7 +245,9 @@ public typealias CPayCheckCallback = (_ result: CPaySDK.CPayCheck?) -> Swift.Voi
   case QA
   case UAT
   case PROD
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -278,14 +284,28 @@ public typealias CPayCheckCallback = (_ result: CPaySDK.CPayCheck?) -> Swift.Voi
   }
   @objc public var data: CPaySDK.CPayResult.CPayResultData
   @objc override dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(status: Swift.String, code: Swift.String, message: Swift.String, reference: Swift.String, id: Swift.String? = nil)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class CPayStyleManager : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func buildPayPalButton(color: Swift.String? = "gold", size: Swift.String? = "collapsed", lable: Swift.String? = "none") -> UIKit.UIButton?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func buildPayPalButton(insets: UIKit.UIEdgeInsets, edges: Swift.Int = 4, color: Swift.String? = "gold", size: Swift.String? = "collapsed", lable: Swift.String? = "none") -> UIKit.UIButton?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func buildCashAppPaymentButton(size: Swift.String? = "large", action: @escaping () -> Swift.Void) -> UIKit.UIView?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func buildCashAppPaymentMethod(size: Swift.String? = "large", cashTag: Swift.String = "", cashTagColor: UIKit.UIColor?, cashTagFont: UIKit.UIFont?) -> UIKit.UIView?
+  #endif
+  @objc public static func hasKlarnaOSM() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func buildKlarnaOSMView(clientId: Swift.String, placementKey: Swift.String, locale: Swift.String = "en-US", purchaseAmount: Foundation.NSNumber? = nil, region: Swift.String? = "NA", environment: Swift.String? = "playground", theme: Swift.String? = "light", onHeightChanged: ((CoreFoundation.CGFloat) -> Swift.Void)? = nil, completion: @escaping (UIKit.UIView?, (any Swift.Error)?) -> Swift.Void) -> Swift.Bool
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }

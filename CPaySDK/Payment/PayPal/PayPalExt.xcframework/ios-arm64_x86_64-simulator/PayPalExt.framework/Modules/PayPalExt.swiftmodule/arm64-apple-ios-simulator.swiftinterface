@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-4.1.50 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-4.1.50 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayPalExt
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import Foundation
 @_exported import PayPalExt
 import Swift
@@ -9,15 +9,21 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @objc public class PayPalButtonBuilder : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func build(color: Swift.String? = "gold", size: Swift.String? = "collapsed", lable: Swift.String? = "none") -> UIKit.UIButton?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func build(insets: UIKit.UIEdgeInsets, edges: Swift.Int = 4, color: Swift.String? = "gold", size: Swift.String? = "collapsed", lable: Swift.String? = "none") -> UIKit.UIButton?
+  #endif
   @objc public static func hasImported() -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum PayPalStatus : Swift.Int {
   case Start = 1, Complete, Cancel, Error
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -36,7 +42,9 @@ import _SwiftConcurrencyShims
 public typealias PayPalCallback = (PayPalExt.PayPalResult) -> Swift.Void
 @objc public enum PayPalModel : Swift.Int {
   case Web = 0, Native
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -45,7 +53,9 @@ public typealias PayPalCallback = (PayPalExt.PayPalResult) -> Swift.Void
 @_inheritsConvenienceInitializers @objc public class PayPalService : ObjectiveC.NSObject {
   @objc public static func setMode(_ model: PayPalExt.PayPalModel)
   @objc public static func initConfig(_ clientId: Swift.String, _ env: Swift.Int = 0)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func getMetadata() -> Swift.String?
+  #endif
   @objc public static func payOrder(clientId: Swift.String, orderId: Swift.String, env: Swift.Int = 0, callback: @escaping PayPalExt.PayPalCallback) -> Swift.Bool
   public static func payOrderWithNative(clientId: Swift.String, orderId: Swift.String, env: Swift.Int = 0, callback: @escaping PayPalExt.PayPalCallback) -> Swift.Bool
   public static func payOrderWithWeb(clientId: Swift.String, orderId: Swift.String, env: Swift.Int = 0, callback: @escaping PayPalExt.PayPalCallback) -> Swift.Bool
