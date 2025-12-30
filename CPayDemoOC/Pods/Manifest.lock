@@ -1,27 +1,27 @@
 PODS:
-  - CPaySDK (2.3.1):
-    - CPaySDK/Core (= 2.3.1)
-    - CPaySDK/Ext (= 2.3.1)
-    - CPaySDK/Payment/CashApp/Button (= 2.3.1)
-    - CPaySDK/Payment/CashApp/Core (= 2.3.1)
-    - CPaySDK/Payment/PayPal/Button (= 2.3.1)
-    - CPaySDK/Payment/PayPal/Fraud (= 2.3.1)
-    - CPaySDK/Payment/PayPal/Web (= 2.3.1)
-  - CPaySDK/Core (2.3.1)
-  - CPaySDK/Ext (2.3.1):
-    - CPaySDK/Ext/CardinalMobile (= 2.3.1)
-    - CPaySDK/Ext/PPRiskMagnes (= 2.3.1)
-  - CPaySDK/Ext/CardinalMobile (2.3.1)
-  - CPaySDK/Ext/PPRiskMagnes (2.3.1)
-  - CPaySDK/Payment/CashApp/Button (2.3.1)
-  - CPaySDK/Payment/CashApp/Core (2.3.1)
-  - CPaySDK/Payment/PayPal/Button (2.3.1):
+  - CPaySDK (2.4.0):
+    - CPaySDK/Core (= 2.4.0)
+    - CPaySDK/Ext (= 2.4.0)
+    - CPaySDK/Payment/CashApp/Button (= 2.4.0)
+    - CPaySDK/Payment/CashApp/Core (= 2.4.0)
+    - CPaySDK/Payment/PayPal/Button (= 2.4.0)
+    - CPaySDK/Payment/PayPal/Fraud (= 2.4.0)
+    - CPaySDK/Payment/PayPal/Web (= 2.4.0)
+  - CPaySDK/Core (2.4.0)
+  - CPaySDK/Ext (2.4.0):
+    - CPaySDK/Ext/CardinalMobile (= 2.4.0)
+    - CPaySDK/Ext/PPRiskMagnes (= 2.4.0)
+  - CPaySDK/Ext/CardinalMobile (2.4.0)
+  - CPaySDK/Ext/PPRiskMagnes (2.4.0)
+  - CPaySDK/Payment/CashApp/Button (2.4.0)
+  - CPaySDK/Payment/CashApp/Core (2.4.0)
+  - CPaySDK/Payment/PayPal/Button (2.4.0):
     - CPaySDK/Payment/PayPal/Core
-  - CPaySDK/Payment/PayPal/Core (2.3.1)
-  - CPaySDK/Payment/PayPal/Fraud (2.3.1):
+  - CPaySDK/Payment/PayPal/Core (2.4.0)
+  - CPaySDK/Payment/PayPal/Fraud (2.4.0):
     - CPaySDK/Ext/PPRiskMagnes
     - CPaySDK/Payment/PayPal/Core
-  - CPaySDK/Payment/PayPal/Web (2.3.1):
+  - CPaySDK/Payment/PayPal/Web (2.4.0):
     - CPaySDK/Payment/PayPal/Core
 
 DEPENDENCIES:
@@ -32,7 +32,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CPaySDK: 3f303e5768967810cb37f774151a771ee9d0b418
+  CPaySDK: f6f2ea4074631ca4aa1086334ce26dcba4303da8
 
 PODFILE CHECKSUM: cb0448c270a57b238e57f9675651d227b8620066
 

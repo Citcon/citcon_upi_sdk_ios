@@ -77,6 +77,7 @@
         @"billease",
         @"cashalo",
         @"cashapppay",
+        @"klarna",
     ];
     
     self.ns_country = @[
@@ -94,6 +95,25 @@
         @"MY",
         @"TH",
         @"JP",
+        @"GB",
+        @"DE",
+        @"FR",
+        @"IT",
+        @"ES",
+        @"NL",
+        @"BE",
+        @"AT",
+        @"CH",
+        @"SE",
+        @"NO",
+        @"DK",
+        @"FI",
+        @"PL",
+        @"CZ",
+        @"PT",
+        @"GR",
+        @"IE",
+        @"",
         @""
     ];
     
@@ -112,6 +132,14 @@
         @"THB",
         @"HKD",
         @"JPY",
+        @"EUR",
+        @"CHF",
+        @"SEK",
+        @"NOK",
+        @"DKK",
+        @"PLN",
+        @"CZK",
+        
     ];
     
     self.ns_vendors = @[
