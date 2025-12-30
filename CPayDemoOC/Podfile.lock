@@ -1,20 +1,18 @@
 PODS:
-  - CPaySDK (2.4.0):
-    - CPaySDK/Core (= 2.4.0)
-    - CPaySDK/Ext (= 2.4.0)
+  - CPaySDK/Core (2.4.0)
+  - CPaySDK/Ext/PPRiskMagnes (2.4.0)
+  - CPaySDK/Payment/CashApp (2.4.0):
     - CPaySDK/Payment/CashApp/Button (= 2.4.0)
     - CPaySDK/Payment/CashApp/Core (= 2.4.0)
-    - CPaySDK/Payment/PayPal/Button (= 2.4.0)
-    - CPaySDK/Payment/PayPal/Fraud (= 2.4.0)
-    - CPaySDK/Payment/PayPal/Web (= 2.4.0)
-  - CPaySDK/Core (2.4.0)
-  - CPaySDK/Ext (2.4.0):
-    - CPaySDK/Ext/CardinalMobile (= 2.4.0)
-    - CPaySDK/Ext/PPRiskMagnes (= 2.4.0)
-  - CPaySDK/Ext/CardinalMobile (2.4.0)
-  - CPaySDK/Ext/PPRiskMagnes (2.4.0)
   - CPaySDK/Payment/CashApp/Button (2.4.0)
   - CPaySDK/Payment/CashApp/Core (2.4.0)
+  - CPaySDK/Payment/Klarna (2.4.0):
+    - KlarnaMobileSDK (~> 2.10.0)
+  - CPaySDK/Payment/PayPal (2.4.0):
+    - CPaySDK/Payment/PayPal/Button (= 2.4.0)
+    - CPaySDK/Payment/PayPal/Core (= 2.4.0)
+    - CPaySDK/Payment/PayPal/Fraud (= 2.4.0)
+    - CPaySDK/Payment/PayPal/Web (= 2.4.0)
   - CPaySDK/Payment/PayPal/Button (2.4.0):
     - CPaySDK/Payment/PayPal/Core
   - CPaySDK/Payment/PayPal/Core (2.4.0)
@@ -23,9 +21,19 @@ PODS:
     - CPaySDK/Payment/PayPal/Core
   - CPaySDK/Payment/PayPal/Web (2.4.0):
     - CPaySDK/Payment/PayPal/Core
+  - KlarnaMobileSDK (2.10.1):
+    - KlarnaMobileSDK/basic (= 2.10.1)
+  - KlarnaMobileSDK/basic (2.10.1)
 
 DEPENDENCIES:
-  - CPaySDK (from `../`)
+  - CPaySDK/Core (from `../`)
+  - CPaySDK/Payment/CashApp (from `../`)
+  - CPaySDK/Payment/Klarna (from `../`)
+  - CPaySDK/Payment/PayPal (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - KlarnaMobileSDK
 
 EXTERNAL SOURCES:
   CPaySDK:
@@ -33,7 +41,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CPaySDK: f6f2ea4074631ca4aa1086334ce26dcba4303da8
+  KlarnaMobileSDK: 4d1acf86e14fe374a7341280ee5ca975538ac34d
 
-PODFILE CHECKSUM: cb0448c270a57b238e57f9675651d227b8620066
+PODFILE CHECKSUM: fd7517de2447c6c75fbfecd26159c10ee4cb2ba3
 
 COCOAPODS: 1.16.2
