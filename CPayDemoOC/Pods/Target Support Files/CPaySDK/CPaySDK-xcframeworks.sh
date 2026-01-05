@@ -213,13 +213,13 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/../../CPaySDK/Core/CPaySDK.xcframework" "CPaySDK/Core" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
-install_xcframework "${PODS_ROOT}/../../CPaySDK/Ext/PPRiskMagnes.xcframework" "CPaySDK/Ext/PPRiskMagnes" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
-install_xcframework "${PODS_ROOT}/../../CPaySDK/Payment/CashApp/Ext/PayKitUI.xcframework" "CPaySDK/Payment/CashApp/Button" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
-install_xcframework "${PODS_ROOT}/../../CPaySDK/Payment/CashApp/Ext/PayKit.xcframework" "CPaySDK/Payment/CashApp/Core" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
-install_xcframework "${PODS_ROOT}/../../CPaySDK/Payment/Klarna/KlarnaExt.xcframework" "CPaySDK/Payment/Klarna" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
-install_xcframework "${PODS_ROOT}/../../CPaySDK/Payment/PayPal/Ext/PaymentButtons.xcframework" "CPaySDK/Payment/PayPal/Button" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
-install_xcframework "${PODS_ROOT}/../../CPaySDK/Payment/PayPal/Ext/CorePayments.xcframework" "CPaySDK/Payment/PayPal/Core" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
-install_xcframework "${PODS_ROOT}/../../CPaySDK/Payment/PayPal/Ext/FraudProtection.xcframework" "CPaySDK/Payment/PayPal/Fraud" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
-install_xcframework "${PODS_ROOT}/../../CPaySDK/Payment/PayPal/Ext/PayPalWebPayments.xcframework" "CPaySDK/Payment/PayPal/Web" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug/CPaySDK/Core/CPaySDK.xcframework" "CPaySDK/Core" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug/CPaySDK/Ext/PPRiskMagnes.xcframework" "CPaySDK/Ext/PPRiskMagnes" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug/CPaySDK/Payment/CashApp/Ext/PayKitUI.xcframework" "CPaySDK/Payment/CashApp/Button" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug/CPaySDK/Payment/CashApp/Ext/PayKit.xcframework" "CPaySDK/Payment/CashApp/Core" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug/CPaySDK/Payment/Klarna/KlarnaExt.xcframework" "CPaySDK/Payment/Klarna" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug/CPaySDK/Payment/PayPal/Ext/PaymentButtons.xcframework" "CPaySDK/Payment/PayPal/Button" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug/CPaySDK/Payment/PayPal/Ext/CorePayments.xcframework" "CPaySDK/Payment/PayPal/Core" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug/CPaySDK/Payment/PayPal/Ext/FraudProtection.xcframework" "CPaySDK/Payment/PayPal/Fraud" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug/CPaySDK/Payment/PayPal/Ext/PayPalWebPayments.xcframework" "CPaySDK/Payment/PayPal/Web" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 

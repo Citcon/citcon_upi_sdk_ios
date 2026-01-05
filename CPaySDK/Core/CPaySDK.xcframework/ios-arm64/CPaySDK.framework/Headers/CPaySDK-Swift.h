@@ -411,7 +411,7 @@ SWIFT_CLASS("_TtC7CPaySDK7CPayExt")
 
 SWIFT_CLASS("_TtC7CPaySDK10CPayExtApp")
 @interface CPayExtApp : NSObject
-@property (nonatomic, copy) NSString * _Nullable app_name;
+@property (nonatomic, copy) NSString * _Nullable appName;
 @property (nonatomic, copy) NSString * _Nullable version;
 @property (nonatomic, copy) NSString * _Nullable source;
 @property (nonatomic, copy) NSString * _Nullable bundle_id;
@@ -424,23 +424,244 @@ SWIFT_CLASS("_TtC7CPaySDK13CPayExtDevice")
 @property (nonatomic, copy) NSString * _Nullable ip;
 @property (nonatomic, copy) NSString * _Nullable os;
 @property (nonatomic, copy) NSString * _Nullable fingerprint;
-@property (nonatomic, copy) NSString * _Nullable os_version;
+@property (nonatomic, copy) NSString * _Nullable osVersion;
 @property (nonatomic, copy) NSString * _Nullable model;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class CPayExtGatewayGrant;
+@class CPayExtGatewayConsumer;
+@class CPayExtGatewayFlight;
+@class CPayExtGatewayCar;
+@class CPayExtGatewayHotel;
+@class CPayExtGatewayTrip;
 SWIFT_CLASS("_TtC7CPaySDK14CPayExtGateway")
 @interface CPayExtGateway : NSObject
+@property (nonatomic, copy) NSString * _Nullable orderId;
+@property (nonatomic, copy) NSString * _Nullable orderPayerId;
+@property (nonatomic, copy) NSString * _Nullable orderPaymentId;
+@property (nonatomic, copy) NSString * _Nullable orderPaymentSource;
+@property (nonatomic, copy) NSString * _Nullable authorizationToken;
+@property (nonatomic, strong) CPayExtGatewayGrant * _Nullable grant;
+@property (nonatomic, strong) CPayExtGatewayConsumer * _Nullable consumer;
+@property (nonatomic, copy) NSArray<CPayExtGatewayFlight *> * _Nullable flight;
+@property (nonatomic, copy) NSArray<CPayExtGatewayCar *> * _Nullable car;
+@property (nonatomic, copy) NSArray<CPayExtGatewayHotel *> * _Nullable hotel;
+@property (nonatomic, copy) NSArray<CPayExtGatewayTrip *> * _Nullable trip;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class CPayExtGatewayCarItinerary;
+@class CPayExtGatewayCarInsurance;
+@class CPayExtGatewayCarDriver;
+SWIFT_CLASS("_TtC7CPaySDK17CPayExtGatewayCar")
+@interface CPayExtGatewayCar : NSObject
+@property (nonatomic, copy) NSString * _Nullable pnr;
+@property (nonatomic, copy) NSArray<CPayExtGatewayCarItinerary *> * _Nullable carRentalItinerary;
+@property (nonatomic, copy) NSArray<CPayExtGatewayCarInsurance *> * _Nullable insurance;
+@property (nonatomic, copy) NSArray<CPayExtGatewayCarDriver *> * _Nullable drivers;
+@property (nonatomic, copy) NSString * _Nullable affiliateName;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC7CPaySDK23CPayExtGatewayCarDriver")
+@interface CPayExtGatewayCarDriver : NSObject
+@property (nonatomic, strong) NSNumber * _Nullable id;
+@property (nonatomic, copy) NSString * _Nullable title;
+@property (nonatomic, copy) NSString * _Nullable firstName;
+@property (nonatomic, copy) NSString * _Nullable lastName;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC7CPaySDK26CPayExtGatewayCarInsurance")
+@interface CPayExtGatewayCarInsurance : NSObject
+@property (nonatomic, copy) NSString * _Nullable insuranceCompany;
+@property (nonatomic, copy) NSString * _Nullable insuranceType;
+@property (nonatomic, strong) NSNumber * _Nullable insurancePrice;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class CPayExtGatewayCarLocation;
+SWIFT_CLASS("_TtC7CPaySDK26CPayExtGatewayCarItinerary")
+@interface CPayExtGatewayCarItinerary : NSObject
+@property (nonatomic, copy) NSString * _Nullable rentalCompany;
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nullable driverId;
+@property (nonatomic, strong) CPayExtGatewayCarLocation * _Nullable pickUpLocation;
+@property (nonatomic, strong) CPayExtGatewayCarLocation * _Nullable dropOffLocation;
+@property (nonatomic, copy) NSString * _Nullable startTime;
+@property (nonatomic, copy) NSString * _Nullable endTime;
+@property (nonatomic, strong) NSNumber * _Nullable carPrice;
+@property (nonatomic, copy) NSString * _Nullable clasName;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC7CPaySDK25CPayExtGatewayCarLocation")
+@interface CPayExtGatewayCarLocation : NSObject
+@property (nonatomic, copy) NSString * _Nullable streetAddress;
+@property (nonatomic, copy) NSString * _Nullable postalCode;
+@property (nonatomic, copy) NSString * _Nullable city;
+@property (nonatomic, copy) NSString * _Nullable country;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 SWIFT_CLASS("_TtC7CPaySDK22CPayExtGatewayConsumer")
 @interface CPayExtGatewayConsumer : NSObject
+@property (nonatomic, copy) NSString * _Nullable consumerId;
+@property (nonatomic, copy) NSString * _Nullable cashtag;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class CPayExtGatewayFlightItinerary;
+@class CPayExtGatewayFlightInsurance;
+@class CPayExtGatewayFlightPassenger;
+SWIFT_CLASS("_TtC7CPaySDK20CPayExtGatewayFlight")
+@interface CPayExtGatewayFlight : NSObject
+@property (nonatomic, copy) NSString * _Nullable pnr;
+@property (nonatomic, copy) NSArray<CPayExtGatewayFlightItinerary *> * _Nullable itinerary;
+@property (nonatomic, copy) NSArray<CPayExtGatewayFlightInsurance *> * _Nullable insurance;
+@property (nonatomic, copy) NSArray<CPayExtGatewayFlightPassenger *> * _Nullable passengers;
+@property (nonatomic, copy) NSString * _Nullable affiliateName;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC7CPaySDK29CPayExtGatewayFlightInsurance")
+@interface CPayExtGatewayFlightInsurance : NSObject
+@property (nonatomic, copy) NSString * _Nullable insuranceCompany;
+@property (nonatomic, copy) NSString * _Nullable insuranceType;
+@property (nonatomic, strong) NSNumber * _Nullable insurancePrice;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC7CPaySDK29CPayExtGatewayFlightItinerary")
+@interface CPayExtGatewayFlightItinerary : NSObject
+@property (nonatomic, copy) NSString * _Nullable departure;
+@property (nonatomic, copy) NSString * _Nullable departureCity;
+@property (nonatomic, copy) NSString * _Nullable arrival;
+@property (nonatomic, copy) NSString * _Nullable arrivalCity;
+@property (nonatomic, copy) NSString * _Nullable carrier;
+@property (nonatomic, strong) NSNumber * _Nullable segmentPrice;
+@property (nonatomic, copy) NSString * _Nullable departureDate;
+@property (nonatomic, copy) NSString * _Nullable ticketDeliveryMethod;
+@property (nonatomic, copy) NSString * _Nullable ticketDeliveryRecipient;
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nullable passengerId;
+@property (nonatomic, copy) NSString * _Nullable clasName;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC7CPaySDK29CPayExtGatewayFlightPassenger")
+@interface CPayExtGatewayFlightPassenger : NSObject
+@property (nonatomic, strong) NSNumber * _Nullable id;
+@property (nonatomic, copy) NSString * _Nullable title;
+@property (nonatomic, copy) NSString * _Nullable firstName;
+@property (nonatomic, copy) NSString * _Nullable lastName;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 SWIFT_CLASS("_TtC7CPaySDK19CPayExtGatewayGrant")
 @interface CPayExtGatewayGrant : NSObject
+@property (nonatomic, copy) NSString * _Nullable grantId;
+@property (nonatomic, copy) NSString * _Nullable expiry;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class CPayExtGatewayHotelItinerary;
+@class CPayExtGatewayHotelInsurance;
+@class CPayExtGatewayHotelPassenger;
+SWIFT_CLASS("_TtC7CPaySDK19CPayExtGatewayHotel")
+@interface CPayExtGatewayHotel : NSObject
+@property (nonatomic, copy) NSString * _Nullable pnr;
+@property (nonatomic, copy) NSArray<CPayExtGatewayHotelItinerary *> * _Nullable hotelItinerary;
+@property (nonatomic, copy) NSArray<CPayExtGatewayHotelInsurance *> * _Nullable insurance;
+@property (nonatomic, copy) NSArray<CPayExtGatewayHotelPassenger *> * _Nullable passengers;
+@property (nonatomic, copy) NSString * _Nullable affiliateName;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC7CPaySDK26CPayExtGatewayHotelAddress")
+@interface CPayExtGatewayHotelAddress : NSObject
+@property (nonatomic, copy) NSString * _Nullable streetAddress;
+@property (nonatomic, copy) NSString * _Nullable postalCode;
+@property (nonatomic, copy) NSString * _Nullable city;
+@property (nonatomic, copy) NSString * _Nullable country;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC7CPaySDK28CPayExtGatewayHotelInsurance")
+@interface CPayExtGatewayHotelInsurance : NSObject
+@property (nonatomic, copy) NSString * _Nullable insuranceCompany;
+@property (nonatomic, copy) NSString * _Nullable insuranceType;
+@property (nonatomic, strong) NSNumber * _Nullable insurancePrice;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC7CPaySDK28CPayExtGatewayHotelItinerary")
+@interface CPayExtGatewayHotelItinerary : NSObject
+@property (nonatomic, copy) NSString * _Nullable hotelName;
+@property (nonatomic, strong) CPayExtGatewayHotelAddress * _Nullable address;
+@property (nonatomic, copy) NSString * _Nullable startTime;
+@property (nonatomic, copy) NSString * _Nullable endTime;
+@property (nonatomic, strong) NSNumber * _Nullable numberOfRooms;
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nullable passengerId;
+@property (nonatomic, copy) NSString * _Nullable ticketDeliveryMethod;
+@property (nonatomic, copy) NSString * _Nullable ticketDeliveryRecipient;
+@property (nonatomic, strong) NSNumber * _Nullable hotelPrice;
+@property (nonatomic, copy) NSString * _Nullable clasName;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC7CPaySDK28CPayExtGatewayHotelPassenger")
+@interface CPayExtGatewayHotelPassenger : NSObject
+@property (nonatomic, strong) NSNumber * _Nullable id;
+@property (nonatomic, copy) NSString * _Nullable title;
+@property (nonatomic, copy) NSString * _Nullable firstName;
+@property (nonatomic, copy) NSString * _Nullable lastName;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class CPayExtGatewayTripItinerary;
+@class CPayExtGatewayTripPassenger;
+@class CPayExtGatewayTripServices;
+SWIFT_CLASS("_TtC7CPaySDK18CPayExtGatewayTrip")
+@interface CPayExtGatewayTrip : NSObject
+@property (nonatomic, strong) CPayExtGatewayTripItinerary * _Nullable tripItinerary;
+@property (nonatomic, copy) NSArray<CPayExtGatewayTripPassenger *> * _Nullable tripPassengers;
+@property (nonatomic, strong) NSNumber * _Nullable minAge;
+@property (nonatomic, strong) NSNumber * _Nullable maxAge;
+@property (nonatomic, copy) NSArray<CPayExtGatewayTripServices *> * _Nullable services;
+@property (nonatomic, copy) NSString * _Nullable affiliateName;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC7CPaySDK27CPayExtGatewayTripItinerary")
+@interface CPayExtGatewayTripItinerary : NSObject
+@property (nonatomic, copy) NSString * _Nullable initialCountry;
+@property (nonatomic, copy) NSString * _Nullable initialCity;
+@property (nonatomic, copy) NSString * _Nullable finalCountry;
+@property (nonatomic, copy) NSString * _Nullable finalCity;
+@property (nonatomic, copy) NSString * _Nullable startTime;
+@property (nonatomic, copy) NSString * _Nullable endTime;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC7CPaySDK27CPayExtGatewayTripPassenger")
+@interface CPayExtGatewayTripPassenger : NSObject
+@property (nonatomic, strong) NSNumber * _Nullable id;
+@property (nonatomic, copy) NSString * _Nullable firstName;
+@property (nonatomic, copy) NSString * _Nullable lastName;
+@property (nonatomic, copy) NSString * _Nullable birthDate;
+@property (nonatomic, copy) NSString * _Nullable email;
+@property (nonatomic, copy) NSString * _Nullable uniqueId;
+@property (nonatomic, copy) NSString * _Nullable mainPassenger;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC7CPaySDK26CPayExtGatewayTripServices")
+@interface CPayExtGatewayTripServices : NSObject
+@property (nonatomic, copy) NSString * _Nullable travelInsurance;
+@property (nonatomic, copy) NSString * _Nullable hotel;
+@property (nonatomic, copy) NSString * _Nullable flight;
+@property (nonatomic, copy) NSString * _Nullable cancelationService;
+@property (nonatomic, copy) NSString * _Nullable sharedRoom;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

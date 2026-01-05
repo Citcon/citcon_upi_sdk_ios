@@ -1,13 +1,13 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/CPaySDK
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../CPaySDK/Core" "${PODS_ROOT}/../../CPaySDK/Ext" "${PODS_ROOT}/../../CPaySDK/Payment/CashApp/Ext" "${PODS_ROOT}/../../CPaySDK/Payment/Klarna" "${PODS_ROOT}/../../CPaySDK/Payment/PayPal/Ext" "${PODS_ROOT}/KlarnaMobileSDK" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Core" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Ext/PPRiskMagnes" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Button" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Core" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/Klarna" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Button" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Core" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Fraud" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Web" "${PODS_XCFRAMEWORKS_BUILD_DIR}/KlarnaMobileSDK/basic"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug/CPaySDK/Core" "${PODS_ROOT}/../../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug/CPaySDK/Ext" "${PODS_ROOT}/../../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug/CPaySDK/Payment/CashApp/Ext" "${PODS_ROOT}/../../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug/CPaySDK/Payment/Klarna" "${PODS_ROOT}/../../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug/CPaySDK/Payment/PayPal/Ext" "${PODS_ROOT}/KlarnaMobileSDK" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Core" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Ext/PPRiskMagnes" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Button" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Core" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/Klarna" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Button" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Core" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Fraud" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Web" "${PODS_XCFRAMEWORKS_BUILD_DIR}/KlarnaMobileSDK/basic"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 OTHER_LDFLAGS = $(inherited) -l"stdc++" -framework "KlarnaCore" -framework "KlarnaMobileSDK" -framework "KlarnaPayments"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_DEVELOPMENT_LANGUAGE = ${DEVELOPMENT_LANGUAGE}
 PODS_ROOT = ${SRCROOT}
-PODS_TARGET_SRCROOT = ${PODS_ROOT}/../..
+PODS_TARGET_SRCROOT = ${PODS_ROOT}/../../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug
 PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
 PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
 SKIP_INSTALL = YES
