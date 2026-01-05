@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '13.0'
 #source 'https://github.com/CocoaPods/Specs.git'
 #source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 
@@ -14,7 +14,9 @@ target 'CPayDemoOC' do
   # Pods for Demo
   
 #    pod 'CPaySDK', :path => '../'
-  pod 'CPaySDK', :subspecs => ['Core', 'Payment/CashApp', 'Payment/PayPal', 'Payment/Klarna' ], :path => '../'
+ pod 'CPaySDK', :subspecs => ['Core', 'Payment/CashApp', 'Payment/PayPal', 'Payment/Klarna' ]
+
+#  pod 'CPaySDK', :subspecs => ['Core', 'Payment/CashApp', 'Payment/PayPal', 'Payment/Klarna' ], :path => '../'
 #    pod 'CPaySDK', :git => 'git@github.com:Citcon/citcon_upi_sdk_ios.git', :branch => 'main'
 #     pod 'CPaySDK', '2.0.10'
 

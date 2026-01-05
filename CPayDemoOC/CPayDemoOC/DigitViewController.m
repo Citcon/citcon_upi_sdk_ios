@@ -349,6 +349,169 @@ preparation before navigation
         good.totalAmount = order.transaction.amount ;
 
       order.goods.goods = @[ good ];
+      
+      // ========== Klarna Travel API Example ==========
+      // Add travel data for flight, hotel, car rental, or trip bookings
+      // This demonstrates how to use the new Travel API structures
+      
+        // flight
+        CPayExtGatewayFlight *flight = CPayExtGatewayFlight.new;
+        flight.pnr = @"Y2YWJD";
+        flight.affiliateName = @"Booking.com";
+        
+        CPayExtGatewayFlightItinerary *flightItinerary = CPayExtGatewayFlightItinerary.new;
+        flightItinerary.departure = @"AMS";
+        flightItinerary.departureCity = @"Amsterdam";
+        flightItinerary.arrival = @"LHR";
+        flightItinerary.arrivalCity = @"London";
+        flightItinerary.carrier = @"KL";
+        flightItinerary.segmentPrice = @2000;
+        flightItinerary.departureDate = @"2025-12-25T08:00:00Z";
+        flightItinerary.ticketDeliveryMethod = @"email";
+        flightItinerary.ticketDeliveryRecipient = @"john.doe@email.com";
+        flightItinerary.passengerId = @[@(1)];
+        flightItinerary.clasName = @"business";
+        flight.itinerary = @[flightItinerary];
+        
+        CPayExtGatewayFlightInsurance *flightInsurance = CPayExtGatewayFlightInsurance.new;
+        flightInsurance.insuranceCompany = @"AON";
+        flightInsurance.insuranceType = @"cancellation";
+        flightInsurance.insurancePrice = @200;
+        flight.insurance = @[flightInsurance];
+
+        CPayExtGatewayFlightPassenger *flightPassenger = CPayExtGatewayFlightPassenger.new;
+        flightPassenger.id = @1;
+        flightPassenger.title = @"mr";
+        flightPassenger.firstName = @"John";
+        flightPassenger.lastName = @"Doe";
+        flight.passengers = @[flightPassenger];
+
+        
+        // car
+        CPayExtGatewayCar *car = CPayExtGatewayCar.new;
+        car.pnr = @"3411qsxqed23123";
+        car.affiliateName = @"hertz.com";
+        
+        CPayExtGatewayCarItinerary *carItinerary = CPayExtGatewayCarItinerary.new;
+        carItinerary.rentalCompany = @"Hertz";
+        carItinerary.driverId = @[@1];
+        carItinerary.startTime = @"2022-08-20T16:45:00Z";
+        carItinerary.endTime = @"2022-08-20T16:45:00Z";
+        carItinerary.carPrice = @700;
+        carItinerary.clasName = @"economy";
+
+        carItinerary.pickUpLocation = CPayExtGatewayCarLocation.new;
+        carItinerary.pickUpLocation.streetAddress = @"Aankomstpassage Amsterdam (Schiphol)";
+        carItinerary.pickUpLocation.postalCode = @"1118 AA";
+        carItinerary.pickUpLocation.city = @"Schiphol";
+        carItinerary.pickUpLocation.country = @"NL";
+
+        carItinerary.dropOffLocation = CPayExtGatewayCarLocation.new;
+        carItinerary.dropOffLocation.streetAddress = @"Aankomstpassage Amsterdam (Schiphol)";
+        carItinerary.dropOffLocation.postalCode = @"1118 AA";
+        carItinerary.dropOffLocation.city = @"Schiphol";
+        carItinerary.dropOffLocation.country = @"NL";
+        
+        car.carRentalItinerary = @[carItinerary];
+        
+        CPayExtGatewayCarInsurance *carInsurance = CPayExtGatewayCarInsurance.new;
+        carInsurance.insuranceCompany = @"AON";
+        carInsurance.insuranceType = @"cancellation";
+        carInsurance.insurancePrice = @2000;
+        
+        car.insurance = @[carInsurance];
+        
+        CPayExtGatewayCarDriver *carDriver = CPayExtGatewayCarDriver.new;
+//        carDriver.id = @1;
+        carDriver.title = @"mr";
+        carDriver.firstName = @"Jane";
+        carDriver.lastName = @"Doe";
+        
+        car.drivers = @[carDriver];
+        
+        
+        // hotel
+        CPayExtGatewayHotel *hotel = CPayExtGatewayHotel.new;
+        hotel.pnr = @"20qsx2121";
+        
+        CPayExtGatewayHotelItinerary *hotelItinerary = CPayExtGatewayHotelItinerary.new;
+        hotelItinerary.hotelName = @"Hotel ltd.";
+        hotelItinerary.startTime = @"2022-08-06T19:50:00Z";
+        hotelItinerary.endTime = @"2022-08-20T22:00:00Z";
+        hotelItinerary.numberOfRooms = @1;
+        hotelItinerary.ticketDeliveryMethod = @"email";
+        hotelItinerary.ticketDeliveryRecipient = @"john.doe@email.com";
+        hotelItinerary.hotelPrice = @23050;
+        hotelItinerary.clasName = @"Presidential Suite";
+        hotelItinerary.passengerId = @[@1];
+        
+        hotelItinerary.address = CPayExtGatewayHotelAddress.new;
+        hotelItinerary.address.streetAddress = @"New Burlington St 10";
+        hotelItinerary.address.postalCode = @"W1B 1JA";
+        hotelItinerary.address.city = @"London";
+        hotelItinerary.address.country = @"GB";
+        
+        hotel.hotelItinerary = @[hotelItinerary];
+        
+        CPayExtGatewayHotelInsurance *hotelInsurance = CPayExtGatewayHotelInsurance.new;
+        hotelInsurance.insuranceCompany = @"AON";
+        hotelInsurance.insuranceType = @"cancellation";
+        hotelInsurance.insurancePrice = @200;
+        
+        hotel.insurance = @[hotelInsurance];
+        
+        CPayExtGatewayHotelPassenger *hotelPassenger = CPayExtGatewayHotelPassenger.new;
+        hotelPassenger.id = @1;
+        hotelPassenger.title = @"mr";
+        hotelPassenger.firstName = @"John";
+        hotelPassenger.lastName = @"Doe";
+        
+        hotel.passengers = @[hotelPassenger];
+        
+        // trip
+        CPayExtGatewayTrip *trip = CPayExtGatewayTrip.new;
+        
+        trip.affiliateName = @"travel.com";
+        trip.minAge = @21;
+        trip.maxAge = @60;
+        
+        trip.tripItinerary = CPayExtGatewayTripItinerary.new;
+        trip.tripItinerary.initialCountry = @"France";
+        trip.tripItinerary.initialCity = @"Calais";
+        trip.tripItinerary.finalCountry = @"England";
+        trip.tripItinerary.finalCity = @"Dover";
+        trip.tripItinerary.startTime = @"2022-08-06T19:50:00Z";
+        trip.tripItinerary.endTime = @"2022-08-15T19:50:00Z";
+        
+        CPayExtGatewayTripPassenger *tripPassenger1 = CPayExtGatewayTripPassenger.new;
+        tripPassenger1.id = @1;
+        tripPassenger1.firstName = @"John";
+        tripPassenger1.lastName = @"Doe";
+        tripPassenger1.birthDate = @"1980-05-10";
+        tripPassenger1.email = @"johndoe@email.com";
+        tripPassenger1.uniqueId = @"AYY12345";
+        tripPassenger1.mainPassenger = @"true";
+        
+        trip.tripPassengers = @[tripPassenger1];
+        
+        CPayExtGatewayTripServices *service1 = CPayExtGatewayTripServices.new;
+        service1.travelInsurance    = @"true";
+        service1.hotel = @"true";
+        service1.flight = @"true";
+        service1.cancelationService = @"true";
+        service1.sharedRoom = @"false";
+        
+        trip.services = @[service1];
+        
+        order.ext = CPayExt.new;
+        order.ext.gateway = CPayExtGateway.new;
+        order.ext.gateway.flight = @[flight];
+        order.ext.gateway.car = @[car];
+        order.ext.gateway.trip = @[trip];
+        order.ext.gateway.hotel = @[hotel];
+        
+      
+      // ========== End of Travel API Example ==========
     }
   }
 

@@ -76,7 +76,7 @@
 }
 
 - (void)initEnvForm {
-    _txtRTEnv.text = @"QA";
+    _txtRTEnv.text = @"UAT";
     _txtPaymethod.text = @"klarna";
     _txtVendorType.text = SDK_TOKEN;
     _txtDemoType.text = @"others";

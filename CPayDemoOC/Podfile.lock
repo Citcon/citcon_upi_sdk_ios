@@ -1,35 +1,35 @@
 PODS:
-  - CPaySDK/Core (2.4.0)
-  - CPaySDK/Ext/PPRiskMagnes (2.4.0)
-  - CPaySDK/Payment/CashApp (2.4.0):
-    - CPaySDK/Payment/CashApp/Button (= 2.4.0)
-    - CPaySDK/Payment/CashApp/Core (= 2.4.0)
-  - CPaySDK/Payment/CashApp/Button (2.4.0)
-  - CPaySDK/Payment/CashApp/Core (2.4.0)
-  - CPaySDK/Payment/Klarna (2.4.0):
+  - CPaySDK/Core (2.5.0)
+  - CPaySDK/Ext/PPRiskMagnes (2.5.0)
+  - CPaySDK/Payment/CashApp (2.5.0):
+    - CPaySDK/Payment/CashApp/Button (= 2.5.0)
+    - CPaySDK/Payment/CashApp/Core (= 2.5.0)
+  - CPaySDK/Payment/CashApp/Button (2.5.0)
+  - CPaySDK/Payment/CashApp/Core (2.5.0)
+  - CPaySDK/Payment/Klarna (2.5.0):
     - KlarnaMobileSDK (~> 2.10.0)
-  - CPaySDK/Payment/PayPal (2.4.0):
-    - CPaySDK/Payment/PayPal/Button (= 2.4.0)
-    - CPaySDK/Payment/PayPal/Core (= 2.4.0)
-    - CPaySDK/Payment/PayPal/Fraud (= 2.4.0)
-    - CPaySDK/Payment/PayPal/Web (= 2.4.0)
-  - CPaySDK/Payment/PayPal/Button (2.4.0):
+  - CPaySDK/Payment/PayPal (2.5.0):
+    - CPaySDK/Payment/PayPal/Button (= 2.5.0)
+    - CPaySDK/Payment/PayPal/Core (= 2.5.0)
+    - CPaySDK/Payment/PayPal/Fraud (= 2.5.0)
+    - CPaySDK/Payment/PayPal/Web (= 2.5.0)
+  - CPaySDK/Payment/PayPal/Button (2.5.0):
     - CPaySDK/Payment/PayPal/Core
-  - CPaySDK/Payment/PayPal/Core (2.4.0)
-  - CPaySDK/Payment/PayPal/Fraud (2.4.0):
+  - CPaySDK/Payment/PayPal/Core (2.5.0)
+  - CPaySDK/Payment/PayPal/Fraud (2.5.0):
     - CPaySDK/Ext/PPRiskMagnes
     - CPaySDK/Payment/PayPal/Core
-  - CPaySDK/Payment/PayPal/Web (2.4.0):
+  - CPaySDK/Payment/PayPal/Web (2.5.0):
     - CPaySDK/Payment/PayPal/Core
-  - KlarnaMobileSDK (2.10.1):
-    - KlarnaMobileSDK/basic (= 2.10.1)
-  - KlarnaMobileSDK/basic (2.10.1)
+  - KlarnaMobileSDK (2.10.2):
+    - KlarnaMobileSDK/basic (= 2.10.2)
+  - KlarnaMobileSDK/basic (2.10.2)
 
 DEPENDENCIES:
-  - CPaySDK/Core (from `../`)
-  - CPaySDK/Payment/CashApp (from `../`)
-  - CPaySDK/Payment/Klarna (from `../`)
-  - CPaySDK/Payment/PayPal (from `../`)
+  - CPaySDK/Core (from `../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug`)
+  - CPaySDK/Payment/CashApp (from `../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug`)
+  - CPaySDK/Payment/Klarna (from `../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug`)
+  - CPaySDK/Payment/PayPal (from `../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug`)
 
 SPEC REPOS:
   trunk:
@@ -37,12 +37,12 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   CPaySDK:
-    :path: "../"
+    :path: "../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug"
 
 SPEC CHECKSUMS:
-  CPaySDK: f6f2ea4074631ca4aa1086334ce26dcba4303da8
-  KlarnaMobileSDK: 4d1acf86e14fe374a7341280ee5ca975538ac34d
+  CPaySDK: 617b34e66995b8f1d35cb6f0101ffb4940334f0e
+  KlarnaMobileSDK: 7971288298945f4448b474c09e8c662715f5a733
 
-PODFILE CHECKSUM: fd7517de2447c6c75fbfecd26159c10ee4cb2ba3
+PODFILE CHECKSUM: 695a87584950dd898608fb5765566f1e0694173a
 
 COCOAPODS: 1.16.2
