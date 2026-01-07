@@ -1,29 +1,29 @@
 PODS:
-  - CPaySDK/Core (2.4.0)
-  - CPaySDK/Ext/PPRiskMagnes (2.4.0)
-  - CPaySDK/Payment/CashApp (2.4.0):
-    - CPaySDK/Payment/CashApp/Button (= 2.4.0)
-    - CPaySDK/Payment/CashApp/Core (= 2.4.0)
-  - CPaySDK/Payment/CashApp/Button (2.4.0)
-  - CPaySDK/Payment/CashApp/Core (2.4.0)
-  - CPaySDK/Payment/Klarna (2.4.0):
+  - CPaySDK/Core (2.5.0)
+  - CPaySDK/Ext/PPRiskMagnes (2.5.0)
+  - CPaySDK/Payment/CashApp (2.5.0):
+    - CPaySDK/Payment/CashApp/Button (= 2.5.0)
+    - CPaySDK/Payment/CashApp/Core (= 2.5.0)
+  - CPaySDK/Payment/CashApp/Button (2.5.0)
+  - CPaySDK/Payment/CashApp/Core (2.5.0)
+  - CPaySDK/Payment/Klarna (2.5.0):
     - KlarnaMobileSDK (~> 2.10.0)
-  - CPaySDK/Payment/PayPal (2.4.0):
-    - CPaySDK/Payment/PayPal/Button (= 2.4.0)
-    - CPaySDK/Payment/PayPal/Core (= 2.4.0)
-    - CPaySDK/Payment/PayPal/Fraud (= 2.4.0)
-    - CPaySDK/Payment/PayPal/Web (= 2.4.0)
-  - CPaySDK/Payment/PayPal/Button (2.4.0):
+  - CPaySDK/Payment/PayPal (2.5.0):
+    - CPaySDK/Payment/PayPal/Button (= 2.5.0)
+    - CPaySDK/Payment/PayPal/Core (= 2.5.0)
+    - CPaySDK/Payment/PayPal/Fraud (= 2.5.0)
+    - CPaySDK/Payment/PayPal/Web (= 2.5.0)
+  - CPaySDK/Payment/PayPal/Button (2.5.0):
     - CPaySDK/Payment/PayPal/Core
-  - CPaySDK/Payment/PayPal/Core (2.4.0)
-  - CPaySDK/Payment/PayPal/Fraud (2.4.0):
+  - CPaySDK/Payment/PayPal/Core (2.5.0)
+  - CPaySDK/Payment/PayPal/Fraud (2.5.0):
     - CPaySDK/Ext/PPRiskMagnes
     - CPaySDK/Payment/PayPal/Core
-  - CPaySDK/Payment/PayPal/Web (2.4.0):
+  - CPaySDK/Payment/PayPal/Web (2.5.0):
     - CPaySDK/Payment/PayPal/Core
-  - KlarnaMobileSDK (2.10.1):
-    - KlarnaMobileSDK/basic (= 2.10.1)
-  - KlarnaMobileSDK/basic (2.10.1)
+  - KlarnaMobileSDK (2.10.2):
+    - KlarnaMobileSDK/basic (= 2.10.2)
+  - KlarnaMobileSDK/basic (2.10.2)
 
 DEPENDENCIES:
   - CPaySDK/Core (from `../`)
@@ -40,9 +40,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CPaySDK: f6f2ea4074631ca4aa1086334ce26dcba4303da8
-  KlarnaMobileSDK: 4d1acf86e14fe374a7341280ee5ca975538ac34d
+  CPaySDK: 617b34e66995b8f1d35cb6f0101ffb4940334f0e
+  KlarnaMobileSDK: 7971288298945f4448b474c09e8c662715f5a733
 
-PODFILE CHECKSUM: fd7517de2447c6c75fbfecd26159c10ee4cb2ba3
+PODFILE CHECKSUM: 3b7436084bb39bd62a4e0ed5d11bff6e5cac3d56
 
 COCOAPODS: 1.16.2

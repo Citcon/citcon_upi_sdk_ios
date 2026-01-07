@@ -101,7 +101,7 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class CPayProduct : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc public class CPayProduct : ObjectiveC.NSObject {
   @objc public var name: Swift.String?
   @objc public var sku: Swift.String?
   @objc public var url: Swift.String?
@@ -171,7 +171,7 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class CPayExtApp : ObjectiveC.NSObject {
-  @objc public var app_name: Swift.String?
+  @objc public var appName: Swift.String?
   @objc public var version: Swift.String?
   @objc public var source: Swift.String?
   @objc public var bundle_id: Swift.String?
@@ -183,31 +183,204 @@ import _SwiftConcurrencyShims
   @objc public var ip: Swift.String?
   @objc public var os: Swift.String?
   @objc public var fingerprint: Swift.String?
-  @objc public var os_version: Swift.String?
+  @objc public var osVersion: Swift.String?
   @objc public var model: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers public class CPayExtGatewayGrant : ObjectiveC.NSObject {
-  public var grant_id: Swift.String?
-  public var expiry: Swift.String?
+@_inheritsConvenienceInitializers @objc public class CPayExtGatewayGrant : ObjectiveC.NSObject {
+  @objc public var grantId: Swift.String?
+  @objc public var expiry: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers public class CPayExtGatewayConsumer : ObjectiveC.NSObject {
-  public var consumer_id: Swift.String?
-  public var cashtag: Swift.String?
+@_inheritsConvenienceInitializers @objc public class CPayExtGatewayConsumer : ObjectiveC.NSObject {
+  @objc public var consumerId: Swift.String?
+  @objc public var cashtag: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers public class CPayExtGateway : ObjectiveC.NSObject {
-  public var order_id: Swift.String?
-  public var order_payer_id: Swift.String?
-  public var order_payment_id: Swift.String?
-  public var order_payment_source: Swift.String?
-  public var authorization_token: Swift.String?
-  public var grant: CPaySDK.CPayExtGatewayGrant?
-  public var consumer: CPaySDK.CPayExtGatewayConsumer?
+@_inheritsConvenienceInitializers @objc public class CPayExtGatewayFlightPassenger : ObjectiveC.NSObject {
+  @objc public var id: Foundation.NSNumber?
+  @objc public var title: Swift.String?
+  @objc public var firstName: Swift.String?
+  @objc public var lastName: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtGatewayFlightInsurance : ObjectiveC.NSObject {
+  @objc public var insuranceCompany: Swift.String?
+  @objc public var insuranceType: Swift.String?
+  @objc public var insurancePrice: Foundation.NSNumber?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtGatewayFlightItinerary : ObjectiveC.NSObject {
+  @objc public var departure: Swift.String?
+  @objc public var departureCity: Swift.String?
+  @objc public var arrival: Swift.String?
+  @objc public var arrivalCity: Swift.String?
+  @objc public var carrier: Swift.String?
+  @objc public var segmentPrice: Foundation.NSNumber?
+  @objc public var departureDate: Swift.String?
+  @objc public var ticketDeliveryMethod: Swift.String?
+  @objc public var ticketDeliveryRecipient: Swift.String?
+  @objc public var passengerId: [Foundation.NSNumber]?
+  @objc public var clasName: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtGatewayFlight : ObjectiveC.NSObject {
+  @objc public var pnr: Swift.String?
+  @objc public var itinerary: [CPaySDK.CPayExtGatewayFlightItinerary]?
+  @objc public var insurance: [CPaySDK.CPayExtGatewayFlightInsurance]?
+  @objc public var passengers: [CPaySDK.CPayExtGatewayFlightPassenger]?
+  @objc public var affiliateName: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtGatewayCarDriver : ObjectiveC.NSObject {
+  @objc public var id: Foundation.NSNumber?
+  @objc public var title: Swift.String?
+  @objc public var firstName: Swift.String?
+  @objc public var lastName: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtGatewayCarInsurance : ObjectiveC.NSObject {
+  @objc public var insuranceCompany: Swift.String?
+  @objc public var insuranceType: Swift.String?
+  @objc public var insurancePrice: Foundation.NSNumber?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtGatewayCarLocation : ObjectiveC.NSObject {
+  @objc public var streetAddress: Swift.String?
+  @objc public var postalCode: Swift.String?
+  @objc public var city: Swift.String?
+  @objc public var country: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtGatewayCarItinerary : ObjectiveC.NSObject {
+  @objc public var rentalCompany: Swift.String?
+  @objc public var driverId: [Foundation.NSNumber]?
+  @objc public var pickUpLocation: CPaySDK.CPayExtGatewayCarLocation?
+  @objc public var dropOffLocation: CPaySDK.CPayExtGatewayCarLocation?
+  @objc public var startTime: Swift.String?
+  @objc public var endTime: Swift.String?
+  @objc public var carPrice: Foundation.NSNumber?
+  @objc public var clasName: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtGatewayCar : ObjectiveC.NSObject {
+  @objc public var pnr: Swift.String?
+  @objc public var carRentalItinerary: [CPaySDK.CPayExtGatewayCarItinerary]?
+  @objc public var insurance: [CPaySDK.CPayExtGatewayCarInsurance]?
+  @objc public var drivers: [CPaySDK.CPayExtGatewayCarDriver]?
+  @objc public var affiliateName: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtGatewayHotelInsurance : ObjectiveC.NSObject {
+  @objc public var insuranceCompany: Swift.String?
+  @objc public var insuranceType: Swift.String?
+  @objc public var insurancePrice: Foundation.NSNumber?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtGatewayHotelPassenger : ObjectiveC.NSObject {
+  @objc public var id: Foundation.NSNumber?
+  @objc public var title: Swift.String?
+  @objc public var firstName: Swift.String?
+  @objc public var lastName: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtGatewayHotelAddress : ObjectiveC.NSObject {
+  @objc public var streetAddress: Swift.String?
+  @objc public var postalCode: Swift.String?
+  @objc public var city: Swift.String?
+  @objc public var country: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtGatewayHotelItinerary : ObjectiveC.NSObject {
+  @objc public var hotelName: Swift.String?
+  @objc public var address: CPaySDK.CPayExtGatewayHotelAddress?
+  @objc public var startTime: Swift.String?
+  @objc public var endTime: Swift.String?
+  @objc public var numberOfRooms: Foundation.NSNumber?
+  @objc public var passengerId: [Foundation.NSNumber]?
+  @objc public var ticketDeliveryMethod: Swift.String?
+  @objc public var ticketDeliveryRecipient: Swift.String?
+  @objc public var hotelPrice: Foundation.NSNumber?
+  @objc public var clasName: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtGatewayHotel : ObjectiveC.NSObject {
+  @objc public var pnr: Swift.String?
+  @objc public var hotelItinerary: [CPaySDK.CPayExtGatewayHotelItinerary]?
+  @objc public var insurance: [CPaySDK.CPayExtGatewayHotelInsurance]?
+  @objc public var passengers: [CPaySDK.CPayExtGatewayHotelPassenger]?
+  @objc public var affiliateName: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtGatewayTripServices : ObjectiveC.NSObject {
+  @objc public var travelInsurance: Swift.String?
+  @objc public var hotel: Swift.String?
+  @objc public var flight: Swift.String?
+  @objc public var cancelationService: Swift.String?
+  @objc public var sharedRoom: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtGatewayTripPassenger : ObjectiveC.NSObject {
+  @objc public var id: Foundation.NSNumber?
+  @objc public var firstName: Swift.String?
+  @objc public var lastName: Swift.String?
+  @objc public var birthDate: Swift.String?
+  @objc public var email: Swift.String?
+  @objc public var uniqueId: Swift.String?
+  @objc public var mainPassenger: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtGatewayTripItinerary : ObjectiveC.NSObject {
+  @objc public var initialCountry: Swift.String?
+  @objc public var initialCity: Swift.String?
+  @objc public var finalCountry: Swift.String?
+  @objc public var finalCity: Swift.String?
+  @objc public var startTime: Swift.String?
+  @objc public var endTime: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtGatewayTrip : ObjectiveC.NSObject {
+  @objc public var tripItinerary: CPaySDK.CPayExtGatewayTripItinerary?
+  @objc public var tripPassengers: [CPaySDK.CPayExtGatewayTripPassenger]?
+  @objc public var minAge: Foundation.NSNumber?
+  @objc public var maxAge: Foundation.NSNumber?
+  @objc public var services: [CPaySDK.CPayExtGatewayTripServices]?
+  @objc public var affiliateName: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CPayExtGateway : ObjectiveC.NSObject {
+  @objc public var orderId: Swift.String?
+  @objc public var orderPayerId: Swift.String?
+  @objc public var orderPaymentId: Swift.String?
+  @objc public var orderPaymentSource: Swift.String?
+  @objc public var authorizationToken: Swift.String?
+  @objc public var grant: CPaySDK.CPayExtGatewayGrant?
+  @objc public var consumer: CPaySDK.CPayExtGatewayConsumer?
+  @objc public var flight: [CPaySDK.CPayExtGatewayFlight]?
+  @objc public var car: [CPaySDK.CPayExtGatewayCar]?
+  @objc public var hotel: [CPaySDK.CPayExtGatewayHotel]?
+  @objc public var trip: [CPaySDK.CPayExtGatewayTrip]?
   @objc override dynamic public init()
   @objc deinit
 }
