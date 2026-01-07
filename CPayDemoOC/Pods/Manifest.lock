@@ -26,10 +26,10 @@ PODS:
   - KlarnaMobileSDK/basic (2.10.2)
 
 DEPENDENCIES:
-  - CPaySDK/Core (from `../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug`)
-  - CPaySDK/Payment/CashApp (from `../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug`)
-  - CPaySDK/Payment/Klarna (from `../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug`)
-  - CPaySDK/Payment/PayPal (from `../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug`)
+  - CPaySDK/Core (from `../`)
+  - CPaySDK/Payment/CashApp (from `../`)
+  - CPaySDK/Payment/Klarna (from `../`)
+  - CPaySDK/Payment/PayPal (from `../`)
 
 SPEC REPOS:
   trunk:
@@ -37,12 +37,12 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   CPaySDK:
-    :path: "../../upi_mobile_sdk_ios/Output/a5_btd9_3/DynamicFramework/Debug"
+    :path: "../"
 
 SPEC CHECKSUMS:
   CPaySDK: 617b34e66995b8f1d35cb6f0101ffb4940334f0e
   KlarnaMobileSDK: 7971288298945f4448b474c09e8c662715f5a733
 
-PODFILE CHECKSUM: 695a87584950dd898608fb5765566f1e0694173a
+PODFILE CHECKSUM: 3b7436084bb39bd62a4e0ed5d11bff6e5cac3d56
 
 COCOAPODS: 1.16.2
