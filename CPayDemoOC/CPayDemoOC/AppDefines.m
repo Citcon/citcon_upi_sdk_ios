@@ -78,6 +78,7 @@
         @"cashalo",
         @"cashapppay",
         @"klarna",
+        @"flexa",
     ];
     
     self.ns_country = @[
