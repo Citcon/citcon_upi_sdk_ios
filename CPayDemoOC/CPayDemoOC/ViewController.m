@@ -77,7 +77,7 @@
 
 - (void)initEnvForm {
     _txtRTEnv.text = @"UAT";
-    _txtPaymethod.text = @"klarna";
+    _txtPaymethod.text = @"flexa";
     _txtVendorType.text = SDK_TOKEN;
     _txtDemoType.text = @"others";
     
@@ -310,7 +310,11 @@
     if ([_txtPaymethod.text isEqualToString:@"cashapppay"]) {
         return [self presentPaymentView:@"digit" payment:payment title:@"Cash App"];
     }
-    
+
+    if ([_txtPaymethod.text isEqualToString:@"flexa"]) {
+        return [self presentPaymentView:@"digit" payment:payment title:@"Flexa"];
+    }
+
     if ([payment isEqualToString:@"upop"]) {
         [self presentPaymentView:@"upop"];
     } else if ([payment isEqualToString:@"wechatpay"]) {

@@ -1,7 +1,7 @@
 // swift-tools-version: 5.8
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 //
-// CPaySDK v2.5.0
+// CPaySDK v2.6.0
 // Citcon UPI Mobile SDK for iOS
 
 import PackageDescription
