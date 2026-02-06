@@ -1,4 +1,0 @@
-framework module PayPalWebPayments {
-  header "PayPalWebPayments-Swift.h"
-  requires objc
-}

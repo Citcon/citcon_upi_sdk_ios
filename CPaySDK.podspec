@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CPaySDK'
-  s.version          = '2.6.0'
+  s.version          = '2.6.1'
   s.summary          = 'UPI mobile SDK for iOS.'
   
   # This description is used to generate tags and improve search results.
@@ -31,7 +31,6 @@ s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'yansheng.ao@citcon.cn' => 'yansheng.ao@citcon.cn' }
 s.source           = { :git => 'https://github.com/Citcon/citcon_upi_sdk_ios.git', :tag => 'v' + s.version.to_s }
 
-#  s.exclude_files = ['PPRiskMagnes.xcframework', 'Alamofire.xcframework', 'Braintree.xcframework', 'CardinalMobile.xcframework']
 
 s.libraries = 'stdc++'#,'z','c++'
 s.requires_arc = true
@@ -42,67 +41,14 @@ s.platform         = :ios, "13.0"
 
 #  s.default_subspecs = %w[Core Ext Payment]
 
-s.default_subspecs = ["Core", "Ext", "Payment/PayPal/Web", "Payment/PayPal/Fraud", "Payment/PayPal/Button", "Payment/CashApp/Core", "Payment/CashApp/Button"]
+s.default_subspecs = ["Core", "Payment/CashApp/Core", "Payment/CashApp/Button"]
 
 s.subspec 'Core' do |ss|
   # Alamofire 5.5.0
   ss.vendored_frameworks = 'CPaySDK/Core/CPaySDK.xcframework'
 end
 
-s.subspec 'Ext' do |ss|
-  # btd 9.3.0, bt 5.5.0
-  
-  ss.subspec 'CardinalMobile' do |sss|
-    # btd 9.3.0, bt 5.5.0
-    sss.vendored_frameworks = 'CPaySDK/Ext/CardinalMobile.xcframework'
-  end
-  
-  ss.subspec 'PPRiskMagnes' do |sss|
-    # btd 9.3.0, bt 5.5.0
-    sss.vendored_frameworks = 'CPaySDK/Ext/PPRiskMagnes.xcframework'
-  end
-end
-
-
 s.subspec 'Payment' do |ss|
-  
-  ss.subspec 'PayPal' do |sss|
-    
-    #sss.dependency 'PayPal', '= 1.3.2'
-    
-    sss.subspec 'Core' do |ssss|
-      ssss.vendored_frameworks = ['CPaySDK/Payment/PayPal/Ext/CorePayments.xcframework']
-    end
-    
-    
-    sss.subspec 'Web' do |ssss|
-      ssss.vendored_frameworks = ['CPaySDK/Payment/PayPal/Ext/PayPalWebPayments.xcframework']
-      ssss.dependency 'CPaySDK/Payment/PayPal/Core'
-    end
-    
-    #sss.subspec 'Native' do |ssss|
-    #  ssss.vendored_frameworks = ['CPaySDK/Payment/PayPal/Ext/PayPalNativePayments.xcframework']
-    #  ssss.dependency 'PayPalCheckout', '= 1.3.0'
-    #  ssss.dependency 'CPaySDK/Payment/PayPal/Core'
-    #end
-    
-    #          sss.subspec 'Card' do |ssss|
-    #            ssss.vendored_frameworks = ['CPaySDK/Payment/PayPal/Ext/CardPayments.xcframework']
-    #            ssss.dependency 'CPaySDK/Payment/PayPal/Core'
-    #          end
-    
-    sss.subspec 'Fraud' do |ssss|
-      ssss.vendored_frameworks = ['CPaySDK/Payment/PayPal/Ext/FraudProtection.xcframework']
-      ssss.dependency 'CPaySDK/Ext/PPRiskMagnes'
-      ssss.dependency 'CPaySDK/Payment/PayPal/Core'
-    end
-    
-    sss.subspec 'Button' do |ssss|
-      ssss.vendored_frameworks = ['CPaySDK/Payment/PayPal/Ext/PaymentButtons.xcframework']
-      ssss.dependency 'CPaySDK/Payment/PayPal/Core'
-    end
-    
-  end
   
   ss.subspec 'CashApp' do |sss|
     sss.subspec 'Core' do |ssss|

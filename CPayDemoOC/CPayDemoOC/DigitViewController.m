@@ -56,46 +56,7 @@
   if (self.isPPCPPayPal) {
     _txtAmount.text = @"8";
 
-    {
-      UIButton *button = [CPayStyleManager buildPayPalButtonWithColor:@"blue"
-                                                                 size:@"full"
-                                                                lable:nil];
-      if (button) {
-        [button addTarget:self
-                      action:@selector(buttonTapped)
-            forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:button];
-
-        [NSLayoutConstraint activateConstraints:@[
-          [button.bottomAnchor
-              constraintEqualToAnchor:self.confirmBtn.bottomAnchor
-                             constant:10],
-          [button.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor]
-        ]];
-      }
-    }
-
-    {
-      UIButton *button = [CPayStyleManager
-          buildPayPalButtonWithInsets:UIEdgeInsetsMake(0, 0, 0, 0)
-                                edges:4
-                                color:@"red"
-                                 size:@"full"
-                                lable:@"checkout"];
-      if (button) {
-        [button addTarget:self
-                      action:@selector(buttonTapped)
-            forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:button];
-
-        [NSLayoutConstraint activateConstraints:@[
-          [button.bottomAnchor
-              constraintEqualToAnchor:self.confirmBtn.bottomAnchor
-                             constant:10 + 100],
-          [button.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor]
-        ]];
-      }
-    }
+    
   }
 
   if (self.isCashApp) {

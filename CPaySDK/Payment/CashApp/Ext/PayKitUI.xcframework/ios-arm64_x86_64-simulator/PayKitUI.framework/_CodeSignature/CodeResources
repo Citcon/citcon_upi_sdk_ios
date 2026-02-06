@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		7OLIhTMFwrEupJNJ2j9lbunc6DM=
+		GTtm1ckSZpw7ELAFxOKPBjyt9SQ=
 		</data>
 		<key>Headers/CashAppPayKitUI-umbrella.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2PkUgSsIr8QVpHVyhc3mpSkOM9c=
+		D7qrY44RHabEFCUpPZxl99y9MHU=
 		</data>
 		<key>Modules/PayKitUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RqLqsnffTRbuoZKUHSmn8AdNQGM8n4T1NOcSVnnOJes=
+			TOVKH++EQyXrQrY7Uz6x6rPYws49Fx7xJ3E7uXXZr5s=
 			</data>
 		</dict>
 		<key>Headers/CashAppPayKitUI-umbrella.h</key>

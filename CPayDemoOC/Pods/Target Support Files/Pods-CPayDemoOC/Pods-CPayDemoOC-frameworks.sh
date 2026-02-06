@@ -177,31 +177,13 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Core/CPaySDK.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Ext/PPRiskMagnes/PPRiskMagnes.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Button/PayKitUI.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Core/PayKit.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/Klarna/KlarnaExt.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Button/PaymentButtons.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Core/CorePayments.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Fraud/FraudProtection.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Web/PayPalWebPayments.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/KlarnaMobileSDK/basic/KlarnaCore.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/KlarnaMobileSDK/basic/KlarnaMobileSDK.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/KlarnaMobileSDK/basic/KlarnaPayments.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Core/CPaySDK.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Ext/PPRiskMagnes/PPRiskMagnes.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Button/PayKitUI.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Core/PayKit.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/Klarna/KlarnaExt.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Button/PaymentButtons.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Core/CorePayments.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Fraud/FraudProtection.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/PayPal/Web/PayPalWebPayments.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/KlarnaMobileSDK/basic/KlarnaCore.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/KlarnaMobileSDK/basic/KlarnaMobileSDK.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/KlarnaMobileSDK/basic/KlarnaPayments.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

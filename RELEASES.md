@@ -4,6 +4,14 @@
 
 ## 📦 Release History
 
+### v2.6.1 - 2026-02-06 (Custom Build)
+- ⚠️ **Custom version** for specific merchant requirements
+- Removed **Braintree** SDK dependency
+- Removed **PayPal** and **Venmo** payment support
+- Reduced SDK binary size
+
+---
+
 ### v2.6.0 - 2026-01-24
 - Added **Flexa** payment support
 

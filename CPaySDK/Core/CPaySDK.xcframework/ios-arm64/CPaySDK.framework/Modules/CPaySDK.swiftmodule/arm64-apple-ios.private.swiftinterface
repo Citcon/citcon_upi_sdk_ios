@@ -464,12 +464,6 @@ public typealias CPayCheckCallback = (_ result: CPaySDK.CPayCheck?) -> Swift.Voi
 }
 @_inheritsConvenienceInitializers @objc public class CPayStyleManager : ObjectiveC.NSObject {
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc public static func buildPayPalButton(color: Swift.String? = "gold", size: Swift.String? = "collapsed", lable: Swift.String? = "none") -> UIKit.UIButton?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public static func buildPayPalButton(insets: UIKit.UIEdgeInsets, edges: Swift.Int = 4, color: Swift.String? = "gold", size: Swift.String? = "collapsed", lable: Swift.String? = "none") -> UIKit.UIButton?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func buildCashAppPaymentButton(size: Swift.String? = "large", action: @escaping () -> Swift.Void) -> UIKit.UIView?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes

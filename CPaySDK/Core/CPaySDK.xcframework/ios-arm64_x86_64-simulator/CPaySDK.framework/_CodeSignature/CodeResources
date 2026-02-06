@@ -36,211 +36,9 @@
 		<data>
 		v8pstv1HbmoW3gdlKZzSqn31WHY=
 		</data>
-		<key>BraintreeDropIn-Localization.bundle/Info.plist</key>
-		<data>
-		goXng4+Q/UMOc7bwCVFX9Zes2aw=
-		</data>
-		<key>BraintreeDropIn-Localization.bundle/ar.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3/GwcsXQtxQ9/uyMXS92b2KAbvg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/da.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			aHxVKHtKdL/ryQeUN1AmFH4lo9Y=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/de.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			QPYYlhjdmJI9JChxhIvt9ETVCMA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/en.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Pt9tmvk3DsdTe6nSmh34yzonkQU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/es.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Oe14toHwfj2YEHT1WwO3gUMEd+Y=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/fr-CA.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			vIuSePgXk5AQLne+dPgX62olHQs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/fr.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZFMnuU01wKNpotGFU9z/iafdRCU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/he.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8qCtcoee+xFfeKroecIwMrCRfpY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/id.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1zjm6nZfRQNUJ98PGt2irPhiqtw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/it.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			r8PRAymyxHOrNjnEJkFBqs+a/NY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/ja.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+QMR/2SYjdG0v3z/v588qjZl/f8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/ko.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			0O2FcgXuSeWsxTPEoejqxTqLf/Y=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/nb.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ABIzs0U+Sh6d14RbMR7VAmY4tzM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/nl.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			hTnfgYXD3vL3aMv/5wEqihwE7is=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/pl.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			r54vA8L1SH42FkNSEYFrZoa6RJg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/pt.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZDWSnWvdSnKCKtBgviM2F0izSdY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/ru.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			dHXG+RlGtWHD7YNiagbQ0ZWkBbc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/sv.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5YeW1AVOyC0Nxn+JqSvKjrwQLMg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/th.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9MzV9VzB40CuufABbCiTsmqrPVY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/zh-Hans.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			d+38nX04XG9ZmF3aSUWtp2KU0Pg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/zh-Hant-HK.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			I+Rz2I/jE91J7m/ajFc6bPdezrQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/zh-Hant.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			BNWr38eWGxJ5SXDiZZPRtvRx23A=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>Headers/CPaySDK-Swift.h</key>
 		<data>
-		LRm5fAn/N9nKpz/E2hldImTgZ/I=
+		sTyKeopAKlpNjmQjG0n0wKMi16I=
 		</data>
 		<key>Headers/CPaySDK.h</key>
 		<data>
@@ -248,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		PgD6ZkzSha3Gwe8ba5sPa7hxd5g=
+		5Cyrw/KCMtynKX2k65e91jnkB5I=
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -256,19 +54,19 @@
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		3wa+V1kLJwf8F1QOBklxanrAFPk=
+		aFT5TaH0+wzYJIJAphGkqXxjlH4=
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		BTLcMvL3N6l42u9Tb7bu8mZtqW0=
+		67BZgVbywDC8R4O5fVnziI2RNDY=
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3wa+V1kLJwf8F1QOBklxanrAFPk=
+		aFT5TaH0+wzYJIJAphGkqXxjlH4=
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		h4zPgdpmQ0+xqxsqsyANJH62Vc8=
+		2ESipfVY9vbNrxwPs8O5AS9SsJ4=
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -276,19 +74,19 @@
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		6Ttj2YjRPpOnETGAvfvNyMd3n+8=
+		t+LAqkOGfWKCI9RQbvmidDLm4I8=
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		olPJG3Zy0BvvTy/qs2hkLATUXFc=
+		RwuA/zBaBWVAHFB0yQTIlg/9Im0=
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		6Ttj2YjRPpOnETGAvfvNyMd3n+8=
+		t+LAqkOGfWKCI9RQbvmidDLm4I8=
 		</data>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		n+H/0f3PykjOvFzWgQApR0OLFvg=
+		i77YA3H7DM+GCtc6SmkOTsTTXjM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -357,216 +155,11 @@
 			dE2ndHqk8MuNrgTt2yHONxfP38nq2HUgB4t2jKRl8SI=
 			</data>
 		</dict>
-		<key>BraintreeDropIn-Localization.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			HvADu0zwNZUoZl6cP3at+Z+fibNkGi36z57qiaQ6DN4=
-			</data>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/ar.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			I6v+7Ln12vHOoNGA22lnjbPZ20W+dAYnpq1/SsFGpeA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/da.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xFAbYzLLZLrOMTN0DzJoyG6nTYZfEPOOzZ+xqzxKCd4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/de.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			G1TBfSC0UYBbOJ6Q+kGq0zOMdfbFRZVUzUurkBq3iEk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/en.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KP7Dcy2QQcQVVevhSEJViacHbEQ6UmxSLzW0/ZGmhbM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/es.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0my1ROuQ6c7eQQQNldj3yWoA6PuL1wngUY2PHO0moO8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/fr-CA.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			koKYJPUJ+pX68LphuDFIy/9/deuITSPifSXm/+2rCYs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/fr.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			sfjXXt2B5qHQy+/Ot15+4D1SuIDYAmR/JjIbNzK//1o=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/he.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			u9DsQG1c5cK4vRuZEty7MLRMBD4R27fSNX8yFJSAuMY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/id.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			eomjVGkZ6tfHFrqMz1m5smBdwAGQqKM4SKDnfdFNLKk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/it.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			AoDVsat21losuACiC2ZqpqKaLy6MNerrdsNMqwf1hWw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/ja.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			p4rHMKucO2fvHRxmIKZA8e7ucdXw7BdVMcpgWy3/ikw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/ko.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Wg4eSwpmJgCPqpBewiwWaSqKW3kRJFOHSPs9A+Otl+8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/nb.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			O/1LKKY7WV2mU9gn35CCZArT8Uimnf3IBeqd2kBsPUM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/nl.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			r6L5N6EIX5b5BnzUgiLR/WpEKFCP0BjGHXTgwd44nLQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/pl.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			b/APcYeuOVVu/DmuHzldFV+m+NKIid9ANoHGwOTWPhU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/pt.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			aZ6dXB7FbVlV/34DwuwG7TcXcFpFBg/H7Qo2MDKramc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/ru.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xcwtmVITrrnxZaBvdN0WZJXhconpOsOicOUbIDn6aSs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/sv.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xuRwg+2OnrlksL9X+PWphu7A0VZdhH7A7G6bQp9eGV8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/th.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			pj8QQ+z40YOPPAM0xDbkB303DqqmvRtKe/4CQcEm38s=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/zh-Hans.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xJN/ToQrgD8QGV73S89qmpaf2sFjQYCMQw0AOixIHpM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/zh-Hant-HK.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zDS8sPRgWs63iNSuhWNZfl7BZTfSddTpMpoSz67wqEU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>BraintreeDropIn-Localization.bundle/zh-Hant.lproj/BTUI.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Rzk9wV5TSlHGlJAQ2UbsJKrMWiXMEAhElUJFHDMqKq0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>Headers/CPaySDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6BZU/ZzOwjZGMu3BCMYd1amSolHzSfxFser9Rpmyp6k=
+			MB6CUpk2c94J0fl9jF8+jFcHNBA3JKOXErq0pJ67VtI=
 			</data>
 		</dict>
 		<key>Headers/CPaySDK.h</key>
@@ -587,28 +180,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0vsbDdt7Dug2+JDhOCxZzb7y6Rd1ok16xpNOhUy4ag4=
+			2n4rRgEzSCny+eZtiEoZxlG4ttFJ6PkSHah/8bMKPfo=
 			</data>
 		</dict>
 		<key>Modules/CPaySDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m/393u+YaTlI/ISL1taKypTff1B2l9muFsyG8j01Row=
+			I4TeIuAIuwRvGipLMT7LvJDBDWLPOlK1Jo1KwTVrtKc=
 			</data>
 		</dict>
 		<key>Modules/CPaySDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0vsbDdt7Dug2+JDhOCxZzb7y6Rd1ok16xpNOhUy4ag4=
+			2n4rRgEzSCny+eZtiEoZxlG4ttFJ6PkSHah/8bMKPfo=
 			</data>
 		</dict>
 		<key>Modules/CPaySDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B8Tc0dzeiCy3JYcM20OIE1UJ0vDi31PKiWaIQwMo900=
+			ge6XefNflNArI9qlCVU3cHBqGrB0MArNkMu4yoRvKXk=
 			</data>
 		</dict>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -622,28 +215,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xiY9Er6G5vp/JzUeTJEUY3Jt3ArBq1DHflDyolUJ8OM=
+			NtrN4LXR9zHgLfINGyz/o6gZVqqDLpgVy2NqJcNBj3Y=
 			</data>
 		</dict>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2qTAiYakAOJbjtvay4PYLDV2Od69G2p3DpzHAHjEwBQ=
+			cGHsuOXgsfeH3j5ouFFOitdvg0uaHnAQJp1Qxn7o6dw=
 			</data>
 		</dict>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xiY9Er6G5vp/JzUeTJEUY3Jt3ArBq1DHflDyolUJ8OM=
+			NtrN4LXR9zHgLfINGyz/o6gZVqqDLpgVy2NqJcNBj3Y=
 			</data>
 		</dict>
 		<key>Modules/CPaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ANpv+Yl88IXPVZdmJJ0XlIunHOMGUF8WH7F6pRjTRG8=
+			WPhTsc1oRCoHcnJzPwaomYPH+OxcyvTMCm1AhyxUn+s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

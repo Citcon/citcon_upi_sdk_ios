@@ -927,42 +927,11 @@ SWIFT_CLASS("_TtC7CPaySDK12CPayShipping")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
 @class UIView;
 @class UIColor;
 @class UIFont;
 SWIFT_CLASS("_TtC7CPaySDK16CPayStyleManager")
 @interface CPayStyleManager : NSObject
-/// Create PayPal Button
-/// <ul>
-///   <li>
-///     Returns a button or nil,  if the paypal button module is not imported
-///   </li>
-/// </ul>
-/// \param color default is gold, value: gold, white, black, silver, blue
-///
-/// \param size default is expanded, value: mini, collapsed, expanded, full
-///
-/// \param lable default is none, value: none, checkout, buyNow, payWith
-///
-+ (UIButton * _Nullable)buildPayPalButtonWithColor:(NSString * _Nullable)color size:(NSString * _Nullable)size lable:(NSString * _Nullable)lable SWIFT_WARN_UNUSED_RESULT;
-/// Create PayPal Button
-/// <ul>
-///   <li>
-///     Returns a button or nil,  if the paypal button module is not imported
-///   </li>
-/// </ul>
-/// \param insets default is (-1, -1, -1, -1)
-///
-/// \param edges default is 4, value: ‘0’ - hardEdges, ‘4’ - softEdges, ‘-1’ - rounded , ‘xx - custom’
-///
-/// \param color default is gold, value: gold, white, black, silver, blue
-///
-/// \param size default is expanded, value: mini, collapsed, expanded, full
-///
-/// \param lable default is none, value: none, checkout, buyNow, payWith
-///
-+ (UIButton * _Nullable)buildPayPalButtonWithInsets:(UIEdgeInsets)insets edges:(NSInteger)edges color:(NSString * _Nullable)color size:(NSString * _Nullable)size lable:(NSString * _Nullable)lable SWIFT_WARN_UNUSED_RESULT;
 /// Create CashApp Button
 /// \param size string, value are small、large, default is large
 ///
