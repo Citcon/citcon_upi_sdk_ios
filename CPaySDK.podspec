@@ -61,9 +61,9 @@ s.subspec 'Payment' do |ss|
   end
   
   ss.subspec 'Klarna' do |sss|
-    # KlarnaExt 1.0.0, KlarnaMobileSDK 2.10.0+
+    # KlarnaExt 1.0.0, KlarnaMobileSDK 2.10+
     sss.vendored_frameworks = ['CPaySDK/Payment/Klarna/KlarnaExt.xcframework']
-    sss.dependency 'KlarnaMobileSDK', '~> 2.10.0'
+    sss.dependency 'KlarnaMobileSDK', '~> 2.10'
   end
 end
 
