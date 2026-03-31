@@ -41,7 +41,7 @@ s.platform         = :ios, "13.0"
 
 #  s.default_subspecs = %w[Core Ext Payment]
 
-s.default_subspecs = ["Core", "Payment/CashApp/Core", "Payment/CashApp/Button"]
+s.default_subspecs = ["Core", "Payment/CashApp/Core", "Payment/CashApp/Button", "Payment/Klarna"]
 
 s.subspec 'Core' do |ss|
   # Alamofire 5.5.0
