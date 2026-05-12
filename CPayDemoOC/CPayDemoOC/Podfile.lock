@@ -1,0 +1,22 @@
+PODS:
+  - CPaySDK (2.6.1):
+    - CPaySDK/Core (= 2.6.1)
+    - CPaySDK/Payment/CashApp/Button (= 2.6.1)
+    - CPaySDK/Payment/CashApp/Core (= 2.6.1)
+  - CPaySDK/Core (2.6.1)
+  - CPaySDK/Payment/CashApp/Button (2.6.1)
+  - CPaySDK/Payment/CashApp/Core (2.6.1)
+
+DEPENDENCIES:
+  - CPaySDK (from `../`)
+
+EXTERNAL SOURCES:
+  CPaySDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CPaySDK: bd94f477b2a415cb443ddd8b2c815e20cc04694e
+
+PODFILE CHECKSUM: 36556c8dc68c996c6cfafd3f9bceb518dc696b8b
+
+COCOAPODS: 1.16.2

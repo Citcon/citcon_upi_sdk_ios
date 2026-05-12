@@ -35,6 +35,12 @@ variant_for_slice()
   "PayKit.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
+  "KlarnaExt.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "KlarnaExt.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
   esac
 }
 
@@ -57,6 +63,12 @@ archs_for_slice()
     echo "arm64"
     ;;
   "PayKit.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "KlarnaExt.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "KlarnaExt.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
   esac
@@ -144,4 +156,5 @@ install_xcframework() {
 install_xcframework "${PODS_ROOT}/../../CPaySDK/Core/CPaySDK.xcframework" "CPaySDK/Core" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 install_xcframework "${PODS_ROOT}/../../CPaySDK/Payment/CashApp/Ext/PayKitUI.xcframework" "CPaySDK/Payment/CashApp/Button" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 install_xcframework "${PODS_ROOT}/../../CPaySDK/Payment/CashApp/Ext/PayKit.xcframework" "CPaySDK/Payment/CashApp/Core" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../CPaySDK/Payment/Klarna/KlarnaExt.xcframework" "CPaySDK/Payment/Klarna" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 

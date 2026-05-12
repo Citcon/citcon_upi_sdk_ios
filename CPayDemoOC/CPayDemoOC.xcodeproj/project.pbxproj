@@ -48,6 +48,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		09CAB4C72F7B6596004028D1 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		09CAB4C82F7B6596004028D1 /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		09F966D12C12F7B90001AA98 /* TokenHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TokenHeader.h; sourceTree = "<group>"; };
 		17F735747D79331BB90DB603 /* Pods-CPayDemoOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CPayDemoOC.release.xcconfig"; path = "Target Support Files/Pods-CPayDemoOC/Pods-CPayDemoOC.release.xcconfig"; sourceTree = "<group>"; };
 		D02A27B76CFBAA1227A30AEE /* Pods_CPayDemoOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CPayDemoOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,8 @@
 		F1F06AC527B0FD8000BD302F /* CPayDemoOC */ = {
 			isa = PBXGroup;
 			children = (
+				09CAB4C72F7B6596004028D1 /* Podfile */,
+				09CAB4C82F7B6596004028D1 /* Podfile.lock */,
 				F1F242C127C4829B0065809F /* CPayDemoOC.entitlements */,
 				F1F06AC627B0FD8000BD302F /* AppDelegate.h */,
 				F1F06AC727B0FD8000BD302F /* AppDelegate.m */,

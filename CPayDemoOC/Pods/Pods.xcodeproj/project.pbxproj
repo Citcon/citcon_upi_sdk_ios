@@ -9,118 +9,204 @@
 /* Begin PBXAggregateTarget section */
 		0EA3B06E42F14A5239D6B4EEF1A2183D /* CPaySDK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = B13AA709AD5EDE209EF129175FE0AD10 /* Build configuration list for PBXAggregateTarget "CPaySDK" */;
+			buildConfigurationList = D1BA862907F30C7282AF6DA9BBD1D6A1 /* Build configuration list for PBXAggregateTarget "CPaySDK" */;
 			buildPhases = (
-				60E2DB6DC1E08486EAB147773E463440 /* [CP] Copy XCFrameworks */,
+				0E8EA2DC52F59FB94952ACAD88886436 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				2D2D813750027C08739F0680DEA2CC38 /* PBXTargetDependency */,
+			);
+			name = CPaySDK;
+		};
+		CED402C355914FFED9773C1549264B8C /* KlarnaMobileSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 01B91580473EB679C174BD6D7DB813DD /* Build configuration list for PBXAggregateTarget "KlarnaMobileSDK" */;
+			buildPhases = (
+				E4C823523F691DCA669E7B18C4ED21E9 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 			);
-			name = CPaySDK;
+			name = KlarnaMobileSDK;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		265D7FD31165F9BE4AEC668175393C33 /* Pods-CPayDemoOC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A65B00A2B00E1C05396AD2D10E8C19 /* Pods-CPayDemoOC-dummy.m */; };
-		27D9D1C56ACC27255592EE6ECD25E477 /* Pods-CPayDemoOC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB83AAD132C1C35023781AF9444E0B12 /* Pods-CPayDemoOC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AFD7C835D94BF441F718C910C5BD2CF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		863FC115BBC19DCDD48144D7F1C1FE21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		A67F1C0BBB69AD8069691387A7CB2C43 /* Pods-CPayDemoOC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB83AAD132C1C35023781AF9444E0B12 /* Pods-CPayDemoOC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3471039B1F2C489FB2E4F2EE28A3EBC /* Pods-CPayDemoOC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A65B00A2B00E1C05396AD2D10E8C19 /* Pods-CPayDemoOC-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		594BD7CC2729C636849143848D236A74 /* PBXContainerItemProxy */ = {
+		C15A99624BB7853AF26B694592FEF072 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CED402C355914FFED9773C1549264B8C;
+			remoteInfo = KlarnaMobileSDK;
+		};
+		DD93297BDDC357CCD0A9EF05A86A1F66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0EA3B06E42F14A5239D6B4EEF1A2183D;
 			remoteInfo = CPaySDK;
 		};
+		EF1FDA4FFF2030FA71C561CB0DDE3135 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CED402C355914FFED9773C1549264B8C;
+			remoteInfo = KlarnaMobileSDK;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0351A0137BFB45B6BC3BF5D320614E01 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		0551CC797A39EE64853AFC5B8971F525 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		092354648D1CCFE5A2BB053DB7DDE6B7 /* Pods-CPayDemoOC-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CPayDemoOC-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0F612E131DE4960E0873532B2D32761F /* CPaySDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CPaySDK.release.xcconfig; sourceTree = "<group>"; };
+		1B08AC73E97B867513EE50E23EA6E97F /* CPaySDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = CPaySDK.xcframework; path = CPaySDK/Core/CPaySDK.xcframework; sourceTree = "<group>"; };
 		1BA019B7440F299F831DAE0F2790055B /* Pods-CPayDemoOC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CPayDemoOC.modulemap"; sourceTree = "<group>"; };
-		1EE74938EBB6BD69910F36ACBDB7474D /* CPaySDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = CPaySDK.xcframework; path = CPaySDK/Core/CPaySDK.xcframework; sourceTree = "<group>"; };
 		28851E6AC772B3591CECF85722837AF9 /* Pods-CPayDemoOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CPayDemoOC.release.xcconfig"; sourceTree = "<group>"; };
-		369177F249C715D1F82AD2B88CAE78F4 /* CPaySDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CPaySDK.debug.xcconfig; sourceTree = "<group>"; };
+		2E42669A1ACFEB1102995D31C4670585 /* PayKitUI.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = PayKitUI.xcframework; path = CPaySDK/Payment/CashApp/Ext/PayKitUI.xcframework; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3989D566D1D41D4BD822A1EF632EE615 /* KlarnaMobileSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = KlarnaMobileSDK.xcframework; sourceTree = "<group>"; };
 		44136A907C148B9E968FA5BD86CB949C /* Pods-CPayDemoOC-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CPayDemoOC-frameworks.sh"; sourceTree = "<group>"; };
+		4E1B8E18DAC687718BB1CADA6EF28734 /* KlarnaExt.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = KlarnaExt.xcframework; path = CPaySDK/Payment/Klarna/KlarnaExt.xcframework; sourceTree = "<group>"; };
+		5162D7962D89EA44BEA61529C166CBF6 /* CPaySDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "CPaySDK-xcframeworks.sh"; sourceTree = "<group>"; };
 		51F86B4021C592BB5E71CFBF338C68B4 /* Pods-CPayDemoOC-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CPayDemoOC-Info.plist"; sourceTree = "<group>"; };
-		52F2F88E0C710994855A887E85DFDD2C /* CPaySDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "CPaySDK-xcframeworks.sh"; sourceTree = "<group>"; };
-		6B4E9DAF3266D28E95D3D22142B5FCFB /* CPaySDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CPaySDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5D8C333363B0A1FCED455009836C0AF1 /* KlarnaMobileSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KlarnaMobileSDK.debug.xcconfig; sourceTree = "<group>"; };
+		7ABAD8640CEA721E68DD0B715CAF7FC1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		7BA644FC4CAA9108B7F8B007510C4A56 /* Pods-CPayDemoOC */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CPayDemoOC"; path = Pods_CPayDemoOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86631136A1E5795158728C7A01A073DD /* KlarnaCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = KlarnaCore.xcframework; sourceTree = "<group>"; };
 		8A555F0E3241F7B06D63BEB8565944CB /* Pods-CPayDemoOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CPayDemoOC.debug.xcconfig"; sourceTree = "<group>"; };
+		8FCDA033B6B069766E5CFEA71AE82B95 /* PayKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = PayKit.xcframework; path = CPaySDK/Payment/CashApp/Ext/PayKit.xcframework; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D0251F42DD732E91519E1710724EBDBB /* PayKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = PayKit.xcframework; path = CPaySDK/Payment/CashApp/Ext/PayKit.xcframework; sourceTree = "<group>"; };
+		A627F8E067A2B52B0830DA854F11F4DA /* CPaySDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CPaySDK.debug.xcconfig; sourceTree = "<group>"; };
+		B5205D95D01D79B13789C9EA8E94C875 /* CPaySDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CPaySDK.release.xcconfig; sourceTree = "<group>"; };
+		C75532BC3C06604E309F719C4EF50662 /* CPaySDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CPaySDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C7CC2F3DAEF4A316D84A5B5B507EE936 /* KlarnaMobileSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "KlarnaMobileSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		D74AD7B2BE7E71D9E962EA3CE5AB91B8 /* KlarnaMobileSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KlarnaMobileSDK.release.xcconfig; sourceTree = "<group>"; };
 		D8A65B00A2B00E1C05396AD2D10E8C19 /* Pods-CPayDemoOC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CPayDemoOC-dummy.m"; sourceTree = "<group>"; };
 		DD2FB96DA2EFF86B52A0408AAFB007FC /* Pods-CPayDemoOC-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CPayDemoOC-acknowledgements.plist"; sourceTree = "<group>"; };
-		DF3AEF5E2682BBE9C45C9AE8F899B569 /* PayKitUI.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = PayKitUI.xcframework; path = CPaySDK/Payment/CashApp/Ext/PayKitUI.xcframework; sourceTree = "<group>"; };
-		EA9D0ECFEAF1E4B64657A5FAB145DD01 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F264EF05826D1111B616F5799661D43E /* KlarnaPayments.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = KlarnaPayments.xcframework; sourceTree = "<group>"; };
 		FB83AAD132C1C35023781AF9444E0B12 /* Pods-CPayDemoOC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CPayDemoOC-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BAC1D4650326E9E0E06BDD497A14E0A1 /* Frameworks */ = {
+		787180D010902FB239309059176F3049 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFD7C835D94BF441F718C910C5BD2CF3 /* Foundation.framework in Frameworks */,
+				863FC115BBC19DCDD48144D7F1C1FE21 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0DCD26250126EC132532C36B9A60D29B /* CashApp */ = {
+		06CADDEA463CDD7699C833B705967591 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FB12CDE37760273962D8899406EF8C92 /* Button */,
-				9A56FDAA9A3FEE16DA0DE7AE9FBDB9F4 /* Core */,
-			);
-			name = CashApp;
-			sourceTree = "<group>";
-		};
-		57555B7FDB7064C3F4D613B5DEE77CDF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D0251F42DD732E91519E1710724EBDBB /* PayKit.xcframework */,
+				86631136A1E5795158728C7A01A073DD /* KlarnaCore.xcframework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D7E2150AFF0BB7DD2C06356FE96E505 /* CPaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				D7DBBB19F9A6958CB3C43755AAAB97F2 /* Core */,
+				C091684E479F53EAB093244820DE8D4C /* Payment */,
+				C5D1032DE6E3F8BC0C3DEA7D1E6C55CB /* Pod */,
+				CDE054F2210DB198B1ED23E4C8992912 /* Support Files */,
+			);
+			name = CPaySDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		1975ECBA5D499ED5E2D6AE2357B17AD0 /* KlarnaMobileSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D20BE7E5AE3030A20225740A3B9EA140 /* basic */,
+				950F084C5D91E8DEE3E9C33A009AC9BE /* core */,
+				4ABC3717A5158D970C585BA6511A5D17 /* Support Files */,
+			);
+			name = KlarnaMobileSDK;
+			path = KlarnaMobileSDK;
+			sourceTree = "<group>";
+		};
+		1B04DA78CA0D12E918A7265DC2B5E8FE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				248523C57736460DBDF89564587DEB6A /* Frameworks */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		248523C57736460DBDF89564587DEB6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FCDA033B6B069766E5CFEA71AE82B95 /* PayKit.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4339C5C3EE28265F72532CCD17B96556 /* Klarna */ = {
+			isa = PBXGroup;
+			children = (
+				743C98EA2664BB4F9299C9A346CB5597 /* Frameworks */,
+			);
+			name = Klarna;
+			sourceTree = "<group>";
+		};
+		4ABC3717A5158D970C585BA6511A5D17 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7CC2F3DAEF4A316D84A5B5B507EE936 /* KlarnaMobileSDK-xcframeworks.sh */,
+				5D8C333363B0A1FCED455009836C0AF1 /* KlarnaMobileSDK.debug.xcconfig */,
+				D74AD7B2BE7E71D9E962EA3CE5AB91B8 /* KlarnaMobileSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KlarnaMobileSDK";
 			sourceTree = "<group>";
 		};
 		5DB3F14D600DAD1C80029DF31D1A94B5 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FC75FA87677F59305FDB9448AAA40785 /* CPaySDK */,
+				0D7E2150AFF0BB7DD2C06356FE96E505 /* CPaySDK */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		6042352686E984BE54B5B088246BB771 /* Frameworks */ = {
+		6846976BB8497464F481CCDFDC0D5D31 /* Button */ = {
 			isa = PBXGroup;
 			children = (
-				1EE74938EBB6BD69910F36ACBDB7474D /* CPaySDK.xcframework */,
+				8FF42F408FDB13F551B4A9A6EE8E7E3D /* Frameworks */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		6F7DDC9F169FBB64D147C727FEE4CE06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1975ECBA5D499ED5E2D6AE2357B17AD0 /* KlarnaMobileSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		743C98EA2664BB4F9299C9A346CB5597 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E1B8E18DAC687718BB1CADA6EF28734 /* KlarnaExt.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7C3A3DC32A4A69F899DD7171BCC88490 /* Core */ = {
+		7CB48986F5C7AFFD7D4CDE520DA017AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6042352686E984BE54B5B088246BB771 /* Frameworks */,
+				1B08AC73E97B867513EE50E23EA6E97F /* CPaySDK.xcframework */,
 			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		87C80CE3D98ED5B48A5B963E80E20736 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				52F2F88E0C710994855A887E85DFDD2C /* CPaySDK-xcframeworks.sh */,
-				369177F249C715D1F82AD2B88CAE78F4 /* CPaySDK.debug.xcconfig */,
-				0F612E131DE4960E0873532B2D32761F /* CPaySDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "CPayDemoOC/Pods/Target Support Files/CPaySDK";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8BDAFD0A41ADD99F28FEA32713939091 /* Pods-CPayDemoOC */ = {
@@ -148,12 +234,20 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9A56FDAA9A3FEE16DA0DE7AE9FBDB9F4 /* Core */ = {
+		8FF42F408FDB13F551B4A9A6EE8E7E3D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				57555B7FDB7064C3F4D613B5DEE77CDF /* Frameworks */,
+				2E42669A1ACFEB1102995D31C4670585 /* PayKitUI.xcframework */,
 			);
-			name = Core;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		950F084C5D91E8DEE3E9C33A009AC9BE /* core */ = {
+			isa = PBXGroup;
+			children = (
+				06CADDEA463CDD7699C833B705967591 /* Frameworks */,
+			);
+			name = core;
 			sourceTree = "<group>";
 		};
 		B6A9C35174FB178C8F5E58BBDFC2D9DF /* Products */ = {
@@ -164,14 +258,43 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B8B9CC7C1FD11AB2AF0507E6E85F5D9E /* Pod */ = {
+		BFF17A3DE0CC1FBF824CC5F0787C1291 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6B4E9DAF3266D28E95D3D22142B5FCFB /* CPaySDK.podspec */,
-				0351A0137BFB45B6BC3BF5D320614E01 /* LICENSE */,
-				EA9D0ECFEAF1E4B64657A5FAB145DD01 /* README.md */,
+				3989D566D1D41D4BD822A1EF632EE615 /* KlarnaMobileSDK.xcframework */,
+				F264EF05826D1111B616F5799661D43E /* KlarnaPayments.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C091684E479F53EAB093244820DE8D4C /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				E32F5CF21D7504B912E806F0C1BA96EB /* CashApp */,
+				4339C5C3EE28265F72532CCD17B96556 /* Klarna */,
+			);
+			name = Payment;
+			sourceTree = "<group>";
+		};
+		C5D1032DE6E3F8BC0C3DEA7D1E6C55CB /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C75532BC3C06604E309F719C4EF50662 /* CPaySDK.podspec */,
+				7ABAD8640CEA721E68DD0B715CAF7FC1 /* LICENSE */,
+				0551CC797A39EE64853AFC5B8971F525 /* README.md */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		CDE054F2210DB198B1ED23E4C8992912 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5162D7962D89EA44BEA61529C166CBF6 /* CPaySDK-xcframeworks.sh */,
+				A627F8E067A2B52B0830DA854F11F4DA /* CPaySDK.debug.xcconfig */,
+				B5205D95D01D79B13789C9EA8E94C875 /* CPaySDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "CPayDemoOC/Pods/Target Support Files/CPaySDK";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -180,9 +303,18 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				5DB3F14D600DAD1C80029DF31D1A94B5 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				6F7DDC9F169FBB64D147C727FEE4CE06 /* Pods */,
 				B6A9C35174FB178C8F5E58BBDFC2D9DF /* Products */,
 				8ED27F578F9217CFF517782DDFE3EFD6 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D20BE7E5AE3030A20225740A3B9EA140 /* basic */ = {
+			isa = PBXGroup;
+			children = (
+				BFF17A3DE0CC1FBF824CC5F0787C1291 /* Frameworks */,
+			);
+			name = basic;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -193,6 +325,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D7DBBB19F9A6958CB3C43755AAAB97F2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7CB48986F5C7AFFD7D4CDE520DA017AB /* Frameworks */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		E32F5CF21D7504B912E806F0C1BA96EB /* CashApp */ = {
+			isa = PBXGroup;
+			children = (
+				6846976BB8497464F481CCDFDC0D5D31 /* Button */,
+				1B04DA78CA0D12E918A7265DC2B5E8FE /* Core */,
+			);
+			name = CashApp;
+			sourceTree = "<group>";
+		};
 		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,50 +350,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F828FEF1588B585EB2EB078864C19426 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DF3AEF5E2682BBE9C45C9AE8F899B569 /* PayKitUI.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FB12CDE37760273962D8899406EF8C92 /* Button */ = {
-			isa = PBXGroup;
-			children = (
-				F828FEF1588B585EB2EB078864C19426 /* Frameworks */,
-			);
-			name = Button;
-			sourceTree = "<group>";
-		};
-		FC75FA87677F59305FDB9448AAA40785 /* CPaySDK */ = {
-			isa = PBXGroup;
-			children = (
-				7C3A3DC32A4A69F899DD7171BCC88490 /* Core */,
-				FFE329B32D62666FE198F74E3559117F /* Payment */,
-				B8B9CC7C1FD11AB2AF0507E6E85F5D9E /* Pod */,
-				87C80CE3D98ED5B48A5B963E80E20736 /* Support Files */,
-			);
-			name = CPaySDK;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		FFE329B32D62666FE198F74E3559117F /* Payment */ = {
-			isa = PBXGroup;
-			children = (
-				0DCD26250126EC132532C36B9A60D29B /* CashApp */,
-			);
-			name = Payment;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4B94E6140E2E1F875D4D7423EA4E805D /* Headers */ = {
+		A8C7EC3A6934A0FE7A38261C5A623861 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27D9D1C56ACC27255592EE6ECD25E477 /* Pods-CPayDemoOC-umbrella.h in Headers */,
+				A67F1C0BBB69AD8069691387A7CB2C43 /* Pods-CPayDemoOC-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,17 +366,18 @@
 /* Begin PBXNativeTarget section */
 		9B1D101C9287CEFE00F5B573ED4351B1 /* Pods-CPayDemoOC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F27182D5237E8758E28449AF68EE7A77 /* Build configuration list for PBXNativeTarget "Pods-CPayDemoOC" */;
+			buildConfigurationList = 0264CB2CCD405771C6B7D54A69BC9C65 /* Build configuration list for PBXNativeTarget "Pods-CPayDemoOC" */;
 			buildPhases = (
-				4B94E6140E2E1F875D4D7423EA4E805D /* Headers */,
-				9F1A3F4DAAC461B4B5D402C45AE3DC84 /* Sources */,
-				BAC1D4650326E9E0E06BDD497A14E0A1 /* Frameworks */,
-				74A48B48895E42E659C7A1CE0644BB01 /* Resources */,
+				A8C7EC3A6934A0FE7A38261C5A623861 /* Headers */,
+				298C55D7BAFFD91C6CCFD61ABF58E4C3 /* Sources */,
+				787180D010902FB239309059176F3049 /* Frameworks */,
+				F3B6377C20AE3E38C11F731010495925 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				702291C4D6ACDEED7F6E0118130B5E2E /* PBXTargetDependency */,
+				1BCCD9FD68F9D33CA584BC5644F29B0B /* PBXTargetDependency */,
+				709798E92C3E0C4684F1B73401F5ABD5 /* PBXTargetDependency */,
 			);
 			name = "Pods-CPayDemoOC";
 			productName = Pods_CPayDemoOC;
@@ -295,13 +409,14 @@
 			projectRoot = "";
 			targets = (
 				0EA3B06E42F14A5239D6B4EEF1A2183D /* CPaySDK */,
+				CED402C355914FFED9773C1549264B8C /* KlarnaMobileSDK */,
 				9B1D101C9287CEFE00F5B573ED4351B1 /* Pods-CPayDemoOC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		74A48B48895E42E659C7A1CE0644BB01 /* Resources */ = {
+		F3B6377C20AE3E38C11F731010495925 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -311,7 +426,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		60E2DB6DC1E08486EAB147773E463440 /* [CP] Copy XCFrameworks */ = {
+		0E8EA2DC52F59FB94952ACAD88886436 /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -328,30 +443,96 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/CPaySDK/CPaySDK-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E4C823523F691DCA669E7B18C4ED21E9 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/KlarnaMobileSDK/KlarnaMobileSDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/KlarnaMobileSDK/KlarnaMobileSDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/KlarnaMobileSDK/KlarnaMobileSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9F1A3F4DAAC461B4B5D402C45AE3DC84 /* Sources */ = {
+		298C55D7BAFFD91C6CCFD61ABF58E4C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				265D7FD31165F9BE4AEC668175393C33 /* Pods-CPayDemoOC-dummy.m in Sources */,
+				B3471039B1F2C489FB2E4F2EE28A3EBC /* Pods-CPayDemoOC-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		702291C4D6ACDEED7F6E0118130B5E2E /* PBXTargetDependency */ = {
+		1BCCD9FD68F9D33CA584BC5644F29B0B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CPaySDK;
 			target = 0EA3B06E42F14A5239D6B4EEF1A2183D /* CPaySDK */;
-			targetProxy = 594BD7CC2729C636849143848D236A74 /* PBXContainerItemProxy */;
+			targetProxy = DD93297BDDC357CCD0A9EF05A86A1F66 /* PBXContainerItemProxy */;
+		};
+		2D2D813750027C08739F0680DEA2CC38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KlarnaMobileSDK;
+			target = CED402C355914FFED9773C1549264B8C /* KlarnaMobileSDK */;
+			targetProxy = C15A99624BB7853AF26B694592FEF072 /* PBXContainerItemProxy */;
+		};
+		709798E92C3E0C4684F1B73401F5ABD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KlarnaMobileSDK;
+			target = CED402C355914FFED9773C1549264B8C /* KlarnaMobileSDK */;
+			targetProxy = EF1FDA4FFF2030FA71C561CB0DDE3135 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		37CA5F23E47726BA5D7DD5B42F27AABA /* Debug */ = {
+		09E3475A3ACBAC34F9A63095C660AC0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5205D95D01D79B13789C9EA8E94C875 /* CPaySDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		616407D744A79712FE41954913D0C3E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D8C333363B0A1FCED455009836C0AF1 /* KlarnaMobileSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84826793308C0068D28FB30E8CF05BA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8A555F0E3241F7B06D63BEB8565944CB /* Pods-CPayDemoOC.debug.xcconfig */;
 			buildSettings = {
@@ -389,64 +570,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		49CE70ED5DB1E4B1BA1C4E05A066FB27 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 369177F249C715D1F82AD2B88CAE78F4 /* CPaySDK.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		523CB2350E88ED8191893209A2299752 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28851E6AC772B3591CECF85722837AF9 /* Pods-CPayDemoOC.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-CPayDemoOC/Pods-CPayDemoOC-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CPayDemoOC/Pods-CPayDemoOC.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -514,6 +637,43 @@
 			};
 			name = Debug;
 		};
+		93F450CF63885547BF11B19C1E234060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A627F8E067A2B52B0830DA854F11F4DA /* CPaySDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CFE6A0F1DC02AC9E1659CF90FFC3FA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D74AD7B2BE7E71D9E962EA3CE5AB91B8 /* KlarnaMobileSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -576,28 +736,67 @@
 			};
 			name = Release;
 		};
-		FB38B953E5E8C4276D888EC1A97C5A1C /* Release */ = {
+		BB891070B86F09F8CC981B35617E03BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F612E131DE4960E0873532B2D32761F /* CPaySDK.release.xcconfig */;
+			baseConfigurationReference = 28851E6AC772B3591CECF85722837AF9 /* Pods-CPayDemoOC.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-CPayDemoOC/Pods-CPayDemoOC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CPayDemoOC/Pods-CPayDemoOC.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		01B91580473EB679C174BD6D7DB813DD /* Build configuration list for PBXAggregateTarget "KlarnaMobileSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				616407D744A79712FE41954913D0C3E8 /* Debug */,
+				9CFE6A0F1DC02AC9E1659CF90FFC3FA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0264CB2CCD405771C6B7D54A69BC9C65 /* Build configuration list for PBXNativeTarget "Pods-CPayDemoOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84826793308C0068D28FB30E8CF05BA4 /* Debug */,
+				BB891070B86F09F8CC981B35617E03BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -607,20 +806,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B13AA709AD5EDE209EF129175FE0AD10 /* Build configuration list for PBXAggregateTarget "CPaySDK" */ = {
+		D1BA862907F30C7282AF6DA9BBD1D6A1 /* Build configuration list for PBXAggregateTarget "CPaySDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				49CE70ED5DB1E4B1BA1C4E05A066FB27 /* Debug */,
-				FB38B953E5E8C4276D888EC1A97C5A1C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F27182D5237E8758E28449AF68EE7A77 /* Build configuration list for PBXNativeTarget "Pods-CPayDemoOC" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				37CA5F23E47726BA5D7DD5B42F27AABA /* Debug */,
-				523CB2350E88ED8191893209A2299752 /* Release */,
+				93F450CF63885547BF11B19C1E234060 /* Debug */,
+				09E3475A3ACBAC34F9A63095C660AC0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

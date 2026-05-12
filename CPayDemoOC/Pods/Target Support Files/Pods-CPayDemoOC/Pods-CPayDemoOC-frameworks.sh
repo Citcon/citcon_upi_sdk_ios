@@ -179,11 +179,19 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Core/CPaySDK.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Button/PayKitUI.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Core/PayKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/Klarna/KlarnaExt.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/KlarnaMobileSDK/basic/KlarnaMobileSDK.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/KlarnaMobileSDK/basic/KlarnaPayments.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/KlarnaMobileSDK/core/KlarnaCore.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Core/CPaySDK.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Button/PayKitUI.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Core/PayKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/Klarna/KlarnaExt.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/KlarnaMobileSDK/basic/KlarnaMobileSDK.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/KlarnaMobileSDK/basic/KlarnaPayments.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/KlarnaMobileSDK/core/KlarnaCore.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

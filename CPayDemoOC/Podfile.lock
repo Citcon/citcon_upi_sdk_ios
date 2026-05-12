@@ -3,20 +3,33 @@ PODS:
     - CPaySDK/Core (= 2.6.1)
     - CPaySDK/Payment/CashApp/Button (= 2.6.1)
     - CPaySDK/Payment/CashApp/Core (= 2.6.1)
+    - CPaySDK/Payment/Klarna (= 2.6.1)
   - CPaySDK/Core (2.6.1)
   - CPaySDK/Payment/CashApp/Button (2.6.1)
   - CPaySDK/Payment/CashApp/Core (2.6.1)
+  - CPaySDK/Payment/Klarna (2.6.1):
+    - KlarnaMobileSDK (~> 2.10)
+  - KlarnaMobileSDK (2.11.2):
+    - KlarnaMobileSDK/basic (= 2.11.2)
+  - KlarnaMobileSDK/basic (2.11.2):
+    - KlarnaMobileSDK/core
+  - KlarnaMobileSDK/core (2.11.2)
 
 DEPENDENCIES:
   - CPaySDK (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - KlarnaMobileSDK
 
 EXTERNAL SOURCES:
   CPaySDK:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CPaySDK: 7ba6b7024bd098e5a35f0b9b1fa5cae753b8b918
+  CPaySDK: 3ee1f269a0e23b6052bbf97881a35fb17be5adf1
+  KlarnaMobileSDK: e2076ef6d4994aee3fb9dc7d41f5f1fb849b279e
 
-PODFILE CHECKSUM: eccf8874bbc767b80acc77de026f0e52e275c45a
+PODFILE CHECKSUM: 36556c8dc68c996c6cfafd3f9bceb518dc696b8b
 
 COCOAPODS: 1.16.2

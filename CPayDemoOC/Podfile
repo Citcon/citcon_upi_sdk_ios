@@ -14,7 +14,11 @@ target 'CPayDemoOC' do
   # Pods for Demo
   
     pod 'CPaySDK', :path => '../'
-# pod 'CPaySDK', :subspecs => ['Core', 'Payment/CashApp',  'Payment/Klarna']
+# pod 'CPaySDK', :git => 'https://github.com/Citcon/citcon_upi_sdk_ios.git', :branch => 'no-paypal-braintree'
+# pod 'CPaySDK', :subspecs => ['Core', 'Payment/CashApp',  'Payment/Klarna'], :git => 'https://github.com/Citcon/citcon_upi_sdk_ios.git', :branch => 'no-paypal-braintree'
+
+# pod 'KlarnaMobileSDK', '~> 2.11.2'
+
 
 #  pod 'CPaySDK', :subspecs => ['Core', 'Payment/CashApp', 'Payment/Klarna' ], :path => '../'
 #    pod 'CPaySDK', :git => 'git@github.com:Citcon/citcon_upi_sdk_ios.git', :branch => 'main'

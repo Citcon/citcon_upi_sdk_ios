@@ -2,3 +2,4 @@ ${PODS_ROOT}/Target Support Files/CPaySDK/CPaySDK-xcframeworks.sh
 ${PODS_ROOT}/../../CPaySDK/Core/CPaySDK.xcframework
 ${PODS_ROOT}/../../CPaySDK/Payment/CashApp/Ext/PayKitUI.xcframework
 ${PODS_ROOT}/../../CPaySDK/Payment/CashApp/Ext/PayKit.xcframework
+${PODS_ROOT}/../../CPaySDK/Payment/Klarna/KlarnaExt.xcframework

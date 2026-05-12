@@ -1,3 +1,4 @@
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Core/CPaySDK.framework
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Button/PayKitUI.framework
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/CashApp/Core/PayKit.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CPaySDK/Payment/Klarna/KlarnaExt.framework

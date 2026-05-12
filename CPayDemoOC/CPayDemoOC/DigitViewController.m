@@ -632,7 +632,7 @@ preparation before navigation
   CPayRequest *order = [self createOrder];
   order.chargeToken = [_txtTxnId.text copy];
 
-  _txtTxnId.text = nil;
+_txtTxnId.text = nil;
   [self confirmCharge:order];
 }
 
