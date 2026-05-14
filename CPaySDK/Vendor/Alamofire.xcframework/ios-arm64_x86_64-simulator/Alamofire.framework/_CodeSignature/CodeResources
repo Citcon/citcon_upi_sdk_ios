@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/Alamofire-Swift.h</key>
 		<data>
-		hZS2zGjuVFjhPHaV5/Voj+HP1Ik=
+		ZiQ7QmpeZfiHB/3ThMV6G5VREM8=
 		</data>
 		<key>Headers/Alamofire-umbrella.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jOmqpxeL/JSOYV47RWWRqrvAe3s=
+		LRUua4xPkPktrUAzx48STqEsaHY=
 		</data>
 		<key>Modules/Alamofire.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/Alamofire.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		TOyBa3LsF3XOHAMTgkk1gBiCX30=
+		CkwH0AkVAwmtf2XbuS2q9RiXjD8=
 		</data>
 		<key>Modules/Alamofire.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		vds3ukzXYlcve+jfd8ZDFULSbgQ=
+		eqeEaDyjDVM7UR9N/MuLN1I0GUk=
 		</data>
 		<key>Modules/Alamofire.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		TOyBa3LsF3XOHAMTgkk1gBiCX30=
+		CkwH0AkVAwmtf2XbuS2q9RiXjD8=
 		</data>
 		<key>Modules/Alamofire.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8W2s538+F+PudMI1Iq+r6xUDid4=
+		BjT63mdcWnyZ3gE1Yw7ufdjaD+g=
 		</data>
 		<key>Modules/Alamofire.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -54,19 +54,19 @@
 		</data>
 		<key>Modules/Alamofire.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		GfYKlKe5yczjMqCWiXq+5aXpxhw=
+		ye8zwKsJt0xLZn0+gPxYGrRESkQ=
 		</data>
 		<key>Modules/Alamofire.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		I3CpfBNoZBo1RNacOAcQLuzgwlo=
+		p14a1wPL+K5XAe21V59aTqZ+ogo=
 		</data>
 		<key>Modules/Alamofire.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		GfYKlKe5yczjMqCWiXq+5aXpxhw=
+		ye8zwKsJt0xLZn0+gPxYGrRESkQ=
 		</data>
 		<key>Modules/Alamofire.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0NelFqrZ0BXRTVEwMISx9BDIi3g=
+		pTY/hwCodoaKoOFRuQRBBAoy8N4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z1lbFWOcHnSpeo3tUo6NfXUxcbtDTfVwfA5/IJfw9Kc=
+			tv8qP7ANxxjaRgXYiDV85OzGyqLtWdU6NUz50jNEnKU=
 			</data>
 		</dict>
 		<key>Headers/Alamofire-umbrella.h</key>
@@ -121,28 +121,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z2FGJhoVLgcx1hfL+Ti79eVT1Mn35oJFazpKdPIlCtI=
+			oTyW/ErwdSvdkyDVd7FrkonU79dfXhoF1bahOrtyzxU=
 			</data>
 		</dict>
 		<key>Modules/Alamofire.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UV5Or6xlwmTSDuege6GEOwLDDsjAR9vDGHHTGSi/0Xg=
+			j1AtgSWMQwcXUUcO9ZDtrz4bLiBxA7PwyKOFGFaZIa0=
 			</data>
 		</dict>
 		<key>Modules/Alamofire.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z2FGJhoVLgcx1hfL+Ti79eVT1Mn35oJFazpKdPIlCtI=
+			oTyW/ErwdSvdkyDVd7FrkonU79dfXhoF1bahOrtyzxU=
 			</data>
 		</dict>
 		<key>Modules/Alamofire.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i0f0fqtCoDofAYlHA9aCDtCI80Z0r5u09qjMcGJxuRw=
+			MNBuW8TH/MoYmf9bheZbkXgkFPHU54szxqZNuKy0lxg=
 			</data>
 		</dict>
 		<key>Modules/Alamofire.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -156,28 +156,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t4JYrZlYlNPaCXKfERrNFA7Z2qcWLLl2+lZy6DEqtZo=
+			MSbm6u+6xk/7TgPauU71zR9RhXj8oHmSZJYz7YJDT7I=
 			</data>
 		</dict>
 		<key>Modules/Alamofire.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BGEBdtGlcHzTVAjld4Eg6lJSQIkKRR/T7mExBtLlfmk=
+			3o2k2T1EWVqp9SGhu5XR1mWGS7xzovFeakZJhk/xx/0=
 			</data>
 		</dict>
 		<key>Modules/Alamofire.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t4JYrZlYlNPaCXKfERrNFA7Z2qcWLLl2+lZy6DEqtZo=
+			MSbm6u+6xk/7TgPauU71zR9RhXj8oHmSZJYz7YJDT7I=
 			</data>
 		</dict>
 		<key>Modules/Alamofire.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RY4QLjOoCmOex/ThST9RXPVik6yiO5epytowQ8xmgxI=
+			PVw22g5u6On0GCqLrc1Cye/qsLWqCNATWWNbKr44pNU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
