@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/KlarnaExt-Swift.h</key>
 		<data>
-		r+Aw2Cef12wY4GR62cVOWoZizQ4=
+		FvpQJlykdJiPRGOW+WGBmGfzEWc=
 		</data>
 		<key>Headers/KlarnaExt-umbrella.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ccBmN04+1lFdPZu5WvEJSh6DdiQ=
+		pUDFiLCV5aO91VGwt7LWKt9p7Io=
 		</data>
 		<key>Modules/KlarnaExt.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/KlarnaExt.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		G0+hSU5rSlpzanRO80KCWyslB7o=
+		8fLaEgT2G3QfcGD8WYsOEGhEzEg=
 		</data>
 		<key>Modules/KlarnaExt.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		5M/t0ECaoN6nCVoqHFmGPRWYd1o=
+		neHGU2/akrxi3Vdoctdh/FUQuEw=
 		</data>
 		<key>Modules/KlarnaExt.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		G0+hSU5rSlpzanRO80KCWyslB7o=
+		8fLaEgT2G3QfcGD8WYsOEGhEzEg=
 		</data>
 		<key>Modules/KlarnaExt.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7xqDkSfdavahzGNXtSbenl6Jpy8=
+		YHJPjcPNdD3IZr3i8CuYAb9gqnY=
 		</data>
 		<key>Modules/KlarnaExt.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -42,19 +42,19 @@
 		</data>
 		<key>Modules/KlarnaExt.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		cXN4hYtLU4QF5JFoQWvy7EZAMFU=
+		Hp6Nr7lqV6L5rTH/tMnncC/4V5M=
 		</data>
 		<key>Modules/KlarnaExt.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		TGojv/dmH9r+vcY46jSAxoJSTiE=
+		8vkH+h3Ub4UhZ8H85aodgQBvmKU=
 		</data>
 		<key>Modules/KlarnaExt.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		cXN4hYtLU4QF5JFoQWvy7EZAMFU=
+		Hp6Nr7lqV6L5rTH/tMnncC/4V5M=
 		</data>
 		<key>Modules/KlarnaExt.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		no1KdcSNPXuTh8GEvhqUfqY5ifQ=
+		QEysEjhxWwG+L5YQBUE2dv1MKUs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			m5cbgSplWzNoP9pTdsne7RxuxW4sXDYpIsPIyKMuvAA=
+			81ckFumZBFLJs3BqEnYeuDymIWJrc3OnURmaRew31Sc=
 			</data>
 		</dict>
 		<key>Headers/KlarnaExt-umbrella.h</key>
@@ -88,28 +88,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y3Tdg7Ico8IYdxJf5OuucPMzG0deRlM2GATtyRukG8I=
+			m+Kho1rQUgLhWXpQiFqizX9cHCudTMAZzsV6dGKYedA=
 			</data>
 		</dict>
 		<key>Modules/KlarnaExt.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JRiZcgya6jq+qpS216GzcDF4hyoiP1RLMjXFiXN77yQ=
+			fvTYbT7Qu7sgZZlBVHxzYXSmqPE7JM/LfzFK289jZQI=
 			</data>
 		</dict>
 		<key>Modules/KlarnaExt.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y3Tdg7Ico8IYdxJf5OuucPMzG0deRlM2GATtyRukG8I=
+			m+Kho1rQUgLhWXpQiFqizX9cHCudTMAZzsV6dGKYedA=
 			</data>
 		</dict>
 		<key>Modules/KlarnaExt.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AKDpu82dZ2HFetebWdTnX4Y3KXy34sCxDm9hojvmyYA=
+			tqAsrwu43fPj4QQOQ7Np5RuFcHy72wQ1Z+r3XSEJPHw=
 			</data>
 		</dict>
 		<key>Modules/KlarnaExt.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -123,28 +123,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XMRZQCgn7J7VYzg+xy8SPck48DFGAd5r/3Qzeulw8fA=
+			KR8xUlOAnukYD40InOaMLpyTu7LJFsJOY3E5CHYG6jo=
 			</data>
 		</dict>
 		<key>Modules/KlarnaExt.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mv/DFGkju6Ga+8o4ajKpZpW8pL8hMMk5Gg/dG8IpfFI=
+			Hsh/rcD653o7vNrmvT86aiNR3g5Ql2YsUScvqoi4gtM=
 			</data>
 		</dict>
 		<key>Modules/KlarnaExt.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XMRZQCgn7J7VYzg+xy8SPck48DFGAd5r/3Qzeulw8fA=
+			KR8xUlOAnukYD40InOaMLpyTu7LJFsJOY3E5CHYG6jo=
 			</data>
 		</dict>
 		<key>Modules/KlarnaExt.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zibilx0r+OdvtGJVfnE+X7JsND+KnnANP1GiEQV8+1s=
+			3yZhfWTC7kfI9vB1iO4F6xUX5QqMjzASJWx4FQuOA2Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/BraintreeDropIn-Swift.h</key>
 		<data>
-		KTmiskYD3pVhUv7jwYeyZXpKON8=
+		mfe5z2wWNgVzUY/hQZPt42WUqEc=
 		</data>
 		<key>Headers/BraintreeDropIn-umbrella.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TqJ1rGkGlDwSd80FZp4t/dxvK6w=
+		T4XYvzPn/o+LfLkAqizaY2oikOc=
 		</data>
 		<key>Modules/BraintreeDropIn.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -54,19 +54,19 @@
 		</data>
 		<key>Modules/BraintreeDropIn.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		KiORyyF3I+zWQt1ZZmdxqXu9DCg=
+		vAJCrdQhkaG9rlSNw2ULoofbUUU=
 		</data>
 		<key>Modules/BraintreeDropIn.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		nfo6RPt5b/1B//HKhQlNIbtHQX8=
+		i+b6LRREClVXJ0ALnYIoAaQSxZo=
 		</data>
 		<key>Modules/BraintreeDropIn.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		KiORyyF3I+zWQt1ZZmdxqXu9DCg=
+		vAJCrdQhkaG9rlSNw2ULoofbUUU=
 		</data>
 		<key>Modules/BraintreeDropIn.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		wEAiS7MgNDe+uRv9cO2hLcGtYVU=
+		uyVvWMJ8A4urO5P8JxlJeVn8AWQ=
 		</data>
 		<key>Modules/BraintreeDropIn.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -74,19 +74,19 @@
 		</data>
 		<key>Modules/BraintreeDropIn.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		9GB9XgW/q5u1q0PCBtJ++93IPj4=
+		+cMAQ5aOIoNwPddJs75lfhmIF1Q=
 		</data>
 		<key>Modules/BraintreeDropIn.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		VD57v4qivauFFSmdKDh2qGiu0CM=
+		veuuNJf7Dzgo0fTL7u220smD+LQ=
 		</data>
 		<key>Modules/BraintreeDropIn.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		9GB9XgW/q5u1q0PCBtJ++93IPj4=
+		+cMAQ5aOIoNwPddJs75lfhmIF1Q=
 		</data>
 		<key>Modules/BraintreeDropIn.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qXb0OTzF2+FZUppqWn/7o/+rm5A=
+		LcMUx43X/e3UTIiopBytgQXhFkU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -141,7 +141,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LPXJAi77xA7BKe+/mCzOLtko3BZbHYFl+JGPyRvprDI=
+			p0QKH9hMRR3Bq3PHmG7dGP5OBWHHFiCt06qWoYTbbnk=
 			</data>
 		</dict>
 		<key>Headers/BraintreeDropIn-umbrella.h</key>
@@ -176,28 +176,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6vI7qQIRJbNB3RbUZmqSS3ZLbjTcjHU3AP1VvvJCVms=
+			HenizJQIW6weHmdEmL7Mi6DIAjrU5WaG3fPuEI949iE=
 			</data>
 		</dict>
 		<key>Modules/BraintreeDropIn.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nHfiomF2HzTcEahOsnkk1joWmyUwEpiOiD2yVDMFZOc=
+			YPFBQPOrXCpXyoQrAvdng5fTWNbDNG2zZwv+7aN9StY=
 			</data>
 		</dict>
 		<key>Modules/BraintreeDropIn.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6vI7qQIRJbNB3RbUZmqSS3ZLbjTcjHU3AP1VvvJCVms=
+			HenizJQIW6weHmdEmL7Mi6DIAjrU5WaG3fPuEI949iE=
 			</data>
 		</dict>
 		<key>Modules/BraintreeDropIn.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ekxh1W0QVGoXwzbrsd8qeucWl4LeU3PoYGShA+Bwd3A=
+			DWgE27zMCaasLAmFyA+qiSghf+JGosBAiMomrmU8Zk4=
 			</data>
 		</dict>
 		<key>Modules/BraintreeDropIn.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -211,28 +211,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/tXR/WJxJz4rctWRxLPuiXz1nZxfm8kS8jyjo/c25r0=
+			rE7Hqer8y3hblguckzs2VMtKBbHAXM+wk3pHbHyOCyo=
 			</data>
 		</dict>
 		<key>Modules/BraintreeDropIn.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ohb2m9oHik+vOdKepA7sovlWYjMYNwkDtxio+WFwrTQ=
+			QRK9ShbHkWzZeNQ0WgynMgD0M0MDkJ593Q7zkCZfZsA=
 			</data>
 		</dict>
 		<key>Modules/BraintreeDropIn.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/tXR/WJxJz4rctWRxLPuiXz1nZxfm8kS8jyjo/c25r0=
+			rE7Hqer8y3hblguckzs2VMtKBbHAXM+wk3pHbHyOCyo=
 			</data>
 		</dict>
 		<key>Modules/BraintreeDropIn.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wpRUG2a3N96lWBpyq5OxKmnVOzb9R3bHlMxFnplBl18=
+			lpZFg8JTxaRPNBLYqVM0Wsj8hwLRWPEyK3zsMrM3En8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

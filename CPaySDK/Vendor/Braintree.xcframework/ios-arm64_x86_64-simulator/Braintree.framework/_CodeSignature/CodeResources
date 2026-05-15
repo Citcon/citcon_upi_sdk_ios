@@ -294,7 +294,7 @@
 		</data>
 		<key>Headers/Braintree-Swift.h</key>
 		<data>
-		gdTaqyR7/sxpwEruNLohDAKwqOE=
+		C6FTE8EsDb3aXJJU8NOqodQqsWc=
 		</data>
 		<key>Headers/Braintree-umbrella.h</key>
 		<data>
@@ -338,7 +338,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		u01k6MdssYE1PUyslYapJKpMgYA=
+		rLlRQj8gcnCasoNQ+DsOXGZTtUE=
 		</data>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -346,19 +346,19 @@
 		</data>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		A7EDCSLu3LwdbAA/9u7dY2pYf64=
+		OrMYQTOKkKxrZbGPvCEilAOwRxE=
 		</data>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		JvIPVaPqx/GuN5LYneiNEKnM5mI=
+		n4xNuj8Y/o/phsvQHIps5uxYMTo=
 		</data>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		A7EDCSLu3LwdbAA/9u7dY2pYf64=
+		OrMYQTOKkKxrZbGPvCEilAOwRxE=
 		</data>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7dq0TlwX14YhhF2N7z/JZRbQlck=
+		ilLWPAWzEWqQrF3dAP6lbPe1N6U=
 		</data>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -366,19 +366,19 @@
 		</data>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		TjcN7UhLDULGGQBJ3s9w/JoGq9M=
+		fyTPT6o6gWK+5VG/FsKYdt5K+Jc=
 		</data>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		NefzZ/E2+XdL1q9UNNuE8X67XmE=
+		MVuNm0086XOHWU8GUtq80ldNcFw=
 		</data>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		TjcN7UhLDULGGQBJ3s9w/JoGq9M=
+		fyTPT6o6gWK+5VG/FsKYdt5K+Jc=
 		</data>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		LLHeOF5YhUfS/2Rr8l6jdYkxbzs=
+		yYHg4xsYK5lIpS4fIQeY5Rt9OMY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -895,7 +895,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6/W9Z5vfxxIKrWpErz+ohunsUNymLQY34u1xrmX+9A0=
+			glWve2nrmOeqeQ/VlGGH1klN0tA3FLGZ61aTKJDRk7I=
 			</data>
 		</dict>
 		<key>Headers/Braintree-umbrella.h</key>
@@ -979,28 +979,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SAj3pN6yH3mALi63FduR79EFmRaJaj/gLVVA+4a4vKk=
+			W9RT/XWGGRRdOgz6mtSYvEbRmVxDqMrLc5ubWCg9liE=
 			</data>
 		</dict>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XP1+4Xb9tyUHjpLpNrqWWJpshqgiBEbpxM1d1Oa/Xxs=
+			QKs2xfsSetxqubyAVCHaeX2ycDvLCNr8XyR2njuK048=
 			</data>
 		</dict>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SAj3pN6yH3mALi63FduR79EFmRaJaj/gLVVA+4a4vKk=
+			W9RT/XWGGRRdOgz6mtSYvEbRmVxDqMrLc5ubWCg9liE=
 			</data>
 		</dict>
 		<key>Modules/Braintree.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oZ20Xh7w63KQDjLqDP9/eDAt6NgT1dwou0TzIJ4k6WE=
+			xmWxhiX0CAoniS1cKBff9csiwtatRLbfEhTrcfpt1W4=
 			</data>
 		</dict>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -1014,28 +1014,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tt/Xu+77sRLJ3YDGO+DV2WJ7nePlcfdpFeFLRKCVUE4=
+			Wae81SA8EqEzg8mQu6N7hvp9MgH9CoHtiN8RYWvhKHs=
 			</data>
 		</dict>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ae0omfNyMm7cpnCVlYgPWyTdwD9RpaMvuYqs0ZMTCEM=
+			GjPeE7kafgjenZJRItwhh4m/qQTgRPo70VBOZDH4sHQ=
 			</data>
 		</dict>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tt/Xu+77sRLJ3YDGO+DV2WJ7nePlcfdpFeFLRKCVUE4=
+			Wae81SA8EqEzg8mQu6N7hvp9MgH9CoHtiN8RYWvhKHs=
 			</data>
 		</dict>
 		<key>Modules/Braintree.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r6Bp8RjYyBXnPC1wUohpQ8wY6k1n8zcrrP5je9RQVLs=
+			SLX6LuXY9ZhqrxJnTiBdPSSsCBYZATEIk5a+DZqmC8w=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
