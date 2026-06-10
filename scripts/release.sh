@@ -1,20 +1,43 @@
 #!/usr/bin/env bash
-# Usage: ./scripts/release.sh <version>
-# Example: ./scripts/release.sh 2.8.0
+# Usage: ./scripts/release.sh <version> [--binaries-dir <path>]
+# Example: ./scripts/release.sh 2.8.0 --binaries-dir ../upi_mobile_sdk_ios/Cocoapods/CPaySDK
+#
+# --binaries-dir  Path to the CPaySDK xcframeworks directory.
+#                 Defaults to ../upi_mobile_sdk_ios/Cocoapods/CPaySDK
+#                 (sibling checkout of the private dev repo).
 #
 # Prerequisites:
 #   - gh auth login (GitHub CLI authenticated)
 #   - swift installed
-#   - xcframeworks built and placed into CPaySDK/ in this repo
 #
 # Run from the root of citcon_upi_sdk_ios repo.
 
 set -euo pipefail
 
-VERSION="${1:?Usage: $0 <version>}"
+VERSION="${1:?Usage: $0 <version> [--binaries-dir <path>]}"
+shift
+
 REPO="Citcon/citcon_upi_sdk_ios"
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-CAYSDK_DIR="$REPO_ROOT/CPaySDK"
+CAYSDK_DIR="$REPO_ROOT/../upi_mobile_sdk_ios/Cocoapods/CPaySDK"
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --binaries-dir)
+      CAYSDK_DIR="$(cd "$2" && pwd)"
+      shift 2
+      ;;
+    *)
+      echo "Unknown option: $1"
+      exit 1
+      ;;
+  esac
+done
+
+CAYSDK_DIR="$(cd "$CAYSDK_DIR" 2>/dev/null && pwd)" || {
+  echo "ERROR: --binaries-dir not found: $CAYSDK_DIR"
+  exit 1
+}
 
 echo "==> Releasing CPaySDK v${VERSION}"
 
