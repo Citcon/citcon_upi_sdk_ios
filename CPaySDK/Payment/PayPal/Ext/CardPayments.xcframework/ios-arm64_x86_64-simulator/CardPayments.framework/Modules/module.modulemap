@@ -1,4 +1,0 @@
-framework module CardPayments {
-  header "CardPayments-Swift.h"
-  requires objc
-}

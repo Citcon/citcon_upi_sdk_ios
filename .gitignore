@@ -18,3 +18,8 @@ Output/*
 *.xcuserdatad
 **/Build/*
 *.xcuserstate
+.build
+Package.resolved
+
+# xcframeworks — hosted on GitHub Releases
+CPaySDK/
