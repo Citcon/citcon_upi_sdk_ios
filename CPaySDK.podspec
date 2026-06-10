@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CPaySDK'
-  s.version          = '2.6.1'
+  s.version          = '2.7.0'
   s.summary          = 'UPI mobile SDK for iOS.'
   
   # This description is used to generate tags and improve search results.
@@ -29,7 +29,7 @@ DESC
 s.homepage         = 'https://github.com/Citcon/citcon_upi_sdk_ios'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'yansheng.ao@citcon.cn' => 'yansheng.ao@citcon.cn' }
-s.source           = { :git => 'https://github.com/Citcon/citcon_upi_sdk_ios.git', :tag => 'v' + s.version.to_s }
+s.source           = { :http => "https://github.com/Citcon/citcon_upi_sdk_ios/releases/download/v#{s.version}/CPaySDK.zip" }
 
 #  s.exclude_files = ['PPRiskMagnes.xcframework', 'Alamofire.xcframework', 'Braintree.xcframework', 'CardinalMobile.xcframework']
 
