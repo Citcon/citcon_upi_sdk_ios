@@ -4,6 +4,11 @@
 
 ## 📦 Release History
 
+### v2.7.0 - 2026-06-10
+- Added **AMS gateway** support for **Alipay** (CAD / Canada)
+
+---
+
 ### v2.6.0 - 2026-01-24
 - Added **Flexa** payment support
 
