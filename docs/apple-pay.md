@@ -5,6 +5,7 @@
 - Citcon must enable Apple Pay for your merchant account and issue you a merchant identifier. Once that's done, the backend `/config` response includes the `applepay_direct` gateway.
 - You need an Apple Developer Program account (to create the Merchant ID and enable the capability below).
 - Minimum iOS version is 13.0, matching the SDK's podspec (`s.platform = :ios, "13.0"`).
+- Apple Pay requires **CPaySDK 2.8.0 or later**. Pin your Podfile to that version or newer.
 - Apple Pay must be tested on a real device. The simulator never presents the payment sheet, regardless of how your code is configured.
 
 ## Merchant ID onboarding
@@ -24,7 +25,9 @@ The private key that decrypts the payment token lives on Citcon's side, so only 
 
 - In your target's Signing & Capabilities tab, add the Apple Pay capability and check the Merchant ID created in the previous step.
 - The entitlement key behind this is `com.apple.developer.in-app-payments`.
-- If the entitlement is missing, `canMakePayments(usingNetworks:)` returns `false` and the payment sheet never appears — no error, no crash, it just silently doesn't show up. This is the most common integration mistake.
+- The capability is required for the payment sheet to present at all. The SDK calls `PKPaymentAuthorizationController.present(completion: nil)` with no completion handler, so if presentation fails (e.g. because the entitlement is missing) it fails silently: no error, no crash, and no delegate callback fires. In practice this looks like `requestOrder` never calling your `CPayRequestCallback` — nothing happens after you tap the Apple Pay button. If you hit that, check the entitlement first.
+
+> **Bundled demo note:** `CPayDemoOC/CPayDemoOC/CPayDemoOC.entitlements` in this repo is signed with Citcon's own Apple Pay merchant ID (`merchant.applepay.citconpay.com.ecc`). Running that demo on your own device will fail provisioning. To run it yourself, edit `CPayDemoOC/CPayDemoOC/CPayDemoOC.entitlements` to use your own merchant ID and sign the target with your own team.
 
 ## Installation
 
@@ -57,6 +60,10 @@ Objective-C:
 ```objc
 #import <CPaySDK/CPaySDK-Swift.h>
 #import <PassKit/PassKit.h>
+
+// 0. Configure the SDK once at startup. `yourAccessToken` comes from your own backend.
+[[CPayManager sharedInst] setMode:CPayENVModeUAT];   // or CPayENVModePROD in production
+[[CPayManager sharedInst] setAccessToken:yourAccessToken];
 
 // 1. Only offer Apple Pay when the device can actually use it.
 NSArray<PKPaymentNetwork> *networks = @[PKPaymentNetworkVisa,
@@ -101,6 +108,10 @@ Swift:
 import CPaySDK
 import PassKit
 
+// 0. Configure the SDK once at startup. `yourAccessToken` comes from your own backend.
+CPayManager.sharedInst().setMode(.UAT)   // or .PROD in production
+CPayManager.sharedInst().setAccessToken(yourAccessToken)
+
 // 1. Only offer Apple Pay when the device can actually use it.
 let networks: [PKPaymentNetwork] = [.visa, .masterCard, .amex, .discover, .JCB, .chinaUnionPay]
 guard PKPaymentAuthorizationController.canMakePayments(usingNetworks: networks) else {
@@ -144,11 +155,11 @@ There are three channels that can carry the outcome of an Apple Pay confirm:
 
 Get the notification names from `[CPayRuntimeInst ORDER_CONFIRMED]` and `[CPayRuntimeInst NTFY_ASYNC]` rather than hardcoding the strings.
 
-One thing to note: **failure and user-cancellation paths do not trigger that automatic follow-up query.** In those cases you only get a single `CPayUPI.Notification.Async` notification with `status` set to `fail`.
+One thing to note: **failure and user-cancellation paths do not trigger that automatic follow-up query.** Your `CPayRequestCallback` still fires in both cases — it's the `GET /transactions/{id}` inquiry (and the resulting delayed `CPayUPI.Notification.Async`) that gets skipped. What you get instead is a single, immediate `CPayUPI.Notification.Async` notification with `status` set to `fail`, posted alongside the callback.
 
 ## Errors and testing
 
-These error codes and messages come from the gateway itself (`CPayApplePayGateway.swift`):
+These error codes and messages come from the gateway itself:
 
 | code | message | meaning |
 |---|---|---|
@@ -158,5 +169,6 @@ These error codes and messages come from the gateway itself (`CPayApplePayGatewa
 | `-1` | `.chargeToken can not be empty or nil` | `requestOrder` was called before a charge was created |
 | `-3` | `Failed to encode Apple Pay token` | the payment token returned by PassKit could not be serialized |
 | `other` | `Canceled` | the user dismissed the payment sheet without authorizing the payment |
+| `-1` | `Unsupport Payment: <gateway>` | the installed CPaySDK predates 2.8.0 and has no Apple Pay gateway registered — upgrade the pod |
 
 Testing note: always use a real device. `canMakePayments` and the entitlement check depend on real hardware and provisioning state, so results on the simulator can't be trusted.
