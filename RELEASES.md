@@ -4,6 +4,15 @@
 
 ## 📦 Release History
 
+### v2.8.0 - 2026-08-11
+- Added **Apple Pay** support (`applepay`) — see [docs/apple-pay.md](./docs/apple-pay.md)
+- Requires the Apple Pay capability and a Citcon-issued merchant identifier in the host app
+
+> Binary not yet published. The demo shows the `applepay` option, but the gateway
+> only becomes functional once the v2.8.0 xcframework is released.
+
+---
+
 ### v2.7.0 - 2026-06-10
 - Added **AMS gateway** support for **Alipay** (CAD / Canada)
 
