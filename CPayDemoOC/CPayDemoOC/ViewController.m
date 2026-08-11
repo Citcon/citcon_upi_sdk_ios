@@ -328,6 +328,11 @@
     }  else if ([payment isEqualToString:@"klarna"]) {
         [self presentPaymentView:@"digit" payment:payment title:@"Klarna"];
     }
+    else if ([payment isEqualToString:@"applepay"]) {
+        // Apple Pay self-presents (no order.controller needed); the generic digit
+        // flow sets order.payment.method = "applepay" then generateOrder + requestOrder.
+        [self presentPaymentView:@"digit" payment:payment title:@"Apple Pay"];
+    }
     else if ([payment isEqualToString:@"card"] ||
                [payment isEqualToString:@"toss"] ||
                [payment isEqualToString:@"lpay"] ||
