@@ -20,3 +20,7 @@ pod 'CPaySDK/Core'
 pod 'CPaySDK/Ext/PPRiskMagnes'
 pod 'CPaySDK/Ext/CardinalMobile'
 ```
+
+## Documentation
+
+- [Apple Pay integration guide](./docs/apple-pay.md)
