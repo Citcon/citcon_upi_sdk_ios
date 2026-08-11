@@ -159,7 +159,7 @@ One thing to note: **failure and user-cancellation paths do not trigger that aut
 
 ## Errors and testing
 
-These error codes and messages come from the gateway itself:
+The SDK reports these errors through the `code` and `message` fields of `CPayResult`:
 
 | code | message | meaning |
 |---|---|---|
