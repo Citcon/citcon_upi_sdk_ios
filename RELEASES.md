@@ -4,7 +4,7 @@
 
 ## 📦 Release History
 
-### v2.8.0 - 2026-08-11
+### v2.8.0 - 2026-08-22
 - Added **Apple Pay** support (`applepay`) — see [docs/apple-pay.md](./docs/apple-pay.md)
 - Requires the Apple Pay capability and a Citcon-issued merchant identifier in the host app
 
