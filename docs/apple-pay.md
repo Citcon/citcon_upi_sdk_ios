@@ -50,6 +50,10 @@ The merchant capabilities the SDK requests are: 3D Secure, EMV, debit, credit. `
 ## Making a payment
 
 - `transaction.amount` is in the **minor currency unit** — `1199` means `$11.99`.
+  The exponent follows ISO 4217 and is not always 2: zero-decimal currencies take the
+  whole unit (`100` is `¥100` for JPY, not `¥1`), and three-decimal currencies take
+  thousandths (`1234` is `1.234 KWD`). The SDK scales the sheet total by the currency's
+  own exponent, so the amount you send is the amount the customer sees and is charged.
 - `transaction.currency` and `transaction.country` are required.
 - `payment.method` must be `"applepay"`.
 - `order.controller` is **not needed** for Apple Pay — the gateway presents the payment sheet itself.
