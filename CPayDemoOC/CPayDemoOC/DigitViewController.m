@@ -607,6 +607,15 @@ preparation before navigation
 
   order.controller = self;
 
+  // Apple Pay routed to nuvei requires ext.device.ip. The merchant has to supply
+  // it: on-device the SDK can only see a LAN address, which is useless for risk
+  // scoring. Real integrations should pass the public IP their own backend saw.
+  if (!order.ext) {
+    order.ext = CPayExt.new;
+  }
+  order.ext.device = [CPayExtDevice new];
+  order.ext.device.ip = @"122.235.240.87";
+
   if (self.isPPCPPayPal) {
     //        order.paypalClientId =
     //        @"Aevy5i-20TVIB6j6KyjbWoUuqopBtx0UKg8L6xlbHv3_ZP3ddoVXkAXSooCsg7HUWDOJgt4oJmh8l2Yg";
