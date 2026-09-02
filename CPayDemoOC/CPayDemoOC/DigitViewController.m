@@ -10,6 +10,14 @@
 // #import <CPaySDK/CPaySDK.h>
 #import <CPaySDK/CPaySDK-Swift.h>
 
+// Demo toggle — flip this and rebuild to exercise the other path.
+//
+// Matters most for Apple Pay: the SDK only asks the payment sheet for the
+// customer's contact details when payment.billing_address is left empty.
+//   YES -> the address below is sent, and the sheet stays minimal
+//   NO  -> nothing is sent, and the sheet collects the contact details instead
+static const BOOL kDemoSendBillingAddress = NO;
+
 @interface DigitViewController ()
 @property(weak, nonatomic) IBOutlet UITextField *txtRefId;
 @property(weak, nonatomic) IBOutlet UITextField *txtCurrency;
@@ -606,6 +614,21 @@ preparation before navigation
   }
 
   order.controller = self;
+
+  // Flip kDemoSendBillingAddress at the top of this file to switch paths.
+  if (kDemoSendBillingAddress) {
+    CPayBillingAddr *billing = CPayBillingAddr.new;
+    billing.firstName = @"Ada";
+    billing.lastName = @"Lovelace";
+    billing.email = @"ada.lovelace@example.com";
+    billing.phone = @"14085551234";
+    billing.street = @"2055 Gateway Place";
+    billing.city = @"San Jose";
+    billing.state = @"CA";          // backend caps this at 3 characters
+    billing.zip = @"95110";
+    billing.country = @"US";        // backend requires exactly 2
+    order.payment.billingAddress = billing;
+  }
 
   // Apple Pay routed to nuvei requires ext.device.ip. The merchant has to supply
   // it: on-device the SDK can only see a LAN address, which is useless for risk
