@@ -630,9 +630,9 @@ preparation before navigation
     order.payment.billingAddress = billing;
   }
 
-  // Apple Pay routed to nuvei requires ext.device.ip. The merchant has to supply
-  // it: on-device the SDK can only see a LAN address, which is useless for risk
-  // scoring. Real integrations should pass the public IP their own backend saw.
+  // ext.device.ip is required for Apple Pay. The merchant has to supply it: on
+  // device the SDK can only see a LAN address, which is useless for risk scoring.
+  // Real integrations should pass the public IP their own backend saw.
   if (!order.ext) {
     order.ext = CPayExt.new;
   }
