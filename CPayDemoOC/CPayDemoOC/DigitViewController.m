@@ -16,7 +16,7 @@
 // customer's contact details when payment.billing_address is left empty.
 //   YES -> the address below is sent, and the sheet stays minimal
 //   NO  -> nothing is sent, and the sheet collects the contact details instead
-static const BOOL kDemoSendBillingAddress = NO;
+static const BOOL kDemoSendBillingAddress = YES;
 
 @interface DigitViewController ()
 @property(weak, nonatomic) IBOutlet UITextField *txtRefId;
