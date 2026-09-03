@@ -23,3 +23,6 @@ Package.resolved
 
 # xcframeworks — hosted on GitHub Releases
 CPaySDK/
+
+# local code index
+.codegraph/
