@@ -50,9 +50,16 @@ The merchant capabilities the SDK requests are: 3D Secure, EMV, debit, credit. `
 ## Making a payment
 
 - `transaction.amount` is in the **minor currency unit** — `1199` means `$11.99`.
+  The exponent follows ISO 4217 and is not always 2: zero-decimal currencies take the
+  whole unit (`100` is `¥100` for JPY, not `¥1`), and three-decimal currencies take
+  thousandths (`1234` is `1.234 KWD`). The SDK scales the sheet total by the currency's
+  own exponent, so the amount you send is the amount the customer sees and is charged.
 - `transaction.currency` and `transaction.country` are required.
 - `payment.method` must be `"applepay"`.
 - `order.controller` is **not needed** for Apple Pay — the gateway presents the payment sheet itself.
+- `ext.device.ip` is **required** for Apple Pay. Send the public IP your own backend observed for
+  the customer: an app can only see its device's LAN address, which is useless for risk scoring.
+  Maximum length 45 characters, so IPv6 fits.
 - In production, create the charge on **your own server** and have the client only confirm it. The `generateOrder` call below is for demonstration convenience only.
 
 Objective-C:
@@ -85,6 +92,11 @@ order.transaction.country   = @"US";
 
 order.payment        = [CPayPayment new];
 order.payment.method = @"applepay";
+
+// Required. Use the public IP your backend saw for this customer, not a device-local one.
+order.ext            = [CPayExt new];
+order.ext.device     = [CPayExtDevice new];
+order.ext.device.ip  = @"203.0.113.42";
 
 // 3. Create the charge. In production, do this on your own server.
 [[CPayManager sharedInst] generateOrder:order callback:^(CPayResult * _Nullable resp) {
@@ -128,6 +140,11 @@ order.transaction.country   = "US"
 order.payment        = CPayPayment()
 order.payment?.method = "applepay"
 
+// Required. Use the public IP your backend saw for this customer, not a device-local one.
+order.ext            = CPayExt()
+order.ext?.device    = CPayExtDevice()
+order.ext?.device?.ip = "203.0.113.42"
+
 // 3. Create the charge. In production, do this on your own server.
 CPayManager.sharedInst().generateOrder(order) { resp in
     guard let resp = resp, resp.status != "fail" else {
@@ -142,6 +159,49 @@ CPayManager.sharedInst().generateOrder(order) { resp in
     }
 }
 ```
+
+## Billing address
+
+Depending on which gateway your transaction routes to, the backend may require
+`payment.billing_address` with `email`, `first_name` and `last_name` present. There are two
+ways that gets filled, and **the SDK picks one before the sheet appears** — they are never
+mixed:
+
+| You supply | What the SDK does |
+|---|---|
+| `payment.billingAddress` with any of `street`, `city`, `state`, `zip`, `country` set | Asks Apple Pay for nothing. Your address is used as-is. |
+| None of those five fields | Asks Apple Pay for the customer's name, email, phone and postal address, and fills `payment.billing_address` from what the sheet returns. |
+
+Supplying the address yourself is the better option when you already have it. It keeps the
+payment sheet minimal, and it keeps the address consistent with whatever you use for your own
+records.
+
+```objc
+CPayBillingAddr *billing = [CPayBillingAddr new];
+billing.firstName = @"Ada";
+billing.lastName  = @"Lovelace";
+billing.email     = @"ada@example.com";
+billing.street    = @"1 Infinite Loop";
+billing.city      = @"Cupertino";
+billing.state     = @"CA";
+billing.zip       = @"95014";
+billing.country   = @"US";        // two-letter ISO code
+order.payment.billingAddress = billing;
+```
+
+Two things to know if you leave it to Apple Pay:
+
+- **The sheet gains a contact section.** iOS only allows a postal address to be requested as a
+  billing contact field, so the name, email and phone have to be requested as *shipping* contact
+  fields. A side effect is that the sheet labels that section "Ship To" even for a digital
+  purchase. There is no PassKit option for "contact details, no shipping".
+- **Fields the customer doesn't have on file come back empty**, and the required ones then fail
+  validation. If `email`, `first_name` and `last_name` matter to you, supplying them yourself is
+  more reliable than hoping they are present in the customer's Apple account.
+
+Field limits are enforced by the backend and rejected rather than truncated: `email` 100,
+`first_name` 30, `last_name` 40, `street` 50, `city` 30, `state` 3, `zip` 10, and `country`
+exactly 2. Note the 3-character cap on `state` — pass a code like `CA`, not `California`.
 
 ## Handling results
 
@@ -159,7 +219,9 @@ One thing to note: **failure and user-cancellation paths do not trigger that aut
 
 ## Errors and testing
 
-The SDK reports these errors through the `code` and `message` fields of `CPayResult`:
+The SDK reports these errors through the `code` and `message` fields of `CPayResult`.
+
+Raised on the device, before anything reaches the backend:
 
 | code | message | meaning |
 |---|---|---|
@@ -171,4 +233,17 @@ The SDK reports these errors through the `code` and `message` fields of `CPayRes
 | `other` | `Canceled` | the user dismissed the payment sheet without authorizing the payment |
 | `-1` | `Unsupport Payment: <gateway>` | the installed CPaySDK predates 2.8.0 and has no Apple Pay gateway registered — upgrade the pod |
 
-Testing note: always use a real device. `canMakePayments` and the entitlement check depend on real hardware and provisioning state, so results on the simulator can't be trusted.
+Returned by the backend when a required field is absent or malformed. These arrive with the
+offending field named, so read the `message`:
+
+| code | message | meaning |
+|---|---|---|
+| `4002` | `missing parameter ext.device.ip` | you did not set `ext.device.ip` |
+| `4002` | `missing parameter payment.billing_address.email` | neither you nor the Apple Pay sheet supplied an email |
+| `4002` | `missing parameter payment.billing_address.first_name` | same, for the given name |
+| `4001` | `invalid parameter payment.billing_address.state` | over the 3-character cap — pass `CA`, not `California` |
+| `4001` | `invalid parameter payment.billing_address.country` | not exactly two characters — use the ISO code |
+
+Testing note: always use a real device. The simulator never presents the payment sheet, and
+provisioning state is what decides whether presentation succeeds, so neither behaviour can be
+reproduced there.
