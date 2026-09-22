@@ -4,6 +4,11 @@
 
 ## 📦 Release History
 
+### v2.8.1 - 2026-09-22
+- **AMS**: open the wallet app directly when installed, falling back to the landing page
+
+---
+
 ### v2.8.0 - 2026-08-22
 - Added **Apple Pay** support (`applepay`) — see [docs/apple-pay.md](./docs/apple-pay.md)
 - Requires the Apple Pay capability and a Citcon-issued merchant identifier in the host app

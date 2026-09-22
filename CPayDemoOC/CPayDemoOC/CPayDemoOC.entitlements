@@ -10,6 +10,7 @@
 	<key>com.apple.developer.in-app-payments</key>
 	<array>
 		<string>merchant.applepay.citconpay.com.ecc</string>
+		<string>merchant.com.citcon.applepay.demo</string>
 	</array>
 </dict>
 </plist>
